@@ -301,7 +301,7 @@ E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">S
   
   <section class="comments">
     <h2>Comments</h2>
-    
+    <!-- 
   <p>
     You are seeing this because your Disqus shortname is not properly set. To
     configure Disqus, you should edit your <code>_config.yml</code> to include
@@ -312,7 +312,19 @@ E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">S
     If you do not wish to use Disqus, override the
     <code>comments.html</code> partial for this theme.
   </p>
+ -->
 
+    <div id="disqus_thread"></div>
+    <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-leonardobenedeti-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <script id="dsq-count-scr" src="//https-leonardobenedeti-github-io.disqus.com/count.js" async></script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </section>
 
   <section class="related">
