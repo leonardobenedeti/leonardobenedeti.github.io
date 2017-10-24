@@ -37,4 +37,4 @@ github:
   repo:             https://github.com/leonardobenedeti
 
 exclude: ['modelos_de_post']
-disqus.shortname: https-leonardobenedeti-github-io
+site.disqus.shortname: https-leonardobenedeti-github-io
