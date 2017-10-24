@@ -11,7 +11,7 @@
 
   <title>
     
-      About &middot; Leonardo Benedeti
+      AAPT - Como verificar detalhes de um APK &middot; Leonardo Benedeti
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="page">
+  <body class="post">
 
     <div id="sidebar">
   <header>
@@ -71,7 +71,7 @@
 
   
     
-      <a class="page-link  active"
+      <a class="page-link "
           href="/about.html">About</a>
     
   
@@ -221,14 +221,106 @@
 
     <main class="container">
       <header>
-  <h1 class="page-title">About</h1>
+  <h1 class="post-title">AAPT - Como verificar detalhes de um APK</h1>
 </header>
 <div class="content">
-  <p>Formado em Técnico de informática pela FAETEC e em Sistemas de Informação pela UniFOA com experiência de trabalho em empresas como: Grupo Segurador Banco do Brasil e MAPFRE, Entelgy, Coca-Cola, CSN e muitas agências focadas em tecnologia.</p>
+  <div class="post-meta">
+  <span class="post-date">24 Oct 2017</span>
+  <span class="post-categories">
+    
+      &bull;
 
-<p>Iniciei minha saga como Desenvolvedor Web, criando sites e plataformas server side. Atualmente atuo no ramo Mobile, desenvolvendo aplicativos nativos e hibridos para diversas plataformas.</p>
+      
+      
+      
 
-<p>Atualmente alocado no Grupo Segurador Banco do Brasil e MAPFRE, atuando pela Entelgy, trabalho na criação de apps utilizando a plataforma Kony, uma plataforma onde se escreve javascript puro que é compilado para várias plataformas.</p>
+      
+        Dev Android
+      
+    
+  </span>
+</div>
+
+  <div class="post-body">
+    <p>Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para que a mesma verificasse, queria algo mais simples, <!--more-->do nível de terminal. 
+Dai iniciei uma busca e encontrei o binário <code class="highlighter-rouge">aapt</code> que com algumas flags adicionais, fazem toda essa mágica, e mostram as informações do apk.</p>
+
+<p>Como utilizar:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/android-[version]/aapt aapt dump badging &lt;path-to-apk&gt;
+</code></pre></div></div>
+
+<p>Utilizando este comando, consegui o que precisava, que era saber o version code do apk de um modo bem simples. 
+E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">Stack Overflow</a>, nos links abaixo:</p>
+
+<p><a href="https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat">https://stackoverflow….e-in-the-android-applicat</a></p>
+
+<p><a href="https://stackoverflow.com/questions/11330165/android-aapt-can-not-be-found-on-mac">https://stackoverflow…can-not-be-found-on-mac</a></p>
+
+    
+
+
+
+<div class="post-tags">
+  
+    
+    <a href="/tags.html#android">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">android</span>
+    </a>
+  
+    
+    <a href="/tags.html#apk">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">apk</span>
+    </a>
+  
+    
+    <a href="/tags.html#appt">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">appt</span>
+    </a>
+  
+</div>
+  </div>
+
+  
+  <section class="comments">
+    <h2>Comments</h2>
+    
+  <p>
+    You are seeing this because your Disqus shortname is not properly set. To
+    configure Disqus, you should edit your <code>_config.yml</code> to include
+    either a <code>disqus.shortname</code> variable.
+  </p>
+
+  <p>
+    If you do not wish to use Disqus, override the
+    <code>comments.html</code> partial for this theme.
+  </p>
+
+  </section>
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+  </ul>
+</section>
 
 </div>
 
