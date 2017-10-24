@@ -11,7 +11,7 @@
 
   <title>
     
-      Tags &middot; Leonardo Benedeti
+      Post teste &middot; Leonardo Benedeti
     
   </title>
 
@@ -35,7 +35,7 @@
 </head>
 
 
-  <body class="tags">
+  <body class="post">
 
     <div id="sidebar">
   <header>
@@ -221,123 +221,128 @@
 
     <main class="container">
       <header>
-  <h1 class="page-title">Tags</h1>
+  <h1 class="post-title">Post teste</h1>
 </header>
 <div class="content">
-  <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
-<!-- With added pipe to handle lack of sort_natural -->
+  <div class="post-meta">
+  <span class="post-date">24 Oct 2017</span>
+  <span class="post-categories">
+    
+      &bull;
 
-<!-- site_tags: android|android,apk|apk,appt|appt -->
+      
+      
+      
 
-<!-- tag_words: android|androidapk|apkappt|appt -->
-
-<div id="tags-page">
-  <div class="tags-list">
+      
+        Dev Android
+      
     
-    
-    <a href="#android" class="tag-link">
-      <span class="tag-name">android</span>
-      <span class="tag-count">2</span>
-    </a>
-    
-    
-    <a href="#apk" class="tag-link">
-      <span class="tag-name">apk</span>
-      <span class="tag-count">2</span>
-    </a>
-    
-    
-    <a href="#appt" class="tag-link">
-      <span class="tag-name">appt</span>
-      <span class="tag-count">2</span>
-    </a>
-    
-  </div>
-
-  <hr/>
-
-  <div class="posts-by-tag">
-    
-    
-    <div id="android" class="posts-for-tag">
-      <h2>android</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/teste.html">
-                Post teste
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/como-verificar-infos-de-apks.html">
-                AAPT - Como verificar detalhes de um APK
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-    
-    <div id="apk" class="posts-for-tag">
-      <h2>apk</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/teste.html">
-                Post teste
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/como-verificar-infos-de-apks.html">
-                AAPT - Como verificar detalhes de um APK
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-    
-    <div id="appt" class="posts-for-tag">
-      <h2>appt</h2>
-      <ul class="posts-list">
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/teste.html">
-                Post teste
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-          <li>
-            <h3>
-              <a href="/dev%20android/2017/10/24/como-verificar-infos-de-apks.html">
-                AAPT - Como verificar detalhes de um APK
-                <small>24 Oct 2017</small>
-              </a>
-            </h3>
-          </li>
-        
-      </ul>
-    </div>
-    
-  </div>
+  </span>
 </div>
+
+  <div class="post-body">
+    <p>2Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para que a mesma verificasse, queria algo mais simples, <!--more-->do nível de terminal. 
+Dai iniciei uma busca e encontrei o binário <code class="highlighter-rouge">aapt</code> que com algumas flags adicionais, fazem toda essa mágica, e mostram as informações do apk.</p>
+
+<p>Como utilizar:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/android-[version]/aapt aapt dump badging &lt;path-to-apk&gt;
+</code></pre></div></div>
+
+<p>Utilizando este comando, consegui o que precisava, que era saber o version code do apk de um modo bem simples. 
+E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">Stack Overflow</a>, nos links abaixo:</p>
+
+<p><a href="https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat">https://stackoverflow….e-in-the-android-applicat</a></p>
+
+<p><a href="https://stackoverflow.com/questions/11330165/android-aapt-can-not-be-found-on-mac">https://stackoverflow…can-not-be-found-on-mac</a></p>
+
+    
+
+
+
+<div class="post-tags">
+  
+    
+    <a href="/tags.html#android">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">android</span>
+    </a>
+  
+    
+    <a href="/tags.html#apk">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">apk</span>
+    </a>
+  
+    
+    <a href="/tags.html#appt">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">appt</span>
+    </a>
+  
+</div>
+  </div>
+
+  
+  <section class="comments">
+    <h2>Comments</h2>
+    <!-- 
+  <p>
+    You are seeing this because your Disqus shortname is not properly set. To
+    configure Disqus, you should edit your <code>_config.yml</code> to include
+    either a <code>disqus.shortname</code> variable.
+  </p>
+
+  <p>
+    If you do not wish to use Disqus, override the
+    <code>comments.html</code> partial for this theme.
+  </p>
+ -->
+
+    <div id="disqus_thread"></div>
+    <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-leonardobenedeti-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <script id="dsq-count-scr" src="//https-leonardobenedeti-github-io.disqus.com/count.js" async></script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+      <li>
+        <h3>
+          <a href="/dev%20android/2017/10/24/como-verificar-infos-de-apks.html">
+            AAPT - Como verificar detalhes de um APK
+            <small>24 Oct 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</section>
+
 </div>
 
     </main>
