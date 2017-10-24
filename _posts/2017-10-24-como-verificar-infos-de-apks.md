@@ -2,6 +2,7 @@
 layout: post
 title: "AAPT - Como verificar detalhes de um APK"
 excerpt_separator: "<!--more-->"
+comments: true
 categories:
   - Dev Android
 tags:
