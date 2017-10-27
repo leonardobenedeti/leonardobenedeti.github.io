@@ -5,11 +5,11 @@
        href="{{ site.github.repo }}">
       {% include svg/github.svg %}
     </a>
-    <a id="github-download-link"
+    <!-- <a id="github-download-link"
        class="icon" title="Download" aria-label="Download"
        href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">
       {% include svg/download.svg %}
-    </a>
+    </a> -->
   {% endif %}
 
   <a id="subscribe-link"
@@ -40,14 +40,14 @@
     </a>
   {% endif %}
 
-  {% if search_page %}
+  <!-- {% if search_page %}
     <a id="search-link"
        class="icon{% if page.url == '/search' %} active{% endif %}"
        title="Search" aria-label="Tags"
        href="{{ site.baseurl }}{{ search_page.url }}">
       {% include svg/search.svg %}
     </a>
-  {% endif %}
+  {% endif %} -->
 
   {% include custom-icon-links.html %}
 </nav>

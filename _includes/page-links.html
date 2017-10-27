@@ -4,6 +4,9 @@
 {% endcomment %}
 {% assign pages_list = site.pages %}
 {% for node in pages_list %}
+  <!-- <script>
+    console.log(" {{ node }}");
+  </script>  -->
   {% if node.title != null %}
     {% if node.sidebar_link %}
       <a class="page-link {% if page.url == node.url %} active{% endif %}"

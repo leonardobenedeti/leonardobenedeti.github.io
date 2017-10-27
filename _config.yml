@@ -4,9 +4,9 @@ highlighter:      rouge
 
 # Setup
 title:            Leonardo Benedeti
-tagline:          'A Jekyll theme'
+tagline:          'Meu site e base de conhecimento'
 description:      'Meu site e base de conhecimento'
-url:              https://fongandrew.github.io/hydeout
+url:              '' #https://fongandrew.github.io/hydeout
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep

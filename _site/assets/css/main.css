@@ -497,10 +497,12 @@ body {
 
 #sidebar {
   flex: 0 0 auto;
-  padding: 2rem; }
+  padding: 2rem;
+  align-self: center; }
   #sidebar header img {
     border-radius: 50%;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    margin: 1rem auto 1rem auto; }
   #sidebar header p {
     font-size: 1rem; }
   #sidebar .site-title {
@@ -595,6 +597,8 @@ body {
     display: flex; }
   #sidebar p {
     font-size: 1rem; }
+  #sidebar img {
+    margin: 0 0 1rem !important; }
 
   .index #sidebar {
     margin-bottom: 0; }
@@ -612,7 +616,6 @@ body {
         .container > header h1:last-child, .container > header h2:last-child {
           margin-bottom: 0.5rem; }
     .container > * {
-      max-width: 38rem;
       padding: 0; } }
 /* -----------------------------------------------------------
   Sidebar links + nav

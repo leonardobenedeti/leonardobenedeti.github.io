@@ -38,11 +38,13 @@ body {
 #sidebar {
   flex: 0 0 auto;
   padding: $section-spacing;
+  align-self: center;
 
   header {
     img{
       border-radius: 50%;
       border: 3px solid #fff;
+      margin: 1rem auto 1rem auto;
     }
 
     p{
@@ -158,7 +160,6 @@ body {
   }
 }
 
-
 /* -----------------------------------------------------------
   Tablet / Desktop view
 ----------------------------------------------------------- */
@@ -201,6 +202,10 @@ body {
     p{
       font-size: $sidebar-medium-font;
     }
+
+    img{
+      margin:0 0 1rem!important;
+    }
   }
 
   .index #sidebar { margin-bottom: 0; }
@@ -225,7 +230,7 @@ body {
     }
 
     > * {
-      max-width: 38rem;
+      // max-width: 38rem;
       padding: 0;
     }
   }
