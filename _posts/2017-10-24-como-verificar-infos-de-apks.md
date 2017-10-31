@@ -17,7 +17,7 @@ Dai iniciei uma busca e encontrei o binário `aapt` que com algumas flags adicio
 
 Como utilizar: 
 ``` terminal
-$ANDROID_HOME/buid-tools/android-[version]/aapt aapt dump badging <path-to-apk>
+$ANDROID_HOME/buid-tools/[android-version]/aapt dump badging <path-to-apk>
 ```
 
 Utilizando este comando, consegui o que precisava, que era saber o version code do apk de um modo bem simples. 
