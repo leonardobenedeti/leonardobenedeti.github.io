@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Graduações
+permalink: /graduacoes
 sidebar_link: true
 ---
 ## Formações

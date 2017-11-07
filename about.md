@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Sobre
+permalink: /sobre
 sidebar_link: true
 ---
 ## Sobre

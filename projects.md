@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projetos
+permalink: /projetos
 sidebar_link: true
 ---
 ## Projetos
