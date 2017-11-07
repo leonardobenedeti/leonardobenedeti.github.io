@@ -38,3 +38,5 @@ github:
 
 exclude: ['modelos_de_post']
 site.disqus.shortname: https-leonardobenedeti-github-io
+
+permalink: /:title
