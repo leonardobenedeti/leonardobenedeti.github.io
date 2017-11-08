@@ -6,4 +6,12 @@ sidebar_link: true
 ---
 ## Conhecimentos
 
+### Formação
+
 em breve ...
+
+
+### Cursos
+
+em breve ...
+
