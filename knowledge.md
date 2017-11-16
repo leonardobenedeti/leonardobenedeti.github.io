@@ -20,8 +20,6 @@ Curso técnico em Informática
 Sistemas de informação 
 <br/>2009/2013
 
-
----
 ---
 
 ### Cursos
