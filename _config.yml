@@ -14,7 +14,7 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
+  name:           'Leonardo Benedeti'
   url:            https://twitter.com/LeonardoBSM
 
 paginate:         5
