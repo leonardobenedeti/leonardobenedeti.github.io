@@ -56,13 +56,12 @@ Foi ajustado o fluxo de ações do módulo social onde você se conectava com ou
 <br/>**Contratação:** Freelancer
 
 
-#### Cardápio Cervejeiro - All Most
-**Descrição:** Com base em uma loja de cervejas especiais, citiada em Volta Redonda - RJ, foi pensado o projeto que consiste em um cardápio de cervejas, petiscos e dicas de harmonização. 
-O aplicativo foi criado inicialmente com linguagens nativas, porém devido ao tempo de desenvolvimento de cada plataforma, na epoca abrangendo iOS, Android e Windows Phone, decidimos alterar para uma recém lançada técnologia de desenvolvimento de apps, o Ionic Framework, que se baseia no Cordova para criar a integração com o hardware para executar as ações nativas, como: camera, gps, touch id e outros. 
-Também foi criado um painel para gerenciamento das cervejas do cardápio, ele foi criado em php sem uso de frameworks e para alimentar o app também foi criado api's que retornam a listas que o app emite o request. 
-O app ainda não foi publicado por fins políticos e que não podem ser divulgados.
-Atualmente, mantenho o app fora da All Most diretamente com o cliente e em breve será lançado. 
-<br/>**Contratação:** Co-Founder ( ex no momento )
+#### Cardápio Cervejeiro - Independente
+**Descrição:** Com base em uma loja de cervejas especiais de Volta Redonda - RJ, foi criado o projeto que consiste em um cardápio de cervejas, petiscos e dicas de harmonização. 
+O aplicativo foi criado inicialmente com linguagens nativas, porém devido ao tempo de desenvolvimento de cada plataforma, na época abrangendo iOS, Android e Windows Phone, decidimos alterar para uma recém lançada técnologia de desenvolvimento de apps, o Ionic Framework, que se baseia no Cordova para criar a integração com o hardware para executar as ações nativas, como: camera, gps, touch id e outros. 
+Também foi criado um painel para gerenciamento dos ítens do cardápio, ele foi criado em php sem uso de frameworks e para alimentar o app também foram criadas api's que retornam a listas que o app consume.
+O app ainda não foi publicado por fins comerciais e que não podem ser divulgados, mas em breve estará nas lojas.
+<br/>**Contratação:** Contrato entre desenvolvedor e cliente
 
 
 #### NotaBoleto - Coca-Cola FEMSA
