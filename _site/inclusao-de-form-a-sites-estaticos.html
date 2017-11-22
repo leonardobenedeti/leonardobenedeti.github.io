@@ -11,7 +11,7 @@
 
   <title>
     
-      AAPT - Como verificar detalhes de um APK &middot; Leonardo Benedeti
+      SimpleForm - Incluindo formulários simples em sites estáticos &middot; Leonardo Benedeti
     
   </title>
 
@@ -254,11 +254,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">AAPT - Como verificar detalhes de um APK</h1>
+  <h1 class="post-title">SimpleForm - Incluindo formulários simples em sites estáticos</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">24 Oct 2017</span>
+  <span class="post-date">22 Nov 2017</span>
   <span class="post-categories">
     
       &bull;
@@ -268,26 +268,21 @@
       
 
       
-        Dev Android
+        Dev Web
       
     
   </span>
 </div>
 
   <div class="post-body">
-    <p>Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para<!--more--> que a mesma verificasse, queria algo mais simples, do nível de terminal. 
-Dai iniciei uma busca e encontrei o binário <code class="highlighter-rouge">aapt</code> que com algumas flags adicionais, fazem toda essa mágica, e mostram as informações do apk.</p>
+    <p>Em uma alteração neste site, precisei criar um formulário de envio de emails, porém, como fazer isso com meu <!--more-->site hospedado no GitHubPages e ele sendo um site estático, todo em HTML ?</p>
 
-<p>Como utilizar:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/[android-version]/aapt dump badging &lt;path-to-apk&gt;
-</code></pre></div></div>
+<p>Após uma busca, econtrei uma ferramenta muito interessante que envia emails através de uma api. Você passa o seu token e já era. O email é enviado pra você como um formulário padrão de um site hospedado em um servidor completo.</p>
 
-<p>Utilizando este comando, consegui o que precisava, que era saber o version code do apk de um modo bem simples. 
-E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">Stack Overflow</a>, nos links abaixo:</p>
+<p>A ferramenta se chama <a href="https://getsimpleform.com/">Simple Form</a> e é gratuita. Basta entrar no site e pedir um token que é enviado pro seu email e já pode ser usado.
+É de fato muito simples.</p>
 
-<p><a href="https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat">https://stackoverflow….e-in-the-android-applicat</a></p>
-
-<p><a href="https://stackoverflow.com/questions/11330165/android-aapt-can-not-be-found-on-mac">https://stackoverflow…can-not-be-found-on-mac</a></p>
+<p>#ficadica</p>
 
     
 
@@ -296,36 +291,25 @@ E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">S
 <div class="post-tags">
   
     
-    <a href="/tags#android">
+    <a href="/tags#web">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">android</span>
+      </span>&nbsp;<span class="tag-name">web</span>
     </a>
   
     
-    <a href="/tags#apk">
+    <a href="/tags#jekyll">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">apk</span>
-    </a>
-  
-    
-    <a href="/tags#appt">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">appt</span>
+      </span>&nbsp;<span class="tag-name">jekyll</span>
     </a>
   
 </div>
@@ -366,15 +350,6 @@ E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">S
     
       <li>
         <h3>
-          <a href="/inclusao-de-form-a-sites-estaticos">
-            SimpleForm - Incluindo formulários simples em sites estáticos
-            <small>22 Nov 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
           <a href="/criacao-de-sites-ou-blogs-com-jekyll">
             Jekyll - Criação de blog e sites
             <small>21 Nov 2017</small>
@@ -387,6 +362,15 @@ E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">S
           <a href="/status-bar-ios11-ionic1">
             Status bar ionic1 rodando no iOS 11
             <small>03 Nov 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/como-verificar-infos-de-apks">
+            AAPT - Como verificar detalhes de um APK
+            <small>24 Oct 2017</small>
           </a>
         </h3>
       </li>

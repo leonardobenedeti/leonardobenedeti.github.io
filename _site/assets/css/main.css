@@ -925,7 +925,46 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
   border: 1px solid #51cbee; }
 
 .customform {
-  width: 50%;
-  float: left; }
-  .customform .socialmedia svg {
-    height: 1.5em; }
+  width: 100%;
+  float: left;
+  margin-top: 2em; }
+  .customform .socialmedia {
+    display: block;
+    text-decoration: none !important;
+    color: #313131 !important;
+    opacity: 0.8;
+    margin-top: 1em;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center; }
+    .customform .socialmedia:hover {
+      opacity: 1; }
+    .customform .socialmedia svg {
+      height: 1.5em;
+      fill: #313131 !important; }
+    .customform .socialmedia span {
+      vertical-align: super; }
+
+@media (min-width: 70rem) {
+  .customform {
+    width: 45%;
+    float: left;
+    margin-top: 2em; }
+    .customform.left {
+      margin-left: 2em; }
+    .customform .socialmedia {
+      display: block;
+      text-decoration: none !important;
+      color: #313131 !important;
+      opacity: 0.8;
+      margin-top: 1em;
+      line-height: 1em;
+      font-size: 1.3em;
+      text-align: left; }
+      .customform .socialmedia:hover {
+        opacity: 1; }
+      .customform .socialmedia svg {
+        height: 1.5em;
+        fill: #313131 !important; }
+      .customform .socialmedia span {
+        vertical-align: super; } }
