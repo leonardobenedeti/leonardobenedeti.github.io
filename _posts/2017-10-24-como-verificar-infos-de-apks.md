@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AAPT - Como verificar detalhes de um APK"
+little_desc: "Recentemente em um freela, precisei verificar o version code de um apk, porém não queria"
 excerpt_separator: "<!--more-->"
 comments: true
 categories:
@@ -12,7 +13,7 @@ tags:
 last_modified_at: 2017-10-24T12:32:16-05:00
 ---
 
-Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para<!--more--> que a mesma verificasse, queria algo mais simples, do nível de terminal. 
+Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para que a mesma verificasse, queria algo mais simples, do nível de terminal. 
 Dai iniciei uma busca e encontrei o binário `aapt` que com algumas flags adicionais, fazem toda essa mágica, e mostram as informações do apk.
 
 Como utilizar: 

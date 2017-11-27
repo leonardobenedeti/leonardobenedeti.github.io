@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SimpleForm - Incluindo formulários simples em sites estáticos"
+little_desc: "Em uma alteração neste site, precisei criar um formulário de envio de emails, porém"
 excerpt_separator: "<!--more-->"
 comments: true
 categories:
@@ -11,7 +12,7 @@ tags:
 last_modified_at: 2017-11-22T12:32:16-05:00
 ---
 
-Em uma alteração neste site, precisei criar um formulário de envio de emails, porém, como fazer isso com meu <!--more-->site hospedado no GitHubPages e ele sendo um site estático, todo em HTML ? 
+Em uma alteração neste site, precisei criar um formulário de envio de emails, porém, como fazer isso com meu site hospedado no GitHubPages e ele sendo um site estático, todo em HTML ? 
 
 Após uma busca, econtrei uma ferramenta muito interessante que envia emails através de uma api. Você passa o seu token e já era. O email é enviado pra você como um formulário padrão de um site hospedado em um servidor completo.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jekyll - Criação de blog e sites"
+little_desc: "Todo desenvolvedor tem a necessidade pessoal de montar seu próprio site ou blog para"
 excerpt_separator: "<!--more-->"
 comments: true
 categories:
@@ -11,7 +12,7 @@ tags:
 last_modified_at: 2017-11-21T12:32:16-05:00
 ---
 
-Todo desenvolvedor tem a necessidade pessoal de montar seu próprio site ou blog para mostrar seus trabalhos <!--more-->de uma maneira mais amigável, né?!
+Todo desenvolvedor tem a necessidade pessoal de montar seu próprio site ou blog para mostrar seus trabalhos de uma maneira mais amigável, né?!
 Comigo não foi diferente, porém no meu caso, precisava de algo mais simples e que não me demandasse tanto tempo para criar um site, precisava que fosse rápido, simples e funcional. Com isso iniciei as buscas e encontrei uma magia chamada Jekyll, basicamente um criador de páginas estáticas a partir de arquivos Markdown. 
 
 Este site que você navega, foi criado com esta ferramenta. O intuito era ter uma base de conhecimento muito simples com um acesso mais fácil e melhor indexada, porém com a facilidade de montar e alterar templates e conteúdo, também incrementei com minhas informações profissionais, assim tentando substituir o tão formal currículo de papel. Que ainda tenho se precisar rsrs. 

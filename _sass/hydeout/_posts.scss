@@ -4,9 +4,9 @@
 // page is wrapped in `.page` and is only used on the page layout.
 
 article + *, .post-body ~ section {
-  padding-top: $section-spacing;
+  padding-top: $section-spacing-home;
   border-top: 1px solid $border-color;
-  margin-top: $section-spacing;
+  margin-top: $section-spacing-home;
 
   > h2:first-child, > h3:first-child {
     margin-top: 0;
@@ -34,13 +34,13 @@ article + *, .post-body ~ section {
 
 // h1-size h2
 h2.post-title, h2.page-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 // Meta data line below post title
 .post-meta {
-  margin-top: -.5rem;
-  margin-bottom: 1rem;
+  // margin-top: -.5rem;
+  // margin-bottom: 0.2rem;
   color: $body-muted;
 }
 
