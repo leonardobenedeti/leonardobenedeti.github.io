@@ -9,7 +9,7 @@ sidebar_link: false
     Mensagem enviada com sucesso! <br/>Já já te respondo via email. 
     <form action="https://getsimpleform.com/messages?form_api_token=23968fe0bc3e8c1bf8ead8931ebcc313" method="post">
         <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='https://leonardobenedeti.github.io/contatos' />
+        <input type='hidden' name='redirect_to' value='https://leonardobenedeti.github.io/sent' />
         <input type='text' name='name' placeholder="Nome" />
         <input type='text' name='phone' placeholder="Telefone" />
         <input type='text' name='email' placeholder="Email" />
