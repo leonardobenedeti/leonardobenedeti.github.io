@@ -1,0 +1,28 @@
+{
+    "$id": "1",
+    "empresa": "VERTEC (GESTÃO DE PRODUTOS) S/C LTDA 3",
+    "logo": "/Portal/ShellTemplate/_custom/img/logo-wkp-header.png",
+    "cor": "#1ab394",
+    "usuario": "Easy ToGo",
+    "notificacoes": 5,
+    "menuitens": [
+        {
+            "$id": "2",
+            "item": "Meu Painel",
+            "url": "/Portal/MeuPainel",
+            "subitens": []
+        },
+        {
+            "$id": "3",
+            "item": "Solicitações",
+            "url": "/Wkp.Solicitacao.Mvc/Solicitacao/Listar",
+            "subitens": []
+        },
+        {
+            "$id": "4",
+            "item": "Pendências",
+            "url": "/Wkp.Solicitacao.Mvc/Solicitacao/Listar",
+            "subitens": []
+        }
+    ]
+}
