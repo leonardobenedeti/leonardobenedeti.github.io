@@ -11,7 +11,7 @@
 
   <title>
     
-      Status bar ionic1 rodando no iOS 11 &middot; Leonardo Benedeti
+      Leonardo Benedeti &middot; Meu site e base de conhecimento
     
   </title>
 
@@ -35,11 +35,11 @@
 </head>
 
 
-  <body class="post">
+  <body class="index">
 
     <div id="sidebar">
   <header>
-    <div class="site-title">
+    <h1 class="site-title">
       <img src="/assets/img/foto-perfil.png">
       <a href="/">
         
@@ -50,7 +50,7 @@
         
         Leonardo Benedeti
       </a>
-    </div>
+    </h1>
     <p class="lead">Meu site e base de conhecimento</p>
   </header>
   <nav id="sidebar-nav-links">
@@ -285,12 +285,28 @@
 </div>
 
     <main class="container">
-      <header>
-  <h1 class="post-title">Status bar ionic1 rodando no iOS 11</h1>
-</header>
-<div class="content">
-  <div class="post-meta">
-  <span class="post-date">03 Nov 2017</span>
+      <div class="content">
+  
+<div class="pagination">
+  <a class="pagination-item newer"
+     href="/">
+    Newer
+  </a>
+</div>
+
+
+
+  
+
+  
+  <article class="post-body">
+    <h2 class="post-title">
+      <a href="/como-verificar-infos-de-apks">
+        AAPT - Como verificar detalhes de um APK
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">24 Oct 2017</span>
   <span class="post-categories">
     
       &bull;
@@ -300,120 +316,44 @@
       
 
       
-        Dev Ionic
+        Dev Android
       
     
   </span>
 </div>
+    Recentemente em um freela, precisei verificar o version code de um apk, porém não queria<a href="/como-verificar-infos-de-apks">&hellip;Veja mais!</a>
 
-  <div class="post-body">
-    <p>Em uma alteração de um aplicativo que eu mantenho, me deparei com o problema relacionado a status bar do iOS 11.
-O app ficou com o header maior por não utilizar setar a cor de background da status bar, com isso ocorreram quebras de layout e a própria status bar ficou sem cor.</p>
 
-<p>Depois de uma boa busca pelo assunto, encontrei o plugin que resolvia isso e logo adicionei ao projeto</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic plugin add cordova-plugin-disable-ios11-statusbar
+    <!-- 
+      <p>Recentemente em um freela, precisei verificar o version code de um apk, porém não queria subir na loja para que a mesma verificasse, queria algo mais simples, do nível de terminal. 
+Dai iniciei uma busca e encontrei o binário <code class="highlighter-rouge">aapt</code> que com algumas flags adicionais, fazem toda essa mágica, e mostram as informações do apk.</p>
+
+<p>Como utilizar:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/[android-version]/aapt dump badging &lt;path-to-apk&gt;
 </code></pre></div></div>
 
-<p>Após a inclusão do plugin, bastou gerar um novo build e tudo se resolveu. Apenas para o iOS 11, para o iPhone X ainda não consegui testar, mas a solução deve ser bem próxima.</p>
+<p>Utilizando este comando, consegui o que precisava, que era saber o version code do apk de um modo bem simples. 
+E pra variar, encontrei essa solução no <a href="https://stackoverflow.com/">Stack Overflow</a>, nos links abaixo:</p>
 
-<p>fonte: <a href="https://issues.apache.org/jira/browse/CB-12886">Issues Apache</a></p>
+<p><a href="https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat">https://stackoverflow….e-in-the-android-applicat</a></p>
+
+<p><a href="https://stackoverflow.com/questions/11330165/android-aapt-can-not-be-found-on-mac">https://stackoverflow…can-not-be-found-on-mac</a></p>
 
     
 
+    
+      
+      
+      
 
-
-<div class="post-tags">
+      
+     -->
+  </article>
   
-    
-    <a href="/tags#ionic">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">ionic</span>
-    </a>
-  
-    
-    <a href="/tags#ios">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">ios</span>
-    </a>
-  
-</div>
-  </div>
 
   
-  <section class="comments">
-    <h2>Comments</h2>
-    <!-- 
-  <p>
-    You are seeing this because your Disqus shortname is not properly set. To
-    configure Disqus, you should edit your <code>_config.yml</code> to include
-    either a <code>disqus.shortname</code> variable.
-  </p>
-
-  <p>
-    If you do not wish to use Disqus, override the
-    <code>comments.html</code> partial for this theme.
-  </p>
- -->
-
-    <div id="disqus_thread"></div>
-    <script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-leonardobenedeti-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <script id="dsq-count-scr" src="//https-leonardobenedeti-github-io.disqus.com/count.js" async></script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
-
-  <section class="related">
-  <h2>Related Posts</h2>
-  <ul class="posts-list">
-    
-      <li>
-        <h3>
-          <a href="/bind-of-html-on-ionic-1">
-            ng-bind-html on ionic 1
-            <small>11 Jan 2018</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/projeto-app-cervejarias">
-            Projeto - App Cervejarias
-            <small>27 Nov 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/inclusao-de-form-a-sites-estaticos">
-            SimpleForm - Incluindo formulários simples em sites estáticos
-            <small>22 Nov 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</section>
 
 </div>
-
     </main>
 
     <!-- Optional footer content -->
