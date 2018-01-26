@@ -2,21 +2,11 @@
 layout: page
 title: Contatos
 permalink: /contatos
-sidebar_link: true
+sidebar_link: false
 ---
 ## Contatos
-<div class="customform">
-    <form action="https://getsimpleform.com/messages?form_api_token=23968fe0bc3e8c1bf8ead8931ebcc313" method="post">
-        <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-        <input type='hidden' name='redirect_to' value='https://leonardobenedeti.github.io/sent' />
-        <input type='text' name='name' placeholder="Nome" />
-        <input type='text' name='phone' placeholder="Telefone" />
-        <input type='text' name='email' placeholder="Email" />
-        <textarea name="message" placeholder="Mensagem"></textarea>
-        <input type='submit' value='Enviar' />
-    </form>
-</div>
-<div class="customform left">
+
+<div>
     <a href="http://github.com/leonardobenedeti/" target="_blank" class="socialmedia">
         {% include svg/github2.svg %}
         <span>GitHub/leonardobenedeti</span>
@@ -40,6 +30,5 @@ sidebar_link: true
     <a href="tel:+5511939282916" target="_blank" class="socialmedia">
         {% include svg/mobile.svg %}
         <span>+55 (11) 93928-2916</span>
-    </a>
-    
-</div>
+    </a>        
+</div>   

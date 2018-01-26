@@ -2,21 +2,35 @@
   {% if site.github.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.github.repo }}">
+       href="{{ site.author.git }}" target="_blank">
       {% include svg/github.svg %}
     </a>
-    <!-- <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">
-      {% include svg/download.svg %}
-    </a> -->
+
+    <a id="linkedin-link"
+       class="icon" title="LinkedIn" aria-label="LinkedIn"
+       href="{{ site.author.linkedin }}" target="_blank">
+      {% include svg/linkedin.svg %}
+    </a>
+
+    <a id="tt-link"
+       class="icon" title="Twitter" aria-label="Twitter"
+       href="{{ site.author.tt }}" target="_blank">
+      {% include svg/twitter.svg %}
+    </a>
+
+    <a id="cel-link"
+      class="icon" title="Mail" aria-label="Mail"
+      href="mailto:leonardobenedeti@gmail.com" target="_blank">
+      {% include svg/at.svg %}
+    </a> 
+
+    <a id="cel-link"
+      class="icon" title="Celular" aria-label="Celular"
+      href="tel:+5511939282916" target="_blank">
+      {% include svg/mobile.svg %}
+    </a> 
+
   {% endif %}
-<!-- 
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.baseurl }}/feed.xml">
-    {% include svg/feed.svg %}
-  </a> -->
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
@@ -31,14 +45,14 @@
     {% endif %}
   {% endfor %}
 
-  {% if tags_page %}
+  <!-- {% if tags_page %}
     <a id="tags-link"
        class="icon{% if page.url == '/tags' %} active{% endif %}"
        title="Tags" aria-label="Tags"
        href="{{ site.baseurl }}{{ tags_page.url }}">
       {% include svg/tags.svg %}
     </a>
-  {% endif %}
+  {% endif %} -->
 
   <!-- {% if search_page %}
     <a id="search-link"

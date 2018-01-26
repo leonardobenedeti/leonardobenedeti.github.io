@@ -96,11 +96,33 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 // custom divs contact
 
+.socialmedia{
+	display: block;
+	text-decoration: none!important;
+	color: $gray-6!important;
+	opacity: 0.8;
+	margin-top:1em;
+	line-height: 1em;
+	font-size: 1em;
+	text-align: center;
 
-.customform{
-	width: 100%;
-	float: left;
-	margin-top: 2em;
+	&:hover {
+		opacity: 1;
+	}
+	
+	svg{
+		height: 1.5em;
+		fill: $gray-6!important;
+	}
+
+	span {
+		vertical-align: super;
+	}
+}
+
+
+// Telas grandes
+@media (min-width: $very-large-breakepoint) {
 
 	.socialmedia{
 		display: block;
@@ -109,8 +131,8 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 		opacity: 0.8;
 		margin-top:1em;
 		line-height: 1em;
-		font-size: 1em;
-		text-align: center;
+		font-size: 1.3em;
+		text-align: left;
 
 		&:hover {
 			opacity: 1;
@@ -123,45 +145,6 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 		span {
 			vertical-align: super;
-		}
-	}
-}
-
-
-// Telas grandes
-@media (min-width: $very-large-breakepoint) {
-	
-	.customform{
-		width: 45%;
-		float: left;
-		margin-top: 2em;
-
-		&.left{
-			margin-left: 2em;
-		}
-
-		.socialmedia{
-			display: block;
-			text-decoration: none!important;
-			color: $gray-6!important;
-			opacity: 0.8;
-			margin-top:1em;
-			line-height: 1em;
-			font-size: 1.3em;
-			text-align: left;
-
-			&:hover {
-				opacity: 1;
-			}
-			
-			svg{
-				height: 1.5em;
-				fill: $gray-6!important;
-			}
-
-			span {
-				vertical-align: super;
-			}
 		}
 	}
 }

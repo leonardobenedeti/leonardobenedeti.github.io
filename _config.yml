@@ -14,8 +14,14 @@ baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # sidebar_blog_link below.
 
 author:
-  name:           'Leonardo Benedeti'
-  url:            https://twitter.com/LeonardoBSM
+  name:          'Leonardo Benedeti'
+  url:           https://leonardobenedeti.github.io
+  tt:            https://twitter.com/LeonardoBSM
+  linkedin:      https://www.linkedin.com/in/leonardobenedeti/
+  insta:         http://instagram.com/leonardobenedeti
+  facebook:      https://www.facebook.com/leobenedeti
+  git:           https://github.com/leonardobenedeti
+
 
 paginate:         5
 # paginate_path:    '/page:num'
