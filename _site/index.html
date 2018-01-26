@@ -313,6 +313,73 @@
   
   <article class="post-body">
     <h2 class="post-title">
+      <a href="/white-page-after-slash-screen-ionic-before-ready">
+        White page after splash screen on ionic before ready
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">26 Jan 2018</span>
+  <span class="post-categories">
+    
+      &bull;
+
+      
+      
+      
+
+      
+        Dev Ionic
+      
+    
+  </span>
+</div>
+    Ao iniciar um projeto ionic, eu reparei que a splash tinha um comportamento estranho...<a href="/white-page-after-slash-screen-ionic-before-ready">&hellip;Veja mais!</a>
+
+
+    <!-- 
+      <p>Ao iniciar um projeto ionic, eu reparei que a splash tinha um comportamento estranho. 
+Ao finalizar o fade de saída, a tela do app ainda não tinha carregado, mostrando assim uma tela branca antes do conteúdo. 
+Fui investigar o porque e descobri algumas <code class="highlighter-rouge">preferences</code> que corrigem esse comportamento.
+Normalmente as splash screens servem para preparar o app, e ao finalizar o carregamento dos arquivos ela faz o fade dando foco ao conteúdo da tela inicial do seu aplicativo.</p>
+
+<p>Neste post vamos alterar apenas dois arquivos pra que isso de fato aconteça. O config.xml e o app.js</p>
+
+<p>Para previnir que a splash execute o fade automaticamente antes do conteúdo estar pronto, você precisa da preference: <code class="highlighter-rouge">AutoHideSplashScreen</code>, que é quem previne isso, se estiver com valor <code class="highlighter-rouge">false</code>.
+As demais preferences são para melhorar a experiência da splash, os nomes já se auto explicam né. =D</p>
+
+<p>config.xml:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"AutoHideSplashScreen"</span> <span class="na">value=</span><span class="s">"false"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"FadeSplashScreenDuration"</span> <span class="na">value=</span><span class="s">"1000"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"ShowSplashScreenSpinner"</span> <span class="na">value=</span><span class="s">"false"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"SplashMaintainAspectRatio"</span> <span class="na">value=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>Com os valores do config.xml definidos basta incluir este trecho de código no arquivo app.js para a magia acontecer.</p>
+
+<p>Atenção: para ele funcionar como combinado, ele precisa estar dentro do ready, para que assim que de fato ele esteja pronto e a splash pode ser esmaecida. =D</p>
+
+<p>app.js:</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nb">navigator</span><span class="p">.</span><span class="nx">splashscreen</span><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
+    <span class="p">},</span> <span class="mi">100</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>fontes: <br /><a href="https://cordova.apache.org/docs/en/2.6.0/cordova/splashscreen/splashscreen.hide.html">Doc Cordova</a><br />
+<a href="https://forum.ionicframework.com/t/white-page-showing-after-splash-screen-before-app-load/2908/9">Forum Ionic</a></p>
+
+    
+
+    
+      
+      
+      
+
+      
+     -->
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
       <a href="/bind-of-html-on-ionic-1">
         ng-bind-html on ionic 1
       </a>
@@ -656,54 +723,6 @@ Comigo não foi diferente, porém no meu caso, precisava de algo mais simples e 
 
 <p><a href="https://jekyllrb.com/">Documentação oficial</a><br />
 <a href="https://www.udemy.com/criando-sites-estaticos-com-jekyll/">Curso no Udemy</a></p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/status-bar-ios11-ionic1">
-        Status bar ionic1 rodando no iOS 11
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">03 Nov 2017</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        Dev Ionic
-      
-    
-  </span>
-</div>
-    Em uma alteração de um aplicativo que eu mantenho, me deparei com o problema<a href="/status-bar-ios11-ionic1">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>Em uma alteração de um aplicativo que eu mantenho, me deparei com o problema relacionado a status bar do iOS 11.
-O app ficou com o header maior por não utilizar setar a cor de background da status bar, com isso ocorreram quebras de layout e a própria status bar ficou sem cor.</p>
-
-<p>Depois de uma boa busca pelo assunto, encontrei o plugin que resolvia isso e logo adicionei ao projeto</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic plugin add cordova-plugin-disable-ios11-statusbar
-</code></pre></div></div>
-
-<p>Após a inclusão do plugin, bastou gerar um novo build e tudo se resolveu. Apenas para o iOS 11, para o iPhone X ainda não consegui testar, mas a solução deve ser bem próxima.</p>
-
-<p>fonte: <a href="https://issues.apache.org/jira/browse/CB-12886">Issues Apache</a></p>
 
     
 
