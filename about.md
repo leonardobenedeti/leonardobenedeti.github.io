@@ -10,13 +10,21 @@ Formado em Técnico de informática pela FAETEC e em Sistemas de Informação pe
 
 Iniciei minha saga como Desenvolvedor Web, criando sites e plataformas server side. Atualmente atuo principalmente no ramo Mobile, desenvolvendo aplicativos nativos e hibridos.
 
-Atualmente alocado no Grupo Segurador Banco do Brasil e MAPFRE, atuando pela Entelgy, trabalho na criação de apps utilizando a plataforma Kony, uma plataforma onde se escreve javascript puro e é compilado para várias plataformas nativas.
+Atualmente alocado no Grupo Segurador Banco do Brasil e MAPFRE, atuando pela Everis, atuo na sustentação de apps utilizando a plataforma Kony, uma plataforma onde se escreve javascript puro e é compilado para várias plataformas nativas.
 
 ## Experiência
 
+#### Everis
+Especialista em Sistemas
+<br/>__Período:__ mar de 2018 – o momento
+<br/>__Local:__ São Paulo - SP, Brasil
+<br/>__Responsabilidades:__ 
+Manter aplicativos criados com a plataforma de desenvolvimento Kony e serviços do Mobile Fabric que são vinculados ao app. Publicação dos apps e serviços, auxilio a equipe de arquitetura do Grupo Segurador Banco do Brasil e MAPFRE em análises de problemas que ocorrem em produção. 
+<br/>__Tecnologias:__ Kony, SVN, Mobile Fabric, Android e iOS
+
 #### Entelgy Brasil
 Desenvolvedor Mobile Senior III
-<br/>__Período:__ set de 2016 – o momento
+<br/>__Período:__ set de 2016 – mar de 2018
 <br/>__Local:__ São Paulo - SP, Brasil
 <br/>__Responsabilidades:__ Criar aplicativos na plataforma Kony, alteração de serviços do middleware vinculado a plataforma e publicação dos aplicativos. Trabalhando com o método ágil com framework montado específicamente para o Grupo Segurador Banco do Brasil e MAPFRE.
 <br/>__Tecnologias:__ Kony, SVN, Mobile Fabric, Android e iOS
