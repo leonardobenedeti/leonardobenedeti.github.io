@@ -313,6 +313,69 @@
   
   <article class="post-body">
     <h2 class="post-title">
+      <a href="/ionic-override-keys-info-plist">
+        Override keys configs do info.plist para Ionic 3
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">16 May 2018</span>
+  <span class="post-categories">
+    
+      &bull;
+
+      
+      
+      
+
+      
+        Dev Ionic
+      
+    
+  </span>
+</div>
+    Ao atualizar um projeto ionic, do 1 para o 3, precisei rever alguns...<a href="/ionic-override-keys-info-plist">&hellip;Veja mais!</a>
+
+
+    <!-- 
+      <p>Ao atualizar um projeto ionic, do 1 para o 3, precisei rever alguns guides da Apple referente a permissões de uso de recursos nativos.
+Neste caso precisei utilizar a câmera e a configuração básica deste plugin não estava criando a chave de descrição para o info.plist, com isso ao executar a chamada para a câmera o aplicativo crashava. 
+Ao procurar o motivo encontrei a key <code class="highlighter-rouge">NSCameraUsageDescription</code> sem valor algum. Ao incluir um valor de teste, tudo voltou a funcionar. 
+Porém o projeto XCode é sempre refeito quando se faz um novo build, alterar a cada build não seria algo prático e busquei a solução abaixo.</p>
+
+<p>No arquivo config.xml é onde ficam todas as configurações básicas do ionic para gerar o projeto de cada plataforma.</p>
+
+<p>Como é algo focado em iOS, precisamos definir essas tags dentro da tag ‘Mãe’ <code class="highlighter-rouge">&lt;platform name="ios"&gt;</code>, onde obviamente são definidas as propriedades do build para o XCode.</p>
+
+<p>config.xml:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;platform</span> <span class="na">name=</span><span class="s">"ios"</span><span class="nt">&gt;</span>
+...
+    <span class="nt">&lt;config-file</span> <span class="na">parent=</span><span class="s">"NSCameraUsageDescription"</span> <span class="na">platform=</span><span class="s">"ios"</span> <span class="na">target=</span><span class="s">"*-Info.plist"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;string&gt;</span>Texto explicando o porque você quer usar a câmera<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/config-file&gt;</span>
+...    
+<span class="nt">&lt;/platform&gt;</span>
+</code></pre></div></div>
+
+<p>Com isso ele altera a key e inclui o valor que você escreveu na tag <code class="highlighter-rouge">&lt;string&gt;</code>, com isso você consegue utilizar a câmera com a devida permissão.</p>
+
+<p>Vale ressaltar que basta trocar a key e o valor para ser alterada no info.plist, ou seja, quer trocar a de localização por exemplo ?
+Basta descobrir o nome da key, que sendo de localização é <code class="highlighter-rouge">NSLocationWhenInUseUsageDescription</code> e criar a mesma tag pra ele, incluir um texto explicando o porque e pronto. Ao fazer o build do aplicativo você vai conseguir utilizar o recurso desejado.</p>
+
+<p>Fonte: <a href="https://stackoverflow.com/questions/39980700/usage-description-issue-in-ionic-and-ios-10-builds/40466511">https://stackove…-10-builds/40466511</a></p>
+
+    
+
+    
+      
+      
+      
+
+      
+     -->
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
       <a href="/events-page-from-riosulvalley">
         Página de eventos para a comunidade RioSulValley
       </a>
@@ -660,52 +723,6 @@ As demais preferences são para melhorar a experiência da splash, os nomes já 
       </span>
     </div>
 </div>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/inclusao-de-form-a-sites-estaticos">
-        SimpleForm - Incluindo formulários simples em sites estáticos
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">22 Nov 2017</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        Dev Web
-      
-    
-  </span>
-</div>
-    Em uma alteração neste site, precisei criar um formulário de envio de emails, porém<a href="/inclusao-de-form-a-sites-estaticos">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>Em uma alteração neste site, precisei criar um formulário de envio de emails, porém, como fazer isso com meu site hospedado no GitHubPages e ele sendo um site estático, todo em HTML ?</p>
-
-<p>Após uma busca, econtrei uma ferramenta muito interessante que envia emails através de uma api. Você passa o seu token e já era. O email é enviado pra você como um formulário padrão de um site hospedado em um servidor completo.</p>
-
-<p>A ferramenta se chama <a href="https://getsimpleform.com/">Simple Form</a> e é gratuita. Basta entrar no site e pedir um token que é enviado pro seu email e já pode ser usado.
-É de fato muito simples.</p>
-
-<p>#ficadica</p>
 
     
 

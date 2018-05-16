@@ -11,7 +11,7 @@
 
   <title>
     
-      Projeto - App Cervejarias &middot; Leonardo Benedeti
+      Override keys configs do info.plist para Ionic 3 &middot; Leonardo Benedeti
     
   </title>
 
@@ -310,11 +310,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Projeto - App Cervejarias</h1>
+  <h1 class="post-title">Override keys configs do info.plist para Ionic 3</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">27 Nov 2017</span>
+  <span class="post-date">16 May 2018</span>
   <span class="post-categories">
     
       &bull;
@@ -324,182 +324,44 @@
       
 
       
-        Dev FullStack
+        Dev Ionic
       
     
   </span>
 </div>
 
   <div class="post-body">
-    <div class="grid">
-    <div class="titulo a text">
-      <h1>App Cervejarias</h1>
-    </div>
-    <div class="b">
-      <img src="assets/img/app/img-app-apresentacao.png" alt="" />
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/home.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Tela inicial do app</h3>
-      <span>
-        Aqui você consegue inserir a logo da cervejaria e alguma ação abaixo da logo, no caso deste projeto a ação foi ler um código de barras para retornar as informações da cerveja. O código está previamente cadastrado em um painel, onde você consegue gerenciar todas as cervejas que vão aparecer no app. 
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/side-menu.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Menu lateral</h3>
-      <span>
-        Ele foi desenhado para o usuário conseguir acessar qualquer parte do app em qualquer página principal. Como as páginas que contém as listas de Cervejas, Petiscos, Dicas e além das listas também tem um item que retorna a home. E acima dos itens foi inserida a logo da empresa para melhorar a usabilidade do menu, inserindo um cabeçalho ao menu. 
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/dicas.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Dicas</h3>
-      <span>
-        Uma página bem simples no visual e bem complexo por baixo. A tela executa uma busca de cervejas e petiscos que estão cadastrados como dica no banco de dados e os indexa em ordem, separando as cervejas dos petiscos. Cada item da lista leva diretamente ao seu referente detalhamento. 
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/estilos.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Estilos</h3>
-      <span>
-        Esta página é bem semelhante a outras do app, é uma simples lista. Porém existe um filtro específico em cada lista. Neste caso o filto são pelos estilos das cervejas disponíveis no banco de dados. Ao buscar as cervejas a página mostra em ordem alfabefica todos os estilos de cervejas disponíveis.
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/cervejas.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Cervejas</h3>
-      <span>
-        Página subsequente a pagina de estilos, selecionando seu estilo favorito o app vai fazer uma nova busca trazendo apenas os rótulos de cervejas referentes ao estilo escolhido, possibilitando o usuário a escolher a cerveja desejada.
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/cerveja.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Cerveja</h3>
-      <span>
-        Resultado de toda jornada de cliques em busca da cerveja perfeita, esta tela mostra os detalhes da cerveja escolhida, tal como foto, descrição, cervejaria, origem, estilo, graduação alcoolica, copo, temperatura ideal e amargor. O cliente do projeto inicial escolheu não mostrar preço da cerveja, mas isso pode ser configurado facilmente, possibilitando o app funcionar como um catálogo para pedidos, que pode ser usado por vendedores da cervejaria em questão.
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/petiscos.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Petiscos</h3>
-      <span>
-        Novamente uma lista simples, tal como a lista de estilos e cervejas, esta lista mostra todos os petiscos disponíveis na casa. Uma lista um pouco mais direta, não tem muitos filtros, tudo que está disponível no banco de dados como petiscos vai aparecer nesta lista para o usuário escolher o que mais lhe agrada.
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/petisco.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Petisco</h3>
-      <span>
-        Tela subsequente a lista anterior, mostra também detalhes do petisco, porém com pouco menos detalhes se comparar a tela de cerveja. Está tela mostra apenas o tempo médio de preparo e os ingredientes. 
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/erro.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Erro</h3>
-      <span>
-        Todas as requisições ao banco de dados dependem de internet, logo, caso o usuário esteja sem conexão ou até com uma conexão muito lenta, o retorno precisa ser amigável. Com isso todas as requisições acima possuem este erro, no caso a imagem relata o erro de buscar uma cerveja, mas cada tela tem seu erro específico para deixar bem claro ao usuário o que está acontecendo.
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/foto.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Foto e compartilhamento</h3>
-      <span>
-        Esta tela agrega muito valor ao negócio do estabelecimento, ao tirar uma foto com o app e confirmar o app inclui na foto a logo do estabelecimento, assim fornecendo uma divulgação da sua marca nas redes sociais do cliente final que está utilizando o app. A foto tirada pode ser compartilhada em qualquer rede social, como Instagram, Facebook, WhatsApp...
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/barcode.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Leitor de código de barras</h3>
-      <span>
-        Citado na tela Home, a função de ler os códigos de barras foi o carro chefe do projeto, inicialmente seria apenas para informações básicas da cerveja, mas ai o app se construiu em torno desta funcionalidade, que é bem simples, basta apontar o leitor para o código de barras da sua cerveja e vai encontrar informações da cerveja, caso ela esteja cadastrada no banco de dados. 
-      </span>
-    </div>
-</div>
-<hr />
-<div class="grid">
-    <div class="a img">
-      <img src="assets/img/app/tecnologias.jpg" alt="" />
-    </div>
-    <div class="b">
-      <h3>Técnologias</h3>
-      <span>
-        Para criar o app utilizei o Ionic, framework de desenvolvimento de apps híbridos. E o painel que alimenta o app, foi criado em PHP puro, sem frameworks, que acessa um banco de dados MySQL.
-      </span>
-    </div>
-</div>
+    <p>Ao atualizar um projeto ionic, do 1 para o 3, precisei rever alguns guides da Apple referente a permissões de uso de recursos nativos.
+Neste caso precisei utilizar a câmera e a configuração básica deste plugin não estava criando a chave de descrição para o info.plist, com isso ao executar a chamada para a câmera o aplicativo crashava. 
+Ao procurar o motivo encontrei a key <code class="highlighter-rouge">NSCameraUsageDescription</code> sem valor algum. Ao incluir um valor de teste, tudo voltou a funcionar. 
+Porém o projeto XCode é sempre refeito quando se faz um novo build, alterar a cada build não seria algo prático e busquei a solução abaixo.</p>
+
+<p>No arquivo config.xml é onde ficam todas as configurações básicas do ionic para gerar o projeto de cada plataforma.</p>
+
+<p>Como é algo focado em iOS, precisamos definir essas tags dentro da tag ‘Mãe’ <code class="highlighter-rouge">&lt;platform name="ios"&gt;</code>, onde obviamente são definidas as propriedades do build para o XCode.</p>
+
+<p>config.xml:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;platform</span> <span class="na">name=</span><span class="s">"ios"</span><span class="nt">&gt;</span>
+...
+    <span class="nt">&lt;config-file</span> <span class="na">parent=</span><span class="s">"NSCameraUsageDescription"</span> <span class="na">platform=</span><span class="s">"ios"</span> <span class="na">target=</span><span class="s">"*-Info.plist"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;string&gt;</span>Texto explicando o porque você quer usar a câmera<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/config-file&gt;</span>
+...    
+<span class="nt">&lt;/platform&gt;</span>
+</code></pre></div></div>
+
+<p>Com isso ele altera a key e inclui o valor que você escreveu na tag <code class="highlighter-rouge">&lt;string&gt;</code>, com isso você consegue utilizar a câmera com a devida permissão.</p>
+
+<p>Vale ressaltar que basta trocar a key e o valor para ser alterada no info.plist, ou seja, quer trocar a de localização por exemplo ?
+Basta descobrir o nome da key, que sendo de localização é <code class="highlighter-rouge">NSLocationWhenInUseUsageDescription</code> e criar a mesma tag pra ele, incluir um texto explicando o porque e pronto. Ao fazer o build do aplicativo você vai conseguir utilizar o recurso desejado.</p>
+
+<p>Fonte: <a href="https://stackoverflow.com/questions/39980700/usage-description-issue-in-ionic-and-ios-10-builds/40466511">https://stackove…-10-builds/40466511</a></p>
 
     
 
 
 
 <div class="post-tags">
-  
-    
-    <a href="/tags#web">
-    
-      <span class="icon">
-        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-      </span>&nbsp;<span class="tag-name">web</span>
-    </a>
   
     
     <a href="/tags#ionic">
@@ -513,14 +375,25 @@
     </a>
   
     
-    <a href="/tags#projetos">
+    <a href="/tags#ios">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">projetos</span>
+      </span>&nbsp;<span class="tag-name">ios</span>
+    </a>
+  
+    
+    <a href="/tags#info-plist">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">info-plist</span>
     </a>
   
 </div>
@@ -561,15 +434,6 @@
     
       <li>
         <h3>
-          <a href="/ionic-override-keys-info-plist">
-            Override keys configs do info.plist para Ionic 3
-            <small>16 May 2018</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
           <a href="/events-page-from-riosulvalley">
             Página de eventos para a comunidade RioSulValley
             <small>17 Apr 2018</small>
@@ -582,6 +446,15 @@
           <a href="/white-page-after-slash-screen-ionic-before-ready">
             White page after splash screen on ionic before ready
             <small>26 Jan 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/bind-of-html-on-ionic-1">
+            ng-bind-html on ionic 1
+            <small>11 Jan 2018</small>
           </a>
         </h3>
       </li>
