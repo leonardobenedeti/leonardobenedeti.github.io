@@ -11,7 +11,7 @@
 
   <title>
     
-      ng-bind-html on ionic 1 &middot; Leonardo Benedeti
+      Deploy flask API on Heroku &middot; Leonardo Benedeti
     
   </title>
 
@@ -310,11 +310,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">ng-bind-html on ionic 1</h1>
+  <h1 class="post-title">Deploy flask API on Heroku</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">11 Jan 2018</span>
+  <span class="post-date">25 May 2018</span>
   <span class="post-categories">
     
       &bull;
@@ -324,31 +324,62 @@
       
 
       
-        Dev Ionic
+        Dev Python
       
     
   </span>
 </div>
 
   <div class="post-body">
-    <p>Trabalhando em um projeto mobile, precisei dinamizar uma página inteira, com isso busquei como fazer tal coisa. Foi ai que encontrei o ng-bind-html.
-<br />Como ele funciona: você basicamente monta todo o html no controller da aplicação e passa para a view como uma variável de escopo, sim, só isso.</p>
+    <p>Em um happy hour com o pessoal do trabalho, rolou um papo de api em python e a curiosidade para criar isso se iniciou. 
+Não sou tão bom assim com python, mas decidi iniciar os estudos sobre o papo direto com a lib Flask, focada em apis.</p>
 
-<p>Abaixo criei uma variável dentro do escopo e passei uma string já com o html que queria utilizar.</p>
+<p>Após alguns minutos de busca e vídeos assistidos, tinha uma api rodando localmente na minha máquina. Com pouco mais de 10 linhas e alguns imports uma api já estava pronta, é claro, apenas com uma resposta de ‘hello world’, mas ainda sim já estava funcional.</p>
 
-<p>Controller:</p>
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$scope</span><span class="p">.</span><span class="nx">data_body</span> <span class="o">=</span> <span class="s1">'</span><span class="err">\</span><span class="s1">
-    &lt;h1 class="text-center"&gt;'</span><span class="o">+</span><span class="nx">variavel_qualquer_que_queira_utilizar</span><span class="o">+</span><span class="s1">'&lt;/h1&gt;</span><span class="err">\</span><span class="s1">
-'</span><span class="p">;</span>
-</code></pre></div></div>
+<p>Outra necessidade era expor essa api em algum lugar, foi ai que pensamos no <a href="https://www.heroku.com/">Heroku</a>, gratuito e fácil de usar. Abaixo, vou mostrar como fazer o deploy de uma api, que você pode baixar e ver como foi feita meu <a href="https://github.com/leonardobenedeti/api-flask">GitHub</a>.</p>
 
-<p>Já na view, basta passar a variável como valor para a diretiva ng-bind-html e ver a mágica acontecer.</p>
+<p>Levando em consideração que os arquivos já estejam prontos e rodando localmente, temos duas opções após criar o app no Heroku:
+1 - vincular com algum repositório do github e criar um pipeline, onde você commita na branch escolhida no github e o Heroku faz o deploy a partir dela.
+2 - vincular com o própio heroku, que é baseado em git também.</p>
 
-<p>View:</p>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"padding"</span> <span class="na">ng-bind-html=</span><span class="s">"data_body"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
+<p>Mas antes de criar a api precisamos criar o app no Heroku.
+Pra isso vamos seguir alguns passos.</p>
 
-<p>Infelizmente não tenho as fontes pra isso. Mas não precisa, basta fazer como mostrei acima que vai dar certo. =D</p>
+<h4 id="00---criar-app-sem-definição-de-plataforma">0.0 - Criar app sem definição de plataforma</h4>
+<p><img src="assets/img/heroku-deploy/create-app.png" style="margin:20px auto;" alt="" /></p>
+
+<h4 id="01---escolher-nome-e-região">0.1 - Escolher nome e região</h4>
+<p><img src="assets/img/heroku-deploy/nome-e-regiao.png" style="margin:20px auto;" alt="" /></p>
+
+<p>Com estes dois itens já criados, vamos vincular com o GitHub e Heroku.</p>
+
+<h4 id="10---vincular-com-o-github">1.0 - Vincular com o github</h4>
+
+<p>No print eu já estava vinculado com o github, mas basta clicar em conctar e colocar usuário e senha do github pra buscar seus repositorios e escolher o que abriga a sua api, no meu caso, api-flask.</p>
+
+<p><img src="assets/img/heroku-deploy/vinculo-com-github.png" style="margin:20px auto;" alt="" /></p>
+
+<h4 id="11---configurar-os-deploys">1.1 - Configurar os deploys</h4>
+
+<p>No meu caso como é uma api aberta e de exemplo, escolhi o deploy automático. Pois a cada commit que eu faça na api, em questão de segundos já posso visualizar o que foi alterado.</p>
+
+<p><img src="assets/img/heroku-deploy/deploy-auto-manual.png" style="margin:20px auto;" alt="" /></p>
+
+<p>E pronto. A partir daqui basta commitar na branch escolhida no momento do vínculo com o GitHub e pronto, seu deploy vai ser feito automaticamente, caso tenha habilitado a opção.</p>
+
+<h4 id="20---vincular-com-o-próprio-heroku">2.0 - Vincular com o próprio heroku</h4>
+
+<p>Neste caso precisei criar outro app para printar, não ia apagar e criar outro rsrs.</p>
+
+<p>Para este vínculo, você não é preciso ter login no github, precisa apenas seguir os commandos que ele recomenda. Simples assim.</p>
+
+<p><img src="assets/img/heroku-deploy/vinculo-com-heroku.png" style="margin:20px auto;" alt="" /></p>
+
+<p>Agora, basta você customizar sua api como quiser, commitar onde escolheu subir o código e aproveitar a facilidade do Flask + Heroku.</p>
+
+<p>Pra visualizar o exemplo criado no repositório citado acima basta ir para: <a href="https://api-flask-leonardobenedeti.herokuapp.com/">https://api-flask-leonardobenedeti.herokuapp.com/</a></p>
+
+<p>Fonte: <a href="https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/">https://progblog…k-App-to-Heroku/</a></p>
 
     
 
@@ -357,14 +388,36 @@
 <div class="post-tags">
   
     
-    <a href="/tags#ionic">
+    <a href="/tags#python">
     
       <span class="icon">
         <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
 </svg>
-      </span>&nbsp;<span class="tag-name">ionic</span>
+      </span>&nbsp;<span class="tag-name">python</span>
+    </a>
+  
+    
+    <a href="/tags#flash">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">flash</span>
+    </a>
+  
+    
+    <a href="/tags#heroku">
+    
+      <span class="icon">
+        <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+      </span>&nbsp;<span class="tag-name">heroku</span>
     </a>
   
 </div>
@@ -405,15 +458,6 @@
     
       <li>
         <h3>
-          <a href="/deploy-flask-api-on-heroku">
-            Deploy flask API on Heroku
-            <small>25 May 2018</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
           <a href="/ionic-override-keys-info-plist">
             Override keys configs do info.plist para Ionic 3
             <small>16 May 2018</small>
@@ -426,6 +470,15 @@
           <a href="/events-page-from-riosulvalley">
             Página de eventos para a comunidade RioSulValley
             <small>17 Apr 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/white-page-after-slash-screen-ionic-before-ready">
+            White page after splash screen on ionic before ready
+            <small>26 Jan 2018</small>
           </a>
         </h3>
       </li>
