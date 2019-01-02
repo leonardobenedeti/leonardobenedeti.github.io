@@ -15,8 +15,8 @@
     
   </title>
 
-  
-
+  <!-- 
+ -->
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+  <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" /> -->
 
   <!-- Additional head bits without overriding original head -->
 </head>
@@ -66,6 +66,10 @@
 
   
     
+  
+
+  
+    
       <a class="page-link "
           href="/sobre">Sobre</a>
     
@@ -86,14 +90,6 @@
     
   
 
-  
-    
-  
-
-  
-
-  
-    
   
 
   
@@ -116,22 +112,6 @@
   
 
   
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
 
 
   <!-- 
@@ -143,16 +123,19 @@
 
   
     
+      <a class="category-link "
+          href="/riosulvalley">RioSulValley</a>
+    
+  
+
+  
+    
   
 
   
     
       <a class="category-link "
           href="/category/edge-case">Edge Case</a>
-    
-  
-
-  
     
   
 
@@ -185,26 +168,6 @@
     
   
 
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
   
  -->
 
@@ -304,7 +267,7 @@
   <!-- Optional additional links to insert for icons links -->
 </nav>
   <p>
-  &copy; 2018.
+  &copy; 2019.
   <a href="/LICENSE.md">MIT License.</a>
   <span class="small-text">The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.</span>
 </p>
@@ -314,369 +277,18 @@
     <main class="container">
       <div class="content">
   
-
-
   
 
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/app-list-cards-by-heroku-api">
-        Ionic app to list cards by heroky api
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">30 May 2018</span>
-  <span class="post-categories">
-    
-      &bull;
+  <h1>Projetos</h1>
 
-      
-      
-      
-
-      
-        Dev Ionic
-      
-    
-  </span>
-</div>
-    No mesmo happy hour do último post, além da API, houve a necessidade de um APP...<a href="/app-list-cards-by-heroku-api">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>No mesmo happy hour do <a href="./deploy-flask-api-on-heroku">último post</a>, além da API, houve a necessidade de um APP que pudesse entender essa API de maneira simples.</p>
-
-<p>Escopo: Rápido e básico, fazer um request em uma API que vai retornar uma lista e mostrar isso como cards.</p>
-
-<p>No papo também definimos que fazer isso com <a href="http://ionicframework.com/">Ionic</a> seria bem tranquilo.</p>
-
-<p>Com tudo definido vamos a criação do app.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic start listCardsByHerokuApi blank
-</code></pre></div></div>
-
-<p>~ A partir deste momento é preciso estar dentro da pasta do projeto, de preferência usando o Visual Studio Code.</p>
-
-<p>Vamos alterar o arquivo <code class="highlighter-rouge">[path-to-your-project]/src/app/app.module.ts</code> para incluir um import.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//incluir o import do HttpClientModule</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">HttpClientModule</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/common/http'</span><span class="p">;</span> 
-<span class="p">...</span>
-<span class="nx">imports</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">...</span>
-    <span class="c1">//incluir na lista de imports que o app precisa</span>
-    <span class="nx">HttpClientModule</span><span class="p">,</span> 
-    <span class="p">...</span>
-  <span class="p">],</span>
-</code></pre></div></div>
-
-<p>Próximo passo - Vamos precisar criar um provider com o seguinte comando</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic g provider ListRest
-</code></pre></div></div>
-
-<p>Após criar seu provider precisamos alterar algumas coisas nele.</p>
-
-<p>Vamos até ele então <code class="highlighter-rouge">[path-to-your-project]/src/providers/list-rest/list-rest.ts</code></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// precisamos incluir o endpoint da api</span>
-  <span class="nx">endpoint</span> <span class="o">=</span> <span class="s1">'https://api-flask-leonardobenedeti.herokuapp.com'</span><span class="p">;</span>
-  <span class="p">...</span>
-  <span class="c1">// e criar um metodo que retorna uma promise simples</span>
-  <span class="c1">// vamos tratar esta promise mais pra frente no home.ts</span>
-  <span class="nx">getList</span><span class="p">(</span><span class="nx">api</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">http</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">endpoint</span><span class="o">+</span><span class="nx">api</span><span class="p">)</span>
-      <span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-      <span class="p">},</span> <span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-      <span class="p">});</span>
-    <span class="p">});</span>
-  <span class="p">}</span>
-</code></pre></div></div>
-
-<p>Provider devidamente escrito, vamos alterar agora a tela que vai chamar essa lista.</p>
-
-<p>Como criamos um projeto baseado no template <code class="highlighter-rouge">blank</code> do Ionic, temos apenas uma página, que é a <code class="highlighter-rouge">[path-to-your-project]/src/pages/home/</code>.
-Dentro da pasta dessa página temos 3 arquivos, mas vamos alterar apenas 2, <code class="highlighter-rouge">home.html</code> e <code class="highlighter-rouge">home.ts</code>, o <code class="highlighter-rouge">home.scss</code> fica pra um próximo post.</p>
-
-<p>Vamos ao <code class="highlighter-rouge">.ts</code>, que é quem vai buscar a lista utilizando o provider que criamos acima.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Component</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">NavController</span><span class="p">,</span> <span class="nx">LoadingController</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'ionic-angular'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ListRestProvider</span> <span class="p">}</span> <span class="k">from</span> <span class="s1">'../../providers/list-rest/list-rest'</span><span class="p">;</span>
-
-<span class="p">@</span><span class="nd">Component</span><span class="p">({</span>
-  <span class="na">selector</span><span class="p">:</span> <span class="s1">'page-home'</span><span class="p">,</span>
-  <span class="na">templateUrl</span><span class="p">:</span> <span class="s1">'home.html'</span>
-<span class="p">})</span>
-<span class="k">export</span> <span class="kd">class</span> <span class="nx">HomePage</span> <span class="p">{</span>
-
-  <span class="c1">// incluir o list rest para podermos buscar a lista</span>
-  <span class="c1">// incluir o loadingControler para não deixar o usuário esperando sem informar</span>
-  <span class="c1">// Ambos precisam do import, se estiver utilizando o VSCode provavelmente ele já importou pra você.</span>
-  <span class="c1">// Caso contrário, copie os imports acima.</span>
-  <span class="kd">constructor</span><span class="p">(</span>
-    <span class="kr">public</span> <span class="nx">navCtrl</span><span class="p">:</span> <span class="nx">NavController</span><span class="p">,</span>
-    <span class="kr">public</span> <span class="nx">listRest</span><span class="p">:</span> <span class="nx">ListRestProvider</span><span class="p">,</span> 
-    <span class="kr">public</span> <span class="nx">loadingCtrl</span><span class="p">:</span> <span class="nx">LoadingController</span> 
-  <span class="p">)</span> <span class="p">{}</span>
-
-  <span class="c1">// definição de uma variável tipo any para abrigar os cards</span>
-  <span class="nl">cards</span><span class="p">:</span> <span class="nx">any</span><span class="p">;</span>
-
-  <span class="nx">ionViewDidLoad</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">getCards</span><span class="p">();</span> 
-  <span class="p">}</span>
-
-  <span class="nx">getCards</span><span class="p">(){</span>
-    <span class="c1">// quando iniciarmos a request já vamos ter um loading na tela, informando o usuário que algo está acontecendo</span>
-    <span class="kd">let</span> <span class="nx">loading</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">loadingCtrl</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
-      <span class="na">content</span><span class="p">:</span> <span class="s1">''</span>
-    <span class="p">});</span>
-    <span class="nx">loading</span><span class="p">.</span><span class="nx">present</span><span class="p">();</span>
-
-    <span class="c1">// chamada para o provider que criamos anteriormente passando a api que vamos utilizar, / no caso.</span>
-    <span class="c1">// com o retorno da promise, basta tratar o then ou catch</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">listRest</span><span class="p">.</span><span class="nx">getList</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
-    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="k">this</span><span class="p">.</span><span class="nx">cards</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="s1">'cards'</span><span class="p">];</span>
-      <span class="nx">loading</span><span class="p">.</span><span class="nx">dismiss</span><span class="p">();</span>
-    <span class="p">})</span>
-    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">loading</span><span class="p">.</span><span class="nx">dismiss</span><span class="p">();</span>
-      <span class="c1">// evite usar alerts comuns como utilizei, ele bloqueia o resto da execução, pode deixar seu app atrapalhado</span>
-      <span class="c1">// Dica para este caso é utilizar o AlertController do próprio Ionic</span>
-      <span class="nx">alert</span><span class="p">(</span><span class="s2">"Algo de errado não está certo. Tente novamente!"</span><span class="p">)</span>
-    <span class="p">});</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Agora para mostrar o que foi feito no <code class="highlighter-rouge">.ts</code> vamos alterar o <code class="highlighter-rouge">.html</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ion-header&gt;</span>
-  <span class="nt">&lt;ion-navbar&gt;</span>
-    <span class="nt">&lt;ion-title&gt;</span>
-      Ionic Blank
-    <span class="nt">&lt;/ion-title&gt;</span>
-  <span class="nt">&lt;/ion-navbar&gt;</span>
-<span class="nt">&lt;/ion-header&gt;</span>
-
-<span class="nt">&lt;ion-content</span> <span class="na">padding</span><span class="nt">&gt;</span>
-  <span class="c">&lt;!-- usando o template basico, removemos tudo dentro de ion-content e incluimos o card abaixo --&gt;</span>
-  <span class="c">&lt;!-- repare o *ngFor que estamos fazendo, a variável cards é a mesma do home.ts que alimentamos com a lista que o provider devolveu, elas devem ter o mesmo nome  --&gt;</span>
-  <span class="nt">&lt;ion-card</span> <span class="err">*</span><span class="na">ngFor=</span><span class="s">"let card of cards"</span><span class="nt">&gt;</span> 
-    <span class="c">&lt;!-- agora para cada item da lista ele vai escrever um card --&gt;</span>
-    <span class="nt">&lt;ion-card-header</span> <span class="err">[</span><span class="na">innerHTML</span><span class="err">]="</span><span class="na">card</span><span class="err">.</span><span class="na">title</span><span class="err">"</span><span class="nt">&gt;&lt;/ion-card-header&gt;</span>
-    <span class="nt">&lt;ion-card-content</span> <span class="err">[</span><span class="na">innerHTML</span><span class="err">]="</span><span class="na">card</span><span class="err">.</span><span class="na">desc</span><span class="err">"</span><span class="nt">&gt;&lt;/ion-card-content&gt;</span>
-  <span class="nt">&lt;/ion-card&gt;</span>
-<span class="nt">&lt;/ion-content&gt;</span>
-</code></pre></div></div>
-<p>~ Ignorem os erros do arquivo, é algo do jekyll, em breve ajeito isso. =D</p>
-
-<p>Neste ponto estamos prontos para executar nosso app, como estamos fazendo uma requisição com loading e tudo mais, vamos testar em um device para ver como se comporta.
-Para isso precisamos incluir a plataforma necessária para o teste.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic cordova platform add android
-</code></pre></div></div>
-
-<p>Utilizei a plataforma Android por ser mais simples e não precisar configurar certificados e tudo que a Apple demanda.</p>
-
-<p>Após adicionar a plataforma, basta executar este comando com o device conectado ao computador. Ao finalizar o build, ele vai instalar no device o app que foi criado.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ionic cordova run android --device
-</code></pre></div></div>
-
-<p>E pronto. Aqui temos um aplicativo que é capaz de buscar uma lista de uma API e transformar em Cards.</p>
-
-<div style="display:flex;">
-    <img src="assets/img/list-cards-by-heroku/loading.png" style="margin:20px auto;border: 1px solid #000;padding: 5px;" alt="" />
-    <img src="assets/img/list-cards-by-heroku/cards.png" style="margin:20px auto;border: 1px solid #000;padding: 5px;" alt="" />
-</div>
-
-<hr />
-
-<p>Pra visualizar a API citada neste post basta ir para: <a href="https://api-flask-leonardobenedeti.herokuapp.com/">https://api-flask-leonardobenedeti.herokuapp.com/</a></p>
-
-<p>Para baixar os códigos mostrados acima basta acessar:
-<a href="https://github.com/leonardobenedeti/ionic-app-list-cards-by-heroku-api">https://github.com/leonardobenedeti/ionic-app-list-cards-by-heroku-api</a></p>
-
-<p>Para baixar o apk criado neste exemplo basta <a href="./assets/files/app-list-cards-by-heroku-api.apk">clicar aqui</a></p>
-
-<hr />
-
-<p>Fonte: <a href="https://www.djamware.com/post/59924f9080aca768e4d2b12e/ionic-3-consuming-rest-api-using-new-angular-43-httpclient">https://www.djamwa…43-httpclient</a></p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/deploy-flask-api-on-heroku">
-        Deploy flask API on Heroku
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">25 May 2018</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        Dev Python
-      
-    
-  </span>
-</div>
-    Em um happy hour com o pessoal do trabalho, rolou um papo de api em python...<a href="/deploy-flask-api-on-heroku">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>Em um happy hour com o pessoal do trabalho, rolou um papo de api em python e a curiosidade para criar isso se iniciou. 
-Não sou tão bom assim com python, mas decidi iniciar os estudos sobre o papo direto com a lib Flask, focada em apis.</p>
-
-<p>Após alguns minutos de busca e vídeos assistidos, tinha uma api rodando localmente na minha máquina. Com pouco mais de 10 linhas e alguns imports uma api já estava pronta, é claro, apenas com uma resposta de ‘hello world’, mas ainda sim já estava funcional.</p>
-
-<p>Outra necessidade era expor essa api em algum lugar, foi ai que pensamos no <a href="https://www.heroku.com/">Heroku</a>, gratuito e fácil de usar. Abaixo, vou mostrar como fazer o deploy de uma api, que você pode baixar e ver como foi feita meu <a href="https://github.com/leonardobenedeti/api-flask">GitHub</a>.</p>
-
-<p>Levando em consideração que os arquivos já estejam prontos e rodando localmente, temos duas opções após criar o app no Heroku:
-1 - vincular com algum repositório do github e criar um pipeline, onde você commita na branch escolhida no github e o Heroku faz o deploy a partir dela.
-2 - vincular com o própio heroku, que é baseado em git também.</p>
-
-<p>Mas antes de criar a api precisamos criar o app no Heroku.
-Pra isso vamos seguir alguns passos.</p>
-
-<h4 id="00---criar-app-sem-definição-de-plataforma">0.0 - Criar app sem definição de plataforma</h4>
-<p><img src="assets/img/heroku-deploy/create-app.png" style="margin:20px auto;" alt="" /></p>
-
-<h4 id="01---escolher-nome-e-região">0.1 - Escolher nome e região</h4>
-<p><img src="assets/img/heroku-deploy/nome-e-regiao.png" style="margin:20px auto;" alt="" /></p>
-
-<p>Com estes dois itens já criados, vamos vincular com o GitHub e Heroku.</p>
-
-<h4 id="10---vincular-com-o-github">1.0 - Vincular com o github</h4>
-
-<p>No print eu já estava vinculado com o github, mas basta clicar em conctar e colocar usuário e senha do github pra buscar seus repositorios e escolher o que abriga a sua api, no meu caso, api-flask.</p>
-
-<p><img src="assets/img/heroku-deploy/vinculo-com-github.png" style="margin:20px auto;" alt="" /></p>
-
-<h4 id="11---configurar-os-deploys">1.1 - Configurar os deploys</h4>
-
-<p>No meu caso como é uma api aberta e de exemplo, escolhi o deploy automático. Pois a cada commit que eu faça na api, em questão de segundos já posso visualizar o que foi alterado.</p>
-
-<p><img src="assets/img/heroku-deploy/deploy-auto-manual.png" style="margin:20px auto;" alt="" /></p>
-
-<p>E pronto. A partir daqui basta commitar na branch escolhida no momento do vínculo com o GitHub e pronto, seu deploy vai ser feito automaticamente, caso tenha habilitado a opção.</p>
-
-<h4 id="20---vincular-com-o-próprio-heroku">2.0 - Vincular com o próprio heroku</h4>
-
-<p>Neste caso precisei criar outro app para printar, não ia apagar e criar outro rsrs.</p>
-
-<p>Para este vínculo, você não é preciso ter login no github, precisa apenas seguir os commandos que ele recomenda. Simples assim.</p>
-
-<p><img src="assets/img/heroku-deploy/vinculo-com-heroku.png" style="margin:20px auto;" alt="" /></p>
-
-<p>Agora, basta você customizar sua api como quiser, commitar onde escolheu subir o código e aproveitar a facilidade do Flask + Heroku.</p>
-
-<p>Pra visualizar o exemplo criado no repositório citado acima basta ir para: <a href="https://api-flask-leonardobenedeti.herokuapp.com/">https://api-flask-leonardobenedeti.herokuapp.com/</a></p>
-
-<p>Fonte: <a href="https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/">https://progblog…k-App-to-Heroku/</a></p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/ionic-override-keys-info-plist">
-        Override keys configs do info.plist para Ionic 3
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">16 May 2018</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        Dev Ionic
-      
-    
-  </span>
-</div>
-    Ao atualizar um projeto ionic, do 1 para o 3, precisei rever alguns...<a href="/ionic-override-keys-info-plist">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>Ao atualizar um projeto ionic, do 1 para o 3, precisei rever alguns guides da Apple referente a permissões de uso de recursos nativos.
-Neste caso precisei utilizar a câmera e a configuração básica deste plugin não estava criando a chave de descrição para o info.plist, com isso ao executar a chamada para a câmera o aplicativo crashava. 
-Ao procurar o motivo encontrei a key <code class="highlighter-rouge">NSCameraUsageDescription</code> sem valor algum. Ao incluir um valor de teste, tudo voltou a funcionar. 
-Porém o projeto XCode é sempre refeito quando se faz um novo build, alterar a cada build não seria algo prático e busquei a solução abaixo.</p>
-
-<p>No arquivo config.xml é onde ficam todas as configurações básicas do ionic para gerar o projeto de cada plataforma.</p>
-
-<p>Como é algo focado em iOS, precisamos definir essas tags dentro da tag ‘Mãe’ <code class="highlighter-rouge">&lt;platform name="ios"&gt;</code>, onde obviamente são definidas as propriedades do build para o XCode.</p>
-
-<p>config.xml:</p>
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;platform</span> <span class="na">name=</span><span class="s">"ios"</span><span class="nt">&gt;</span>
-...
-    <span class="nt">&lt;config-file</span> <span class="na">parent=</span><span class="s">"NSCameraUsageDescription"</span> <span class="na">platform=</span><span class="s">"ios"</span> <span class="na">target=</span><span class="s">"*-Info.plist"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;string&gt;</span>Texto explicando o porque você quer usar a câmera<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/config-file&gt;</span>
-...    
-<span class="nt">&lt;/platform&gt;</span>
-</code></pre></div></div>
-
-<p>Com isso ele altera a key e inclui o valor que você escreveu na tag <code class="highlighter-rouge">&lt;string&gt;</code>, com isso você consegue utilizar a câmera com a devida permissão.</p>
-
-<p>Vale ressaltar que basta trocar a key e o valor para ser alterada no info.plist, ou seja, quer trocar a de localização por exemplo ?
-Basta descobrir o nome da key, que sendo de localização é <code class="highlighter-rouge">NSLocationWhenInUseUsageDescription</code> e criar a mesma tag pra ele, incluir um texto explicando o porque e pronto. Ao fazer o build do aplicativo você vai conseguir utilizar o recurso desejado.</p>
-
-<p>Fonte: <a href="https://stackoverflow.com/questions/39980700/usage-description-issue-in-ionic-and-ios-10-builds/40466511">https://stackove…-10-builds/40466511</a></p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
   
   <article class="post-body">
     <h2 class="post-title">
       <a href="/events-page-from-riosulvalley">
-        Página de eventos para a comunidade RioSulValley
+        RioSulValley / Eventos
       </a>
     </h2>
+    <p class="post-subtitle">Página criada para auxiliar nos eventos da comunidade</p>
     <div class="post-meta">
   <span class="post-date">17 Apr 2018</span>
   <span class="post-categories">
@@ -688,113 +300,16 @@ Basta descobrir o nome da key, que sendo de localização é <code class="highli
       
 
       
-        Dev Web
+        <a href="/riosulvalley">
+          RioSulValley
+        </a>
       
     
   </span>
 </div>
-    Depois de um longo papo sobre fazer ou não uma pagina de eventos, me propus a ajudar...<a href="/events-page-from-riosulvalley">&hellip;Veja mais!</a>
 
-
-    <!-- 
-      <p><img src="assets/img/rsv-eventos.png" style="margin:40px auto;" alt="" /></p>
-
-<p>Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade <a href="http://riosulvalley.com.br">RioSulValley</a>, me propus a ajudar a criar essa tal página. 
-Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: <a href="">Kaio Freitas</a> - o cara que normalmente toma a frente da comunidade em diversos assuntos; <a href="">Ivo Soares</a> - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.</p>
-
-<p>Com o grupo formado iniciamos o bate papo para criar essa tal página. Com uma ideia, Ivo mostrou uma página que fazia o mesmo que queriamos fazer para o RSV, era a <a href="http://frontendbr.com.br/eventos/">página eventos</a> da comunidade <a href="http://frontendbr.com.br">Front-End Brasil</a>, como é uma comunidade também, o código estava aberto no <a href="https://github.com/frontendbr/eventos">github</a> deles. Sendo assim, carinhosamente fizemos um fork do projeto e iniciamos as alterações.</p>
-
-<p>No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.</p>
-
-<p>Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link <a href="http://riosulvalley.com.br/eventos">riosulvalley.com.br/eventos</a>.</p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
   </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/white-page-after-slash-screen-ionic-before-ready">
-        White page after splash screen on ionic before ready
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">26 Jan 2018</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        Dev Ionic
-      
-    
-  </span>
-</div>
-    Ao iniciar um projeto ionic, eu reparei que a splash tinha um comportamento estranho...<a href="/white-page-after-slash-screen-ionic-before-ready">&hellip;Veja mais!</a>
-
-
-    <!-- 
-      <p>Ao iniciar um projeto ionic, eu reparei que a splash tinha um comportamento estranho. 
-Ao finalizar o fade de saída, a tela do app ainda não tinha carregado, mostrando assim uma tela branca antes do conteúdo. 
-Fui investigar o porque e descobri algumas <code class="highlighter-rouge">preferences</code> que corrigem esse comportamento.
-Normalmente as splash screens servem para preparar o app, e ao finalizar o carregamento dos arquivos ela faz o fade dando foco ao conteúdo da tela inicial do seu aplicativo.</p>
-
-<p>Neste post vamos alterar apenas dois arquivos pra que isso de fato aconteça. O config.xml e o app.js</p>
-
-<p>Para previnir que a splash execute o fade automaticamente antes do conteúdo estar pronto, você precisa da preference: <code class="highlighter-rouge">AutoHideSplashScreen</code>, que é quem previne isso, se estiver com valor <code class="highlighter-rouge">false</code>.
-As demais preferences são para melhorar a experiência da splash, os nomes já se auto explicam né. =D</p>
-
-<p>config.xml:</p>
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"AutoHideSplashScreen"</span> <span class="na">value=</span><span class="s">"false"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"FadeSplashScreenDuration"</span> <span class="na">value=</span><span class="s">"1000"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"ShowSplashScreenSpinner"</span> <span class="na">value=</span><span class="s">"false"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;preference</span> <span class="na">name=</span><span class="s">"SplashMaintainAspectRatio"</span> <span class="na">value=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-</code></pre></div></div>
-
-<p>Com os valores do config.xml definidos basta incluir este trecho de código no arquivo app.js para a magia acontecer.</p>
-
-<p>Atenção: para ele funcionar como combinado, ele precisa estar dentro do ready, para que assim que de fato ele esteja pronto e a splash pode ser esmaecida. =D</p>
-
-<p>app.js:</p>
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="nb">navigator</span><span class="p">.</span><span class="nx">splashscreen</span><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
-    <span class="p">},</span> <span class="mi">100</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p>fontes: <br /><a href="https://cordova.apache.org/docs/en/2.6.0/cordova/splashscreen/splashscreen.hide.html">Doc Cordova</a><br />
-<a href="https://forum.ionicframework.com/t/white-page-showing-after-splash-screen-before-app-load/2908/9">Forum Ionic</a></p>
-
-    
-
-    
-      
-      
-      
-
-      
-     -->
-  </article>
-  
-
-  
-<div class="pagination">
-  <a class="pagination-item older"
-     href="/page2">
-    Older
-  </a>
-</div>
-
 
 </div>
     </main>

@@ -23,7 +23,7 @@ author:
   git:           https://github.com/leonardobenedeti
 
 
-paginate:         5
+paginate:         9999
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
@@ -42,7 +42,7 @@ sidebar_home_link:  true
 github:
   repo:             https://github.com/leonardobenedeti
 
-exclude: ['modelos_de_post']
+exclude: ['modelos_de_post', 'OLD_posts']
 site.disqus.shortname: https-leonardobenedeti-github-io
 
 permalink: /:title

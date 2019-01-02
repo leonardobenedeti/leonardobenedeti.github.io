@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "RioSulValley / Eventos"
-little_desc: "Página criada para auxiliar nos eventos da comunidade"
-excerpt_separator: ""
+title: "Página de eventos para a comunidade RioSulValley"
+little_desc: "Depois de um longo papo sobre fazer ou não uma pagina de eventos, me propus a ajudar..."
+excerpt_separator: "<!--more-->"
 comments: true
 categories:
-  - RioSulValley
+  - Dev Web
 tags:
   - react
   - webpack
-  - css
-  - github pages
+  - npm
 last_modified_at: 2018-04-17T12:32:16-05:00
 ---
 

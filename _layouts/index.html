@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div class="content">
-  {% include pagination-newer.html %}
-
+  
   {{ content }}
+
+  <h1>Projetos</h1>
 
   {% for post in paginator.posts %}
   <article class="post-body">
@@ -14,31 +15,10 @@ layout: default
         {{ post.title }}
       </a>
     </h2>
+    <p class="post-subtitle">{{ post.little_desc }}</p>
     {% include post-meta.html post=post %}
-    {{ post.little_desc }}<a href="{{ site.baseurl }}{{ post.url }}">&hellip;Veja mais!</a>
 
-
-    <!-- {% if post.excerpt %}
-      {{ post.excerpt }}
-    {% else %}
-      {{ post.content }}
-    {% endif %}
-
-    {% if post.excerpt %}
-      {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-      {% capture content_words %}
-        {{ post.content | number_of_words }}
-      {% endcapture %}
-      {% capture excerpt_words %}
-        {{ post.excerpt | number_of_words }}
-      {% endcapture %}
-
-      {% if content_words != excerpt_words %}
-        <a href="{{ site.baseurl }}{{ post.url }}">More &hellip;</a>
-      {% endif %}
-    {% endif %} -->
   </article>
   {% endfor %}
 
-  {% include pagination-older.html %}
 </div>
