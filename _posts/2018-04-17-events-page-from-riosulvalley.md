@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "RioSulValley / Eventos"
-little_desc: "Página criada para auxiliar nos eventos da comunidade"
+title: "RioSulValley / Página de Eventos"
+little_desc: "Criada para auxiliar nos eventos da comunidade"
 excerpt_separator: ""
 comments: true
 categories:
@@ -15,7 +15,7 @@ last_modified_at: 2018-04-17T12:32:16-05:00
 ---
 
 
-<img src="assets/img/rsv-eventos.png" style="margin:40px auto;" alt="">
+<img src="assets/img/rsv/eventos.png" style="margin:40px auto;" alt="">
 
 
 Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade [RioSulValley](http://riosulvalley.com.br), me propus a ajudar a criar essa tal página. 

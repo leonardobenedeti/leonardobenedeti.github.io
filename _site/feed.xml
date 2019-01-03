@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-02T21:09:25-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">RioSulValley / Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv-eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-03T20:19:07-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
+Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
+
+&lt;p&gt;Inicialmente o MVP foi pensado para apenas ler o código de barras da cerveja e mostrar ao usuário sua informação mais detalhada.&lt;/p&gt;
+
+&lt;p&gt;Com essa base, o app foi ganhando novas funcionalidades como: Cardápio completo, Dicas, Cupons, Lista de desejos, Avaliações dos produtos e Foto personalizada do Bier!&lt;/p&gt;
+
+&lt;p&gt;Para explicar melhor o projeto vamos separar em tópicos&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Arquitetura básica&lt;/li&gt;
+  &lt;li&gt;Painel administrativo / API&lt;/li&gt;
+  &lt;li&gt;Aplicativo&lt;/li&gt;
+  &lt;li&gt;Publicação&lt;/li&gt;
+  &lt;li&gt;Sustentação&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Vale ressaltar que o projeto foi idealizado e iniciado pela empresa All Most, que foi constituida por 4 amigos, Leonardo Benedeti(este que vos escreve), Mateus Diniz, Marcus Paulo e Michael Almeida. Atualmente não integro mais o time da All Most e como era o único desenvolvedor mobile, segui com o desenvolvimento sozinho, fora da All Most.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;1-arquitetura-básica&quot;&gt;1. Arquitetura básica&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/arq-bier.jpeg&quot; style=&quot;margin:40px auto 5px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;** Sim, desenhei num flipchart e tirei foto =D&lt;/p&gt;
+
+&lt;h4 id=&quot;2-painel-administrativo--api&quot;&gt;2. Painel administrativo / API&lt;/h4&gt;
+&lt;p&gt;Criado utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP&lt;/code&gt;, sem utilização de nenhum framework. O painel é responsável por gerenciar todos os produtos, sendo efetuando o cadastro, alteração ou exclusão de algum produto e emitir push notifications para o app, seja a cada produto cadastrado ou alguma mensagem customizada, de acordo com a vontade do Bier Prosit.&lt;/p&gt;
+
+&lt;p&gt;Os produtos são salvos em uma base de dados &lt;code class=&quot;highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; e toda conexão com ele é feita pelo painel. #phpraiz&lt;/p&gt;
+
+&lt;p&gt;Em breve o painel será atualizado para a linguagem &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt; e será &lt;code class=&quot;highlighter-rouge&quot;&gt;API Based&lt;/code&gt; utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Flask&lt;/code&gt;, provavelmente com front-end em &lt;code class=&quot;highlighter-rouge&quot;&gt;Angular&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-aplicativo&quot;&gt;3. Aplicativo&lt;/h4&gt;
+&lt;p&gt;A primeira versão foi criada utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Android Nativo&lt;/code&gt; e com o lançamento do &lt;code class=&quot;highlighter-rouge&quot;&gt;Ionic 1&lt;/code&gt; migrei para o framework, com a atualização foi feito o upgrade para a versão 3 do framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Funcionalidades&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Consulta de produtos na API&lt;/li&gt;
+  &lt;li&gt;Criação de listas de desejo&lt;/li&gt;
+  &lt;li&gt;Avaliação de produtos baseado na lista de desejos&lt;/li&gt;
+  &lt;li&gt;Leitura de QR Code&lt;/li&gt;
+  &lt;li&gt;Captura de imagens e ao finalizar a captura, inclusão da logo do Bier na foto&lt;/li&gt;
+  &lt;li&gt;Compartilhamento de fotos nas redes sociais que o usuário utilizar&lt;/li&gt;
+  &lt;li&gt;Push Notification&lt;/li&gt;
+  &lt;li&gt;DeepLink, ao clicar em um push de um produto específico, o usuário é direcionado para a página de detalhes do produto&lt;/li&gt;
+  &lt;li&gt;Rotas até o Bier, ao clicar para exibir a rota o app sugere todos os apps que são capazes de criar uma rota. ex.: Uber, 99, Google Maps…&lt;/li&gt;
+  &lt;li&gt;Novidades podem vir por ai… =D&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;4-publicação&quot;&gt;4. Publicação&lt;/h4&gt;
+&lt;p&gt;Finalizado o desenvolvimento do app, o mesmo foi submetido para a AppStore e Google Play, todas as telas são diferentes por conta do framework Ionic, ele consegue diferenciar ambas plataformas e tornar a UX mais fluida possível para o usuário ter a sensação que está utilizando um app nativo.&lt;/p&gt;
+
+&lt;p&gt;Para baixar o app ou visualizar as telas você pode acessar os links abaixo ou ler o QR Code.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/br/app/bier-prosit/id1211795341&quot; target=&quot;_blank&quot;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.leonardobenedeti.bierprosit&quot; target=&quot;_blank&quot;&gt;GooglePlay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/qr-post.png&quot; style=&quot;margin:40px auto 5px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-sustentação&quot;&gt;5. Sustentação&lt;/h4&gt;
+&lt;p&gt;Após a publicação do app, bugs e melhorias serão ajustados para mantero app funcionando normalmente.&lt;/p&gt;
+
+&lt;p&gt;Caso tenha encontrado algum bug ou melhoria reporte e ajude o app a ficar mais completo.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;

@@ -693,8 +693,7 @@ body {
 article + *, .post-body ~ section {
   padding-top: 1rem;
   border-top: 1px solid #e5e5e5;
-  margin-top: 1rem;
-  padding-left: 1rem; }
+  margin-top: 1rem; }
   article + * > h2:first-child, article + * > h3:first-child, .post-body ~ section > h2:first-child, .post-body ~ section > h3:first-child {
     margin-top: 0; }
 
