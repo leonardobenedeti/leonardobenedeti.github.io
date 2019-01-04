@@ -73,7 +73,7 @@ Para baixar o app ou visualizar as telas você pode acessar os links abaixo ou l
 
 
 #### 5. Sustentação
-Após a publicação do app, bugs e melhorias serão ajustados para mantero app funcionando normalmente.
+Após a publicação do app, bugs e melhorias serão ajustados para manter o app funcionando normalmente.
 
 Caso tenha encontrado algum bug ou melhoria reporte e ajude o app a ficar mais completo.
 
