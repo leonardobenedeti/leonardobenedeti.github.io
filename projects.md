@@ -2,7 +2,7 @@
 layout: page
 title: Projetos
 permalink: /projetos
-sidebar_link: true
+sidebar_link: false
 ---
 ## Projetos
 Abaixo estão listados, alguns projetos que já trabalhei e que posso divulgar(rsrs). 

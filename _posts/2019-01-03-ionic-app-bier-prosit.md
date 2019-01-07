@@ -12,6 +12,8 @@ tags:
   - ios
   - android
   - cloud
+  - google play
+  - app store
 last_modified_at: 2019-01-03T14:00:00-05:00
 ---
 

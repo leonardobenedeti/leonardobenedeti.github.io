@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-03T20:19:07-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T17:18:33-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -62,14 +62,14 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/qr-post.png&quot; style=&quot;margin:40px auto 5px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;5-sustentação&quot;&gt;5. Sustentação&lt;/h4&gt;
-&lt;p&gt;Após a publicação do app, bugs e melhorias serão ajustados para mantero app funcionando normalmente.&lt;/p&gt;
+&lt;p&gt;Após a publicação do app, bugs e melhorias serão ajustados para manter o app funcionando normalmente.&lt;/p&gt;
 
 &lt;p&gt;Caso tenha encontrado algum bug ou melhoria reporte e ajude o app a ficar mais completo.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
@@ -78,4 +78,45 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.&lt;/p&gt;
 
-&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry></feed>
+&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry><entry><title type="html">Aplicativo Premier Pet</title><link href="http://localhost:4000/app-premier-pet" rel="alternate" type="text/html" title="Aplicativo Premier Pet" /><published>2017-10-26T00:00:00-02:00</published><updated>2017-10-26T17:00:00-02:00</updated><id>http://localhost:4000/app-premier-pet</id><content type="html" xml:base="http://localhost:4000/app-premier-pet">&lt;p&gt;&lt;img src=&quot;assets/img/vision/premier-pet.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este projeto foi bem curto, levou 12h no total para resolver o problema inicial e alguns outros erros.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Problema inicial:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Não conseguimos publicar o app na loja, o painel reclama que o version code está errado, mas não está.”&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Vision Comunicação&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ao iniciar a analise do porque o GooglePlay não aceitou o apk, solicitei acesso ao painel e o APK em questão que foi recusado.&lt;/p&gt;
+
+&lt;p&gt;Refiz o processo confirmando que o Play não aceitava o apk, fui analisar mais a fundo o binário.&lt;/p&gt;
+
+&lt;p&gt;Existe um processo para verificar detalhes de qualquer apk, chamado &lt;code class=&quot;highlighter-rouge&quot;&gt;aapt&lt;/code&gt;. Ao executar o comando ele retorna todas as informações que o Play extrai para realizar a publicação.&lt;/p&gt;
+
+&lt;p&gt;Como utilizar o aapt:&lt;/p&gt;
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;ANDROID_HOME/buid-tools/[android-version]/aapt dump badging &amp;lt;path-to-apk&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;No meu caso, precisava confirmar o &lt;code class=&quot;highlighter-rouge&quot;&gt;version code&lt;/code&gt;, que de acordo com o painel estava incorreto.&lt;/p&gt;
+
+&lt;p&gt;Para contextualizar um pouco mais, o projeto foi construido com Ionic 1. O framework utiliza um arquivo para suas configurações chamado config.xml, onde abriga todas as configs básicas do app, incluindo a versão do app.&lt;/p&gt;
+
+&lt;p&gt;Quando o projeto Android é criado se baseando nesse arquivo, o script utiliza a versão do app 1.0.0 e converte &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; em &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt;, transformando assim a versão 1.0.0 em 10000.&lt;/p&gt;
+
+&lt;p&gt;Ao verificar o arquivo, já tendo em mente o version code necessário para subida do apk, reparei que apenas o número estava errado, parte por falta de atenção da Vision parte pelo Ionic transformar &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; em &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; no version code.&lt;/p&gt;
+
+&lt;p&gt;Com isso aconteceu uma confusão com as versões.&lt;/p&gt;
+
+&lt;p&gt;O config.xml ficou com o mesmo 1.0.0(10000) e as alterações foram feitas direto no Android Studio(prática não recomendada já que o Ionic gera os arquivos automaticamente), alterando o Manifest de 10000(1.0.0) para 100001(1.0.01), aumentando assim o version code de 10000(dez mill) para 100001(cem mil e um).&lt;/p&gt;
+
+&lt;p&gt;Em um nova alteração, ajustaram o config.xml como recomendam as docs a cada subida e seguindo a ordem foi alterado de 1.0.0 para 1.0.1, convertendo para o version code 10001(dez mil e um). Ao tentar subir um apk com version code 10001 o GooglePlay reclamou, e com razão, afinal 100001 &amp;gt; 10001.&lt;/p&gt;
+
+&lt;p&gt;A solução então foi incrementar mais um .2 no version code, 1.0.1.2, convertendo para 100002.&lt;/p&gt;
+
+&lt;p&gt;Demorou tanto para encontrar este detalhe pois os commits estavam de acordo, config.xml certinho.&lt;/p&gt;
+
+&lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
