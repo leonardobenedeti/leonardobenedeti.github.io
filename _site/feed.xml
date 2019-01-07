@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T17:49:18-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T18:41:47-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -138,4 +138,30 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo&quot; target=&quot;_blank&quot;&gt;Apk Pure&lt;/a&gt; - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO&quot; target=&quot;_blank&quot;&gt;Behance - Eduardo Zilio&lt;/a&gt; - Aparentemente quem criou toda experiência e design do app&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Nota Boleto - Coca Cola</title><link href="http://localhost:4000/nota-boleto-coca-cola" rel="alternate" type="text/html" title="Nota Boleto - Coca Cola" /><published>2013-04-20T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>http://localhost:4000/nota-boleto-coca-cola</id><content type="html" xml:base="http://localhost:4000/nota-boleto-coca-cola">&lt;p&gt;&lt;img src=&quot;assets/img/coca/coca-porto-real.jpg&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Motivo do projeto: Com boleto e notas fiscais sendo gerado em ambientes diferentes, o setor de conferência de pedidos precisava, toda manhã antes de liberar as entregas, imprimir todos os boletos em um servidor, notas fiscais em outro, folhear as duas pilhas e unir boleto com a nota fiscal do pedido do Bar do Zé, grampear e liberar para entrega.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Um processo manual e trabalhoso demais.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;O projeto consistiu em buscar numa base de dados em um AS400, informações de notas fiscais e no SAP, boletos referentes a pedidos efetuados pelos clientes da unidade CiaFlu.&lt;/p&gt;
+
+&lt;p&gt;Para auxiliar o projeto, foi comprada uma nova impressora que ao finalizar a impressão de um documento com mais de uma página, ela grampeava as páginas. &lt;strong&gt;WOW&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Com as duas informações em mãos e a impressora esperando, bastava unir tudo em um único arquivo e enviar para impressão.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Moleza rsrsrs&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A integração foi feita em Java buscando as informações e enviando para o SAP mostrando em um report customizado mostrando a lista a ser impressa.&lt;/p&gt;
+
+&lt;p&gt;Com esse processo todo automatizado, o analista agora podia apenas conferir as notas e boletos, já impressos e grampeados, e direcionar para o fluxo de entrega de um modo mais garantido, evitando erros manuais que aconteciam com frequência.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Outras informações&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Com a compra da CiaFlu pela FEMSA, o ABAP foi descontinuado, por eles utilizarem o SAP sem customizações.&lt;/p&gt;
+
+&lt;p&gt;Com essa rescisão precisei decidir o que fazer e depois de pensar muito, comprei um MacBook e migrei para o desenvolvimento mobile. A outra opção seria fazer a Academia SAP, mas o mundo mobile estava crescendo e tomei a direção que achei mais interessante. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="SAP" /><category term="AS400" /><category term="Java" /></entry></feed>
