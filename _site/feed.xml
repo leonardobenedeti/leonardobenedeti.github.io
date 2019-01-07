@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T17:18:33-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-07T17:49:18-02:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -119,4 +119,23 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="http://localhost:4000/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>http://localhost:4000/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="http://localhost:4000/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Projeto feito em parceria com a Agência Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Atuações:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ajuste no fluxo de ações do módulo social, onde você se conecta com outros participantes, tal qual o app Tinder.&lt;/li&gt;
+  &lt;li&gt;Criação de um feed de tweets gerenciados por uma api criada pela empresa Vision Comunicação.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O aplicativo foi desenvolvido nativamente com a linguagem Java e as consultas eram feitas em um server dentro do Azure(antes de se chamar oficialmente azure rsrs).&lt;/p&gt;
+
+&lt;p&gt;O aplicativo era publicado com o bundle base da Vision, atualmente ele não está mais online pela Vision.&lt;/p&gt;
+
+&lt;p&gt;Encontrei algumas referencias do app pelo titio Google:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo&quot; target=&quot;_blank&quot;&gt;Apk Pure&lt;/a&gt; - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO&quot; target=&quot;_blank&quot;&gt;Behance - Eduardo Zilio&lt;/a&gt; - Aparentemente quem criou toda experiência e design do app&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>

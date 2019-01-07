@@ -7,11 +7,11 @@ sidebar_link: false
 ## Projetos
 Abaixo estão listados, alguns projetos que já trabalhei e que posso divulgar(rsrs). 
 
-#### App Premier Pet - Vision Comunicação
+<!-- #### App Premier Pet - Vision Comunicação
 **Descrição:** App voltado para vendedores, promotores veterinários, criadores, lojistas e público em geral. De maneira rápida e simples, você se cadastra gratuitamente, entra no Universo PremieR pet e tem acesso a informações como: informações institucionais, garantias Premier Pet, Novidades do universo pet e muito mais. 
 A atuação neste projeto foi algo bem simples, o problema inicial era que o aplicativo não conseguia ser atualizado com a nova versão na loja. 
 Após uma analise mais minunciosa, foi percebido que o version code não estava compatível com o padrão da release mais antiga, ao ajustar o release novo e publicar tudo voltou ao notmal e o app passou a ser atualizado normalmente. 
-<br/>**Contratação:** Freelancer
+<br/>**Contratação:** Freelancer -->
 
 
 #### App Seguro Auto - Banco do Brasil e MAPFRE
@@ -50,10 +50,10 @@ como o Case da nova marca da TIM, Eventos da TIM, Branding Interfarma e outros.
 <br/>**Contratação:** PJ
 
 
-#### Latam CXO Forum Microsoft - Vision Comunicação
+<!-- #### Latam CXO Forum Microsoft - Vision Comunicação
 **Descrição:** Projeto feito em parceria com a agencia Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.
 Foi ajustado o fluxo de ações do módulo social onde você se conectava com outros participantes, tal como Tinder, além dessa feature que era a principal, foi criado um feed de tweets gerenciados por uma api criada pela empresa Vision Comunicação.
-<br/>**Contratação:** Freelancer
+<br/>**Contratação:** Freelancer -->
 
 
 #### Cardápio Cervejeiro - Independente
