@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Conhecimentos
-permalink: /conhecimentos
+title: Formação
+permalink: /formacao
 sidebar_link: true
 ---
-## Conhecimentos
 
 ### Formação Acadêmica
 

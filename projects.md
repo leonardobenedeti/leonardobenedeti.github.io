@@ -14,7 +14,7 @@ Após uma analise mais minunciosa, foi percebido que o version code não estava 
 <br/>**Contratação:** Freelancer -->
 
 
-#### App Seguro Auto - Banco do Brasil e MAPFRE
+#### App Seguro Auto - Banco do Brasil e MAPFRE - PROJETOS KONY e SUSTENTAÇÃO
 **Descrição:** Alocados no Grupo Segurador Banco do Brasil e MAPFRE, através da empresa de consultoria Entelgy, o app de seguro auto de ambas empresas foram criados em conjunto.
 Os apps eram iguais em termos de funcionalidades, mudando apenas as identidades dependendo da empresa. 
 O app foi criado na plataforma Kony, um cross-compiler que utiliza javascript como linguagem principal de desenvolvimento e ao fim do desenvolvimento gera código nativo de cada
@@ -41,13 +41,13 @@ O app foi desenvolvido com a linguagem nativa, apenas para Android, atuei em bug
 O aplicativo funciona apenas internamente, impossibilitando a divulgação. =D
 <br/>**Contratação:** PJ
 
-
+<!-- 
 #### Site Conception - Conception
 **Descrição:** Manutenção constante do site, que foi criado em html5, css3 e php, também
 utilizando Grunt para minificar e concatenar os arquivos. Criação de cases de sucesso da empresa, tais
 como o Case da nova marca da TIM, Eventos da TIM, Branding Interfarma e outros.
 <br/>Veja o site: [conception.com.br](http://conception.com.br/)
-<br/>**Contratação:** PJ
+<br/>**Contratação:** PJ -->
 
 
 <!-- #### Latam CXO Forum Microsoft - Vision Comunicação
