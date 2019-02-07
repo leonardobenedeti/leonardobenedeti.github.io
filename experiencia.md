@@ -1,16 +1,9 @@
 ---
 layout: page
-title: Sobre
-permalink: /sobre
+title: Experiência
+permalink: /experiencia
 sidebar_link: true
 ---
-## Sobre
-
-Formado em Técnico de informática pela FAETEC e em Sistemas de Informação pela UniFOA, com experiência de trabalho em empresas como: Grupo Segurador Banco do Brasil e MAPFRE, Entelgy, Coca-Cola, CSN e muitas agências focadas em tecnologias web e mobile.
-
-Iniciei minha saga como Desenvolvedor Web, criando sites e plataformas server side. Atualmente atuo principalmente no ramo Mobile, desenvolvendo aplicativos nativos e hibridos.
-
-Atualmente alocado no Grupo Segurador Banco do Brasil e MAPFRE, atuando pela Everis, atuo na sustentação de apps utilizando a plataforma Kony, uma plataforma onde se escreve javascript puro e é compilado para várias plataformas nativas.
 
 ## Experiência
 
