@@ -24,22 +24,22 @@ Caso queira conhecer o app, basta procurar por "MAPFRE Auto" e "BB Seguro Auto" 
 <br/>**Contratação:** CLT
 
 
-#### TIM Menu - App e API - Conception
+<!-- #### TIM Menu - App e API - Conception
 **Descrição:** Básicamente é um agregador de informações da TIM, como Apps, Promoções, Notícias e Mídias Sociais. 
 Atuei no app em duas frentes, Mídias Sociais e no Versionamento de informações do app.
 Na parte de mídias sociais, foi desenvido o feed de informações do twitter, usando a propria api da rede social, adaptando apenas o layout dos twits a identidade do app.
 Já no versionamento das informações, foi gerado alguns pacotes que eram enviados para o app esporadicamente, de acordo com a necessidade da área de vendas para promover novas campanhas e vendas de aparelhos em lançamento. 
 O App foi desenvolvido para Android e iOS, usando suas respectivas linguagens nativas, Java e Objective-C. 
-<br/>**Contratação:** PJ
+<br/>**Contratação:** PJ -->
 
 
-#### TIM Precificador Digital - App e API - Conception
+<!-- #### TIM Precificador Digital - App e API - Conception
 **Descrição:** Aplicativo criado com o intuito de substituir as plaquinhas de preço das lojas, que constantemente estão desatualizadas. 
 O App funciona junto a uma api que envia para os devices os preços atualizados no momento e o cliente da loja que possui o app está sempre atualizada.
 A api foi criada com o framework CakePhp e para atualizar os apps, emitia uma carga de informação de acordo com a vontade do gerente de vendas da região. 
 O app foi desenvolvido com a linguagem nativa, apenas para Android, atuei em bugs e na criação de uma animação das informações, para evitar a queima dos displays dos aparelhos, tal como as televisões e computadores fazem com as proteções de tela.
 O aplicativo funciona apenas internamente, impossibilitando a divulgação. =D
-<br/>**Contratação:** PJ
+<br/>**Contratação:** PJ -->
 
 <!-- 
 #### Site Conception - Conception
