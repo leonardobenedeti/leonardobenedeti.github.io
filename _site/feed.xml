@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-20T11:58:10-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-20T20:11:00-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
 
 &lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
@@ -269,7 +269,49 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="http://localhost:4000/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>http://localhost:4000/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="http://localhost:4000/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="http://localhost:4000/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>http://localhost:4000/apps-kony-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para explicar melhor este projeto/sustentação, preciso dividir em dois periódos de tempo. Quando cheguei em São Paulo, fui contratado pela Entelgy e depois de muita história migrei para a Everis, mas mantive o cliente e os projetos.&lt;/p&gt;
+
+&lt;p&gt;Explicando com um Diagrama de Venn ficaria mais ou menos assim
+&lt;img src=&quot;assets/img/entelgybr/venn-diagram.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;período-entelgy---092016&quot;&gt;Período Entelgy - 09/2016&lt;/h4&gt;
+
+&lt;p&gt;Ao chegar no cliente e encontrar uma plataforma desconhecida, o Kony, foi um grande impacto, mas como a linguagem básica dessa plataforma era &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt; puro, consegui aprender as nuances bem rápido e em pouco tempo passei a resolver alguns problemas básicos.&lt;/p&gt;
+
+&lt;p&gt;Com pouco tempo apenas sustentando o aplicativo, iniciamos alguns projetos e eu fiquei com um desafio bem complexo: Ser o frente nas atuações de sustentação e no tempo livre atuar no projeto pra ajudar a equipe.&lt;/p&gt;
+
+&lt;p&gt;Criamos funcionalidades bem expressivas como uma funcionalidade que mostra o guincho chegando até o local de assistência, solicitada pelo usuário do app, tal qual o Uber faz em suas viagens.&lt;/p&gt;
+
+&lt;p&gt;Além da frente técnica, tivemos muitos insights do mundo Ágil e corporativo. Ambas frentes, sustentação e projetos, eram controladas com metodologias ágeis e com isso aprendemos muito como tocar um projeto dentro de uma empresa bem engessada de forma rápida e com resultados bem expressivos.&lt;/p&gt;
+
+&lt;p&gt;Corta cena… a Entelgy perde o contrato dos projetos por conta da separação do Grupo Segurador.&lt;/p&gt;
+
+&lt;h4 id=&quot;período-de-limbo&quot;&gt;Período de Limbo.&lt;/h4&gt;
+&lt;p&gt;Por conta do fim do contrato entre o Grupo e Entelgy, os colaboradores da Entelgy ficaram sem projeto e atuando em POCs e projetos pequenos na sede da empresa.&lt;/p&gt;
+
+&lt;p&gt;No meu caso, encontrei um amigo, em um treino de Jiu Jitsu, que comentou sobre uma oportunidade para retornar ao ainda Grupo para o mesmo projeto que atuava antes.&lt;/p&gt;
+
+&lt;p&gt;Corta cena e estou voltando ao Grupo pela empresa Everis.&lt;/p&gt;
+
+&lt;h4 id=&quot;período-everis---032018&quot;&gt;Período Everis - 03/2018&lt;/h4&gt;
+
+&lt;p&gt;Neste período, mantive as atividades citadas no período Entelgy, porém tinha um pouco mais de responsabilidade, na Entelgy era Dev Sr e cheguei na Everis como Especialista, com o papel de liderança técnica.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Uma curiosidade sobre o início deste período: Assim que cheguei e estava sendo apresentado, um desenvolvedor pediu as contas, sendo que outros dois já tinham feito isso antes. No caso esses 3 devs compunham a equipe. Nesse momento fiquei sozinho até conseguir recompor a equipe. Suave. rsrsrsrs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Após um pequeno período sustentando o app sozinho, a equipe foi recomposta com um ex-Grupo que já conhecia Kony e outro que nunca ouviu falar. Até ai tudo certo.&lt;/p&gt;
+
+&lt;p&gt;Tendo um time um pouco mais multidiciplinar, começamos a ajudar em outras frentes dentro do Grupo como Angular, APIs Java e outros.&lt;/p&gt;
+
+&lt;p&gt;Pouco depois iniciamos estimativas e estudos de uma possível migração dos Apps atuais para o framework Ionic.&lt;/p&gt;
+
+&lt;p&gt;Corta cena… o projeto aconteceu, foi entregue no prazo e hoje a sustentação é baseada nesse novo app, que em breve escreverei sobre!&lt;/p&gt;
+
+&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="http://localhost:4000/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>http://localhost:4000/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="http://localhost:4000/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto feito em parceria com a Agência Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.&lt;/p&gt;
 
