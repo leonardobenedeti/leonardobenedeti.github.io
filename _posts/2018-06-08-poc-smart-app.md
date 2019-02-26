@@ -30,7 +30,7 @@ Vamos separar em tópicos para explicar a POC.
 #### 1. Conceito de smart apps
 Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
 Um smart app bem conhecido e muito utilizado é o Waze.
-O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza e azul claro, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.
+O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza com rotas em roxo, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.
 
 <div class="images-grid two">
   <img src="assets/img/everis/smartapp/waze-dia.png" alt="">
@@ -44,7 +44,7 @@ Existem tipos de smart app, a grande maioria utiliza recursos do device que esta
 
 #### 2. Necessidade e contexto 
 
-A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências. 
+A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências de mercado em varias frentes. 
 
 Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação. 
 
@@ -52,7 +52,7 @@ Para conseguir criar tudo que precisava, chegamos a um consenso que Ionic seria 
 
 Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.
 
-Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho do algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku. 
+Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho no algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku. 
 
 Escrevi um outro <a href="/heroku-python-mysql" target="_blank">post</a> que mostra como subir uma aplicação python com mysql no heroku. 
 
@@ -66,6 +66,3 @@ Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos n
   <img class="b" src="assets/img/everis/smartapp/smartapp-2.png" alt="">
   <img class="c" src="assets/img/everis/smartapp/smartapp-3.png" alt="">
 </div>
-
-Este app foi apresentado no evento CIAB como um exemplo de SmartApp API Based apresentado pela Everis.
-

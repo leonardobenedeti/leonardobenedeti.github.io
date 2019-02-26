@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-26T16:29:36-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-26T16:42:14-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
 
 &lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
@@ -235,7 +235,7 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;h4 id=&quot;1-conceito-de-smart-apps&quot;&gt;1. Conceito de smart apps&lt;/h4&gt;
 &lt;p&gt;Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
 Um smart app bem conhecido e muito utilizado é o Waze.
-O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza e azul claro, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.&lt;/p&gt;
+O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza com rotas em roxo, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.&lt;/p&gt;
 
 &lt;div class=&quot;images-grid two&quot;&gt;
   &lt;img src=&quot;assets/img/everis/smartapp/waze-dia.png&quot; alt=&quot;&quot; /&gt;
@@ -248,7 +248,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
 
 &lt;h4 id=&quot;2-necessidade-e-contexto&quot;&gt;2. Necessidade e contexto&lt;/h4&gt;
 
-&lt;p&gt;A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências.&lt;/p&gt;
+&lt;p&gt;A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências de mercado em varias frentes.&lt;/p&gt;
 
 &lt;p&gt;Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação.&lt;/p&gt;
 
@@ -256,7 +256,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
 
 &lt;p&gt;Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.&lt;/p&gt;
 
-&lt;p&gt;Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho do algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.&lt;/p&gt;
+&lt;p&gt;Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho no algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.&lt;/p&gt;
 
 &lt;p&gt;Escrevi um outro &lt;a href=&quot;/heroku-python-mysql&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; que mostra como subir uma aplicação python com mysql no heroku.&lt;/p&gt;
 
@@ -268,9 +268,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
   &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Este app foi apresentado no evento CIAB como um exemplo de SmartApp API Based apresentado pela Everis.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
