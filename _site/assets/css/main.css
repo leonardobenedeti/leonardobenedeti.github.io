@@ -1061,9 +1061,23 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 .titulo {
   display: flex; }
 
+.images-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 5px; }
+  .images-grid img {
+    height: auto !important; }
+
 @media (min-width: 467px) {
   .grid {
     grid-template-columns: 50% 50%; }
+
+  .images-grid.two {
+    grid-template-columns: 1fr 1fr; }
+  .images-grid.three {
+    grid-template-columns: 1fr 1fr 1fr; }
 
   .a {
     grid-column: 1/2;

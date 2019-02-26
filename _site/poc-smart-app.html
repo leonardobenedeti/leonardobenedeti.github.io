@@ -11,7 +11,7 @@
 
   <title>
     
-      Aplicativo LATAM CXO Forum Microsoft &middot; Leonardo Benedeti
+      [POC] - SmartApp &middot; Leonardo Benedeti
     
   </title>
 
@@ -374,11 +374,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Aplicativo LATAM CXO Forum Microsoft</h1>
+  <h1 class="post-title">[POC] - SmartApp</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">17 Aug 2016</span>
+  <span class="post-date">08 Jun 2018</span>
   <span class="post-categories">
     
       &bull;
@@ -388,20 +388,8 @@
       
 
       
-        <a href="/proprios">
-          Próprios / Freelas
-        </a>
-      
-    
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/vision">
-          Vision Comunicação
+        <a href="/everis">
+          Everis
         </a>
       
     
@@ -414,40 +402,90 @@
   Techs:
   
     
+    <a href="/tags#ionic">
+    
+      <span class="tag-name">ionic</span>
+    </a>
+  
+    
+    <a href="/tags#python">
+    
+      <span class="tag-name">python</span>
+    </a>
+  
+    
+    <a href="/tags#ios">
+    
+      <span class="tag-name">ios</span>
+    </a>
+  
+    
     <a href="/tags#android">
     
       <span class="tag-name">android</span>
     </a>
   
     
-    <a href="/tags#google-play">
+    <a href="/tags#heroku">
     
-      <span class="tag-name">google play</span>
+      <span class="tag-name">heroku</span>
     </a>
   
 </div>
 
   <div class="post-body">
-    <p><img src="assets/img/vision/latam-cxo.png" style="margin:40px auto;" alt="" /></p>
+    <p><img src="assets/img/everis/smartapp/img-post.png" style="margin:40px auto 10px;" alt="" /></p>
+<p style="text-align:center;">** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api</p>
 
-<p>Projeto feito em parceria com a Agência Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.</p>
+<p>Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.</p>
 
-<p><strong>Atuações:</strong></p>
-<ul>
-  <li>Ajuste no fluxo de ações do módulo social, onde você se conecta com outros participantes, tal qual o app Tinder.</li>
-  <li>Criação de um feed de tweets gerenciados por uma api criada pela empresa Vision Comunicação.</li>
-</ul>
+<p>Vamos separar em tópicos para explicar a POC.</p>
 
-<p>O aplicativo foi desenvolvido nativamente com a linguagem Java e as consultas eram feitas em um server dentro do Azure(antes de se chamar oficialmente azure rsrs).</p>
+<ol>
+  <li>Conceito de smart apps</li>
+  <li>Necessidade e contexto</li>
+  <li>App final</li>
+</ol>
 
-<p>O aplicativo era publicado com o bundle base da Vision, atualmente ele não está mais online pela Vision.</p>
+<h4 id="1-conceito-de-smart-apps">1. Conceito de smart apps</h4>
+<p>Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
+Um smart app bem conhecido e muito utilizado é o Waze.
+O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza e azul claro, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.</p>
 
-<p>Encontrei algumas referencias do app pelo titio Google:</p>
+<div class="images-grid two">
+  <img src="assets/img/everis/smartapp/waze-dia.png" alt="" />
+  <img src="assets/img/everis/smartapp/waze-noite.png" alt="" />
+</div>
 
-<ul>
-  <li><a href="https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo" target="_blank">Apk Pure</a> - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs</li>
-  <li><a href="https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO" target="_blank">Behance - Eduardo Zilio</a> - Aparentemente quem criou toda experiência e design do app</li>
-</ul>
+<p>Com isso podemos classificar smart apps, os apps que conseguem de alguma forma interagir com o ambiente do usuário. Seja com horário, como o Waze faz, com localização recomendando de lugares e outros exemplos.</p>
+
+<p>Existem tipos de smart app, a grande maioria utiliza recursos do device que esta instalado, mas existem apps que são baseados em API. Que é o caso do post.</p>
+
+<h4 id="2-necessidade-e-contexto">2. Necessidade e contexto</h4>
+
+<p>A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências.</p>
+
+<p>Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação.</p>
+
+<p>Para conseguir criar tudo que precisava, chegamos a um consenso que Ionic seria a melhor pedida devido sua facilidade e menor barreira de entrada.</p>
+
+<p>Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.</p>
+
+<p>Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho do algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.</p>
+
+<p>Escrevi um outro <a href="/heroku-python-mysql" target="_blank">post</a> que mostra como subir uma aplicação python com mysql no heroku.</p>
+
+<h4 id="3-app-final">3. App final</h4>
+
+<p>Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards.</p>
+
+<div class="images-grid three">
+  <img class="a" src="assets/img/everis/smartapp/smartapp-1.png" alt="" />
+  <img class="b" src="assets/img/everis/smartapp/smartapp-2.png" alt="" />
+  <img class="c" src="assets/img/everis/smartapp/smartapp-3.png" alt="" />
+</div>
+
+<p>Este app foi apresentado no evento CIAB como um exemplo de SmartApp API Based apresentado pela Everis.</p>
 
 
   </div>
@@ -476,9 +514,9 @@
     
       <li>
         <h3>
-          <a href="/poc-smart-app">
-            [POC] - SmartApp
-            <small>08 Jun 2018</small>
+          <a href="/events-page-from-riosulvalley">
+            RioSulValley / Página de Eventos
+            <small>17 Apr 2018</small>
           </a>
         </h3>
       </li>
