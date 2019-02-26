@@ -59,7 +59,7 @@ Escrevi um outro <a href="/heroku-python-mysql" target="_blank">post</a> que mos
 
 #### 3. App final
 
-Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards. 
+Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards.
 
 <div class="images-grid three">
   <img class="a" src="assets/img/everis/smartapp/smartapp-1.png" alt="">
