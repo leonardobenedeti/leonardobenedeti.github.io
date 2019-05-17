@@ -29,3 +29,30 @@ Um portal de acesso unico. Onde o visitante requisita o acesso e o contato da em
 Com isso fica mais simples a portaria validar que o visitante está autorizado a subir para fazer o que precisa.
 
 <img src="assets/img/ideias/one-pass.png" style="margin:10px auto;" alt="">
+
+
+O painel teria toda informação do condominio e acessos e convidados.
+
+<img src="assets/img/ideias/painel-portaria-one-pass.jpg" style="margin:10px auto;" alt="">
+
+
+Já o app tem que ser o mais simples possível. Solicitar acesso e fornecer acesso. 
+
+**Algo interessante** a se pensar é criar uma fechadura que consuma a api de grant access para abrir "sozinha", apertou no app pra abrir a propria casa ele abre.
+Pensar algo com aquelas plaquinhas wifi. 
+Futuramente reconhecimento facial e tudo. 
+
+
+
+--------
+
+#### Sistema de pedidos de qualquer coisa com trello. 
+
+Ao criar um pedido ele cria um card e os detalhes vão tudo dentro do card como checklist para: Sem azeitona e dois pedaços sem cebola.
+
+Api aberta do trello vai permitir entregar pro usuário a informação do pedido no momento que estiver sendo feita.
+
+e pro proprietario da loja/restaurante um sistema fácil de acompanhar e sem papeis, tudo pelo painel do trello.
+
+<img src="assets/img/ideias/sistema-pedidos-trello.jpg" style="margin:10px auto;" alt="">
+
