@@ -46,7 +46,7 @@ Corta a cena vamos para o próximo item.
 
 ### 2. PoC com a tecnologia escolhida
 
-Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migrariamos os apps para o Ionic.
+Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migraríamos os apps para o Ionic.
 Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o tempo livre para replicar a home do app principal dos apps em ionic para mensurar o tempo que precisariam para a migração.
 
 Com isso fizemos em duas maneiras.
@@ -83,15 +83,15 @@ Com isso vamos aos prints
     </div>
 </div>
 
-> Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o ionic podia oferecer e mostramos as vantagens.
+> Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o Ionic podia oferecer e mostramos as vantagens.
 
-A poc foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs
+A PoC foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs
 
 
 
 ### 3. Definição do projeto/estimativa
 
-Com o cenário posto, com poc e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.
+Com o cenário posto, com PoC e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.
 
 Porém como nada pode estar tão perfeito, veio a surpresa que comentei acima. O app mudaria o escopo, como?
 
@@ -103,11 +103,11 @@ Porém como nada pode estar tão perfeito, veio a surpresa que comentei acima. O
 * BB Seguro Auto ( auto )
 
 Sim, existia um app apenas para o conteúdo institucional da empresa e outro para as ações transacionais referentes ao segmento auto.
-E o projeto inicial seria manter esse escopo porém com a tecnologia ionic.
+E o projeto inicial seria manter esse escopo, porém com a tecnologia Ionic.
 
 #### Para: 
 2 apps Ionic:
-* MAPFRE Serguros
+* MAPFRE Seguros
 * BB Seguros
 
 Mantivemos o nome do app institucional por ser mais abrangente e unificamos o conteúdo dos apps para facilitar a vida do usuário.
@@ -119,7 +119,7 @@ Prints de produção, não achei as especificações rsrs
 
 ### 4. Início do projeto
 
-Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisavamos replanejar ou assumir que caberia nos 3 meses que já haviamos passado para o cliente.
+Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisávamos replanejar ou assumir que caberia nos 3 meses que já havíamos passado para o cliente.
 
 Aceitamos o desafio e topamos manter os 3 meses, visto que o novo layout melhoraria a usabilidade e com isso removeria algumas telas desnecessárias.
 
@@ -140,16 +140,16 @@ Pontos interessantes que podemos citar sobre o desenvolvimento são:
 Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada `Lazy Loading`. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
 Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.
 
-Por último mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
-O pipeline não fazia todo papel DevOps de fato por politicas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação. 
+Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
+O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação. 
 
-A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o `apk` e `ipa` em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passavamos o link para a equipe de homologação do cliente. 
+A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o `apk` e `ipa` em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passávamos o link para a equipe de homologação do cliente. 
 
-Infelizmente o processo de publicação ainda continua manual pelas politicas já mencionadas.
+Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.
 
 ### 6. Entrega
 
-O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido mas sim o app PUBLICADO nas lojas. =D
+O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido, mas sim o app PUBLICADO nas lojas. =D
 
 
 ### Resumo

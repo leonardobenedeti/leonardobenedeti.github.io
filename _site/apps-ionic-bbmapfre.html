@@ -481,7 +481,7 @@ Comparamos os seguintes pontos: Curva de aprendizado, velocidade de desenvolvime
 
 <h3 id="2-poc-com-a-tecnologia-escolhida">2. PoC com a tecnologia escolhida</h3>
 
-<p>Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migrariamos os apps para o Ionic.
+<p>Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migraríamos os apps para o Ionic.
 Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o tempo livre para replicar a home do app principal dos apps em ionic para mensurar o tempo que precisariam para a migração.</p>
 
 <p>Com isso fizemos em duas maneiras.</p>
@@ -521,14 +521,14 @@ Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o te
 </div>
 
 <blockquote>
-  <p>Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o ionic podia oferecer e mostramos as vantagens.</p>
+  <p>Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o Ionic podia oferecer e mostramos as vantagens.</p>
 </blockquote>
 
-<p>A poc foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs</p>
+<p>A PoC foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs</p>
 
 <h3 id="3-definição-do-projetoestimativa">3. Definição do projeto/estimativa</h3>
 
-<p>Com o cenário posto, com poc e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.</p>
+<p>Com o cenário posto, com PoC e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.</p>
 
 <p>Porém como nada pode estar tão perfeito, veio a surpresa que comentei acima. O app mudaria o escopo, como?</p>
 
@@ -542,12 +542,12 @@ Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o te
 </ul>
 
 <p>Sim, existia um app apenas para o conteúdo institucional da empresa e outro para as ações transacionais referentes ao segmento auto.
-E o projeto inicial seria manter esse escopo porém com a tecnologia ionic.</p>
+E o projeto inicial seria manter esse escopo, porém com a tecnologia Ionic.</p>
 
 <h4 id="para">Para:</h4>
 <p>2 apps Ionic:</p>
 <ul>
-  <li>MAPFRE Serguros</li>
+  <li>MAPFRE Seguros</li>
   <li>BB Seguros</li>
 </ul>
 
@@ -560,7 +560,7 @@ e agora com a unificação não fazia mais sentido manter a mesma UX do app, com
 
 <h3 id="4-início-do-projeto">4. Início do projeto</h3>
 
-<p>Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisavamos replanejar ou assumir que caberia nos 3 meses que já haviamos passado para o cliente.</p>
+<p>Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisávamos replanejar ou assumir que caberia nos 3 meses que já havíamos passado para o cliente.</p>
 
 <p>Aceitamos o desafio e topamos manter os 3 meses, visto que o novo layout melhoraria a usabilidade e com isso removeria algumas telas desnecessárias.</p>
 
@@ -582,16 +582,16 @@ e agora com a unificação não fazia mais sentido manter a mesma UX do app, com
 <p>Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada <code class="highlighter-rouge">Lazy Loading</code>. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
 Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.</p>
 
-<p>Por último mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
-O pipeline não fazia todo papel DevOps de fato por politicas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.</p>
+<p>Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
+O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.</p>
 
-<p>A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o <code class="highlighter-rouge">apk</code> e <code class="highlighter-rouge">ipa</code> em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passavamos o link para a equipe de homologação do cliente.</p>
+<p>A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o <code class="highlighter-rouge">apk</code> e <code class="highlighter-rouge">ipa</code> em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passávamos o link para a equipe de homologação do cliente.</p>
 
-<p>Infelizmente o processo de publicação ainda continua manual pelas politicas já mencionadas.</p>
+<p>Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.</p>
 
 <h3 id="6-entrega">6. Entrega</h3>
 
-<p>O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido mas sim o app PUBLICADO nas lojas. =D</p>
+<p>O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido, mas sim o app PUBLICADO nas lojas. =D</p>
 
 <h3 id="resumo">Resumo</h3>
 
