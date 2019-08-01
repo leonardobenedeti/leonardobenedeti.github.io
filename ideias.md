@@ -7,6 +7,17 @@ sidebar_link: false
 
 ## Ideias
 
+
+#### NoName - Sistema para alugar carros que estão a venda
+
+Hoje existem várias agencias de carro que mantem os carros a venda sempre parados a espera de um novo dono.
+Sabendo que carro parado estraga mais rápido do que carro andando, surge então a ideia de criar uma agencia de aluguel de carros baseada na frota que existe atualmente a venda.
+COm isso movimentamos a economia que hoje fica estacionada nas agencias.
+
+
+-----------
+
+
 #### OnePass - Sistema de gerenciamento de acesso a predios
 
 Todo predio com uma média segurança hoje requer um cadastro para um acesso. 
@@ -55,4 +66,3 @@ Api aberta do trello vai permitir entregar pro usuário a informação do pedido
 e pro proprietario da loja/restaurante um sistema fácil de acompanhar e sem papeis, tudo pelo painel do trello.
 
 <img src="assets/img/ideias/sistema-pedidos-trello.jpg" style="margin:10px auto;" alt="">
-

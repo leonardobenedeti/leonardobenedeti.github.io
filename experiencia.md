@@ -28,7 +28,7 @@ sidebar_link: true
                 Manter aplicativos criados com a plataforma de desenvolvimento Kony e serviços do Mobile Fabric que são vinculados ao app. Publicação dos apps e serviços, auxilio a equipe de arquitetura do Grupo Segurador Banco do Brasil e MAPFRE em análises de problemas que ocorrem em produção. 
                 <br/><b>Tecnologias:</b> Kony, SVN, Mobile Fabric, Android e iOS
             </p>
-            <!-- <a href="#" class="btn">button</a> -->
+            <a href="/everis" class="btn">Projetos</a>
         </div>
     </div>
     <div class="timeline-item">
@@ -51,7 +51,7 @@ sidebar_link: true
                 Criar aplicativos na plataforma Kony, alteração de serviços do middleware vinculado a plataforma e publicação dos aplicativos. Trabalhando com o método ágil com framework montado específicamente para o Grupo Segurador Banco do Brasil e MAPFRE.
                 <br/><b>Tecnologias:</b> Kony, SVN, Mobile Fabric, Android e iOS
             </p>
-            <!-- <a href="#" class="btn">button</a> -->
+            <a href="/entelgybr" class="btn">Projetos</a>
         </div>
     </div>
     <div class="timeline-item">
