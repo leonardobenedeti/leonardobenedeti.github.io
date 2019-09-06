@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-01T17:03:00-03:00</updated><id>/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>/heroku-python-mysql</id><content type="html" xml:base="/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-06T02:19:55-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="http://localhost:4000/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>http://localhost:4000/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="http://localhost:4000/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
+
+&lt;p&gt;A titulo de curiosidade baixei um repo para entender mais sobre Flutter.&lt;/p&gt;
+
+&lt;p&gt;Navegando encontrei esse post no medium&lt;br /&gt;
+&lt;a href=&quot;https://medium.com/@diegoveloper/flutter-lets-know-the-scrollcontroller-and-scrollnotification-652b2685a4ac&quot; target=&quot;_blank&quot;&gt;Flutter : let’s know the ScrollController and ScrollNotification&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Estava procurando específicamente sobre como controlar a scrollview para emitir eventos enquanto o usuário estivesse scrollando a tela.&lt;/p&gt;
+
+&lt;p&gt;Para minha grata surpresa, o repo além de ter o que eu procurava, encontrei um clone do Twitter, específicamente a UI da page de perfil, com efeitos e tudo.&lt;/p&gt;
+
+&lt;p&gt;Ao tentar incluir em um projeto notei um bug ao scrollar as tabs do projeto original.&lt;/p&gt;
+
+&lt;p&gt;Quando eu scrollava as tabs o avatar iniciava a animação, porém não deveria acontecer isso.&lt;/p&gt;
+
+&lt;p&gt;Problema:
+&lt;img src=&quot;assets/videos/bug-scrolling-tabs.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esse bug me fez quase desistir da UI que antes considerei perfeita para o que estava criando para estudos.&lt;/p&gt;
+
+&lt;p&gt;Mas como o Flutter é um toolkit desafiador e o Dart é intuitívo e simples, pensei: Porque não tentar arrumar isso?!&lt;/p&gt;
+
+&lt;p&gt;Com algum tempo procurando o problema e imprimindo tudo que poderia de logs, identifiquei que a animação do avatar estava sendo iniciado com QUALQUER scroll na tela, mais especificamente falando do header.&lt;/p&gt;
+
+&lt;p&gt;Encontrei a propriedade &lt;code class=&quot;highlighter-rouge&quot;&gt;scrollNotification.metrics.axisDirection&lt;/code&gt; que identificava se o scroll era vertical&lt;code class=&quot;highlighter-rouge&quot;&gt;(top-&amp;gt;bottom or bottom-&amp;gt;top)&lt;/code&gt; ou horizontal&lt;code class=&quot;highlighter-rouge&quot;&gt;(left-&amp;gt;right or right-&amp;gt;left)&lt;/code&gt; e com isso consegui controlar quando a animação iniciaria ou não.&lt;/p&gt;
+
+&lt;p&gt;Solução:
+&lt;img src=&quot;assets/videos/bug-fixed-scroll-tabs.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;O pull request desse ajuste foi enviado para o repo original e espero que ajude outras pessoas.&lt;br /&gt;
+&lt;a href=&quot;https://github.com/diegoveloper/flutter-samples/pull/11&quot; target=&quot;_blank&quot;&gt;Link para o pull request&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Obs: essa foi a minha primeira contribuição com a comunidade open source. =D&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Informações importantes para quem quer entrar para o mundo Flutter:&lt;/p&gt;
+
+&lt;p&gt;Temos uma mega comunidade no Brasil que fez agora no fim de agosto o evento Flutter Talks, onde conheci o git em questão comentado acima. O Diego Velasquez mostrou as diferenças entre Provider e Bloc, além dele tiveram muitas outras talks sobre todos assuntos possíveis de Flutter.&lt;/p&gt;
+
+&lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
 
 &lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
@@ -148,7 +190,7 @@ Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 &lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>/ionic-app-bier-prosit</id><content type="html" xml:base="/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -219,7 +261,7 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>/apps-ionic-bbmapfre</id><content type="html" xml:base="/apps-ionic-bbmapfre">&lt;blockquote&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="http://localhost:4000/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>http://localhost:4000/apps-ionic-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-ionic-bbmapfre">&lt;blockquote&gt;
   &lt;p&gt;Antes de começar a falar sobre este projeto, vale a pena relembrar o período que atuei apenas na sustentação dos aplicativos que foram migrados. &lt;a href=&quot;/apps-kony-bbmapfre&quot; target=&quot;_blank&quot;&gt;Confira aqui&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -362,7 +404,7 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>/poc-smart-app</id><content type="html" xml:base="/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="http://localhost:4000/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>http://localhost:4000/poc-smart-app</id><content type="html" xml:base="http://localhost:4000/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
 
 &lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
@@ -411,7 +453,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
   &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>/events-page-from-riosulvalley</id><content type="html" xml:base="/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
@@ -420,7 +462,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.&lt;/p&gt;
 
-&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry><entry><title type="html">Aplicativo Premier Pet</title><link href="/app-premier-pet" rel="alternate" type="text/html" title="Aplicativo Premier Pet" /><published>2017-10-26T00:00:00-02:00</published><updated>2017-10-26T17:00:00-02:00</updated><id>/app-premier-pet</id><content type="html" xml:base="/app-premier-pet">&lt;p&gt;&lt;img src=&quot;assets/img/vision/premier-pet.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry><entry><title type="html">Aplicativo Premier Pet</title><link href="http://localhost:4000/app-premier-pet" rel="alternate" type="text/html" title="Aplicativo Premier Pet" /><published>2017-10-26T00:00:00-02:00</published><updated>2017-10-26T17:00:00-02:00</updated><id>http://localhost:4000/app-premier-pet</id><content type="html" xml:base="http://localhost:4000/app-premier-pet">&lt;p&gt;&lt;img src=&quot;assets/img/vision/premier-pet.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Este projeto foi bem curto, levou 12h no total para resolver o problema inicial e alguns outros erros.&lt;/p&gt;
 
@@ -461,7 +503,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>/apps-kony-bbmapfre</id><content type="html" xml:base="/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="http://localhost:4000/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>http://localhost:4000/apps-kony-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Para explicar melhor este projeto/sustentação, preciso dividir em dois periódos de tempo. Quando cheguei em São Paulo, fui contratado pela Entelgy e depois de muita história migrei para a Everis, mas mantive o cliente e os projetos.&lt;/p&gt;
 
@@ -503,7 +545,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Corta cena… o projeto aconteceu, foi entregue no prazo e hoje a sustentação é baseada nesse novo app, que em breve escreverei sobre!&lt;/p&gt;
 
-&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="http://localhost:4000/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>http://localhost:4000/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="http://localhost:4000/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto feito em parceria com a Agência Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.&lt;/p&gt;
 
@@ -522,7 +564,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo&quot; target=&quot;_blank&quot;&gt;Apk Pure&lt;/a&gt; - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO&quot; target=&quot;_blank&quot;&gt;Behance - Eduardo Zilio&lt;/a&gt; - Aparentemente quem criou toda experiência e design do app&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Site Institucional - Conception</title><link href="/site-conception" rel="alternate" type="text/html" title="Site Institucional - Conception" /><published>2016-07-01T00:00:00-03:00</published><updated>2016-07-01T16:00:00-03:00</updated><id>/site-conception</id><content type="html" xml:base="/site-conception">&lt;p&gt;&lt;img src=&quot;assets/img/conception/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Site Institucional - Conception</title><link href="http://localhost:4000/site-conception" rel="alternate" type="text/html" title="Site Institucional - Conception" /><published>2016-07-01T00:00:00-03:00</published><updated>2016-07-01T16:00:00-03:00</updated><id>http://localhost:4000/site-conception</id><content type="html" xml:base="http://localhost:4000/site-conception">&lt;p&gt;&lt;img src=&quot;assets/img/conception/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Site institucional da empresa Conception, destacando seus cases de sucesso e sempre com fotos de muita qualidade destacando o que foi feito, seja eventos, branding ou aplicativos.&lt;/p&gt;
 
@@ -596,49 +638,4 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
         &lt;a href=&quot;http://conception.com.br/interfarma.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
     &lt;/span&gt;
     &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="HTML" /><category term="CSS" /><category term="GRUNT" /><category term="PHP" /></entry><entry><title type="html">TIM - Precificador Digital</title><link href="/tim-precificador-digital" rel="alternate" type="text/html" title="TIM - Precificador Digital" /><published>2016-04-25T00:00:00-03:00</published><updated>2016-04-25T16:00:00-03:00</updated><id>/tim-precificador-digital</id><content type="html" xml:base="/tim-precificador-digital">&lt;p&gt;&lt;img src=&quot;assets/img/conception/tim-precificador-digital.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Aplicativo criado com o intuito de substituir as plaquinhas de preço das lojas, que constantemente estão desatualizadas. 
-O App funciona junto a uma api que envia para os devices os preços atualizados no momento e o cliente da loja que possui o app está sempre atualizada.&lt;/p&gt;
-
-&lt;p&gt;Também atuei em duas frentes nesse projeto, API e APP.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;API&lt;/li&gt;
-  &lt;li&gt;APP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;api&quot;&gt;API&lt;/h3&gt;
-&lt;p&gt;Criada utilizando PHP com o framework CakePhp e para atualizar os apps, emitia uma carga de informação de acordo com a demanda do gerente de vendas da região.&lt;/p&gt;
-
-&lt;p&gt;Atuei em ajustes simples de conteúdo e versionamento de pacotes para atualização dos devices.&lt;/p&gt;
-
-&lt;h3 id=&quot;app&quot;&gt;APP&lt;/h3&gt;
-&lt;p&gt;Criado utilizando Java, tendo como funcionalidade básica a busca de informações de preço relativo ao device.&lt;/p&gt;
-
-&lt;p&gt;Ex.: ao abrir o app em um Motorola One, a promoção vigente referente ao aparelho seria mostrada.&lt;/p&gt;
-
-&lt;p&gt;Atuei em bugs e melhorias de layout do app, na maior parte das vezes bem simples como tamanho de fonte e posicionamento. Mas em um caso específico precisamos investigar e testar muito a fundo um problema relatado pelo cliente: Telas dos devices queimando pelo layout ser estático. Efeito Burn-In comum em androids devido a barra fixa de ação, botão voltar, home e lista de apps. No caso do nosso app como o layout era estático como a barra comentada, queimava a tela com a promoção do device. Não era legal mesmo.&lt;/p&gt;
-
-&lt;p&gt;ex.:
-&lt;img src=&quot;assets/img/conception/pd-tim-burn-in.png&quot; style=&quot;margin:20px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A solução para isso foi tornar o conteúdo da promoção móvel, assim como proteções de telas de televisões e computadores. 
-A equipe de criação e design criou um novo layout mantendo a tela sempre alterando os valores de cores dos pixels da tela.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;O desenho pode não estar 100% mas vai fazer sentido com a explicação abaixo rsrs&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;O app tinha um espaço para o conteúdo da promoção bater nos cantos. Dinamicamente ele traçava uma reta para cada próximo canto. Assim o conteúdo alternava a posição constantemente. Nunca batendo no mesmo ponto da tela.&lt;/p&gt;
-
-&lt;p&gt;Já o fundo precisavamos alternar as cores pra garantir que a tela mantivesse sua vida útil intacta. 
-Foi pensado 5 imagens usando um gradiente entre cores escuras e claras para sempre manter o pixel alternando o estado.&lt;/p&gt;
-
-&lt;p&gt;ex.: 
-&lt;img src=&quot;assets/img/conception/pd-tim-bg-example.png&quot; style=&quot;margin:20px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;O app alternava entre essas imagens e o fundo girava no próprio eixo, assim mantendo o pixel sempre trabalhando e evitando que o mesmo queimasse em uma cor específica marcando a tela.&lt;/p&gt;
-
-&lt;p&gt;Infelizmente pouco tempo após esses ajustes para a tela não queimar mais a tim descontinuou o projeto e não é mais utilizado.
-A Apple é uma loja que utiliza algo parecido.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="Android" /><category term="PHP" /></entry></feed>
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="HTML" /><category term="CSS" /><category term="GRUNT" /><category term="PHP" /></entry></feed>
