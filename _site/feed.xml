@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-06T02:25:45-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="http://localhost:4000/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>http://localhost:4000/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="http://localhost:4000/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-10T18:43:42-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[POC] - Swipe up component com Ionic</title><link href="http://localhost:4000/poc-swipeup-components-ionic3" rel="alternate" type="text/html" title="[POC] - Swipe up component com Ionic" /><published>2019-09-10T00:00:00-03:00</published><updated>2019-09-10T16:00:00-03:00</updated><id>http://localhost:4000/poc-swipeup-components-ionic3</id><content type="html" xml:base="http://localhost:4000/poc-swipeup-components-ionic3">&lt;p&gt;Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.&lt;/p&gt;
+
+&lt;p&gt;Porém fiquei curioso em saber se o Ionic seria capaz de fazer a mesma coisa.&lt;/p&gt;
+
+&lt;p&gt;Iniciando uma busca, encontrei muita coisa mas nada funcionou 100% até encontrar esse tutorial que mostra como fazer e de uma maneira tão simples que vou deixar a referência logo no início.
+&lt;a href=&quot;https://www.joshmorony.com/how-to-create-a-sliding-drawer-component-for-ionic-2/&quot; target=&quot;_blank&quot;&gt;Post referência&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;No post ele comenta um pouco sobre manipulação de DOM e como utilizar o &lt;a href=&quot;https://hammerjs.github.io/&quot;&gt;Hammer.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;No post original ele faz apenas o swipe, para abrir e fechar. Porém eu queria algumas coisa a mais.&lt;/p&gt;
+
+&lt;p&gt;Como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Abrir o componente clicando, mantendo o efeito&lt;/li&gt;
+  &lt;li&gt;Abrir o componente clicando em um botão fora do contexto do componente&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Brinde:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Listando as tarefas, vamos ao que precisei alterar.&lt;/p&gt;
+
+&lt;h4 id=&quot;abrir-o-componente-clicando-mantendo-o-efeito&quot;&gt;Abrir o componente clicando, mantendo o efeito&lt;/h4&gt;
+
+&lt;p&gt;Usando os eventos do Hammer.js apenas precisei incluir o &lt;code class=&quot;highlighter-rouge&quot;&gt;tap&lt;/code&gt; na lista de eventos para funcionar. Suave!&lt;/p&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;hammer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tap'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O método &lt;code class=&quot;highlighter-rouge&quot;&gt;open()&lt;/code&gt; utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:&lt;/p&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
+    &lt;span class=&quot;c1&quot;&gt;// Este metodo já existia no tutorial original, apenas isolei em um método para controlar 'por fora'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;domCtrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setElementStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nativeElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'transition'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'top 0.5s'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;renderer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setElementStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nativeElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'top'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleTop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'px'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Com isso consegui com um clique na tela abrir o componente com o mesmo efeito do swipe. TOP.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Próximo…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;abrir-o-componente-clicando-em-um-botão-fora-do-contexto-do-componente-com-parametros&quot;&gt;Abrir o componente clicando em um botão fora do contexto do componente, com parametros&lt;/h4&gt;
+
+&lt;p&gt;Aqui tinha um desafio maior, sem nada na doc, afinal, estava fora do contexto do Hammer.js para conseguir manipular.&lt;/p&gt;
+
+&lt;p&gt;Com isso precisei recorrer ao Events do angular para fazer essa comunicação entre componentes.&lt;/p&gt;
+
+&lt;p&gt;Código da page home, envia o evento para algum lugar do app que escute.&lt;/p&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;callDetails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;publish&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'open'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dados&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Dados via parametro&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Código do componente onde o listener fica esperando o evento para iniciar o método &lt;code class=&quot;highlighter-rouge&quot;&gt;open()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* outros controllers...*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'open'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;details&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dados&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// olha ele ai de novo. =D&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mais uma pra dentro.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;ajustar-o-css-para-ficar-parecido-com-o-componente-normalmente-usado-nos-apps-atuais&quot;&gt;Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais&lt;/h4&gt;
+
+&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.&lt;/p&gt;
+
+&lt;p&gt;Para o exemplo que eu estava trabalhando precisei alterar isso um pouco.&lt;/p&gt;
+
+&lt;p&gt;Exemplo do Josh:
+&lt;img src=&quot;assets/img/ionic-swipe-up/example-josh.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vamos aos ajustes que fiz. Pouca coisa mas já deu uma diferença e mostra o que podemos ajustar para ficar do gosto que precisamos.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;content-drawer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map-get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'primary'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;box-shadow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-4px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;22px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-8px&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map-get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'light'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    
+    &lt;span class=&quot;nc&quot;&gt;.linha&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;26px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;map-get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$colors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'light'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Resultado com os ajustes de css acima:
+&lt;img src=&quot;assets/img/ionic-swipe-up/result-leo.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Com isso encerro o exemplo com os ajustes necessários.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;brinde&quot;&gt;Brinde&lt;/h3&gt;
+
+&lt;p&gt;Esse exemplo publiquei no gh-pages de maneira bem automática. Como?&lt;/p&gt;
+
+&lt;p&gt;O github pages é um “server” que hospeda páginas estáticas, como esta que você está vendo.&lt;/p&gt;
+
+&lt;p&gt;Para publicar um app web ionic temos alguns truques.&lt;/p&gt;
+
+&lt;p&gt;Antes de qualquer truque precisamos instalar os packages para isso.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install angular-cli-ghpages &lt;span class=&quot;nt&quot;&gt;--save&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Após instalar basta colar esse código dentro de scripts para automatizar tudo. Build e deploy.&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;scripts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;gh-pages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ionic build --base-href 'https://leonardobenedeti.github.io/ionic3-swipe-up-component/' --prod &amp;amp;&amp;amp; npx ngh --dir=www/&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="http://localhost:4000/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>http://localhost:4000/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="http://localhost:4000/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
 
 &lt;p&gt;A título de curiosidade baixei um repo para entender mais sobre Flutter.&lt;/p&gt;
 
@@ -564,78 +701,4 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo&quot; target=&quot;_blank&quot;&gt;Apk Pure&lt;/a&gt; - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO&quot; target=&quot;_blank&quot;&gt;Behance - Eduardo Zilio&lt;/a&gt; - Aparentemente quem criou toda experiência e design do app&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Site Institucional - Conception</title><link href="http://localhost:4000/site-conception" rel="alternate" type="text/html" title="Site Institucional - Conception" /><published>2016-07-01T00:00:00-03:00</published><updated>2016-07-01T16:00:00-03:00</updated><id>http://localhost:4000/site-conception</id><content type="html" xml:base="http://localhost:4000/site-conception">&lt;p&gt;&lt;img src=&quot;assets/img/conception/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Site institucional da empresa Conception, destacando seus cases de sucesso e sempre com fotos de muita qualidade destacando o que foi feito, seja eventos, branding ou aplicativos.&lt;/p&gt;
-
-&lt;p&gt;O site foi criado utilizando HTML5, CSS3 e PHP em alguns casos, além disso para automatizar as tarefas de build, release, minificação de código e outros foi utilizado o GRUNT.&lt;/p&gt;
-
-&lt;p&gt;Quando cheguei na empresa o site já estava construído e eu era responsável por manter online, ajustar erros e incrementar novos cases.&lt;/p&gt;
-
-&lt;h2 id=&quot;cases&quot;&gt;Cases:&lt;/h2&gt;
-
-&lt;hr /&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-    &lt;img src=&quot;assets/img/conception/tim-convencao-nacional.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b text&quot;&gt;
-    &lt;h3&gt;CONVENÇÃO NACIONAL DE VENDAS 2016&lt;br /&gt;TIM&lt;/h3&gt;
-    &lt;span&gt;
-        Evento interno realizado para a área de vendas da TIM em 2016.&lt;br /&gt;
-        &lt;a href=&quot;http://conception.com.br/convencaotim2016.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
-    &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a text&quot;&gt;
-        &lt;h3&gt;LANÇAMENTO DA NOVA MARCA&lt;br /&gt;TIM&lt;/h3&gt;
-        &lt;span&gt;
-            O evento de lançamento da nova marca com o novo lema da TIM: evoluir é fazer diferente.&lt;br /&gt;
-            &lt;a href=&quot;http://conception.com.br/coletivatim2016.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b img&quot;&gt;
-        &lt;img src=&quot;assets/img/conception/tim-nova-marca.png&quot; alt=&quot;&quot; /&gt; 
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-        &lt;img src=&quot;assets/img/conception/jj-laf.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b text&quot;&gt;
-    &lt;h3&gt;LATIN AMERICAN FORUM 2015&lt;br /&gt;ETHICON | JOHNSON &amp;amp; JOHNSON&lt;/h3&gt;
-    &lt;span&gt;
-        O LAF é um evento promovido pela Ethicon que reúne cirurgiões de diferentes países em busca de procedimentos revolucionários e as melhores soluções médicas.&lt;br /&gt;
-        &lt;a href=&quot;http://conception.com.br/laf2015.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
-    &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a text&quot;&gt;
-        &lt;h3&gt;FUTURECOM 2015&lt;br /&gt;TIM&lt;/h3&gt;
-        &lt;span&gt;
-            Stand montado com presença de destaque na maior feira de telecomunicações e TI da América Latina.&lt;br /&gt;
-            &lt;a href=&quot;http://conception.com.br/futurecom2015.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
-        &lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b img&quot;&gt;
-        &lt;img src=&quot;assets/img/conception/tim-futurecom.png&quot; alt=&quot;&quot; /&gt; 
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-        &lt;img src=&quot;assets/img/conception/interfarma-branding.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b text&quot;&gt;
-    &lt;h3&gt;BRANDING&lt;br /&gt;INTERFARMA&lt;/h3&gt;
-    &lt;span&gt;
-        Construção de uma nova marca que reflita e mantenha a credibilidade depositada a Interfarma pelo seu público.&lt;br /&gt;
-        &lt;a href=&quot;http://conception.com.br/interfarma.html&quot; target=&quot;_blank&quot;&gt;Ver case&lt;/a&gt;
-    &lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="HTML" /><category term="CSS" /><category term="GRUNT" /><category term="PHP" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
