@@ -158,3 +158,5 @@ Após instalar basta colar esse código dentro de scripts para automatizar tudo.
 ```
 
 Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D
+
+<a href="https://leonardobenedeti.github.io/ionic3-swipe-up-component/">Link do projeto publicado rodando</a>
