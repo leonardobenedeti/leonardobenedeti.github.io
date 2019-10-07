@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-07T13:41:48-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-07T13:45:40-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
 
 &lt;p&gt;A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.&lt;/p&gt;
 
@@ -54,13 +54,13 @@
 
 &lt;p&gt;Para exemplificar o uso da plataforma criei um projeto e estou mantendo no meu github.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/heroku-mail-sender&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/heroku-mail-sender&quot; target=&quot;_blank&quot;&gt;
   Link do repo
 &lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ou você pode ‘deployar’ direto no heroku clicando abaixo&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender&quot; target=&quot;_blank&quot;&gt;
   &lt;img src=&quot;https://www.herokucdn.com/deploy/button.svg&quot; alt=&quot;Deploy&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 

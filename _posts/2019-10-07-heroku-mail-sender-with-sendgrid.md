@@ -60,13 +60,13 @@ Podemos perceber que a variável user ainda está sem preenchimento. Vamos agora
 
 Para exemplificar o uso da plataforma criei um projeto e estou mantendo no meu github. 
 
-<a href="https://github.com/leonardobenedeti/heroku-mail-sender">
+<a href="https://github.com/leonardobenedeti/heroku-mail-sender" target="_blank">
   Link do repo
 </a>
 
 Ou você pode 'deployar' direto no heroku clicando abaixo
 
-<a href="https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender">
+<a href="https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender" target="_blank">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
