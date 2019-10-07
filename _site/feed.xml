@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-10T18:46:05-03:00</updated><id>/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[POC] - Swipe up component com Ionic</title><link href="/poc-swipeup-components-ionic3" rel="alternate" type="text/html" title="[POC] - Swipe up component com Ionic" /><published>2019-09-10T00:00:00-03:00</published><updated>2019-09-10T16:00:00-03:00</updated><id>/poc-swipeup-components-ionic3</id><content type="html" xml:base="/poc-swipeup-components-ionic3">&lt;p&gt;Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-07T13:41:48-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
+
+&lt;p&gt;A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.&lt;/p&gt;
+
+&lt;p&gt;Abaixo vão dois links explicando melhor os detalhes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sendgrid.com/&quot; target=&quot;_blank&quot;&gt;Site oficial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://elements.heroku.com/addons/sendgrid&quot; target=&quot;_blank&quot;&gt;Link para o add-on dentro do heroku&lt;/a&gt;(recomendo vir por aqui)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Agora já conhecendo melhor a plataforma, vamos configurar tudo para criar nossos emails transacionais.&lt;/p&gt;
+
+&lt;p&gt;O primeiro passo é provisionar o add-on do Sendgrid dentro do Heroku.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/sendgrid/1.0-provision-heroku.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Com o add-on configurado essa é o dashboard da plataforma.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/sendgrid/2.0-dashboard.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dentro do dashboard precisamos realizar duas configurações básicas são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;1 - Criar uma api key no dashboard 
+&lt;br /&gt;&lt;a href=&quot;https://app.sendgrid.com/settings/api_keys&quot; target=&quot;_blank&quot;&gt;Settings &amp;gt; API KEY&lt;/a&gt;
+&lt;img src=&quot;assets/img/sendgrid/3.0-config-api-key.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2 - Configurar a api key como variável no heroku
+&lt;img src=&quot;assets/img/sendgrid/4.0-config-api-on-heroku.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Após as configurações básicas precisamos criar e testar um template ainda pelo dashboard&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Menu de templates
+&lt;img src=&quot;assets/img/sendgrid/5.0-menu-templates.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aqui basta criar o template como preferir, usando a interface de arrasta e solta ou usando HTML&lt;/p&gt;
+
+&lt;p&gt;Após criar o template precisamos testar e pra isso na própria plataforma temos um sandbox para enviar o email.
+&lt;img src=&quot;assets/img/sendgrid/6.0-preview-and-test-template.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ao enviar o email via sandbox, podemos conferir a caixa de entrada do email escolhido para receber o teste.
+&lt;img src=&quot;assets/img/sendgrid/7.0-first-test-by-preview.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos perceber que a variável user ainda está sem preenchimento. Vamos agora criar o backend para enviar o email de forma transacional.&lt;/p&gt;
+
+&lt;h3 id=&quot;nodejs&quot;&gt;NodeJs&lt;/h3&gt;
+
+&lt;p&gt;Para exemplificar o uso da plataforma criei um projeto e estou mantendo no meu github.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/heroku-mail-sender&quot;&gt;
+  Link do repo
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ou você pode ‘deployar’ direto no heroku clicando abaixo&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender&quot;&gt;
+  &lt;img src=&quot;https://www.herokucdn.com/deploy/button.svg&quot; alt=&quot;Deploy&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A base do código é o que busquei na doc oficial do Sendgrid para nodejs.&lt;/p&gt;
+
+&lt;p&gt;Import e configuração da API KEY que criamos anteriormente.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sgMail&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'@sendgrid/mail'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;sgMail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setApiKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SENDGRID_APIKEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Código base utilizando o template que criamos enviando todos os parametros no request.&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/sendmail/template&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;template_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;templateId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'d-ee4c43022cc74cec802e5398cb54a31f'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dynamic_template_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;template_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;sgMail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Email enviado com sucesso&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Algo de errado não está certo no envio de emails.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Com todo código configurado e rodando localmente vamos aos testes via postman.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/sendgrid/8.0-request-postman.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Após o teste, podemos perceber que o parametro de usuário foi preenchido de acordo com o request via postman.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/sendgrid/9.0-result-postman.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dai pra frente, precisamos criar um template customizado para cada caso e transacionar como preferir. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="heroku" /><category term="node.js" /><category term="sendgrid" /></entry><entry><title type="html">[POC] - Swipe up component com Ionic</title><link href="http://localhost:4000/poc-swipeup-components-ionic3" rel="alternate" type="text/html" title="[POC] - Swipe up component com Ionic" /><published>2019-09-10T00:00:00-03:00</published><updated>2019-09-10T16:00:00-03:00</updated><id>http://localhost:4000/poc-swipeup-components-ionic3</id><content type="html" xml:base="http://localhost:4000/poc-swipeup-components-ionic3">&lt;p&gt;Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.&lt;/p&gt;
 
 &lt;p&gt;Porém fiquei curioso em saber se o Ionic seria capaz de fazer a mesma coisa.&lt;/p&gt;
 
@@ -137,7 +235,7 @@
 
 &lt;p&gt;Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="http://localhost:4000/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>http://localhost:4000/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="http://localhost:4000/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
 
 &lt;p&gt;A título de curiosidade baixei um repo para entender mais sobre Flutter.&lt;/p&gt;
 
@@ -179,7 +277,7 @@
 
 &lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>/heroku-python-mysql</id><content type="html" xml:base="/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
 
 &lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
@@ -329,7 +427,7 @@ Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 &lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>/ionic-app-bier-prosit</id><content type="html" xml:base="/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -400,7 +498,7 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>/apps-ionic-bbmapfre</id><content type="html" xml:base="/apps-ionic-bbmapfre">&lt;blockquote&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="http://localhost:4000/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>http://localhost:4000/apps-ionic-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-ionic-bbmapfre">&lt;blockquote&gt;
   &lt;p&gt;Antes de começar a falar sobre este projeto, vale a pena relembrar o período que atuei apenas na sustentação dos aplicativos que foram migrados. &lt;a href=&quot;/apps-kony-bbmapfre&quot; target=&quot;_blank&quot;&gt;Confira aqui&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -543,7 +641,7 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>/poc-smart-app</id><content type="html" xml:base="/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="http://localhost:4000/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>http://localhost:4000/poc-smart-app</id><content type="html" xml:base="http://localhost:4000/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
 
 &lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
@@ -592,7 +690,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
   &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>/events-page-from-riosulvalley</id><content type="html" xml:base="/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
@@ -601,7 +699,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.&lt;/p&gt;
 
-&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry><entry><title type="html">Aplicativo Premier Pet</title><link href="/app-premier-pet" rel="alternate" type="text/html" title="Aplicativo Premier Pet" /><published>2017-10-26T00:00:00-02:00</published><updated>2017-10-26T17:00:00-02:00</updated><id>/app-premier-pet</id><content type="html" xml:base="/app-premier-pet">&lt;p&gt;&lt;img src=&quot;assets/img/vision/premier-pet.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry><entry><title type="html">Aplicativo Premier Pet</title><link href="http://localhost:4000/app-premier-pet" rel="alternate" type="text/html" title="Aplicativo Premier Pet" /><published>2017-10-26T00:00:00-02:00</published><updated>2017-10-26T17:00:00-02:00</updated><id>http://localhost:4000/app-premier-pet</id><content type="html" xml:base="http://localhost:4000/app-premier-pet">&lt;p&gt;&lt;img src=&quot;assets/img/vision/premier-pet.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Este projeto foi bem curto, levou 12h no total para resolver o problema inicial e alguns outros erros.&lt;/p&gt;
 
@@ -642,7 +740,7 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>/apps-kony-bbmapfre</id><content type="html" xml:base="/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="http://localhost:4000/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>http://localhost:4000/apps-kony-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Para explicar melhor este projeto/sustentação, preciso dividir em dois periódos de tempo. Quando cheguei em São Paulo, fui contratado pela Entelgy e depois de muita história migrei para a Everis, mas mantive o cliente e os projetos.&lt;/p&gt;
 
@@ -684,23 +782,4 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Corta cena… o projeto aconteceu, foi entregue no prazo e hoje a sustentação é baseada nesse novo app, que em breve escreverei sobre!&lt;/p&gt;
 
-&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Aplicativo LATAM CXO Forum Microsoft</title><link href="/app-latam-cxo-forum-microsoft" rel="alternate" type="text/html" title="Aplicativo LATAM CXO Forum Microsoft" /><published>2016-08-17T00:00:00-03:00</published><updated>2016-08-17T16:00:00-03:00</updated><id>/app-latam-cxo-forum-microsoft</id><content type="html" xml:base="/app-latam-cxo-forum-microsoft">&lt;p&gt;&lt;img src=&quot;assets/img/vision/latam-cxo.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Projeto feito em parceria com a Agência Doctor Web e Vision Comunicação, o app tem como meta informar o participante do evento os itens necessários para que o mesmo se guie durante os dias, transitando entre palestras, oficinas e uma aba social, onde você podia se conectar com outros participantes do evento gerando um networking amplo.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Atuações:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ajuste no fluxo de ações do módulo social, onde você se conecta com outros participantes, tal qual o app Tinder.&lt;/li&gt;
-  &lt;li&gt;Criação de um feed de tweets gerenciados por uma api criada pela empresa Vision Comunicação.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;O aplicativo foi desenvolvido nativamente com a linguagem Java e as consultas eram feitas em um server dentro do Azure(antes de se chamar oficialmente azure rsrs).&lt;/p&gt;
-
-&lt;p&gt;O aplicativo era publicado com o bundle base da Vision, atualmente ele não está mais online pela Vision.&lt;/p&gt;
-
-&lt;p&gt;Encontrei algumas referencias do app pelo titio Google:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://apkpure.com/ar/latam-cxo-government-forum/com.vision.cxo&quot; target=&quot;_blank&quot;&gt;Apk Pure&lt;/a&gt; - Aparentemente uma página que baixa os apks do GooglePlay - Não arrisquei baixar não rsrs&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.behance.net/gallery/65302281/Microsoft-Latam-CXO&quot; target=&quot;_blank&quot;&gt;Behance - Eduardo Zilio&lt;/a&gt; - Aparentemente quem criou toda experiência e design do app&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
+&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry></feed>
