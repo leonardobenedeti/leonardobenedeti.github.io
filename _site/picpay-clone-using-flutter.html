@@ -11,7 +11,7 @@
 
   <title>
     
-      Apps Ionic BB e MAPFRE &middot; Leonardo Benedeti
+      Clone do app PicPay usando Flutter &middot; Leonardo Benedeti
     
   </title>
 
@@ -374,11 +374,11 @@
 
     <main class="container">
       <header>
-  <h1 class="post-title">Apps Ionic BB e MAPFRE</h1>
+  <h1 class="post-title">Clone do app PicPay usando Flutter</h1>
 </header>
 <div class="content">
   <div class="post-meta">
-  <span class="post-date">01 Aug 2018</span>
+  <span class="post-date">28 Oct 2019</span>
   <span class="post-categories">
     
       &bull;
@@ -388,8 +388,8 @@
       
 
       
-        <a href="/everis">
-          Everis
+        <a href="/proprios">
+          Próprios / Freelas
         </a>
       
     
@@ -402,15 +402,9 @@
   Techs:
   
     
-    <a href="/tags#ionic">
+    <a href="/tags#flutter">
     
-      <span class="tag-name">ionic</span>
-    </a>
-  
-    
-    <a href="/tags#ios">
-    
-      <span class="tag-name">ios</span>
+      <span class="tag-name">flutter</span>
     </a>
   
     
@@ -420,197 +414,90 @@
     </a>
   
     
-    <a href="/tags#google-play">
+    <a href="/tags#ios">
     
-      <span class="tag-name">google play</span>
-    </a>
-  
-    
-    <a href="/tags#app-store">
-    
-      <span class="tag-name">app store</span>
-    </a>
-  
-    
-    <a href="/tags#devops">
-    
-      <span class="tag-name">devops</span>
-    </a>
-  
-    
-    <a href="/tags#jenkins">
-    
-      <span class="tag-name">jenkins</span>
-    </a>
-  
-    
-    <a href="/tags#azure-devops">
-    
-      <span class="tag-name">azure devops</span>
+      <span class="tag-name">ios</span>
     </a>
   
 </div>
 
   <div class="post-body">
-    <blockquote>
-  <p>Antes de começar a falar sobre este projeto, vale a pena relembrar o período que atuei apenas na sustentação dos aplicativos que foram migrados. <a href="/apps-kony-bbmapfre" target="_blank">Confira aqui</a></p>
-</blockquote>
+    <p>“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”</p>
 
-<p>Vamos separar o post em alguns tópicos para organizar:</p>
+<p>Sim. Em um dia, não tão belo como na música, decidi me aventurar e criar algo bacana usando Flutter.</p>
 
-<ol>
-  <li>Estudos sobre melhores tecnologias mobile</li>
-  <li>PoC com a tecnologia escolhida</li>
-  <li>Definição do projeto/estimativa</li>
-  <li>Início do projeto</li>
-  <li>Desenvolvimento</li>
-  <li>Entrega</li>
-</ol>
+<p>Participo de alguns grupos que fazem apps de exemplo, para mostrar arquiteturas e boas práticas, criando clones de apps já existentes.</p>
 
-<p>Vamos lá…</p>
+<p>Com essa ideia em mente procurei algum app que ainda não tivesse sido clonado e não vi nenhum clone do PicPay, o canivete suíço dos pagamentos.</p>
 
-<h3 id="1-estudos-sobre-melhores-tecnologias-mobile">1. Estudos sobre melhores tecnologias mobile</h3>
+<p>Uso muito o app no meu dia a dia e foi uma motivação maior ainda replicar um app tão bom, que imagino que seja nativo, utilizando o Flutter.</p>
 
-<p>Ainda durante a sustentação, atuando pela Entelgy, fizemos um estudo sobre as tecnologias mobile que estavam em alta no momento.
-Esse estudo veio acompanhado com uma estimativa comparando entre: Kony(atual), Ionic, React Native e Nativas.
-Comparamos os seguintes pontos: Curva de aprendizado, velocidade de desenvolvimento, performance e custo.</p>
-
-<p>Com esses pontos na mesa, após alguns dias de papo entre todos que prestavam serviço, chegamos a conclusão que Ionic seria a melhor opção dado o cenário atual do Grupo Segurador.</p>
-
-<p>Corta a cena vamos para o próximo item.</p>
-
-<h3 id="2-poc-com-a-tecnologia-escolhida">2. PoC com a tecnologia escolhida</h3>
-
-<p>Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migraríamos os apps para o Ionic.
-Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o tempo livre para replicar a home do app principal dos apps em ionic para mensurar o tempo que precisariam para a migração.</p>
-
-<p>Com isso fizemos em duas maneiras.</p>
-
+<p>Como ponto de partida, tirei um print do meu celular e decidi recriar apenas a home do app, que mostra:</p>
 <ul>
-  <li>Layout exatamente igual ao app atual também com ionic</li>
-  <li>Layout aos moldes do ionic com poucos ajustes</li>
+  <li>Saldo</li>
+  <li>Lista de pessoas</li>
+  <li>Tabs de transações, minhas e das pessoas que sigo</li>
+  <li>A lista referente as tabs</li>
 </ul>
 
-<p>Com isso vamos aos prints</p>
+<p>Print do app original. 
+<img src="assets/img/picpay/original.png" alt="" /></p>
 
-<h4 id="original---prints-do-app-em-produção">Original - Prints do app em produção</h4>
-<p><img src="assets/img/everis/bbmapfre-unificacao/0-app-kony.png" alt="" /></p>
+<p>Seguindo para o desenvolvimento.</p>
 
-<h4 id="ionic-idêntico---muitos-ajustes-para-o-layout-ficar-idêntico-ao-app-de-produção">Ionic Idêntico - Muitos ajustes para o layout ficar idêntico ao app de produção</h4>
+<p>Iniciei o projeto em um horário vago no período de trabalho, mas só consegui dar continuidade a noite em casa, devido a tarefas do trabalho.</p>
+
+<p>Seguindo assim, podemos analisar os ajustes a cada commit que fiz. Os detalhes dos commits vocês podem ver no repo. =D</p>
+
+<p>Primeiro ajuste: Apenas ajustes no app que o flutter te entrega pronto, inclusão de cores e ícones na title bar.
+<img src="assets/img/picpay/commits/1.png" alt="" /></p>
+
+<p>Segundo ajuste: Aqui tivemos uma mudança mais considerável, ajustei o header para sliver e customizei o title para fazer o ‘Meu Saldo’ e já adicionei os containers para os próximos ajustes.
+<img src="assets/img/picpay/commits/2.png" alt="" /></p>
+
+<p>Terceiro ajuste: Aqui iniciei a criação das listas de atividades e dos cards. Dei uma boeira na cor da tab também. era pra alterar a cor do indicator apenas mas alterei do container. #mybad
+<img src="assets/img/picpay/commits/3.png" alt="" /></p>
+
+<p>Quarto Ajuste: Cores devidamente ajustadas e card construido.
+<img src="assets/img/picpay/commits/4.png" alt="" /></p>
+
+<p>Quinto ajuste: Inclusão da lista de sugestões de contato para efetuar um pagamento.
+<img src="assets/img/picpay/commits/5.png" alt="" /></p>
+
+<p>Sexto ajuste: Inclusão de mais itens na lista e inclusão de icones printados do app original
+<img src="assets/img/picpay/commits/6.png" alt="" /></p>
+
+<p>Sétimo ajuste: Remover a necessidade da safe area na parte de baixo do layout. 
+<img src="assets/img/picpay/commits/7.png" alt="" /></p>
+
+<p>E para comparar com o layout original vamos com uma imagem lado a lado.</p>
 <div class="grid">
     <div class="a img">
-        <img src="assets/img/everis/bbmapfre-unificacao/1.0-home-identico-ionic.png" alt="" />
+        <img src="assets/img/picpay/original.png" alt="" />
     </div>
     <div class="b img">
-        <img src="assets/img/everis/bbmapfre-unificacao/1.1-menu-identico-ionic.png" alt="" />
+        <img src="assets/img/picpay/clone.png" alt="" />
     </div>
 </div>
 
-<blockquote>
-  <p>Porque criamos este exatamente igual: No início do projeto foi dito que seria apenas uma troca de tecnologia sem alterar nada de regra de negócio nem layout. Dai fizemos exatamente igual para respeitar essa decisão.</p>
-</blockquote>
+<p>Vale ressaltar. Criei aqui apenas a UI da home do PicPay, não me importei com algumas coisas, como arquitetura, boas práticas, BLoC e affins…</p>
 
-<h4 id="ionic-way---layout-básico-sem-muitos-ajustes">Ionic Way - Layout básico sem muitos ajustes</h4>
-<div class="grid">
-    <div class="a img">
-        <img src="assets/img/everis/bbmapfre-unificacao/2.0-home-ajustes-pequenos-ionic.png" alt="" />
-    </div>
-    <div class="b img">
-        <img src="assets/img/everis/bbmapfre-unificacao/2.1-menu-ajustes-pequenos-ionic.png" alt="" />
-    </div>
-</div>
+<p>Queria deixar a UI mais próxima possível do app original para me testar neste quesito.</p>
 
-<blockquote>
-  <p>Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o Ionic podia oferecer e mostramos as vantagens.</p>
-</blockquote>
+<p>Quando tiver um pouco mais de tempo, pretendo plugar uma consulta a algum backend, que provavelmente eu vou criar também, e ai sim, plugar tudo que tiver de boas práticas, loadings e tudo mais pra deixar o app dinâmico.</p>
 
-<p>A PoC foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs</p>
+<p>E pra quem não conhece o PicPay, da uma olhada ai que vale a pena usar.</p>
 
-<h3 id="3-definição-do-projetoestimativa">3. Definição do projeto/estimativa</h3>
+<p>Aqui vai um convite pra você: <a href="http://www.picpay.com/convite?@331X" target="_blank">http://www.picpay.com/convite?@331X</a></p>
 
-<p>Com o cenário posto, com PoC e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.</p>
-
-<p>Porém como nada pode estar tão perfeito, veio a surpresa que comentei acima. O app mudaria o escopo, como?</p>
-
-<h4 id="de">De:</h4>
-<p>4 apps Kony:</p>
-<ul>
-  <li>MAPFRE Seguros ( institucional )</li>
-  <li>BB Seguros ( institucional )</li>
-  <li>MAPFRE Auto ( auto )</li>
-  <li>BB Seguro Auto ( auto )</li>
-</ul>
-
-<p>Sim, existia um app apenas para o conteúdo institucional da empresa e outro para as ações transacionais referentes ao segmento auto.
-E o projeto inicial seria manter esse escopo, porém com a tecnologia Ionic.</p>
-
-<h4 id="para">Para:</h4>
-<p>2 apps Ionic:</p>
-<ul>
-  <li>MAPFRE Seguros</li>
-  <li>BB Seguros</li>
-</ul>
-
-<p>Mantivemos o nome do app institucional por ser mais abrangente e unificamos o conteúdo dos apps para facilitar a vida do usuário.
-e agora com a unificação não fazia mais sentido manter a mesma UX do app, com isso foi preciso um trabalho massivo da equipe de UI/UX da everis para conseguir criar um app com todo conteúdo e ainda sim fazer sentido.</p>
-
-<h4 id="novo-layout">Novo layout</h4>
-<p>Prints de produção, não achei as especificações rsrs
-<img src="assets/img/everis/bbmapfre-unificacao/novo-layout.png" alt="" /></p>
-
-<h3 id="4-início-do-projeto">4. Início do projeto</h3>
-
-<p>Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisávamos replanejar ou assumir que caberia nos 3 meses que já havíamos passado para o cliente.</p>
-
-<p>Aceitamos o desafio e topamos manter os 3 meses, visto que o novo layout melhoraria a usabilidade e com isso removeria algumas telas desnecessárias.</p>
-
-<h3 id="5-desenvolvimento">5. Desenvolvimento</h3>
-
-<p>Apesar de a estimativa ter sido feita como escopo fechado, controlamos o desenvolvimento com métodos ágeis e tivemos poucos problemas em relação a isso.</p>
-
-<p>O desenvolvimento teve poucos problemas na parte do ionic. Não acho tão relevante falar das outras frentes que tiveram. rsrs</p>
-
-<p>Pontos interessantes que podemos citar sobre o desenvolvimento são:</p>
-<ul>
-  <li>Criamos cerca de 95+ telas, algumas sendo reutilizadas como componentes;</li>
-  <li>Criamos um fluxo de telas para o usuário voltar onde parou, mesmo após a morte do app, depois de um tempo em segundo plano;</li>
-  <li>Criamos um plugin específico para o projeto que não existia na doc do ionic. Plugin para enviar o ticket carteirinha para a Apple Wallet <a href="https://github.com/everis-br/cordova-apple-wallet-tickets" target="_blank">Repo</a></li>
-  <li>Usamos o plugin do maps para mostrar o guincho solicitado chegando em tempo real</li>
-  <li>e muito mais …</li>
-</ul>
-
-<p>Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada <code class="highlighter-rouge">Lazy Loading</code>. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
-Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.</p>
-
-<p>Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
-O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.</p>
-
-<p>A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o <code class="highlighter-rouge">apk</code> e <code class="highlighter-rouge">ipa</code> em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passávamos o link para a equipe de homologação do cliente.</p>
-
-<p>Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.</p>
-
-<h3 id="6-entrega">6. Entrega</h3>
-
-<p>O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido, mas sim o app PUBLICADO nas lojas. =D</p>
-
-<h3 id="resumo">Resumo</h3>
-
-<p>Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D</p>
+<p>O código completo do app você pode conferir no meu repositório com todos os detalhes.<br />
+<a href="https://github.com/leonardobenedeti/picpay_clone_flutter" target="_blank">https://github.com/leonardobenedeti/picpay_clone_flutter</a></p>
 
   </div>
 
   <section class="related">
   <h2>Related Posts</h2>
   <ul class="posts-list">
-    
-      <li>
-        <h3>
-          <a href="/picpay-clone-using-flutter">
-            Clone do app PicPay usando Flutter
-            <small>28 Oct 2019</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -626,6 +513,15 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
           <a href="/poc-swipeup-components-ionic3">
             [POC] - Swipe up component com Ionic
             <small>10 Sep 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/flutter-twitter-ui-clone-ug-fix">
+            [Github PR] - Twitter UI Clone Bug fix
+            <small>06 Sep 2019</small>
           </a>
         </h3>
       </li>

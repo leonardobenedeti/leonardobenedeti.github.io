@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-07T13:45:40-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-28T15:46:48-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
+
+&lt;p&gt;Sim. Em um dia, não tão belo como na música, decidi me aventurar e criar algo bacana usando Flutter.&lt;/p&gt;
+
+&lt;p&gt;Participo de alguns grupos que fazem apps de exemplo, para mostrar arquiteturas e boas práticas, criando clones de apps já existentes.&lt;/p&gt;
+
+&lt;p&gt;Com essa ideia em mente procurei algum app que ainda não tivesse sido clonado e não vi nenhum clone do PicPay, o canivete suíço dos pagamentos.&lt;/p&gt;
+
+&lt;p&gt;Uso muito o app no meu dia a dia e foi uma motivação maior ainda replicar um app tão bom, que imagino que seja nativo, utilizando o Flutter.&lt;/p&gt;
+
+&lt;p&gt;Como ponto de partida, tirei um print do meu celular e decidi recriar apenas a home do app, que mostra:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Saldo&lt;/li&gt;
+  &lt;li&gt;Lista de pessoas&lt;/li&gt;
+  &lt;li&gt;Tabs de transações, minhas e das pessoas que sigo&lt;/li&gt;
+  &lt;li&gt;A lista referente as tabs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Print do app original. 
+&lt;img src=&quot;assets/img/picpay/original.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seguindo para o desenvolvimento.&lt;/p&gt;
+
+&lt;p&gt;Iniciei o projeto em um horário vago no período de trabalho, mas só consegui dar continuidade a noite em casa, devido a tarefas do trabalho.&lt;/p&gt;
+
+&lt;p&gt;Seguindo assim, podemos analisar os ajustes a cada commit que fiz. Os detalhes dos commits vocês podem ver no repo. =D&lt;/p&gt;
+
+&lt;p&gt;Primeiro ajuste: Apenas ajustes no app que o flutter te entrega pronto, inclusão de cores e ícones na title bar.
+&lt;img src=&quot;assets/img/picpay/commits/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Segundo ajuste: Aqui tivemos uma mudança mais considerável, ajustei o header para sliver e customizei o title para fazer o ‘Meu Saldo’ e já adicionei os containers para os próximos ajustes.
+&lt;img src=&quot;assets/img/picpay/commits/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Terceiro ajuste: Aqui iniciei a criação das listas de atividades e dos cards. Dei uma boeira na cor da tab também. era pra alterar a cor do indicator apenas mas alterei do container. #mybad
+&lt;img src=&quot;assets/img/picpay/commits/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Quarto Ajuste: Cores devidamente ajustadas e card construido.
+&lt;img src=&quot;assets/img/picpay/commits/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Quinto ajuste: Inclusão da lista de sugestões de contato para efetuar um pagamento.
+&lt;img src=&quot;assets/img/picpay/commits/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sexto ajuste: Inclusão de mais itens na lista e inclusão de icones printados do app original
+&lt;img src=&quot;assets/img/picpay/commits/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sétimo ajuste: Remover a necessidade da safe area na parte de baixo do layout. 
+&lt;img src=&quot;assets/img/picpay/commits/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;E para comparar com o layout original vamos com uma imagem lado a lado.&lt;/p&gt;
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/picpay/original.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;
+        &lt;img src=&quot;assets/img/picpay/clone.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Vale ressaltar. Criei aqui apenas a UI da home do PicPay, não me importei com algumas coisas, como arquitetura, boas práticas, BLoC e affins…&lt;/p&gt;
+
+&lt;p&gt;Queria deixar a UI mais próxima possível do app original para me testar neste quesito.&lt;/p&gt;
+
+&lt;p&gt;Quando tiver um pouco mais de tempo, pretendo plugar uma consulta a algum backend, que provavelmente eu vou criar também, e ai sim, plugar tudo que tiver de boas práticas, loadings e tudo mais pra deixar o app dinâmico.&lt;/p&gt;
+
+&lt;p&gt;E pra quem não conhece o PicPay, da uma olhada ai que vale a pena usar.&lt;/p&gt;
+
+&lt;p&gt;Aqui vai um convite pra você: &lt;a href=&quot;http://www.picpay.com/convite?@331X&quot; target=&quot;_blank&quot;&gt;http://www.picpay.com/convite?@331X&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;O código completo do app você pode conferir no meu repositório com todos os detalhes.&lt;br /&gt;
+&lt;a href=&quot;https://github.com/leonardobenedeti/picpay_clone_flutter&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/picpay_clone_flutter&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /></entry><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
 
 &lt;p&gt;A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.&lt;/p&gt;
 
@@ -740,46 +809,4 @@ Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram e
 
 &lt;p&gt;Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry><entry><title type="html">Apps Kony BB e MAPFRE</title><link href="http://localhost:4000/apps-kony-bbmapfre" rel="alternate" type="text/html" title="Apps Kony BB e MAPFRE" /><published>2016-09-08T00:00:00-03:00</published><updated>2016-09-08T16:00:00-03:00</updated><id>http://localhost:4000/apps-kony-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-kony-bbmapfre">&lt;p&gt;&lt;img src=&quot;assets/img/entelgybr/sustain-kony.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Para explicar melhor este projeto/sustentação, preciso dividir em dois periódos de tempo. Quando cheguei em São Paulo, fui contratado pela Entelgy e depois de muita história migrei para a Everis, mas mantive o cliente e os projetos.&lt;/p&gt;
-
-&lt;p&gt;Explicando com um Diagrama de Venn ficaria mais ou menos assim
-&lt;img src=&quot;assets/img/entelgybr/venn-diagram.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;período-entelgy---092016&quot;&gt;Período Entelgy - 09/2016&lt;/h4&gt;
-
-&lt;p&gt;Ao chegar no cliente e encontrar uma plataforma desconhecida, o Kony, foi um grande impacto, mas como a linguagem básica dessa plataforma era &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt; puro, consegui aprender as nuances bem rápido e em pouco tempo passei a resolver alguns problemas básicos.&lt;/p&gt;
-
-&lt;p&gt;Com pouco tempo apenas sustentando o aplicativo, iniciamos alguns projetos e eu fiquei com um desafio bem complexo: Ser o frente nas atuações de sustentação e no tempo livre atuar no projeto pra ajudar a equipe.&lt;/p&gt;
-
-&lt;p&gt;Criamos funcionalidades bem expressivas como uma funcionalidade que mostra o guincho chegando até o local de assistência, solicitada pelo usuário do app, tal qual o Uber faz em suas viagens.&lt;/p&gt;
-
-&lt;p&gt;Além da frente técnica, tivemos muitos insights do mundo Ágil e corporativo. Ambas frentes, sustentação e projetos, eram controladas com metodologias ágeis e com isso aprendemos muito como tocar um projeto dentro de uma empresa bem engessada de forma rápida e com resultados bem expressivos.&lt;/p&gt;
-
-&lt;p&gt;Corta cena… a Entelgy perde o contrato dos projetos por conta da separação do Grupo Segurador.&lt;/p&gt;
-
-&lt;h4 id=&quot;período-de-limbo&quot;&gt;Período de Limbo.&lt;/h4&gt;
-&lt;p&gt;Por conta do fim do contrato entre o Grupo e Entelgy, os colaboradores da Entelgy ficaram sem projeto e atuando em POCs e projetos pequenos na sede da empresa.&lt;/p&gt;
-
-&lt;p&gt;No meu caso, encontrei um amigo, em um treino de Jiu Jitsu, que comentou sobre uma oportunidade para retornar ao ainda Grupo para o mesmo projeto que atuava antes.&lt;/p&gt;
-
-&lt;p&gt;Corta cena e estou voltando ao Grupo pela empresa Everis.&lt;/p&gt;
-
-&lt;h4 id=&quot;período-everis---032018&quot;&gt;Período Everis - 03/2018&lt;/h4&gt;
-
-&lt;p&gt;Neste período, mantive as atividades citadas no período Entelgy, porém tinha um pouco mais de responsabilidade, na Entelgy era Dev Sr e cheguei na Everis como Especialista, com o papel de liderança técnica.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Uma curiosidade sobre o início deste período: Assim que cheguei e estava sendo apresentado, um desenvolvedor pediu as contas, sendo que outros dois já tinham feito isso antes. No caso esses 3 devs compunham a equipe. Nesse momento fiquei sozinho até conseguir recompor a equipe. Suave. rsrsrsrs&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Após um pequeno período sustentando o app sozinho, a equipe foi recomposta com um ex-Grupo que já conhecia Kony e outro que nunca ouviu falar. Até ai tudo certo.&lt;/p&gt;
-
-&lt;p&gt;Tendo um time um pouco mais multidiciplinar, começamos a ajudar em outras frentes dentro do Grupo como Angular, APIs Java e outros.&lt;/p&gt;
-
-&lt;p&gt;Pouco depois iniciamos estimativas e estudos de uma possível migração dos Apps atuais para o framework Ionic.&lt;/p&gt;
-
-&lt;p&gt;Corta cena… o projeto aconteceu, foi entregue no prazo e hoje a sustentação é baseada nesse novo app, que em breve escreverei sobre!&lt;/p&gt;
-
-&lt;p&gt;Atualmente não atuo mais no, já não mais, Grupo. Estou atuando em outros projetos dentro da Everis com o foco mobile.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="kony" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat&quot; target=&quot;_blank&quot;&gt;https://stackoverflow….e-in-the-android-applicat&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="android" /><category term="google play" /></entry></feed>
