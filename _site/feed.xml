@@ -1,8 +1,152 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-17T22:18:03-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#0 Meta Minha - A Saga</title><link href="http://localhost:4000/meta-minha-a-saga" rel="alternate" type="text/html" title="#0 Meta Minha - A Saga" /><published>2020-02-17T00:00:00-03:00</published><updated>2020-02-17T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-saga</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-saga">&lt;p&gt;Pensei outro dia: Como posso provar o que conheço em todas as áreas mais básicas para criação de um app?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-18T19:06:04-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#2 Meta Minha - Design</title><link href="http://localhost:4000/meta-minha-design" rel="alternate" type="text/html" title="#2 Meta Minha - Design" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-design</id><content type="html" xml:base="http://localhost:4000/meta-minha-design">&lt;p&gt;Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.&lt;/p&gt;
 
-&lt;p&gt;Dai veio a ideia maluca na mente: Criar um app simples, passando por todos os processos: Ágil(organizando tudo), UX(conheço o básico), Devops(já fiz umas mágicas por aqui), Desenvolvimento(minha praia) e por fim a Publicação.&lt;/p&gt;
+&lt;p&gt;Vou estruturar a escrita para fazer sentido, pois fui criando meio sem ter noção de como fazer componentes e coisas assim.&lt;/p&gt;
 
-&lt;p&gt;Pois bem, pra iniciar bem 2020 por aqui, vou criar uma serie de posts com todas as áreas separadas. Não sei bem quantos posts vou criar nesta serie, mas conteúdo de como pensar, desenhar, planejar, preparar, desenvolver e publicar um app, vai estar tendo sim. =D&lt;/p&gt;
+&lt;p&gt;Vou mostrar primeiro os componentes que criei e como estou utilizando no protótipo.&lt;/p&gt;
+
+&lt;h3 id=&quot;componentes&quot;&gt;Componentes&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/2-componentes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Explicando no geral, quis deixar a ideia mais estruturada possível, para quando for escrever o código, já ter noção de todos os estados de componentes, como botões, toggles e listas.&lt;/p&gt;
+
+&lt;p&gt;Vou explicar alguns apenas, para estender tanto o post sobre design, até para não me perder na explicação. rsrs&lt;/p&gt;
+
+&lt;h3 id=&quot;botões---primaryclear&quot;&gt;Botões - Primary/Clear&lt;/h3&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/3-componente-botao-primary.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/3.2-componente-botao-clear.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Primary&lt;/strong&gt; - Este botão é responsável por ações principais no app, ações que faria o usuário percorrer todo o app baseado no que desenhei como fluxo feliz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clear&lt;/strong&gt; - Este botão é responsável por ações secundárias do app, ações como Skip do login e sair da aplicação, não são coisas que quero chamar atenção do usuário. Portanto utilizei este estado do botão.&lt;/p&gt;
+
+&lt;h3 id=&quot;toggle---ativadodesativado&quot;&gt;Toggle - Ativado/Desativado&lt;/h3&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/4-componente-toggle-ativado.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/4.1-componente-toggle-desativado.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Aqui não temos mistério, um toggle para ativar ou desativar algo, portanto temos os dois estados para o componente.&lt;/p&gt;
+
+&lt;h3 id=&quot;item-detalhe-meta---não-executadoexecutadoremover&quot;&gt;Item detalhe meta - Não Executado/Executado/Remover&lt;/h3&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/5-componente-item-detalhe-meta.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/5.1-componente-item-detalhe-meta-selecionado.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/5.2-componente-item-detalhe-meta-remover.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Os estados aqui são 3 e controlam mais que um estado, controla também um comportamento. Além de selecionado e não selecionado também criei o estado para mostrar como seria caso o usuário quisesse remover o item.&lt;/p&gt;
+
+&lt;p&gt;Bom… chega de componentes, para não estender tanto o post.&lt;/p&gt;
+
+&lt;h3 id=&quot;protótipo&quot;&gt;Protótipo&lt;/h3&gt;
+
+&lt;p&gt;Tentei seguir o máximo do desenho mas alterei algumas coisas e incluí outras que não desenhei por ser bem padrão como o Onboarding do app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/6-prototipo-final.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Disclaimer: Não fiz nenhum curso nem nada relacionado ao assunto, portanto não me julguem rsrs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Com o protótipo montado precisei ver com um pouco mais de vida antes de validar alguns pontos para partir para o desenvolvimento.&lt;/p&gt;
+
+&lt;p&gt;Vamos então para a navegação deste protótipo. Até então temos um protótipo estático. Vamos dar vida a ele.&lt;/p&gt;
+
+&lt;h3 id=&quot;protótipo-navegável&quot;&gt;Protótipo navegável&lt;/h3&gt;
+
+&lt;p&gt;Linkei todo cenário possível que enxerguei para os casos de uso que imaginei no app. Vendo de cima fica um emaranhado de links impossível de entender.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/6.1-prototipo-navegavel.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/fluxo.gif&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b text&quot;&gt;
+        Para facilitar o entendimento do fluxo do app e não precisar explicar um a um com prints aqui, fiz o seguinte: Gravei a navegação e na sequência segue o gif do fluxo completo. 
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Caso queira validar o protótipo com a visão de desenvolvedor e com mais detalhes clique no link abaixo.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://xd.adobe.com/view/06b9671d-61a3-4f79-4e44-78921d4c12e3-7088/&quot; target=&quot;_blank&quot;&gt;https://xd.adobe.com/view/06b9671d-61a3-4f79-4e44-78921d4c12e3-7088/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Caso tenha algum problema para acessar, provavelmente estou usando o link para outro projeto. Mas assim que receber a mensagem retorno para o link.&lt;/p&gt;
+
+&lt;p&gt;Infelizmente não tenho a versão paga do Adobe XD. #AdobePagaNois rsrs&lt;/p&gt;
+
+&lt;p&gt;Próximo post: Organização e priorização…&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#1 Meta Minha - A Ideia</title><link href="http://localhost:4000/meta-minha-a-ideia" rel="alternate" type="text/html" title="#1 Meta Minha - A Ideia" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-ideia</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-ideia">&lt;p&gt;Vamos ao primeiro post da série Meta Minha - A Saga, explicando um pouco da Ideia e porque ela surgiu.&lt;/p&gt;
+
+&lt;p&gt;Atualmente trabalho em uma consultoria que presta serviços para mega clientes e com isso os terceirizados, normalmente, não tem tanta liberdade para opinar no produto, mesmo que seja uma ideia para melhorar.&lt;/p&gt;
+
+&lt;p&gt;Além desse contexto acima, sobre a minha posição atual, é bom comentar um pouco sobre o meu perfil.&lt;/p&gt;
+
+&lt;p&gt;Eu sou muito criativo e gosto de tentar soluções que ainda não foram tentadas. Onde todo mundo normalmente segue uma linha, muitas vezes DITADA por um gerente ou cliente, eu sempre questiono para saber se esse é o melhor caminho, sempre sugerindo novas ideias para tentar melhorar o processo, mas nem sempre tenho voz.&lt;/p&gt;
+
+&lt;p&gt;Então tive a tal da ideia que comentei acima, vou criar um app completo, do zero, passando por todos os passos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;WOW&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pensando assim parece ser uma ideia maluca mesmo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Como alguém que vive fazendo horas extras e tem suas obrigações em casa, conseguiria tal feito? Criar um app do zero até a publicação, documentando todo processo?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;É, nem eu sei ao certo a resposta, mas tive uma certeza que precisava criar isso para mostrar o meu potencial e provar para mim mesmo que consigo tal feito.&lt;/p&gt;
+
+&lt;p&gt;Bom. Esse foi o motivo. Mas e a ideia em si?&lt;/p&gt;
+
+&lt;p&gt;Vamos ao contexto do que pensei…&lt;/p&gt;
+
+&lt;p&gt;Em um dia, saindo de um cliente na Faria Lima, decidi sentar em um café e &lt;strong&gt;pensar no papel&lt;/strong&gt; alguma coisa e daí nasceu.&lt;/p&gt;
+
+&lt;p&gt;Um app de Metas para controlar o meu momento atual. Vamos ao desenho.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/1-desenho-ideia.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;No desenho temos:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Uma tela que abriga todas as suas metas com um marcador de progresso mostrando o quanto você já fez para atingir a meta.&lt;/li&gt;
+  &lt;li&gt;No detalhe de cada meta, temos os itens para atingi-la&lt;/li&gt;
+  &lt;li&gt;Em ambas telas desenhei também o comportamento do AppBar retraído e expandido&lt;/li&gt;
+  &lt;li&gt;Também na sequência percebi que um login para isso tudo seria interessante.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Então até aqui temos um papel desenhado e algumas ideias fervilhando, mas não adianta ter apenas uma ideia no papel e sair desenvolvendo.&lt;/p&gt;
+
+&lt;p&gt;Com a ideia posta, pensei em como otimizar meu tempo e daí, no próximo post, vou mostrar alguns detalhes de como vou desenhar toda a ideia usando o app Adobe XD.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design da ideia&lt;/strong&gt; - &lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#0 Meta Minha - A Saga</title><link href="http://localhost:4000/meta-minha-a-saga" rel="alternate" type="text/html" title="#0 Meta Minha - A Saga" /><published>2020-02-17T00:00:00-03:00</published><updated>2020-02-17T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-saga</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-saga">&lt;p&gt;Pensei outro dia: Como posso provar o que conheço em todas as áreas mais básicas para criação de um app?&lt;/p&gt;
+
+&lt;p&gt;Daí veio a ideia maluca na mente: Criar um app simples, passando por todos os processos: Ágil(organizando tudo), UX(conheço o básico), Devops(já fiz umas mágicas por aqui), Desenvolvimento(minha praia) e por fim a Publicação.&lt;/p&gt;
+
+&lt;p&gt;Pois bem, pra iniciar bem 2020 por aqui, vou criar uma série de posts com todas as áreas separadas. Não sei bem quantos posts vou criar nesta saga, mas conteúdo de como pensar, desenhar, planejar, preparar, desenvolver e publicar um app, vai estar tendo sim. =D&lt;/p&gt;
 
 &lt;p&gt;Pois bem, vamos iniciar organizando a bagunça toda pra fazer sentido.&lt;/p&gt;
 
@@ -11,7 +155,7 @@
   &lt;li&gt;&lt;strong&gt;Ideia&lt;/strong&gt; - Mostrar de onde e como surgiu(sim a ideia já existe)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Design da ideia&lt;/strong&gt; - Baseado no primeiro item, vou mostrar detalhes de como vou desenhar todo o projeto ( dev pagando de ux rsrs )&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Organização e priorização&lt;/strong&gt; - Organizar toda ideia, com o que aprendi com esse tal de Ágil&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Praparação do ambiente&lt;/strong&gt; - Este item vai ser uma espécie de sprint-zero do projeto, vou criar toda base e configurações que preciso&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Preparação do ambiente&lt;/strong&gt; - Este item vai ser uma espécie de sprint-zero do projeto, vou criar toda base e configurações que preciso&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt; - Precisei destacar este item por se mostrar muito maior do que o imaginado&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Desenvolvimento&lt;/strong&gt; - Utilizando a organização pensada no post de organização com ágil, vamos sprint a sprint entregando o planejado&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Publicação MVP&lt;/strong&gt; - Após todo desenvolvimento, vou mostrar todo processo de publicação nas lojas Android e iOS.&lt;/li&gt;
@@ -21,14 +165,8 @@
 
 &lt;p&gt;A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D&lt;/p&gt;
 
-&lt;!-- **Ideia**
-
-&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;#1 - Ideia &lt;/a&gt;
-
-
-**Design da ideia**
-
-&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;#2 - Design - Do rabisco ao Adobe XD&lt;/a&gt; --&gt;
+&lt;p&gt;&lt;strong&gt;Ideia&lt;/strong&gt; - &lt;a href=&quot;/meta-minha-a-ideia&quot; target=&quot;_blank&quot;&gt;#1 - A Ideia &lt;/a&gt; &lt;br /&gt;
+&lt;strong&gt;Design da ideia&lt;/strong&gt; - &lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Aguardem..
 &lt;img src=&quot;https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy-downsized.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
@@ -743,62 +881,4 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="http://localhost:4000/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>http://localhost:4000/poc-smart-app</id><content type="html" xml:base="http://localhost:4000/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
-
-&lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
-
-&lt;p&gt;Vamos separar em tópicos para explicar a POC.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conceito de smart apps&lt;/li&gt;
-  &lt;li&gt;Necessidade e contexto&lt;/li&gt;
-  &lt;li&gt;App final&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;1-conceito-de-smart-apps&quot;&gt;1. Conceito de smart apps&lt;/h4&gt;
-&lt;p&gt;Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
-Um smart app bem conhecido e muito utilizado é o Waze.
-O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza com rotas em roxo, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid two&quot;&gt;
-  &lt;img src=&quot;assets/img/everis/smartapp/waze-dia.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img src=&quot;assets/img/everis/smartapp/waze-noite.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Com isso podemos classificar smart apps, os apps que conseguem de alguma forma interagir com o ambiente do usuário. Seja com horário, como o Waze faz, com localização recomendando de lugares e outros exemplos.&lt;/p&gt;
-
-&lt;p&gt;Existem tipos de smart app, a grande maioria utiliza recursos do device que esta instalado, mas existem apps que são baseados em API. Que é o caso do post.&lt;/p&gt;
-
-&lt;h4 id=&quot;2-necessidade-e-contexto&quot;&gt;2. Necessidade e contexto&lt;/h4&gt;
-
-&lt;p&gt;A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências de mercado em varias frentes.&lt;/p&gt;
-
-&lt;p&gt;Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação.&lt;/p&gt;
-
-&lt;p&gt;Para conseguir criar tudo que precisava, chegamos a um consenso que Ionic seria a melhor pedida devido sua facilidade e menor barreira de entrada.&lt;/p&gt;
-
-&lt;p&gt;Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.&lt;/p&gt;
-
-&lt;p&gt;Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho no algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.&lt;/p&gt;
-
-&lt;p&gt;Escrevi um outro &lt;a href=&quot;/heroku-python-mysql&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; que mostra como subir uma aplicação python com mysql no heroku.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-app-final&quot;&gt;3. App final&lt;/h4&gt;
-
-&lt;p&gt;Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid three&quot;&gt;
-  &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
-Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
-
-&lt;p&gt;Com o grupo formado iniciamos o bate papo para criar essa tal página. Com uma ideia, Ivo mostrou uma página que fazia o mesmo que queriamos fazer para o RSV, era a &lt;a href=&quot;http://frontendbr.com.br/eventos/&quot;&gt;página eventos&lt;/a&gt; da comunidade &lt;a href=&quot;http://frontendbr.com.br&quot;&gt;Front-End Brasil&lt;/a&gt;, como é uma comunidade também, o código estava aberto no &lt;a href=&quot;https://github.com/frontendbr/eventos&quot;&gt;github&lt;/a&gt; deles. Sendo assim, carinhosamente fizemos um fork do projeto e iniciamos as alterações.&lt;/p&gt;
-
-&lt;p&gt;No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.&lt;/p&gt;
-
-&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry></feed>
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry></feed>
