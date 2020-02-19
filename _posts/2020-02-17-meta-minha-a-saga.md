@@ -38,8 +38,8 @@ Então até aqui teremos 7 tópicos, que vou quebrar em mais alguns posts.
 
 A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D
 
-**Ideia** - <a href="/meta-minha-a-ideia" target="_blank">#1 - A Ideia </a> <br>
-**Design da ideia** - <a href="/meta-minha-design" target="_blank">#2 - Design</a>
+<a href="/meta-minha-a-ideia" target="_blank">#1 - A Ideia </a> <br>
+<a href="/meta-minha-design" target="_blank">#2 - Design</a>
 
 
 

@@ -55,4 +55,4 @@ Então até aqui temos um papel desenhado e algumas ideias fervilhando, mas não
 
 Com a ideia posta, pensei em como otimizar meu tempo e daí, no próximo post, vou mostrar alguns detalhes de como vou desenhar toda a ideia usando o app Adobe XD.
 
-**Design da ideia** - <a href="/meta-minha-design" target="_blank">#2 - Design</a>
+<a href="/meta-minha-design" target="_blank">#2 - Design</a>
