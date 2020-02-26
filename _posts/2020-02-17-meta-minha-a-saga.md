@@ -4,13 +4,15 @@ title: "#0 Meta Minha - A Saga"
 little_desc: "Como posso provar o que sei em vários aspectos? Hum... um app do zero."
 excerpt_separator: ""
 categories:
-  - Próprios / Freelas
+  - Meta Minha
 tags:
   - flutter
   - android
   - ios
   - agil
   - ux
+  - ui
+  - branding
   - devops
   - jenkins
 last_modified_at: 2020-02-17T14:00:00-05:00
@@ -27,6 +29,7 @@ Pois bem, vamos iniciar organizando a bagunça toda pra fazer sentido.
 Pensei as seguintes frentes de trabalho:
 * **Ideia** - Mostrar de onde e como surgiu(sim a ideia já existe)
 * **Design da ideia** - Baseado no primeiro item, vou mostrar detalhes de como vou desenhar todo o projeto ( dev pagando de ux rsrs )
+* **Logo** - Toda ideia precisa de uma logo, aqui vou mostrar como costumo pensar e desenhar uma para os meus projetos
 * **Organização e priorização** - Organizar toda ideia, com o que aprendi com esse tal de Ágil
 * **Preparação do ambiente** - Este item vai ser uma espécie de sprint-zero do projeto, vou criar toda base e configurações que preciso
 * **DevOps** - Precisei destacar este item por se mostrar muito maior do que o imaginado
@@ -38,8 +41,9 @@ Então até aqui teremos 7 tópicos, que vou quebrar em mais alguns posts.
 
 A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D
 
-<a href="/meta-minha-a-ideia" target="_blank">#1 - A Ideia </a> <br>
-<a href="/meta-minha-design" target="_blank">#2 - Design</a>
+<a href="/meta-minha-a-ideia" target="_blank">#1 - A Ideia</a><br>
+<a href="/meta-minha-design" target="_blank">#2 - Design</a><br>
+<a href="/meta-minha-logo" target="_blank">#3 - Logo</a><br>
 
 
 

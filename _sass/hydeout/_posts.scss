@@ -3,6 +3,8 @@
 // Each post is wrapped in `.post` and is used on default and post layouts. Each
 // page is wrapped in `.page` and is only used on the page layout.
 
+
+
 article + *, .post-body ~ section {
   padding-top: $section-spacing-home;
   border-top: 1px solid $border-color;
@@ -18,6 +20,10 @@ article + *, .post-body ~ section {
   .content {
     li + li {
       margin-top: .25rem;
+    }
+
+    .post-body{
+      margin-top: 1.5em;
     }
   }
 }

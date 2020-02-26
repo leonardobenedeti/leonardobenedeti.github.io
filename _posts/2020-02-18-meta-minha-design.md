@@ -4,13 +4,15 @@ title: "#2 Meta Minha - Design"
 little_desc: "Aqui ferrou. Dev pagando de UI/UX ... vamos ver o que sai"
 excerpt_separator: ""
 categories:
-  - Próprios / Freelas
+  - Meta Minha
 tags:
   - flutter
   - android
   - ios
   - agil
   - ux
+  - ui
+  - branding
   - devops
   - jenkins
 last_modified_at: 2020-02-18T14:00:00-05:00
@@ -118,4 +120,4 @@ Caso tenha algum problema para acessar, provavelmente estou usando o link para o
 
 Infelizmente não tenho a versão paga do Adobe XD. #AdobePagaNois rsrs
 
-Próximo post: Organização e priorização...
+<a href="/meta-minha-logo" target="_blank">#3 - Logo</a><br>

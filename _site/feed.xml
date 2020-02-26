@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-19T13:31:05-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#2 Meta Minha - Design</title><link href="http://localhost:4000/meta-minha-design" rel="alternate" type="text/html" title="#2 Meta Minha - Design" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-design</id><content type="html" xml:base="http://localhost:4000/meta-minha-design">&lt;p&gt;Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-26T06:21:54-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#3 Meta Minha - Logo</title><link href="http://localhost:4000/meta-minha-logo" rel="alternate" type="text/html" title="#3 Meta Minha - Logo" /><published>2020-02-26T00:00:00-03:00</published><updated>2020-02-26T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-logo</id><content type="html" xml:base="http://localhost:4000/meta-minha-logo">&lt;p&gt;&lt;strong&gt;“Offtopic” da saga&lt;/strong&gt;, sempre curti desenhar, pensar no papel e coisas assim. Na minha infância cheguei a desenhar muito mesmo, mas infelizmente não mantive a prática de desenho e hoje apenas mantive o pensamento no papel. Minha mãe é artesã e posso dizer que “cursei” com ela a faculdade que fez sobre arte. =D&lt;/p&gt;
+
+&lt;p&gt;Com esse background, apenas no feeling, vamos tentar pensar alguma logo para o aplicativo.&lt;/p&gt;
+
+&lt;p&gt;Um pequeno brain storming para iniciar:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Logo com a letra M&lt;/li&gt;
+  &lt;li&gt;Gráficos de barra evoluindo&lt;/li&gt;
+  &lt;li&gt;M e M invertidos&lt;/li&gt;
+  &lt;li&gt;Logo da pessoa fincando uma bandeira na lua (logo bucket instagram)&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Com tudo isso em mente, nada como iniciar com um papel em branco e sair rabiscando. Fiz isso e cheguei nesse nível de rabisco e daqui tirei a ideia que mais me pareceu simples para criar no Adobe XD.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/desenho-logo-meta-minha.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Depois de alguns desenhos sem referência, busquei no amigo Google o termo “Logo com a letra M” e achei a seguinte logo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/logo-referencia-google.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Baseado nisso, cheguei no desenho que escolhi. Inclusive cheguei a fazer no papel o contorno representando o app.&lt;/p&gt;
+
+&lt;p&gt;Fiz ainda duas versões no desenho, uma com fundo branco e outra com fundo mesclado com dois verdes, porém não cheguei a criar no Adobe as duas.&lt;/p&gt;
+
+&lt;p&gt;Explico o porque: Quando fiz a com fundo branco reparei que combinou perfeitamente com a identidade do app que tem o fundo branco como base. =D&lt;/p&gt;
+
+&lt;p&gt;Com tudo isso em mente eis o que criei fazendo Path por Path no Adobe XD.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Após o desenho no papel, demorei um pouco para finalizar a logo por  conta de ter feito path por path, alinhar todas as alturas, larguras, tamanho, sombra….. demorou mas saiu rsrs&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#2 Meta Minha - Design</title><link href="http://localhost:4000/meta-minha-design" rel="alternate" type="text/html" title="#2 Meta Minha - Design" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-design</id><content type="html" xml:base="http://localhost:4000/meta-minha-design">&lt;p&gt;Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.&lt;/p&gt;
 
 &lt;p&gt;Vou estruturar a escrita para fazer sentido, pois fui criando meio sem ter noção de como fazer componentes e coisas assim.&lt;/p&gt;
 
@@ -100,7 +131,7 @@
 
 &lt;p&gt;Infelizmente não tenho a versão paga do Adobe XD. #AdobePagaNois rsrs&lt;/p&gt;
 
-&lt;p&gt;Próximo post: Organização e priorização…&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#1 Meta Minha - A Ideia</title><link href="http://localhost:4000/meta-minha-a-ideia" rel="alternate" type="text/html" title="#1 Meta Minha - A Ideia" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-ideia</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-ideia">&lt;p&gt;Vamos ao primeiro post da série Meta Minha - A Saga, explicando um pouco da Ideia e porque ela surgiu.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/meta-minha-logo&quot; target=&quot;_blank&quot;&gt;#3 - Logo&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#1 Meta Minha - A Ideia</title><link href="http://localhost:4000/meta-minha-a-ideia" rel="alternate" type="text/html" title="#1 Meta Minha - A Ideia" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-ideia</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-ideia">&lt;p&gt;Vamos ao primeiro post da série Meta Minha - A Saga, explicando um pouco da Ideia e porque ela surgiu.&lt;/p&gt;
 
 &lt;p&gt;Atualmente trabalho em uma consultoria que presta serviços para mega clientes e com isso os terceirizados, normalmente, não tem tanta liberdade para opinar no produto, mesmo que seja uma ideia para melhorar.&lt;/p&gt;
 
@@ -142,7 +173,7 @@
 
 &lt;p&gt;Com a ideia posta, pensei em como otimizar meu tempo e daí, no próximo post, vou mostrar alguns detalhes de como vou desenhar toda a ideia usando o app Adobe XD.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#0 Meta Minha - A Saga</title><link href="http://localhost:4000/meta-minha-a-saga" rel="alternate" type="text/html" title="#0 Meta Minha - A Saga" /><published>2020-02-17T00:00:00-03:00</published><updated>2020-02-17T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-saga</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-saga">&lt;p&gt;Pensei outro dia: Como posso provar o que conheço em todas as áreas mais básicas para criação de um app?&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#0 Meta Minha - A Saga</title><link href="http://localhost:4000/meta-minha-a-saga" rel="alternate" type="text/html" title="#0 Meta Minha - A Saga" /><published>2020-02-17T00:00:00-03:00</published><updated>2020-02-17T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-a-saga</id><content type="html" xml:base="http://localhost:4000/meta-minha-a-saga">&lt;p&gt;Pensei outro dia: Como posso provar o que conheço em todas as áreas mais básicas para criação de um app?&lt;/p&gt;
 
 &lt;p&gt;Daí veio a ideia maluca na mente: Criar um app simples, passando por todos os processos: Ágil(organizando tudo), UX(conheço o básico), Devops(já fiz umas mágicas por aqui), Desenvolvimento(minha praia) e por fim a Publicação.&lt;/p&gt;
 
@@ -154,6 +185,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Ideia&lt;/strong&gt; - Mostrar de onde e como surgiu(sim a ideia já existe)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Design da ideia&lt;/strong&gt; - Baseado no primeiro item, vou mostrar detalhes de como vou desenhar todo o projeto ( dev pagando de ux rsrs )&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Logo&lt;/strong&gt; - Toda ideia precisa de uma logo, aqui vou mostrar como costumo pensar e desenhar uma para os meus projetos&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Organização e priorização&lt;/strong&gt; - Organizar toda ideia, com o que aprendi com esse tal de Ágil&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Preparação do ambiente&lt;/strong&gt; - Este item vai ser uma espécie de sprint-zero do projeto, vou criar toda base e configurações que preciso&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt; - Precisei destacar este item por se mostrar muito maior do que o imaginado&lt;/li&gt;
@@ -165,11 +197,12 @@
 
 &lt;p&gt;A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/meta-minha-a-ideia&quot; target=&quot;_blank&quot;&gt;#1 - A Ideia &lt;/a&gt; &lt;br /&gt;
-&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/meta-minha-a-ideia&quot; target=&quot;_blank&quot;&gt;#1 - A Ideia&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;/meta-minha-logo&quot; target=&quot;_blank&quot;&gt;#3 - Logo&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aguardem..
-&lt;img src=&quot;https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy-downsized.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
+&lt;img src=&quot;https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy-downsized.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
 
 &lt;p&gt;Sim. Em um dia, não tão belo como na música, decidi me aventurar e criar algo bacana usando Flutter.&lt;/p&gt;
 
@@ -738,147 +771,4 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="http://localhost:4000/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>http://localhost:4000/apps-ionic-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-ionic-bbmapfre">&lt;blockquote&gt;
-  &lt;p&gt;Antes de começar a falar sobre este projeto, vale a pena relembrar o período que atuei apenas na sustentação dos aplicativos que foram migrados. &lt;a href=&quot;/apps-kony-bbmapfre&quot; target=&quot;_blank&quot;&gt;Confira aqui&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Vamos separar o post em alguns tópicos para organizar:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Estudos sobre melhores tecnologias mobile&lt;/li&gt;
-  &lt;li&gt;PoC com a tecnologia escolhida&lt;/li&gt;
-  &lt;li&gt;Definição do projeto/estimativa&lt;/li&gt;
-  &lt;li&gt;Início do projeto&lt;/li&gt;
-  &lt;li&gt;Desenvolvimento&lt;/li&gt;
-  &lt;li&gt;Entrega&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Vamos lá…&lt;/p&gt;
-
-&lt;h3 id=&quot;1-estudos-sobre-melhores-tecnologias-mobile&quot;&gt;1. Estudos sobre melhores tecnologias mobile&lt;/h3&gt;
-
-&lt;p&gt;Ainda durante a sustentação, atuando pela Entelgy, fizemos um estudo sobre as tecnologias mobile que estavam em alta no momento.
-Esse estudo veio acompanhado com uma estimativa comparando entre: Kony(atual), Ionic, React Native e Nativas.
-Comparamos os seguintes pontos: Curva de aprendizado, velocidade de desenvolvimento, performance e custo.&lt;/p&gt;
-
-&lt;p&gt;Com esses pontos na mesa, após alguns dias de papo entre todos que prestavam serviço, chegamos a conclusão que Ionic seria a melhor opção dado o cenário atual do Grupo Segurador.&lt;/p&gt;
-
-&lt;p&gt;Corta a cena vamos para o próximo item.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-poc-com-a-tecnologia-escolhida&quot;&gt;2. PoC com a tecnologia escolhida&lt;/h3&gt;
-
-&lt;p&gt;Voltando dos comerciais, já atuando pela everis, ainda na sustentação dos apps, surgiu o assunto que migraríamos os apps para o Ionic.
-Com isso a equipe de sustentação, mesmo sem nada confirmado, decidiu usar o tempo livre para replicar a home do app principal dos apps em ionic para mensurar o tempo que precisariam para a migração.&lt;/p&gt;
-
-&lt;p&gt;Com isso fizemos em duas maneiras.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Layout exatamente igual ao app atual também com ionic&lt;/li&gt;
-  &lt;li&gt;Layout aos moldes do ionic com poucos ajustes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Com isso vamos aos prints&lt;/p&gt;
-
-&lt;h4 id=&quot;original---prints-do-app-em-produção&quot;&gt;Original - Prints do app em produção&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/0-app-kony.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;ionic-idêntico---muitos-ajustes-para-o-layout-ficar-idêntico-ao-app-de-produção&quot;&gt;Ionic Idêntico - Muitos ajustes para o layout ficar idêntico ao app de produção&lt;/h4&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-        &lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/1.0-home-identico-ionic.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b img&quot;&gt;
-        &lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/1.1-menu-identico-ionic.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Porque criamos este exatamente igual: No início do projeto foi dito que seria apenas uma troca de tecnologia sem alterar nada de regra de negócio nem layout. Dai fizemos exatamente igual para respeitar essa decisão.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;ionic-way---layout-básico-sem-muitos-ajustes&quot;&gt;Ionic Way - Layout básico sem muitos ajustes&lt;/h4&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-        &lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/2.0-home-ajustes-pequenos-ionic.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b img&quot;&gt;
-        &lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/2.1-menu-ajustes-pequenos-ionic.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Mas como todo consultor deve se comportar, fizemos uma versão mais simples, usando tudo que o Ionic podia oferecer e mostramos as vantagens.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A PoC foi apresentada para os gerentes e foi muito elogiada. Mas infelizmente não foi utilizada porque o projeto teve uma surpresa, que vou citar abaixo. rsrs&lt;/p&gt;
-
-&lt;h3 id=&quot;3-definição-do-projetoestimativa&quot;&gt;3. Definição do projeto/estimativa&lt;/h3&gt;
-
-&lt;p&gt;Com o cenário posto, com PoC e noção de tempo para migrar, estimamos em 3 meses o projeto para 4 pessoas. Maravilha.&lt;/p&gt;
-
-&lt;p&gt;Porém como nada pode estar tão perfeito, veio a surpresa que comentei acima. O app mudaria o escopo, como?&lt;/p&gt;
-
-&lt;h4 id=&quot;de&quot;&gt;De:&lt;/h4&gt;
-&lt;p&gt;4 apps Kony:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;MAPFRE Seguros ( institucional )&lt;/li&gt;
-  &lt;li&gt;BB Seguros ( institucional )&lt;/li&gt;
-  &lt;li&gt;MAPFRE Auto ( auto )&lt;/li&gt;
-  &lt;li&gt;BB Seguro Auto ( auto )&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sim, existia um app apenas para o conteúdo institucional da empresa e outro para as ações transacionais referentes ao segmento auto.
-E o projeto inicial seria manter esse escopo, porém com a tecnologia Ionic.&lt;/p&gt;
-
-&lt;h4 id=&quot;para&quot;&gt;Para:&lt;/h4&gt;
-&lt;p&gt;2 apps Ionic:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;MAPFRE Seguros&lt;/li&gt;
-  &lt;li&gt;BB Seguros&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Mantivemos o nome do app institucional por ser mais abrangente e unificamos o conteúdo dos apps para facilitar a vida do usuário.
-e agora com a unificação não fazia mais sentido manter a mesma UX do app, com isso foi preciso um trabalho massivo da equipe de UI/UX da everis para conseguir criar um app com todo conteúdo e ainda sim fazer sentido.&lt;/p&gt;
-
-&lt;h4 id=&quot;novo-layout&quot;&gt;Novo layout&lt;/h4&gt;
-&lt;p&gt;Prints de produção, não achei as especificações rsrs
-&lt;img src=&quot;assets/img/everis/bbmapfre-unificacao/novo-layout.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;4-início-do-projeto&quot;&gt;4. Início do projeto&lt;/h3&gt;
-
-&lt;p&gt;Com novo layout definido para algumas telas e time se formando. Fomos criando o app e agora como a estimativa já havia sido definida, precisávamos replanejar ou assumir que caberia nos 3 meses que já havíamos passado para o cliente.&lt;/p&gt;
-
-&lt;p&gt;Aceitamos o desafio e topamos manter os 3 meses, visto que o novo layout melhoraria a usabilidade e com isso removeria algumas telas desnecessárias.&lt;/p&gt;
-
-&lt;h3 id=&quot;5-desenvolvimento&quot;&gt;5. Desenvolvimento&lt;/h3&gt;
-
-&lt;p&gt;Apesar de a estimativa ter sido feita como escopo fechado, controlamos o desenvolvimento com métodos ágeis e tivemos poucos problemas em relação a isso.&lt;/p&gt;
-
-&lt;p&gt;O desenvolvimento teve poucos problemas na parte do ionic. Não acho tão relevante falar das outras frentes que tiveram. rsrs&lt;/p&gt;
-
-&lt;p&gt;Pontos interessantes que podemos citar sobre o desenvolvimento são:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Criamos cerca de 95+ telas, algumas sendo reutilizadas como componentes;&lt;/li&gt;
-  &lt;li&gt;Criamos um fluxo de telas para o usuário voltar onde parou, mesmo após a morte do app, depois de um tempo em segundo plano;&lt;/li&gt;
-  &lt;li&gt;Criamos um plugin específico para o projeto que não existia na doc do ionic. Plugin para enviar o ticket carteirinha para a Apple Wallet &lt;a href=&quot;https://github.com/everis-br/cordova-apple-wallet-tickets&quot; target=&quot;_blank&quot;&gt;Repo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Usamos o plugin do maps para mostrar o guincho solicitado chegando em tempo real&lt;/li&gt;
-  &lt;li&gt;e muito mais …&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada &lt;code class=&quot;highlighter-rouge&quot;&gt;Lazy Loading&lt;/code&gt;. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
-Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.&lt;/p&gt;
-
-&lt;p&gt;Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
-O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.&lt;/p&gt;
-
-&lt;p&gt;A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o &lt;code class=&quot;highlighter-rouge&quot;&gt;apk&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;ipa&lt;/code&gt; em uma enterprise store chamada &lt;a href=&quot;https://appinstaller.com.br&quot; target=&quot;_blank&quot;&gt;AppInstaller&lt;/a&gt;. Com isso passávamos o link para a equipe de homologação do cliente.&lt;/p&gt;
-
-&lt;p&gt;Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.&lt;/p&gt;
-
-&lt;h3 id=&quot;6-entrega&quot;&gt;6. Entrega&lt;/h3&gt;
-
-&lt;p&gt;O prazo para entrega do projeto, código desenvolvido, era para dia 02/02. Fizemos algumas correrias para atingir essa data e conseguimos entregar perto disso. Atrasado? Não. Entregamos dia 01/02 com uma ressalva, não entregamos apenas o código desenvolvido, mas sim o app PUBLICADO nas lojas. =D&lt;/p&gt;
-
-&lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
-
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry></feed>

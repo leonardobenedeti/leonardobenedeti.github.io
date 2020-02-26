@@ -699,6 +699,8 @@ article + *, .post-body ~ section {
 
 .post .content li + li, .page .content li + li {
   margin-top: .25rem; }
+.post .content .post-body, .page .content .post-body {
+  margin-top: 1.5em; }
 
 .page-title,
 .post-title,

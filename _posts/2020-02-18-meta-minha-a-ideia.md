@@ -4,13 +4,15 @@ title: "#1 Meta Minha - A Ideia"
 little_desc: "De onde veio essa ideia MALUCA ??"
 excerpt_separator: ""
 categories:
-  - Próprios / Freelas
+  - Meta Minha
 tags:
   - flutter
   - android
   - ios
   - agil
   - ux
+  - ui
+  - branding
   - devops
   - jenkins
 last_modified_at: 2020-02-18T14:00:00-05:00
