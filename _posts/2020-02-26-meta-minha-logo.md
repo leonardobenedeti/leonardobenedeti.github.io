@@ -51,3 +51,6 @@ Com tudo isso em mente eis o que criei fazendo Path por Path no Adobe XD.
 
 Após o desenho no papel, demorei um pouco para finalizar a logo por  conta de ter feito path por path, alinhar todas as alturas, larguras, tamanho, sombra..... demorou mas saiu rsrs
 
+
+<a href="/meta-minha-agil" target="_blank">#4 - Organização e priorização</a><br>
+

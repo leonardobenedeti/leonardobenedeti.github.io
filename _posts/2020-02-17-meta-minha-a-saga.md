@@ -42,8 +42,9 @@ Então até aqui teremos 7 tópicos, que vou quebrar em mais alguns posts.
 A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D
 
 <a href="/meta-minha-a-ideia" target="_blank">#1 - A Ideia</a><br>
-<a href="/meta-minha-design" target="_blank">#2 - Design</a><br>
+<a href="/meta-minha-design" target="_blank">#2 - Design da ideia</a><br>
 <a href="/meta-minha-logo" target="_blank">#3 - Logo</a><br>
+<a href="/meta-minha-agil" target="_blank">#4 - Organização e priorização</a><br>
 
 
 

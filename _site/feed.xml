@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-26T06:21:54-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#3 Meta Minha - Logo</title><link href="http://localhost:4000/meta-minha-logo" rel="alternate" type="text/html" title="#3 Meta Minha - Logo" /><published>2020-02-26T00:00:00-03:00</published><updated>2020-02-26T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-logo</id><content type="html" xml:base="http://localhost:4000/meta-minha-logo">&lt;p&gt;&lt;strong&gt;“Offtopic” da saga&lt;/strong&gt;, sempre curti desenhar, pensar no papel e coisas assim. Na minha infância cheguei a desenhar muito mesmo, mas infelizmente não mantive a prática de desenho e hoje apenas mantive o pensamento no papel. Minha mãe é artesã e posso dizer que “cursei” com ela a faculdade que fez sobre arte. =D&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-04T01:55:38-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#4 Meta Minha - Organização e priorização</title><link href="http://localhost:4000/meta-minha-agil" rel="alternate" type="text/html" title="#4 Meta Minha - Organização e priorização" /><published>2020-03-03T00:00:00-03:00</published><updated>2020-03-03T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-agil</id><content type="html" xml:base="http://localhost:4000/meta-minha-agil">&lt;p&gt;Agora vamos organizar tudo que falamos até agora. Vamos tentar mostrar o que conheço sobre Ágil.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Vale comentar: Métodos ágeis normalmente são frameworks, então aqui vou montar um que faça sentido para o contexto do projeto.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Vamos colocar alguns fatos na mesa aqui neste post.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motivos da saga&lt;/strong&gt;: Criar algo para mostrar o que conheço em cada step de um projeto completo.&lt;br /&gt;
+&lt;strong&gt;Status atual&lt;/strong&gt;: Hoje atuo em um projeto muito puxado, pra não dizer Tóxico, portanto tempo para escrever, documentar e ainda fazer o app, é um problema e tanto, mas vamos lá. Vai dar bom.&lt;br /&gt;
+&lt;strong&gt;Prazos&lt;/strong&gt;: Dado o contexto acima, não vou lidar com prazos neste post, caso estivesse 100% livre para criar toda saga, criaria OKRs de performance, gráficos e tudo que conheço. Mas como não consigo garantir quando consigo atuar neste projeto, não vai fazer sentido mensurar. Prometo em um próximo projeto fazer isso. =D&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cenário posto, vamos ao que montei para me organizar nessa caminhada.&lt;/p&gt;
+
+&lt;p&gt;Antes de mostrar o que montei, vale comentar de como montei, mais precisamente onde.&lt;/p&gt;
+
+&lt;p&gt;Já conhecia de alguns projetos que atuei remotamente mas não tinha testado e vou utilizar aqui uma aplicação para gerenciar projetos remotamente chamada &lt;a href=&quot;https://miro.com/&quot; target=&quot;_blank&quot;&gt;Miro&lt;/a&gt;. Estou curtindo muito utilizá-la para este projeto, fica bem fácil mostrar o que estou fazendo. #recomendo&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Voltando aos trilhos do post…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Todo produto tem suas regras de negócio e detalhes específicos, certo ?&lt;/p&gt;
+
+&lt;p&gt;Neste projeto criei uma ideia do zero para ter base para criar tudo aqui do zero.&lt;/p&gt;
+
+&lt;p&gt;Com isso criei as &lt;strong&gt;histórias&lt;/strong&gt; do projeto, elas estão com “post its” de cores diferentes, já explico isso.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/1-historias.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voltando ao porquê dos post its coloridos. Toda história tem um peso para ser criada, utilizei a métrica &lt;strong&gt;T-Shirt&lt;/strong&gt; para “precificar” as histórias.&lt;/p&gt;
+
+&lt;p&gt;Então temos na sequência:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;GG - Será que não vale mais a pena quebrar em duas G ? (sim, consegui não ter histórias GG. #topzera)&lt;/li&gt;
+  &lt;li&gt;G - Tela online ou fluxo complexo&lt;/li&gt;
+  &lt;li&gt;M - Tela Complexa ou funcionalidade nativo&lt;/li&gt;
+  &lt;li&gt;P - Tela Offline ou Componente interativo&lt;/li&gt;
+  &lt;li&gt;PP - Componente estático
+E a sequência correspondendo a uma cor de post it, dai temos nossa precificação do print das histórias.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/2-tshirt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Após definir e precificar precisamos ter em mente os entregáveis com suas devidas prioridades. Então aqui vamos criar nosso &lt;strong&gt;RoadMap&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Separei em duas partes, a primeira versão do app, comumente chamada de MVP.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;O melhor conceito de MVP que escutei por aí é: O MVP é como uma fatia de um bolo, tem todas as camadas, mas não é o bolo inteiro. Neste caso o bolo inteiro é o produto finalizado. Logo o MVP vai dar o gostinho e provar que o produto completo vale a pena.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Outro item nesse print é a &lt;strong&gt;priorização&lt;/strong&gt; das histórias. Como criei tudo pensando no fluxo completo, já meio que criei tudo priorizando, mas consegui quebrar em mais de uma entrega para exemplificar este item.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/3-roadmap.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Contexto de &lt;strong&gt;MVP&lt;/strong&gt; posto, precisamos falar do nosso.&lt;/p&gt;
+
+&lt;p&gt;Falando em poucas palavras, o MVP precisa: permitir que um usuário, logado ou não, defina suas próprias metas e detalhes.&lt;/p&gt;
+
+&lt;p&gt;As próprias histórias explicam bem o fluxo básico do app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/4-mvp.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;MVP entregue e publicado nas lojas, vamos melhorar o app para conseguir entregar o Bolo todo. Daí vamos falar agora da &lt;strong&gt;Release 2&lt;/strong&gt; do app.&lt;/p&gt;
+
+&lt;p&gt;Também em poucas palavras: Vamos evoluir como o usuário se conecta ao app, melhorar a experiência, pensando que nosso usuário tenha várias metas e precise buscar suas metas e detalhes. Além de algo que confesso que está me deixando temeroso, Dark Theme.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/5-release2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feito. Toda priorização e criação das histórias. Ufa…. não pera. O que eu preciso criar em cada história? Detalhes? O que testar depois ?&lt;/p&gt;
+
+&lt;p&gt;É toda história precisa de seus detalhes e tudo mais.&lt;/p&gt;
+
+&lt;p&gt;A &lt;strong&gt;Descrição básica das histórias&lt;/strong&gt; que vou criar aqui vai contar com os seguintes “campos”: Título, Descrição e Critérios de Aceite.&lt;/p&gt;
+
+&lt;p&gt;Não vou explicar dependência de histórias aqui por não fazer sentido e nem ser possível exemplificar. Como estarei sozinho na empreitada, vou precisar fazer task a task e com a priorização bem feita, acaba que não temos dependência. #TOP&lt;/p&gt;
+
+&lt;p&gt;Abaixo temos a lista de histórias ao molde do Miro, curti bastante por ser bem simples. Reparem que mantive a cor de cada história no detalhe dela. 
+&lt;img src=&quot;assets/img/metaminha/agil/6-descricao-historias.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta é a &lt;strong&gt;primeira história do app e seus detalhes&lt;/strong&gt;, talvez a mais simples e rápida.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/7-detalhes-historia-onboarding.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bom. Com tudo isso criado, o interessante é ter sempre todo contexto do projeto em mente certo?&lt;/p&gt;
+
+&lt;p&gt;Pois bem, cá temos o &lt;strong&gt;Cockpit do app Meta Minha&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/8-cockpit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A principal funcionalidade do Miro é compartilhar o que é criado com os times remotos, com isso consegui criar um link para vocês conferirem por lá a evolução do projeto. =D&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://miro.com/app/board/o9J_kvUf1Hk=/&quot; target=&quot;_blank&quot;&gt;https://miro.com/app/board/o9J_kvUf1Hk=/&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#3 Meta Minha - Logo</title><link href="http://localhost:4000/meta-minha-logo" rel="alternate" type="text/html" title="#3 Meta Minha - Logo" /><published>2020-02-26T00:00:00-03:00</published><updated>2020-02-26T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-logo</id><content type="html" xml:base="http://localhost:4000/meta-minha-logo">&lt;p&gt;&lt;strong&gt;“Offtopic” da saga&lt;/strong&gt;, sempre curti desenhar, pensar no papel e coisas assim. Na minha infância cheguei a desenhar muito mesmo, mas infelizmente não mantive a prática de desenho e hoje apenas mantive o pensamento no papel. Minha mãe é artesã e posso dizer que “cursei” com ela a faculdade que fez sobre arte. =D&lt;/p&gt;
 
 &lt;p&gt;Com esse background, apenas no feeling, vamos tentar pensar alguma logo para o aplicativo.&lt;/p&gt;
 
@@ -29,7 +120,9 @@
 
 &lt;p&gt;&lt;img src=&quot;assets/img/metaminha/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Após o desenho no papel, demorei um pouco para finalizar a logo por  conta de ter feito path por path, alinhar todas as alturas, larguras, tamanho, sombra….. demorou mas saiu rsrs&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#2 Meta Minha - Design</title><link href="http://localhost:4000/meta-minha-design" rel="alternate" type="text/html" title="#2 Meta Minha - Design" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-design</id><content type="html" xml:base="http://localhost:4000/meta-minha-design">&lt;p&gt;Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.&lt;/p&gt;
+&lt;p&gt;Após o desenho no papel, demorei um pouco para finalizar a logo por  conta de ter feito path por path, alinhar todas as alturas, larguras, tamanho, sombra….. demorou mas saiu rsrs&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/meta-minha-agil&quot; target=&quot;_blank&quot;&gt;#4 - Organização e priorização&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#2 Meta Minha - Design</title><link href="http://localhost:4000/meta-minha-design" rel="alternate" type="text/html" title="#2 Meta Minha - Design" /><published>2020-02-18T00:00:00-03:00</published><updated>2020-02-18T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-design</id><content type="html" xml:base="http://localhost:4000/meta-minha-design">&lt;p&gt;Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.&lt;/p&gt;
 
 &lt;p&gt;Vou estruturar a escrita para fazer sentido, pois fui criando meio sem ter noção de como fazer componentes e coisas assim.&lt;/p&gt;
 
@@ -198,8 +291,9 @@
 &lt;p&gt;A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequência da ideia toda =D&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/meta-minha-a-ideia&quot; target=&quot;_blank&quot;&gt;#1 - A Ideia&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;/meta-minha-logo&quot; target=&quot;_blank&quot;&gt;#3 - Logo&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design da ideia&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;/meta-minha-logo&quot; target=&quot;_blank&quot;&gt;#3 - Logo&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;/meta-minha-agil&quot; target=&quot;_blank&quot;&gt;#4 - Organização e priorização&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aguardem..
 &lt;img src=&quot;https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy-downsized.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
@@ -700,75 +794,4 @@ Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 &lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
-Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
-
-&lt;p&gt;Inicialmente o MVP foi pensado para apenas ler o código de barras da cerveja e mostrar ao usuário sua informação mais detalhada.&lt;/p&gt;
-
-&lt;p&gt;Com essa base, o app foi ganhando novas funcionalidades como: Cardápio completo, Dicas, Cupons, Lista de desejos, Avaliações dos produtos e Foto personalizada do Bier!&lt;/p&gt;
-
-&lt;p&gt;Para explicar melhor o projeto vamos separar em tópicos&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Arquitetura básica&lt;/li&gt;
-  &lt;li&gt;Painel administrativo / API&lt;/li&gt;
-  &lt;li&gt;Aplicativo&lt;/li&gt;
-  &lt;li&gt;Publicação&lt;/li&gt;
-  &lt;li&gt;Sustentação&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Vale ressaltar que o projeto foi idealizado e iniciado pela empresa All Most, que foi constituida por 4 amigos, Leonardo Benedeti(este que vos escreve), Mateus Diniz, Marcus Paulo e Michael Almeida. Atualmente não integro mais o time da All Most e como era o único desenvolvedor mobile, segui com o desenvolvimento sozinho, fora da All Most.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;1-arquitetura-básica&quot;&gt;1. Arquitetura básica&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/arq-bier.jpeg&quot; style=&quot;margin:40px auto 5px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:center;&quot;&gt;** Sim, desenhei num flipchart e tirei foto =D&lt;/p&gt;
-
-&lt;h4 id=&quot;2-painel-administrativo--api&quot;&gt;2. Painel administrativo / API&lt;/h4&gt;
-&lt;p&gt;Criado utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP&lt;/code&gt;, sem utilização de nenhum framework. O painel é responsável por gerenciar todos os produtos, sendo efetuando o cadastro, alteração ou exclusão de algum produto e emitir push notifications para o app, seja a cada produto cadastrado ou alguma mensagem customizada, de acordo com a vontade do Bier Prosit.&lt;/p&gt;
-
-&lt;p&gt;Os produtos são salvos em uma base de dados &lt;code class=&quot;highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; e toda conexão com ele é feita pelo painel. #phpraiz&lt;/p&gt;
-
-&lt;p&gt;Em breve o painel será atualizado para a linguagem &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt; e será &lt;code class=&quot;highlighter-rouge&quot;&gt;API Based&lt;/code&gt; utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Flask&lt;/code&gt;, provavelmente com front-end em &lt;code class=&quot;highlighter-rouge&quot;&gt;Angular&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-aplicativo&quot;&gt;3. Aplicativo&lt;/h4&gt;
-&lt;p&gt;A primeira versão foi criada utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Android Nativo&lt;/code&gt; e com o lançamento do &lt;code class=&quot;highlighter-rouge&quot;&gt;Ionic 1&lt;/code&gt; migrei para o framework, com a atualização foi feito o upgrade para a versão 3 do framework.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Funcionalidades&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Consulta de produtos na API&lt;/li&gt;
-  &lt;li&gt;Criação de listas de desejo&lt;/li&gt;
-  &lt;li&gt;Avaliação de produtos baseado na lista de desejos&lt;/li&gt;
-  &lt;li&gt;Leitura de QR Code&lt;/li&gt;
-  &lt;li&gt;Captura de imagens e ao finalizar a captura, inclusão da logo do Bier na foto&lt;/li&gt;
-  &lt;li&gt;Compartilhamento de fotos nas redes sociais que o usuário utilizar&lt;/li&gt;
-  &lt;li&gt;Push Notification&lt;/li&gt;
-  &lt;li&gt;DeepLink, ao clicar em um push de um produto específico, o usuário é direcionado para a página de detalhes do produto&lt;/li&gt;
-  &lt;li&gt;Rotas até o Bier, ao clicar para exibir a rota o app sugere todos os apps que são capazes de criar uma rota. ex.: Uber, 99, Google Maps…&lt;/li&gt;
-  &lt;li&gt;Novidades podem vir por ai… =D&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;4-publicação&quot;&gt;4. Publicação&lt;/h4&gt;
-&lt;p&gt;Finalizado o desenvolvimento do app, o mesmo foi submetido para a AppStore e Google Play, todas as telas são diferentes por conta do framework Ionic, ele consegue diferenciar ambas plataformas e tornar a UX mais fluida possível para o usuário ter a sensação que está utilizando um app nativo.&lt;/p&gt;
-
-&lt;p&gt;Para baixar o app ou visualizar as telas você pode acessar os links abaixo ou ler o QR Code.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/br/app/bier-prosit/id1211795341&quot; target=&quot;_blank&quot;&gt;AppStore&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=br.com.leonardobenedeti.bierprosit&quot; target=&quot;_blank&quot;&gt;GooglePlay&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/qr-post.png&quot; style=&quot;margin:40px auto 5px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;5-sustentação&quot;&gt;5. Sustentação&lt;/h4&gt;
-&lt;p&gt;Após a publicação do app, bugs e melhorias serão ajustados para manter o app funcionando normalmente.&lt;/p&gt;
-
-&lt;p&gt;Caso tenha encontrado algum bug ou melhoria reporte e ajude o app a ficar mais completo.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry></feed>
