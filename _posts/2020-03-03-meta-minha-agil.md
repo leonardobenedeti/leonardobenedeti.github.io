@@ -111,3 +111,6 @@ Pois bem, cá temos o **Cockpit do app Meta Minha**
 A principal funcionalidade do Miro é compartilhar o que é criado com os times remotos, com isso consegui criar um link para vocês conferirem por lá a evolução do projeto. =D
 
 <a href="https://miro.com/app/board/o9J_kvUf1Hk=/" target="_blank">https://miro.com/app/board/o9J_kvUf1Hk=/</a>
+
+
+<a href="/meta-minha-sprint-zero" target="_blank">#5 - Preparação do ambiente</a><br>

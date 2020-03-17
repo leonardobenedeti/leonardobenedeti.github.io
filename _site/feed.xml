@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-04T02:03:13-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#4 Meta Minha - Organização e priorização</title><link href="http://localhost:4000/meta-minha-agil" rel="alternate" type="text/html" title="#4 Meta Minha - Organização e priorização" /><published>2020-03-03T00:00:00-03:00</published><updated>2020-03-03T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-agil</id><content type="html" xml:base="http://localhost:4000/meta-minha-agil">&lt;p&gt;Agora vamos organizar tudo que falamos até agora. Vamos tentar mostrar o que conheço sobre Ágil.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-17T02:59:28-03:00</updated><id>http://localhost:4000/</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">#5 Meta Minha - Preparação do Ambiente</title><link href="http://localhost:4000/meta-minha-sprint-zero" rel="alternate" type="text/html" title="#5 Meta Minha - Preparação do Ambiente" /><published>2020-03-17T00:00:00-03:00</published><updated>2020-03-17T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-sprint-zero</id><content type="html" xml:base="http://localhost:4000/meta-minha-sprint-zero">&lt;p&gt;Uma imagem é melhor do que mil palavras…. pois bem! (sim já tinha iniciado rsrs)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/sprint-zero/1-sprint-zero.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este será, talvez, o menor post da série. Aqui darei início aos trabalhos mais técnicos do que conceituais.&lt;/p&gt;
+
+&lt;p&gt;Mas de onde surgiu a ideia de fazer uma &lt;strong&gt;Sprint Zero&lt;/strong&gt; neste app tão pequeno. Precisamos disso ???&lt;/p&gt;
+
+&lt;p&gt;Vamos tentar pintar um cenário: Para uma casa ser construída é necessário uma fundação bem sólida para que a casa se mantenha firme, certo ?!&lt;/p&gt;
+
+&lt;p&gt;A Sprint Zero funciona da mesma maneira. É um período onde todas as frentes podem atuar sem impactar nada, preparando tudo para o projeto iniciar.&lt;/p&gt;
+
+&lt;p&gt;Exemplos que acontecem durante a Sprint Zero, por frente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Product Owner&lt;/strong&gt;: Escreve as histórias na ordem de prioridade para a primeira sprint do projeto.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Scrum Master&lt;/strong&gt;: Orienta o time, sugerindo como utilizar o cockpit da maneira mais otimizada.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Quality &amp;amp; Assurance&lt;/strong&gt;: Escreve os cenários de testes básicos e configura um ambiente automatizado de testes ( Tema não abordado por aqui, AINDA!).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developers&lt;/strong&gt;: Criam essa base para que todo o app seja criado de maneira sustentável e sólida.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Neste app, vamos abordar apenas duas frentes, &lt;strong&gt;Product Owner&lt;/strong&gt; e &lt;strong&gt;Developers&lt;/strong&gt;. Dado o contexto, não tem porque simular as outras frentes. Faria sentido caso estipulasse um prazo para conclusão, mas como não faremos isso… =D&lt;/p&gt;
+
+&lt;p&gt;Separando as responsabilidades por frente:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Owner&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/agil/6-descricao-historias.png&quot; alt=&quot;&quot; /&gt;
+Com o boné de &lt;strong&gt;PO&lt;/strong&gt;, tenho muito trabalho pela frente mas não vou descrevê-lo na Sprint-zero. Vou mostrar as histórias escritas a cada sprint que for evoluindo o aplicativo. #aindaNãoEscrevi&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developer&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finalmente na minha zona de conforto. Na frente de desenvolvimento, na Sprint-zero, vou configurar muita coisa. Como puderam ver na primeira imagem do post, em algumas tasks que criei.&lt;/p&gt;
+
+&lt;p&gt;Estou utilizando uma técnica que pratiquei em um dos projetos que atuei.&lt;/p&gt;
+
+&lt;p&gt;Eu sou um só, certo ? (Adoraria ter um clone rsrs)&lt;/p&gt;
+
+&lt;p&gt;Eu, sendo um só, LOGICAMENTE, só consigo fazer uma coisa por vez. Com isso fiz o seguinte:&lt;/p&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;a text&quot;&gt;
+        &lt;span&gt;
+            Limitei, mentalmente, o Work In Progress do projeto. &lt;br /&gt;
+            &lt;b&gt;Porque?&lt;/b&gt; &lt;br /&gt;
+            Com este limite de uma task por vez, não vou me afogar com 3, 4, 5 tasks por vez. O que normalmente acontece na maioria dos projetos.
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;b img&quot;&gt;
+        &lt;img src=&quot;assets/img/metaminha/sprint-zero/2-WIP.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Outro detalhe que a limitação de execução de tasks ocasiona, é que uma task mal “quebrada”, vai ter dependência de outra task e com isso o dev é meio que OBRIGADO a fazer duas tasks ao mesmo tempo. Esse limite na sprint seguinte, vai educar o dev a quebrar a task sem dependência na próxima sprint.&lt;/p&gt;
+
+&lt;p&gt;Ex.: Uma história que tenha uma chamada de api e que liste o resultado na tela.&lt;/p&gt;
+
+&lt;p&gt;A quebra de tasks pode ser assim:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Criar modelo de dados de itens da lista&lt;/li&gt;
+  &lt;li&gt;Criar widget para repetir após o retorno da api&lt;/li&gt;
+  &lt;li&gt;Criar API e printar o retorno no console&lt;/li&gt;
+  &lt;li&gt;Conectar o widget com a API criando a lista baseado no modelo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aqui criei 3 tasks independentes e uma para fechar todas elas. Eventualmente as tasks vão ter dependência, mas o ideal é evitar esse tipo de coisa para que mais de uma pessoa consiga atuar na mesma história. =D&lt;/p&gt;
+
+&lt;p&gt;Outro item interessante é tentar criar uma base de widgets, componentes ou o que for reutilizar no projeto.&lt;/p&gt;
+
+&lt;p&gt;No decorrer do projeto pretendo conseguir entregar um design system com o que estou criando.&lt;/p&gt;
+
+&lt;p&gt;Para isso, ainda na sprint-zero estou criando alguns widgets que serão a base do meu app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/metaminha/sprint-zero/3-design-system.png&quot; alt=&quot;&quot; /&gt;
+Para validar melhor este item com todo app junto, vale dar uma revisitada no post de &lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design da ideia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aqui então finalizo o post, mas a Sprint-zero ainda vai continuar correndo até conseguir fechar todos os itens, UM A UM, sem pressa e sem correria, para manter sempre a qualidade.&lt;/p&gt;
+
+&lt;p&gt;Em breve a #sprint-01 começa e aí sim vamos codar. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#4 Meta Minha - Organização e priorização</title><link href="http://localhost:4000/meta-minha-agil" rel="alternate" type="text/html" title="#4 Meta Minha - Organização e priorização" /><published>2020-03-03T00:00:00-03:00</published><updated>2020-03-03T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-agil</id><content type="html" xml:base="http://localhost:4000/meta-minha-agil">&lt;p&gt;Agora vamos organizar tudo que falamos até agora. Vamos tentar mostrar o que conheço sobre Ágil.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Vale comentar: Métodos ágeis normalmente são frameworks, então aqui vou montar um que faça sentido para o contexto do projeto.&lt;/p&gt;
@@ -89,7 +167,9 @@ E a sequência correspondendo a uma cor de post it, dai temos nossa precificaç�
 
 &lt;p&gt;A principal funcionalidade do Miro é compartilhar o que é criado com os times remotos, com isso consegui criar um link para vocês conferirem por lá a evolução do projeto. =D&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://miro.com/app/board/o9J_kvUf1Hk=/&quot; target=&quot;_blank&quot;&gt;https://miro.com/app/board/o9J_kvUf1Hk=/&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#3 Meta Minha - Logo</title><link href="http://localhost:4000/meta-minha-logo" rel="alternate" type="text/html" title="#3 Meta Minha - Logo" /><published>2020-02-26T00:00:00-03:00</published><updated>2020-02-26T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-logo</id><content type="html" xml:base="http://localhost:4000/meta-minha-logo">&lt;p&gt;&lt;strong&gt;“Offtopic” da saga&lt;/strong&gt;, sempre curti desenhar, pensar no papel e coisas assim. Na minha infância cheguei a desenhar muito mesmo, mas infelizmente não mantive a prática de desenho e hoje apenas mantive o pensamento no papel. Minha mãe é artesã e posso dizer que “cursei” com ela a faculdade que fez sobre arte. =D&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://miro.com/app/board/o9J_kvUf1Hk=/&quot; target=&quot;_blank&quot;&gt;https://miro.com/app/board/o9J_kvUf1Hk=/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/meta-minha-sprint-zero&quot; target=&quot;_blank&quot;&gt;#5 - Preparação do ambiente&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">#3 Meta Minha - Logo</title><link href="http://localhost:4000/meta-minha-logo" rel="alternate" type="text/html" title="#3 Meta Minha - Logo" /><published>2020-02-26T00:00:00-03:00</published><updated>2020-02-26T16:00:00-03:00</updated><id>http://localhost:4000/meta-minha-logo</id><content type="html" xml:base="http://localhost:4000/meta-minha-logo">&lt;p&gt;&lt;strong&gt;“Offtopic” da saga&lt;/strong&gt;, sempre curti desenhar, pensar no papel e coisas assim. Na minha infância cheguei a desenhar muito mesmo, mas infelizmente não mantive a prática de desenho e hoje apenas mantive o pensamento no papel. Minha mãe é artesã e posso dizer que “cursei” com ela a faculdade que fez sobre arte. =D&lt;/p&gt;
 
 &lt;p&gt;Com esse background, apenas no feeling, vamos tentar pensar alguma logo para o aplicativo.&lt;/p&gt;
 
@@ -293,7 +373,8 @@ E a sequência correspondendo a uma cor de post it, dai temos nossa precificaç�
 &lt;p&gt;&lt;a href=&quot;/meta-minha-a-ideia&quot; target=&quot;_blank&quot;&gt;#1 - A Ideia&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;/meta-minha-design&quot; target=&quot;_blank&quot;&gt;#2 - Design da ideia&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;/meta-minha-logo&quot; target=&quot;_blank&quot;&gt;#3 - Logo&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;/meta-minha-agil&quot; target=&quot;_blank&quot;&gt;#4 - Organização e priorização&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;a href=&quot;/meta-minha-agil&quot; target=&quot;_blank&quot;&gt;#4 - Organização e priorização&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;/meta-minha-sprint-zero&quot; target=&quot;_blank&quot;&gt;#5 - Preparação do ambiente&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Aguardem..
 &lt;img src=&quot;https://media.giphy.com/media/l0HlKrB02QY0f1mbm/giphy-downsized.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="agil" /><category term="ux" /><category term="ui" /><category term="branding" /><category term="devops" /><category term="jenkins" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
@@ -644,154 +725,4 @@ E a sequência correspondendo a uma cor de post it, dai temos nossa precificaç�
 
 &lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
-
-&lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
-
-&lt;p&gt;Com isso em mente, criamos tudo no Heroku e abaixo vai um pequeno passo a passo de como configurar um App no Heroku usando:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Python Flask - para consultar os dados no banco e responder ao client&lt;/li&gt;
-  &lt;li&gt;MySQL ClearDB - Addon do Heroku que permite criar um DB de até 5MB(mais que suficiente para uma POC)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;primeiro-passo-configurar-o-app-no-heroku-com-o-addon-mysql&quot;&gt;Primeiro passo: Configurar o app no Heroku com o Addon MySQL&lt;/h4&gt;
-
-&lt;p&gt;Para conseguirmos fazer tudo o que pretendemos precisamos deixar tudo configurado e vamos fazer isso aqui.&lt;/p&gt;
-
-&lt;p&gt;Começando pela criação do app no Heroku:
-&lt;img src=&quot;assets/img/tutoriais/python-mysql/criar-app-1.png&quot; style=&quot;margin:20px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/criar-app-2.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Após criar o aplicativo vamos precisar incluir os addons, no caso vamos incluir um addon para storage MySQL.
-O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-addons-1.png&quot; style=&quot;margin:20px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Na imagem acima é preciso clicar em configure add-ons e com isso será direcionado para uma página onde a busca da imagem abaixo será mostrada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-addons-2.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Agora com o Add-on configurado precisamos nos conectar no banco para criar as tabelas e incluir dados para consumir.&lt;/p&gt;
-
-&lt;p&gt;Para isso precisamos ir até as configurações de nosso app e abrir as variáveis de configuração.&lt;/p&gt;
-
-&lt;p&gt;Lá vamos encontrar todos os dados para conectar com o banco.&lt;/p&gt;
-
-&lt;p&gt;Com o seguinte formato:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql://[user]:[passwd]@[host]/[default_schema]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-vars-mysql.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;segundo-passo-criar-as-tabelas-e-incluir-dados&quot;&gt;Segundo passo: Criar as tabelas e incluir dados&lt;/h4&gt;
-
-&lt;p&gt;Para este item eu costumo utilizar o MySQL Workbench, mas qualquer cliente, inclusive terminal pode ser utilizado.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/mysql-wb.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Após conectar, crie suas tabelas e dados, eu criei uma tabela simples para exemplificar.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE users (
-  idusers INT NOT NULL,
-  name VARCHAR(45) NULL,
-  phone VARCHAR(45) NULL,
-  PRIMARY KEY (idussers)
-);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;terceiro-passo-subir-a-app-no-heroku-com-um-hello-world&quot;&gt;Terceiro passo: Subir a app no heroku com um hello world&lt;/h4&gt;
-
-&lt;p&gt;Um aplicação python no heroku requer alguns cuidados para subir certinho e vamos passar por todos aqui.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;requirements.txt&lt;/strong&gt;
-Arquivo responsável por abrigar todos as libs que vamos importar no projeto. O próprio nome já diz certo? Requirements. =D&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Flask-MySQLdb==0.2.0
-gunicorn==19.8.1
-mysqlclient==1.3.12
-Flask==0.12.2
-Flask-Cors==3.0.3
-Flask-MySQL==1.4.0
-PyMySQL==0.8.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nesse caso temos algumas libs que vamos precisar. Básicamente todas girando no universo do Flask e MySQL&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Procfile&lt;/strong&gt;
-Arquivo exclusivo do heroku para inicializar os apps. Ele pode abrigar scripts para iniciar sua aplicação.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;web: gunicorn api:app
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nesse caso o trecho procura a app dentro do arquivo api e inicia utulizando o gunicorn&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;api.py&lt;/strong&gt;
-Arquivo principal da aplicação. Aqui temos todos os códigos básicos para retornar um response.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask.ext.mysql&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt; 
-
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# MySQL configurations  #### REVER trecho de configuração para buscar as informações&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_USER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'USER'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_PASSWORD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'PASSWD'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_DB'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'DEFAULT_SCHEMA'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_HOST'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'HOST'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;c&quot;&gt;# routes&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@app.route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM users&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fetchall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;por-último-os-resultados-dessa-saga&quot;&gt;Por último os resultados dessa saga.&lt;/h4&gt;
-
-&lt;p&gt;Temos duas maneiras de testar:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Localmente&lt;/strong&gt;
-Com o heroku cli baixado temos um recurso para utilizar com as mesmas configurações do app, porém localmente.
-Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku local web
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Este comando irá iniciar localmente um server de acordo com o seu app, normalmente na porta 5000.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/result-local.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Publicando&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Para publicar o app no heroku basta fazer um &lt;code class=&quot;highlighter-rouge&quot;&gt;git push heroku master&lt;/code&gt;. Como o heroku é baseado em git ele vai entender o commit e iniciar o build com os novos códigos.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/commit-final.png&quot; style=&quot;margin:10px auto;&quot; alt=&quot;&quot; /&gt;
-** ignorem o –force do comando, não é necessário. Tinha outra aplicação rodando nesse link e o merge não seria tão amigável rsrs&lt;/p&gt;
-
-&lt;p&gt;Após o build acima basta clicar no link que o CLI retornou et voilá.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/result-publicado.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry></feed>

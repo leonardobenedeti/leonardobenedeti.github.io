@@ -45,6 +45,7 @@ A cada post que criar vou incluir o link abaixo para facilitar a leitura e sequ�
 <a href="/meta-minha-design" target="_blank">#2 - Design da ideia</a><br>
 <a href="/meta-minha-logo" target="_blank">#3 - Logo</a><br>
 <a href="/meta-minha-agil" target="_blank">#4 - Organização e priorização</a><br>
+<a href="/meta-minha-sprint-zero" target="_blank">#5 - Preparação do ambiente</a><br>
 
 
 
