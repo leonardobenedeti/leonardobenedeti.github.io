@@ -463,7 +463,7 @@
 
 <p>Usando os eventos do Hammer.js apenas precisei incluir o <code class="highlighter-rouge">tap</code> na lista de eventos para funcionar. Suave!</p>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hammer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'tap'</span><span class="p">,</span> <span class="p">(</span><span class="nx">ev</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hammer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">tap</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">ev</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div></div>
@@ -473,8 +473,8 @@
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">open</span><span class="p">(){</span> 
     <span class="c1">// Este metodo já existia no tutorial original, apenas isolei em um método para controlar 'por fora'</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">domCtrl</span><span class="p">.</span><span class="nx">write</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="s1">'transition'</span><span class="p">,</span> <span class="s1">'top 0.5s'</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="s1">'top'</span><span class="p">,</span>  <span class="k">this</span><span class="p">.</span><span class="nx">handleTop</span> <span class="o">+</span> <span class="s1">'px'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="dl">'</span><span class="s1">transition</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">top 0.5s</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="dl">'</span><span class="s1">top</span><span class="dl">'</span><span class="p">,</span>  <span class="k">this</span><span class="p">.</span><span class="nx">handleTop</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">px</span><span class="dl">'</span><span class="p">);</span>
     <span class="p">});</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -494,14 +494,14 @@
 <p>Código da page home, envia o evento para algum lugar do app que escute.</p>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">callDetails</span><span class="p">(){</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="s1">'open'</span><span class="p">,</span> <span class="p">{</span><span class="na">dados</span><span class="p">:</span> <span class="s2">"Dados via parametro"</span><span class="p">});</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="dl">'</span><span class="s1">open</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">dados</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Dados via parametro</span><span class="dl">"</span><span class="p">});</span>
 <span class="p">}</span> 
 </code></pre></div></div>
 
 <p>Código do componente onde o listener fica esperando o evento para iniciar o método <code class="highlighter-rouge">open()</code>.</p>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">events</span><span class="p">:</span> <span class="nx">Events</span><span class="p">,</span> <span class="cm">/* outros controllers...*/</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">events</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="s1">'open'</span><span class="p">,</span> <span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+    <span class="nx">events</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">open</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">details</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">dados</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span> <span class="c1">// olha ele ai de novo. =D</span>
 <span class="p">})</span>
@@ -560,13 +560,13 @@
 
 <p>Antes de qualquer truque precisamos instalar os packages para isso.</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install angular-cli-ghpages <span class="nt">--save</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>angular-cli-ghpages <span class="nt">--save</span>
 </code></pre></div></div>
 
 <p>Após instalar basta colar esse código dentro de scripts para automatizar tudo. Build e deploy.</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"gh-pages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ionic build --base-href 'https://leonardobenedeti.github.io/ionic3-swipe-up-component/' --prod &amp;&amp; npx ngh --dir=www/"</span><span class="w">
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"gh-pages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ionic build --base-href 'https://leonardobenedeti.github.io/ionic3-swipe-up-component/' --prod &amp;&amp; npx ngh --dir=www/"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 

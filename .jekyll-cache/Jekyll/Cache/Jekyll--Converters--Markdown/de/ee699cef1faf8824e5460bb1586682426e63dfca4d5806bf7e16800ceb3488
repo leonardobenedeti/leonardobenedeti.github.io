@@ -1,0 +1,43 @@
+I"i<p><img src="assets/img/vision/premier-pet.png" style="margin:40px auto;" alt="" /></p>
+
+<p>Este projeto foi bem curto, levou 12h no total para resolver o problema inicial e alguns outros erros.</p>
+
+<p><strong>Problema inicial:</strong></p>
+<blockquote>
+  <p>“Não conseguimos publicar o app na loja, o painel reclama que o version code está errado, mas não está.”</p>
+
+  <p><cite>Vision Comunicação</cite></p>
+</blockquote>
+
+<p>Ao iniciar a analise do porque o GooglePlay não aceitou o apk, solicitei acesso ao painel e o APK em questão que foi recusado.</p>
+
+<p>Refiz o processo confirmando que o Play não aceitava o apk, fui analisar mais a fundo o binário.</p>
+
+<p>Existe um processo para verificar detalhes de qualquer apk, chamado <code class="highlighter-rouge">aapt</code>. Ao executar o comando ele retorna todas as informações que o Play extrai para realizar a publicação.</p>
+
+<p>Como utilizar o aapt:</p>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/[android-version]/aapt dump badging &lt;path-to-apk&gt;
+</code></pre></div></div>
+
+<p>No meu caso, precisava confirmar o <code class="highlighter-rouge">version code</code>, que de acordo com o painel estava incorreto.</p>
+
+<p>Para contextualizar um pouco mais, o projeto foi construido com Ionic 1. O framework utiliza um arquivo para suas configurações chamado config.xml, onde abriga todas as configs básicas do app, incluindo a versão do app.</p>
+
+<p>Quando o projeto Android é criado se baseando nesse arquivo, o script utiliza a versão do app 1.0.0 e converte <code class="highlighter-rouge">.</code> em <code class="highlighter-rouge">0</code>, transformando assim a versão 1.0.0 em 10000.</p>
+
+<p>Ao verificar o arquivo, já tendo em mente o version code necessário para subida do apk, reparei que apenas o número estava errado, parte por falta de atenção da Vision parte pelo Ionic transformar <code class="highlighter-rouge">.</code> em <code class="highlighter-rouge">0</code> no version code.</p>
+
+<p>Com isso aconteceu uma confusão com as versões.</p>
+
+<p>O config.xml ficou com o mesmo 1.0.0(10000) e as alterações foram feitas direto no Android Studio(prática não recomendada já que o Ionic gera os arquivos automaticamente), alterando o Manifest de 10000(1.0.0) para 100001(1.0.01), aumentando assim o version code de 10000(dez mill) para 100001(cem mil e um).</p>
+
+<p>Em um nova alteração, ajustaram o config.xml como recomendam as docs a cada subida e seguindo a ordem foi alterado de 1.0.0 para 1.0.1, convertendo para o version code 10001(dez mil e um). Ao tentar subir um apk com version code 10001 o GooglePlay reclamou, e com razão, afinal 100001 &gt; 10001.</p>
+
+<p>A solução então foi incrementar mais um .2 no version code, 1.0.1.2, convertendo para 100002.</p>
+
+<p>Demorou tanto para encontrar este detalhe pois os commits estavam de acordo, config.xml certinho.</p>
+
+<p>Mas ao comparar os apks gerados cheguei a essa conclusão, com isso, passei a analise para a Vision e tudo correu normalmente. O app foi publicado com as alterações que precisavam e continua sendo mantido.</p>
+
+<p><a href="https://stackoverflow.com/questions/4470139/how-to-get-application-or-package-info-from-the-apk-file-in-the-android-applicat" target="_blank">https://stackoverflow….e-in-the-android-applicat</a></p>
+:ET

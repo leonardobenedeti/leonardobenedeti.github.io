@@ -527,16 +527,16 @@ Arquivo principal da aplicação. Aqui temos todos os códigos básicos para ret
 
 <span class="n">mysql</span> <span class="o">=</span> <span class="n">MySQL</span><span class="p">()</span>
 
-<span class="c"># MySQL configurations  #### REVER trecho de configuração para buscar as informações</span>
-<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_USER'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'USER'</span>
+<span class="c1"># MySQL configurations  #### REVER trecho de configuração para buscar as informações
+</span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_USER'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'USER'</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_PASSWORD'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'PASSWD'</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_DB'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'DEFAULT_SCHEMA'</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_HOST'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'HOST'</span>
 <span class="n">mysql</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
 
 
-<span class="c"># routes</span>
-<span class="nd">@app.route</span><span class="p">(</span><span class="s">'/'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">"GET"</span><span class="p">,</span> <span class="p">])</span>
+<span class="c1"># routes
+</span><span class="o">@</span><span class="n">app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">"GET"</span><span class="p">,</span> <span class="p">])</span>
 <span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>

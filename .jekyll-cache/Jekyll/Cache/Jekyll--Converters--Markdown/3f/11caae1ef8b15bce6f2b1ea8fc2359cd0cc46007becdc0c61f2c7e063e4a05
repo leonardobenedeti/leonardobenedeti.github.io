@@ -1,0 +1,141 @@
+I"�-<p>Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.</p>
+
+<p>Porém fiquei curioso em saber se o Ionic seria capaz de fazer a mesma coisa.</p>
+
+<p>Iniciando uma busca, encontrei muita coisa mas nada funcionou 100% até encontrar esse tutorial que mostra como fazer e de uma maneira tão simples que vou deixar a referência logo no início.
+<a href="https://www.joshmorony.com/how-to-create-a-sliding-drawer-component-for-ionic-2/" target="_blank">Post referência</a></p>
+
+<p>No post ele comenta um pouco sobre manipulação de DOM e como utilizar o <a href="https://hammerjs.github.io/">Hammer.js</a>.</p>
+
+<p>No post original ele faz apenas o swipe, para abrir e fechar. Porém eu queria algumas coisa a mais.</p>
+
+<p>Como:</p>
+
+<ul>
+  <li>Abrir o componente clicando, mantendo o efeito</li>
+  <li>Abrir o componente clicando em um botão fora do contexto do componente</li>
+</ul>
+
+<p>Brinde:</p>
+
+<ul>
+  <li>Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais</li>
+</ul>
+
+<p>Listando as tarefas, vamos ao que precisei alterar.</p>
+
+<h4 id="abrir-o-componente-clicando-mantendo-o-efeito">Abrir o componente clicando, mantendo o efeito</h4>
+
+<p>Usando os eventos do Hammer.js apenas precisei incluir o <code class="highlighter-rouge">tap</code> na lista de eventos para funcionar. Suave!</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hammer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">tap</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">ev</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>O método <code class="highlighter-rouge">open()</code> utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">open</span><span class="p">(){</span> 
+    <span class="c1">// Este metodo já existia no tutorial original, apenas isolei em um método para controlar 'por fora'</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">domCtrl</span><span class="p">.</span><span class="nx">write</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="dl">'</span><span class="s1">transition</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">top 0.5s</span><span class="dl">'</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">renderer</span><span class="p">.</span><span class="nx">setElementStyle</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">nativeElement</span><span class="p">,</span> <span class="dl">'</span><span class="s1">top</span><span class="dl">'</span><span class="p">,</span>  <span class="k">this</span><span class="p">.</span><span class="nx">handleTop</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">px</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Com isso consegui com um clique na tela abrir o componente com o mesmo efeito do swipe. TOP.</p>
+
+<blockquote>
+  <p>Próximo…</p>
+</blockquote>
+
+<h4 id="abrir-o-componente-clicando-em-um-botão-fora-do-contexto-do-componente-com-parametros">Abrir o componente clicando em um botão fora do contexto do componente, com parametros</h4>
+
+<p>Aqui tinha um desafio maior, sem nada na doc, afinal, estava fora do contexto do Hammer.js para conseguir manipular.</p>
+
+<p>Com isso precisei recorrer ao Events do angular para fazer essa comunicação entre componentes.</p>
+
+<p>Código da page home, envia o evento para algum lugar do app que escute.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">callDetails</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">events</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="dl">'</span><span class="s1">open</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">dados</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Dados via parametro</span><span class="dl">"</span><span class="p">});</span>
+<span class="p">}</span> 
+</code></pre></div></div>
+
+<p>Código do componente onde o listener fica esperando o evento para iniciar o método <code class="highlighter-rouge">open()</code>.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">events</span><span class="p">:</span> <span class="nx">Events</span><span class="p">,</span> <span class="cm">/* outros controllers...*/</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">events</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">open</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">details</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">dados</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span> <span class="c1">// olha ele ai de novo. =D</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Mais uma pra dentro.</p>
+</blockquote>
+
+<h4 id="ajustar-o-css-para-ficar-parecido-com-o-componente-normalmente-usado-nos-apps-atuais">Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais</h4>
+
+<p>O <code class="highlighter-rouge">css</code> do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.</p>
+
+<p>Para o exemplo que eu estava trabalhando precisei alterar isso um pouco.</p>
+
+<p>Exemplo do Josh:
+<img src="assets/img/ionic-swipe-up/example-josh.gif" alt="" /></p>
+
+<p>Vamos aos ajustes que fiz. Pouca coisa mas já deu uma diferença e mostra o que podemos ajustar para ficar do gosto que precisamos.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">content-drawer</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$colors</span><span class="o">,</span> <span class="s1">'primary'</span><span class="p">);</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">z-index</span><span class="p">:</span> <span class="m">10</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">-4px</span> <span class="m">22px</span> <span class="m">-8px</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="mi">.75</span><span class="p">);</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$colors</span><span class="o">,</span> <span class="s1">'light'</span><span class="p">);</span>
+    
+    <span class="nc">.linha</span><span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="m">40%</span><span class="p">;</span>
+        <span class="nl">height</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">16px</span> <span class="nb">auto</span> <span class="m">40px</span><span class="p">;</span>
+        <span class="nl">border-radius</span><span class="p">:</span> <span class="m">26px</span><span class="p">;</span>
+        <span class="nl">background</span><span class="p">:</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$colors</span><span class="o">,</span> <span class="s1">'light'</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Resultado com os ajustes de css acima:
+<img src="assets/img/ionic-swipe-up/result-leo.gif" alt="" /></p>
+
+<p>Com isso encerro o exemplo com os ajustes necessários.</p>
+
+<hr />
+
+<h3 id="brinde">Brinde</h3>
+
+<p>Esse exemplo publiquei no gh-pages de maneira bem automática. Como?</p>
+
+<p>O github pages é um “server” que hospeda páginas estáticas, como esta que você está vendo.</p>
+
+<p>Para publicar um app web ionic temos alguns truques.</p>
+
+<p>Antes de qualquer truque precisamos instalar os packages para isso.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>angular-cli-ghpages <span class="nt">--save</span>
+</code></pre></div></div>
+
+<p>Após instalar basta colar esse código dentro de scripts para automatizar tudo. Build e deploy.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"gh-pages"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ionic build --base-href 'https://leonardobenedeti.github.io/ionic3-swipe-up-component/' --prod &amp;&amp; npx ngh --dir=www/"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D</p>
+
+<p><a href="https://leonardobenedeti.github.io/ionic3-swipe-up-component/">Link do projeto publicado rodando</a></p>
+:ET

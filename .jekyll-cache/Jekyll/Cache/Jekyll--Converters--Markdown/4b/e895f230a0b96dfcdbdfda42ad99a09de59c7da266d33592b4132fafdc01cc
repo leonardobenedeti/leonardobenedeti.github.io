@@ -1,0 +1,28 @@
+I"�<p><img src="assets/img/coca/coca-porto-real.jpg" style="margin:40px auto;" alt="" /></p>
+
+<p>Motivo do projeto: Com boleto e notas fiscais sendo gerado em ambientes diferentes, o setor de conferência de pedidos precisava, toda manhã antes de liberar as entregas, imprimir todos os boletos em um servidor, notas fiscais em outro, folhear as duas pilhas e unir boleto com a nota fiscal do pedido do Bar do Zé, grampear e liberar para entrega.</p>
+
+<blockquote>
+  <p><strong>Um processo manual e trabalhoso demais.</strong></p>
+</blockquote>
+
+<p>O projeto consistiu em buscar numa base de dados em um AS400, informações de notas fiscais e no SAP, boletos referentes a pedidos efetuados pelos clientes da unidade CiaFlu.</p>
+
+<p>Para auxiliar o projeto, foi comprada uma nova impressora que ao finalizar a impressão de um documento com mais de uma página, ela grampeava as páginas. <strong>WOW</strong></p>
+
+<p>Com as duas informações em mãos e a impressora esperando, bastava unir tudo em um único arquivo e enviar para impressão.</p>
+
+<blockquote>
+  <p><strong>Moleza rsrsrs</strong></p>
+</blockquote>
+
+<p>A integração foi feita em Java buscando as informações e enviando para o SAP mostrando em um report customizado mostrando a lista a ser impressa.</p>
+
+<p>Com esse processo todo automatizado, o analista agora podia apenas conferir as notas e boletos, já impressos e grampeados, e direcionar para o fluxo de entrega de um modo mais garantido, evitando erros manuais que aconteciam com frequência.</p>
+
+<p><strong>Outras informações</strong></p>
+
+<p>Com a compra da CiaFlu pela FEMSA, o ABAP foi descontinuado, por eles utilizarem o SAP sem customizações.</p>
+
+<p>Com essa rescisão precisei decidir o que fazer e depois de pensar muito, comprei um MacBook e migrei para o desenvolvimento mobile. A outra opção seria fazer a Academia SAP, mas o mundo mobile estava crescendo e tomei a direção que achei mais interessante. =D</p>
+:ET

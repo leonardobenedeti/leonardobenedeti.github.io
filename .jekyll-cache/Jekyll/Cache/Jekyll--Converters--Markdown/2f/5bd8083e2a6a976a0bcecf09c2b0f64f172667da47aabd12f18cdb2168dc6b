@@ -1,0 +1,152 @@
+I"�%<p><img src="assets/img/tutoriais/python-mysql/imagem-post.png" style="margin:40px auto 10px;" alt="" /></p>
+<p style="text-align:center;">** Dessa vez foi no caderno da firma rsrs</p>
+
+<p>Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.</p>
+
+<p>Com isso em mente, criamos tudo no Heroku e abaixo vai um pequeno passo a passo de como configurar um App no Heroku usando:</p>
+
+<ul>
+  <li>Python Flask - para consultar os dados no banco e responder ao client</li>
+  <li>MySQL ClearDB - Addon do Heroku que permite criar um DB de até 5MB(mais que suficiente para uma POC)</li>
+</ul>
+
+<h4 id="primeiro-passo-configurar-o-app-no-heroku-com-o-addon-mysql">Primeiro passo: Configurar o app no Heroku com o Addon MySQL</h4>
+
+<p>Para conseguirmos fazer tudo o que pretendemos precisamos deixar tudo configurado e vamos fazer isso aqui.</p>
+
+<p>Começando pela criação do app no Heroku:
+<img src="assets/img/tutoriais/python-mysql/criar-app-1.png" style="margin:20px auto 10px;" alt="" /></p>
+
+<p><img src="assets/img/tutoriais/python-mysql/criar-app-2.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<p>Após criar o aplicativo vamos precisar incluir os addons, no caso vamos incluir um addon para storage MySQL.
+O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/config-addons-1.png" style="margin:20px auto 10px;" alt="" /></p>
+
+<p>Na imagem acima é preciso clicar em configure add-ons e com isso será direcionado para uma página onde a busca da imagem abaixo será mostrada.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/config-addons-2.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<p>Agora com o Add-on configurado precisamos nos conectar no banco para criar as tabelas e incluir dados para consumir.</p>
+
+<p>Para isso precisamos ir até as configurações de nosso app e abrir as variáveis de configuração.</p>
+
+<p>Lá vamos encontrar todos os dados para conectar com o banco.</p>
+
+<p>Com o seguinte formato:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql://[user]:[passwd]@[host]/[default_schema]
+</code></pre></div></div>
+<p><img src="assets/img/tutoriais/python-mysql/config-vars-mysql.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<h4 id="segundo-passo-criar-as-tabelas-e-incluir-dados">Segundo passo: Criar as tabelas e incluir dados</h4>
+
+<p>Para este item eu costumo utilizar o MySQL Workbench, mas qualquer cliente, inclusive terminal pode ser utilizado.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/mysql-wb.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<p>Após conectar, crie suas tabelas e dados, eu criei uma tabela simples para exemplificar.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE users (
+  idusers INT NOT NULL,
+  name VARCHAR(45) NULL,
+  phone VARCHAR(45) NULL,
+  PRIMARY KEY (idussers)
+);
+</code></pre></div></div>
+
+<h4 id="terceiro-passo-subir-a-app-no-heroku-com-um-hello-world">Terceiro passo: Subir a app no heroku com um hello world</h4>
+
+<p>Um aplicação python no heroku requer alguns cuidados para subir certinho e vamos passar por todos aqui.</p>
+
+<p><strong>requirements.txt</strong>
+Arquivo responsável por abrigar todos as libs que vamos importar no projeto. O próprio nome já diz certo? Requirements. =D</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Flask-MySQLdb==0.2.0
+gunicorn==19.8.1
+mysqlclient==1.3.12
+Flask==0.12.2
+Flask-Cors==3.0.3
+Flask-MySQL==1.4.0
+PyMySQL==0.8.1
+</code></pre></div></div>
+
+<p>Nesse caso temos algumas libs que vamos precisar. Básicamente todas girando no universo do Flask e MySQL</p>
+
+<p><strong>Procfile</strong>
+Arquivo exclusivo do heroku para inicializar os apps. Ele pode abrigar scripts para iniciar sua aplicação.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>web: gunicorn api:app
+</code></pre></div></div>
+
+<p>Nesse caso o trecho procura a app dentro do arquivo api e inicia utulizando o gunicorn</p>
+
+<p><strong>api.py</strong>
+Arquivo principal da aplicação. Aqui temos todos os códigos básicos para retornar um response.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">flask.ext.mysql</span> <span class="kn">import</span> <span class="n">MySQL</span> 
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="n">mysql</span> <span class="o">=</span> <span class="n">MySQL</span><span class="p">()</span>
+
+<span class="c1"># MySQL configurations  #### REVER trecho de configuração para buscar as informações
+</span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_USER'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'USER'</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_PASSWORD'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'PASSWD'</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_DB'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'DEFAULT_SCHEMA'</span>
+<span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MYSQL_DATABASE_HOST'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'HOST'</span>
+<span class="n">mysql</span><span class="o">.</span><span class="n">init_app</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+
+
+<span class="c1"># routes
+</span><span class="o">@</span><span class="n">app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s">"GET"</span><span class="p">,</span> <span class="p">])</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s">"SELECT * FROM users"</span><span class="p">)</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h4 id="por-último-os-resultados-dessa-saga">Por último os resultados dessa saga.</h4>
+
+<p>Temos duas maneiras de testar:</p>
+
+<p><strong>Localmente</strong>
+Com o heroku cli baixado temos um recurso para utilizar com as mesmas configurações do app, porém localmente.
+Para isso basta digitar no terminal, dentro da pasta do projeto.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku local web
+</code></pre></div></div>
+
+<p>Este comando irá iniciar localmente um server de acordo com o seu app, normalmente na porta 5000.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/result-local.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<p><strong>Publicando</strong></p>
+
+<p>Para publicar o app no heroku basta fazer um <code class="highlighter-rouge">git push heroku master</code>. Como o heroku é baseado em git ele vai entender o commit e iniciar o build com os novos códigos.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/commit-final.png" style="margin:10px auto;" alt="" />
+** ignorem o –force do comando, não é necessário. Tinha outra aplicação rodando nesse link e o merge não seria tão amigável rsrs</p>
+
+<p>Após o build acima basta clicar no link que o CLI retornou et voilá.</p>
+
+<p><img src="assets/img/tutoriais/python-mysql/result-publicado.png" style="margin:10px auto 40px;" alt="" /></p>
+
+<hr />
+
+<p>Caso queira baixar os códigos para criar sua API FLASK acesse o repo</p>
+<ul>
+  <li><a href="https://github.com/leonardobenedeti/api-flask-with-mysql" target="_blank">GitHub - api-flask-with-mysql</a></li>
+</ul>
+:ET

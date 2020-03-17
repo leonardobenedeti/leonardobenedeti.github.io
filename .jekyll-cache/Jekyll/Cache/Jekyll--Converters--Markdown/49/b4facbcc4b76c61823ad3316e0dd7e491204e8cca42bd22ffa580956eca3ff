@@ -1,0 +1,100 @@
+I"X<p>Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.</p>
+
+<p>A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.</p>
+
+<p>Abaixo vão dois links explicando melhor os detalhes:</p>
+
+<ul>
+  <li><a href="http://sendgrid.com/" target="_blank">Site oficial</a></li>
+  <li><a href="https://elements.heroku.com/addons/sendgrid" target="_blank">Link para o add-on dentro do heroku</a>(recomendo vir por aqui)</li>
+</ul>
+
+<p>Agora já conhecendo melhor a plataforma, vamos configurar tudo para criar nossos emails transacionais.</p>
+
+<p>O primeiro passo é provisionar o add-on do Sendgrid dentro do Heroku.</p>
+
+<p><img src="assets/img/sendgrid/1.0-provision-heroku.png" alt="" /></p>
+
+<p>Com o add-on configurado essa é o dashboard da plataforma.</p>
+
+<p><img src="assets/img/sendgrid/2.0-dashboard.png" alt="" /></p>
+
+<p>Dentro do dashboard precisamos realizar duas configurações básicas são:</p>
+
+<ul>
+  <li>
+    <p>1 - Criar uma api key no dashboard 
+<br /><a href="https://app.sendgrid.com/settings/api_keys" target="_blank">Settings &gt; API KEY</a>
+<img src="assets/img/sendgrid/3.0-config-api-key.png" alt="" /></p>
+  </li>
+  <li>
+    <p>2 - Configurar a api key como variável no heroku
+<img src="assets/img/sendgrid/4.0-config-api-on-heroku.png" alt="" /></p>
+  </li>
+</ul>
+
+<p>Após as configurações básicas precisamos criar e testar um template ainda pelo dashboard</p>
+
+<ul>
+  <li>Menu de templates
+<img src="assets/img/sendgrid/5.0-menu-templates.png" alt="" /></li>
+</ul>
+
+<p>Aqui basta criar o template como preferir, usando a interface de arrasta e solta ou usando HTML</p>
+
+<p>Após criar o template precisamos testar e pra isso na própria plataforma temos um sandbox para enviar o email.
+<img src="assets/img/sendgrid/6.0-preview-and-test-template.png" alt="" /></p>
+
+<p>Ao enviar o email via sandbox, podemos conferir a caixa de entrada do email escolhido para receber o teste.
+<img src="assets/img/sendgrid/7.0-first-test-by-preview.png" alt="" /></p>
+
+<p>Podemos perceber que a variável user ainda está sem preenchimento. Vamos agora criar o backend para enviar o email de forma transacional.</p>
+
+<h3 id="nodejs">NodeJs</h3>
+
+<p>Para exemplificar o uso da plataforma criei um projeto e estou mantendo no meu github.</p>
+
+<p><a href="https://github.com/leonardobenedeti/heroku-mail-sender" target="_blank">
+  Link do repo
+</a></p>
+
+<p>Ou você pode ‘deployar’ direto no heroku clicando abaixo</p>
+
+<p><a href="https://heroku.com/deploy?template=https://github.com/leonardobenedeti/heroku-mail-sender" target="_blank">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" />
+</a></p>
+
+<p>A base do código é o que busquei na doc oficial do Sendgrid para nodejs.</p>
+
+<p>Import e configuração da API KEY que criamos anteriormente.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">sgMail</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@sendgrid/mail</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">sgMail</span><span class="p">.</span><span class="nx">setApiKey</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">SENDGRID_APIKEY</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Código base utilizando o template que criamos enviando todos os parametros no request.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">"</span><span class="s2">/sendmail/template</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="p">{</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">template_data</span><span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">msg</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">to</span><span class="p">:</span> <span class="nx">to</span><span class="p">,</span>
+        <span class="na">from</span><span class="p">:</span> <span class="k">from</span><span class="p">,</span>
+        <span class="na">templateId</span><span class="p">:</span> <span class="dl">'</span><span class="s1">d-ee4c43022cc74cec802e5398cb54a31f</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">dynamic_template_data</span><span class="p">:</span> <span class="nx">template_data</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="nx">sgMail</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">success</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">success</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Email enviado com sucesso</span><span class="dl">"</span><span class="p">});</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="o">=&gt;</span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">error</span><span class="p">:</span><span class="dl">"</span><span class="s2">Algo de errado não está certo no envio de emails.</span><span class="dl">"</span><span class="p">}));</span> 
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Com todo código configurado e rodando localmente vamos aos testes via postman.</p>
+
+<p><img src="assets/img/sendgrid/8.0-request-postman.png" alt="" /></p>
+
+<p>Após o teste, podemos perceber que o parametro de usuário foi preenchido de acordo com o request via postman.</p>
+
+<p><img src="assets/img/sendgrid/9.0-result-postman.png" alt="" /></p>
+
+<p>Dai pra frente, precisamos criar um template customizado para cada caso e transacionar como preferir. =D</p>
+:ET

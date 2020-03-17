@@ -1,0 +1,44 @@
+I"#<h2 id="minha-primeira-aventura-flutter">Minha “primeira” aventura Flutter</h2>
+
+<p>A título de curiosidade baixei um repo para entender mais sobre Flutter.</p>
+
+<p>Navegando encontrei esse post no medium<br />
+<a href="https://medium.com/@diegoveloper/flutter-lets-know-the-scrollcontroller-and-scrollnotification-652b2685a4ac" target="_blank">Flutter: let’s know the ScrollController and ScrollNotification</a></p>
+
+<p>Estava procurando especificamente sobre como controlar a scrollview para emitir eventos enquanto o usuário estivesse scrollando a tela.</p>
+
+<p>Para minha grata surpresa, o repo além de ter o que eu procurava, encontrei um clone do Twitter, especificamente a UI da page de perfil, com efeitos e tudo.</p>
+
+<p>Ao tentar incluir em um projeto notei um bug ao scrollar as tabs do projeto original.</p>
+
+<p>Quando eu scrollava as tabs o avatar iniciava a animação, porém, não deveria acontecer isso.</p>
+
+<p>Problema:
+<img src="assets/videos/bug-scrolling-tabs.gif" alt="" /></p>
+
+<p>Esse bug me fez quase desistir da UI que antes considerei perfeita para o que estava criando para estudos.</p>
+
+<p>Mas como o Flutter é um toolkit desafiador e o Dart é intuitivo e simples, pensei: Porque não tentar arrumar isso?!</p>
+
+<p>Com algum tempo procurando o problema e imprimindo tudo que poderia de logs, identifiquei que a animação do avatar estava sendo iniciado com QUALQUER scroll na tela, mais especificamente falando do header.</p>
+
+<p>Encontrei a propriedade <code class="highlighter-rouge">scrollNotification.metrics.axisDirection</code> que identificava se o scroll era vertical<code class="highlighter-rouge">(top-&gt;bottom or bottom-&gt;top)</code> ou horizontal<code class="highlighter-rouge">(left-&gt;right or right-&gt;left)</code> e com isso consegui controlar quando a animação iniciaria ou não.</p>
+
+<p>Solução:
+<img src="assets/videos/bug-fixed-scroll-tabs.gif" alt="" /></p>
+
+<p>O pull request desse ajuste foi enviado para o repo original e espero que ajude outras pessoas.<br />
+<a href="https://github.com/diegoveloper/flutter-samples/pull/11" target="_blank">Link para o pull request</a></p>
+
+<p>Obs.: essa foi a minha primeira contribuição com a comunidade open source. =D</p>
+
+<hr />
+
+<p>Informações importantes para quem quer entrar para o mundo Flutter:</p>
+
+<p>Temos uma mega comunidade no Brasil que fez agora no fim de agosto o evento Flutter Talks, onde conheci o git em questão, comentado acima. O Diego Velasquez mostrou as diferenças entre Provider e Bloc, além dele tiveram muitas outras talks sobre todos os assuntos possíveis de Flutter.</p>
+
+<p>A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!</p>
+
+<p><a href="https://t.me/flutterando" target="_blank">Telegram da Comunidade Flutterando</a></p>
+:ET

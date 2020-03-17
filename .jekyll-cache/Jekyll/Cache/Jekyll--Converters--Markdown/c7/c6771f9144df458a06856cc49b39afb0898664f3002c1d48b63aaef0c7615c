@@ -1,0 +1,104 @@
+I"�<p>Neste post vou entrar em um terreno desconhecido, nem tanto, mas não conheço tantos detalhes então talvez deixe algo passar.</p>
+
+<p>Vou estruturar a escrita para fazer sentido, pois fui criando meio sem ter noção de como fazer componentes e coisas assim.</p>
+
+<p>Vou mostrar primeiro os componentes que criei e como estou utilizando no protótipo.</p>
+
+<h3 id="componentes">Componentes</h3>
+
+<p><img src="assets/img/metaminha/2-componentes.png" alt="" /></p>
+
+<p>Explicando no geral, quis deixar a ideia mais estruturada possível, para quando for escrever o código, já ter noção de todos os estados de componentes, como botões, toggles e listas.</p>
+
+<p>Vou explicar alguns apenas, para estender tanto o post sobre design, até para não me perder na explicação. rsrs</p>
+
+<h3 id="botões---primaryclear">Botões - Primary/Clear</h3>
+
+<div class="grid">
+    <div class="a img">
+        <img src="assets/img/metaminha/3-componente-botao-primary.png" alt="" />
+    </div>
+    <div class="b img">
+        <img src="assets/img/metaminha/3.2-componente-botao-clear.png" alt="" />
+    </div>
+</div>
+
+<p><strong>Primary</strong> - Este botão é responsável por ações principais no app, ações que faria o usuário percorrer todo o app baseado no que desenhei como fluxo feliz.</p>
+
+<p><strong>Clear</strong> - Este botão é responsável por ações secundárias do app, ações como Skip do login e sair da aplicação, não são coisas que quero chamar atenção do usuário. Portanto utilizei este estado do botão.</p>
+
+<h3 id="toggle---ativadodesativado">Toggle - Ativado/Desativado</h3>
+
+<div class="grid">
+    <div class="a img">
+        <img src="assets/img/metaminha/4-componente-toggle-ativado.png" alt="" />
+    </div>
+    <div class="b img">
+        <img src="assets/img/metaminha/4.1-componente-toggle-desativado.png" alt="" />
+    </div>
+</div>
+
+<p>Aqui não temos mistério, um toggle para ativar ou desativar algo, portanto temos os dois estados para o componente.</p>
+
+<h3 id="item-detalhe-meta---não-executadoexecutadoremover">Item detalhe meta - Não Executado/Executado/Remover</h3>
+
+<div class="grid">
+    <div class="a img">
+        <img src="assets/img/metaminha/5-componente-item-detalhe-meta.png" alt="" />
+    </div>
+    <div class="b img">
+        <img src="assets/img/metaminha/5.1-componente-item-detalhe-meta-selecionado.png" alt="" />
+    </div>
+</div>
+
+<div class="grid">
+    <div class="a img">
+        <img src="assets/img/metaminha/5.2-componente-item-detalhe-meta-remover.png" alt="" />
+    </div>
+    <div class="b img"></div>
+</div>
+
+<p>Os estados aqui são 3 e controlam mais que um estado, controla também um comportamento. Além de selecionado e não selecionado também criei o estado para mostrar como seria caso o usuário quisesse remover o item.</p>
+
+<p>Bom… chega de componentes, para não estender tanto o post.</p>
+
+<h3 id="protótipo">Protótipo</h3>
+
+<p>Tentei seguir o máximo do desenho mas alterei algumas coisas e incluí outras que não desenhei por ser bem padrão como o Onboarding do app.</p>
+
+<p><img src="assets/img/metaminha/6-prototipo-final.png" alt="" /></p>
+
+<blockquote>
+  <p>Disclaimer: Não fiz nenhum curso nem nada relacionado ao assunto, portanto não me julguem rsrs</p>
+</blockquote>
+
+<p>Com o protótipo montado precisei ver com um pouco mais de vida antes de validar alguns pontos para partir para o desenvolvimento.</p>
+
+<p>Vamos então para a navegação deste protótipo. Até então temos um protótipo estático. Vamos dar vida a ele.</p>
+
+<h3 id="protótipo-navegável">Protótipo navegável</h3>
+
+<p>Linkei todo cenário possível que enxerguei para os casos de uso que imaginei no app. Vendo de cima fica um emaranhado de links impossível de entender.</p>
+
+<p><img src="assets/img/metaminha/6.1-prototipo-navegavel.png" alt="" /></p>
+
+<div class="grid">
+    <div class="a img">
+        <img src="assets/img/metaminha/fluxo.gif" alt="" />
+    </div>
+    <div class="b text">
+        Para facilitar o entendimento do fluxo do app e não precisar explicar um a um com prints aqui, fiz o seguinte: Gravei a navegação e na sequência segue o gif do fluxo completo. 
+    </div>
+</div>
+
+<p>Caso queira validar o protótipo com a visão de desenvolvedor e com mais detalhes clique no link abaixo.</p>
+<ul>
+  <li><a href="https://xd.adobe.com/view/06b9671d-61a3-4f79-4e44-78921d4c12e3-7088/" target="_blank">https://xd.adobe.com/view/06b9671d-61a3-4f79-4e44-78921d4c12e3-7088/</a></li>
+</ul>
+
+<p>Caso tenha algum problema para acessar, provavelmente estou usando o link para outro projeto. Mas assim que receber a mensagem retorno para o link.</p>
+
+<p>Infelizmente não tenho a versão paga do Adobe XD. #AdobePagaNois rsrs</p>
+
+<p><a href="/meta-minha-logo" target="_blank">#3 - Logo</a><br /></p>
+:ET

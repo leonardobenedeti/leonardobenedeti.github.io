@@ -503,23 +503,23 @@
 
 <p>Import e configuração da API KEY que criamos anteriormente.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">sgMail</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'@sendgrid/mail'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">sgMail</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@sendgrid/mail</span><span class="dl">'</span><span class="p">);</span>
 <span class="nx">sgMail</span><span class="p">.</span><span class="nx">setApiKey</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">SENDGRID_APIKEY</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>Código base utilizando o template que criamos enviando todos os parametros no request.</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">"/sendmail/template"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">"</span><span class="s2">/sendmail/template</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
     <span class="kd">const</span> <span class="p">{</span><span class="nx">to</span><span class="p">,</span> <span class="k">from</span><span class="p">,</span> <span class="nx">template_data</span><span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">;</span>
     <span class="kd">const</span> <span class="nx">msg</span> <span class="o">=</span> <span class="p">{</span>
         <span class="na">to</span><span class="p">:</span> <span class="nx">to</span><span class="p">,</span>
         <span class="na">from</span><span class="p">:</span> <span class="k">from</span><span class="p">,</span>
-        <span class="na">templateId</span><span class="p">:</span> <span class="s1">'d-ee4c43022cc74cec802e5398cb54a31f'</span><span class="p">,</span>
+        <span class="na">templateId</span><span class="p">:</span> <span class="dl">'</span><span class="s1">d-ee4c43022cc74cec802e5398cb54a31f</span><span class="dl">'</span><span class="p">,</span>
         <span class="na">dynamic_template_data</span><span class="p">:</span> <span class="nx">template_data</span><span class="p">,</span>
     <span class="p">};</span>
     <span class="nx">sgMail</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">success</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
-      <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">success</span><span class="p">:</span> <span class="s2">"Email enviado com sucesso"</span><span class="p">});</span>
-    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="o">=&gt;</span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">error</span><span class="p">:</span><span class="s2">"Algo de errado não está certo no envio de emails."</span><span class="p">}));</span> 
+      <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">success</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Email enviado com sucesso</span><span class="dl">"</span><span class="p">});</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="o">=&gt;</span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">send</span><span class="p">({</span><span class="na">error</span><span class="p">:</span><span class="dl">"</span><span class="s2">Algo de errado não está certo no envio de emails.</span><span class="dl">"</span><span class="p">}));</span> 
 <span class="p">});</span>
 </code></pre></div></div>
 

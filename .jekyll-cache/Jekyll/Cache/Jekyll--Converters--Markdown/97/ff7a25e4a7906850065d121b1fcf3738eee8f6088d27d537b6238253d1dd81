@@ -1,0 +1,55 @@
+I"k<h2 id="ideias">Ideias</h2>
+
+<h4 id="noname---sistema-para-alugar-carros-que-estão-a-venda">NoName - Sistema para alugar carros que estão a venda</h4>
+
+<p>Hoje existem várias agencias de carro que mantem os carros a venda sempre parados a espera de um novo dono.
+Sabendo que carro parado estraga mais rápido do que carro andando, surge então a ideia de criar uma agencia de aluguel de carros baseada na frota que existe atualmente a venda.
+COm isso movimentamos a economia que hoje fica estacionada nas agencias.</p>
+
+<hr />
+
+<h4 id="onepass---sistema-de-gerenciamento-de-acesso-a-predios">OnePass - Sistema de gerenciamento de acesso a predios</h4>
+
+<p>Todo predio com uma média segurança hoje requer um cadastro para um acesso. 
+Mas para o acesso em si é necessário uma autorização de algum funcionário de alguma empresa que atua no prédio.</p>
+
+<p>Até ai normal, todos os dias muitos cadastros são efetuados e isso já faz parte da cultura de grandes empresas em são paulo, principalmente consultorias.</p>
+
+<p>Mas e se existisse uma solução que melhorasse esse fluxo? 
+Porque pensando no melhor dos casos ao chegar na portaria e solicitar entrada, seu contato no prédio vai estar esperando a validação da portaria para liberar seu acesso. LINDO.</p>
+
+<p>Poreeeeeem, quem nunca ficou aguardando o contato na empresa voltar do almoço, sair de uma reunião ou até atender o telefone por conta de uma partida de algum jogo no celular ?</p>
+
+<p>Com isso muito tempo é desperdiçado, e ambas partes perdem com isso.</p>
+
+<p>COm um processo mais agil de liberação desse visitante, torna o processo de visita ao prédio muito mais produtivo e fácil.</p>
+
+<p>Mas como fariamos isso ?</p>
+
+<p>Um portal de acesso unico. Onde o visitante requisita o acesso e o contato da empresa aceita esse acesso.
+Com isso fica mais simples a portaria validar que o visitante está autorizado a subir para fazer o que precisa.</p>
+
+<p><img src="assets/img/ideias/one-pass.png" style="margin:10px auto;" alt="" /></p>
+
+<p>O painel teria toda informação do condominio e acessos e convidados.</p>
+
+<p><img src="assets/img/ideias/painel-portaria-one-pass.jpg" style="margin:10px auto;" alt="" /></p>
+
+<p>Já o app tem que ser o mais simples possível. Solicitar acesso e fornecer acesso.</p>
+
+<p><strong>Algo interessante</strong> a se pensar é criar uma fechadura que consuma a api de grant access para abrir “sozinha”, apertou no app pra abrir a propria casa ele abre.
+Pensar algo com aquelas plaquinhas wifi. 
+Futuramente reconhecimento facial e tudo.</p>
+
+<hr />
+
+<h4 id="sistema-de-pedidos-de-qualquer-coisa-com-trello">Sistema de pedidos de qualquer coisa com trello.</h4>
+
+<p>Ao criar um pedido ele cria um card e os detalhes vão tudo dentro do card como checklist para: Sem azeitona e dois pedaços sem cebola.</p>
+
+<p>Api aberta do trello vai permitir entregar pro usuário a informação do pedido no momento que estiver sendo feita.</p>
+
+<p>e pro proprietario da loja/restaurante um sistema fácil de acompanhar e sem papeis, tudo pelo painel do trello.</p>
+
+<p><img src="assets/img/ideias/sistema-pedidos-trello.jpg" style="margin:10px auto;" alt="" /></p>
+:ET
