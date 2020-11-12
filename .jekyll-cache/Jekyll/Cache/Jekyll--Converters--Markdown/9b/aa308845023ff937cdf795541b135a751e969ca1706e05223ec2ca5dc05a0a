@@ -1,0 +1,33 @@
+I"�<p>Recentemente, participei de um processo seletivo para uma empresa e para ser avaliado tecnicamente o desafio era criar uma app, utilizando detalhes específicos da empresa que criou o desafio.</p>
+
+<p>Questionei a recrutadora sobre a possibilidade de criar um app sem vínculos com a empresa para manter esse app como desafio para outras oportunidades também. E também porque gostei do desafio e acabei empolgando rsrs</p>
+
+<h3 id="contexto-do-desafio">Contexto do desafio:</h3>
+
+<p>Criar um microblog onde você tenha uma mecanica parecida com a do Twitter mas com uma nova identidade e é claro, feito em Flutter.</p>
+
+<h3 id="contexto-do-que-foi-prototipado">Contexto do que foi prototipado:</h3>
+
+<p>Antes das redes sociais, para você saber das novidades e comentar as suas próprias, tudo era falado pessoalmente e o lugar mais adequado para esse tipo de interação eram as praças.</p>
+
+<p>Daí trazendo o contexto para dentro do app vinculando com o twitter, que tem um pássaro como logo, pensei numa identidade toda voltada para o bicho mais populoso das praças, o POMBO. rsrsrs</p>
+
+<p>Com isso criei uma interface simples, com apenas duas cores e com imagens trazendo a identidade de pombos para cada ação.</p>
+
+<h3 id="protótipo-criado">Protótipo criado</h3>
+
+<p><img src="./assets/img/pruuu/prototipo.png" alt="Imagem do protótipo" /></p>
+
+<p>No momento da escrita deste post, o projeto já se encontra funcional e rodando a plenos pulmões.</p>
+
+<p>O preço do download e teste do app é enviar o feedback, sendo falando o que achou ou caso tenha encontrado algum erro. =D</p>
+
+<p><a href="https://github.com/leonardobenedeti/flutter-app-pruuu-microblog/blob/master/binaries/app-release.apk?raw=true" target="_blank">Baixar apk</a></p>
+
+<p>Para ver como está sendo feito, acesse o link abaixo e veja tudo no repositório, claro, está ficando tudo aberto.</p>
+
+<p><a href="https://github.com/leonardobenedeti/flutter-app-pruuu-microblog" target="_blank">Repositório do Pruuu</a></p>
+
+<p>PS.: Evitem Pull Requests. Porque ? Como é um app que estou criando para mostrar o que o Leonardo Benedeti sabe, eu incluir código criado por outras pessoas é maneiro no contexto código aberto, mas pode gerar confusão quando eu for ser avaliado. =D</p>
+
+:ET
