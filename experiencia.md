@@ -5,10 +5,26 @@ permalink: /experiencia
 sidebar_link: true
 ---
 
+## • Dextra
+
+**Cargo**: Dev Mobile Sr <br>
+**Período**: 01/2020 – atualmente <br>
+**Local**: São Paulo - SP, Brasil <br>
+**Responsabilidades**:  <br>
+Desenvolvimento mobile focado em flutter<br>
+**Tecnologias**: Flutter
+
+<a href="/dextra" class="btn">Projetos</a>
+
+#### Clientes
+* **iFood Benefícios (atual)**: Flutter development - Projeto em andamento para criar um app para abrigar as funcionalidades de benefícios do iFood, hoje estas funcionalidades estão no app principal do iFood e o projeto visa em criar outro app. 
+
+----
+
 ## • Everis
 
 **Cargo**: Especialista Mobile Cross Platform <br>
-**Período**: mar de 2018 – atualmente <br>
+**Período**: 03/2018 – 10/2020 <br>
 **Local**: São Paulo - SP, Brasil <br>
 **Responsabilidades**:  <br>
 Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lead. Atuar em projetos alocado em clientes e auxiliar projetos internos<br>
@@ -32,7 +48,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 ## • Entelgy Brasil
 
 **Cargo**: Desenvolvedor Mobile Senior III <br>
-**Período**: set de 2016 – mar de 2018 <br>
+**Período**: 09/2016 – 03/2018 <br>
 **Local**: São Paulo - SP, Brasil <br>
 **Responsabilidades**: Criar aplicativos na plataforma Kony, alteração de serviços do middleware vinculado a plataforma e publicação dos aplicativos. Trabalhando com o método ágil com framework montado específicamente para o Grupo Segurador Banco do Brasil e MAPFRE. <br>
 **Tecnologias**: Kony, SVN, Mobile Fabric, Android e iOS <br>
@@ -44,7 +60,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 ## • Conception
 
 **Cargo**: FullStack Developer <br>
-**Período**: out de 2015 – ago de 2016 <br>
+**Período**: 10/2015 – 08/2016 <br>
 **Local**: Rio de Janeiro - RJ, Brasil <br>
 **Responsabilidades**: Desenvolvimento de sites, aplicativos e plataformas web.  <br>
 **Tecnologias**: HTML, CSS, JS, PHP, Grunt, Android, iOS, MySQL, Git... <br>
@@ -56,7 +72,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 ## • AllMost
 
 **Cargo**: FullStack Developer <br>
-**Período**: jul de 2014 – ago de 2016 <br>
+**Período**: 06/2014 – 08/2016 <br>
 **Local**: Volta Redonda - RJ, Brasil <br>
 **Responsabilidades**: Criação de sites responsivos, plataformas online e aplicativos(nativos e hibridos). Gerenciamento de servidores web e APIs JSON. <br>
 **Tecnologias**: HTML, CSS, JS, PHP, Grunt, Android, iOS, MySQL, Ionic, Servidores CPanel, Git... <br>
@@ -66,7 +82,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 ## • Coca Cola - CiaFLU/FEMSA
 
 **Cargo**: ABAP Developer <br>
-**Período**: fev de 2013 – ago de 2014 <br>
+**Período**: 02/2013 – 08/2014 <br>
 **Local**: Porto Real - RJ, Brasil <br>
 **Responsabilidades**: Criação de reports customizados para o SAP e criação de integrações com os sistemas legados em COBOL rodando em um AS400.  <br>
 **Tecnologias**: ABAP, Java e ShellScript <br>
@@ -76,7 +92,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 ## • CSN
 
 **Cargo**: Estagiário em Desenvolvimento ABAP <br>
-**Período**: mar de 2012 – jan de 2013 <br>
+**Período**: 03/2012 – 01/2013 <br>
 **Local**: Volta Redonda - RJ, Brasil <br>
 **Responsabilidades**: Criação de reports customizados para o SAP da empresa para os funcionais das áreas de MM e PP <br>
 **Tecnologias**: ABAP<br>
