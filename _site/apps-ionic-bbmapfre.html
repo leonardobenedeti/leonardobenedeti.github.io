@@ -590,13 +590,13 @@ e agora com a unificação não fazia mais sentido manter a mesma UX do app, com
   <li>e muito mais …</li>
 </ul>
 
-<p>Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada <code class="highlighter-rouge">Lazy Loading</code>. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
+<p>Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada <code class="language-plaintext highlighter-rouge">Lazy Loading</code>. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
 Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.</p>
 
 <p>Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
 O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.</p>
 
-<p>A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o <code class="highlighter-rouge">apk</code> e <code class="highlighter-rouge">ipa</code> em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passávamos o link para a equipe de homologação do cliente.</p>
+<p>A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o <code class="language-plaintext highlighter-rouge">apk</code> e <code class="language-plaintext highlighter-rouge">ipa</code> em uma enterprise store chamada <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>. Com isso passávamos o link para a equipe de homologação do cliente.</p>
 
 <p>Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.</p>
 

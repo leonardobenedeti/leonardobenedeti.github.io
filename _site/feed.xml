@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-19T17:48:03-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Pruuu App</title><link href="http://localhost:4000/pruuu-app" rel="alternate" type="text/html" title="Pruuu App" /><published>2020-11-12T00:00:00-03:00</published><updated>2020-11-12T16:00:00-03:00</updated><id>http://localhost:4000/pruuu-app</id><content type="html" xml:base="http://localhost:4000/pruuu-app">&lt;p&gt;Recentemente, participei de um processo seletivo para uma empresa e para ser avaliado tecnicamente o desafio era criar uma app, utilizando detalhes específicos da empresa que criou o desafio.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-19T18:08:34-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Pruuu App</title><link href="/pruuu-app" rel="alternate" type="text/html" title="Pruuu App" /><published>2020-11-12T00:00:00-03:00</published><updated>2020-11-12T16:00:00-03:00</updated><id>/pruuu-app</id><content type="html" xml:base="/pruuu-app">&lt;p&gt;Recentemente, participei de um processo seletivo para uma empresa e para ser avaliado tecnicamente o desafio era criar uma app, utilizando detalhes específicos da empresa que criou o desafio.&lt;/p&gt;
 
 &lt;p&gt;Questionei a recrutadora sobre a possibilidade de criar um app sem vínculos com a empresa para manter esse app como desafio para outras oportunidades também. E também porque gostei do desafio e acabei empolgando rsrs&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/flutter-app-pruuu-microblog&quot; target=&quot;_blank&quot;&gt;Repositório do Pruuu&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;PS.: Evitem Pull Requests. Porque ? Como é um app que estou criando para mostrar o que o Leonardo Benedeti sabe, eu incluir código criado por outras pessoas é maneiro no contexto código aberto, mas pode gerar confusão quando eu for ser avaliado. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="http://localhost:4000/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>http://localhost:4000/picpay-clone-using-flutter</id><content type="html" xml:base="http://localhost:4000/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
+&lt;p&gt;PS.: Evitem Pull Requests. Porque ? Como é um app que estou criando para mostrar o que o Leonardo Benedeti sabe, eu incluir código criado por outras pessoas é maneiro no contexto código aberto, mas pode gerar confusão quando eu for ser avaliado. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>/picpay-clone-using-flutter</id><content type="html" xml:base="/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
 
 &lt;p&gt;Sim. Em um dia, não tão belo como na música, decidi me aventurar e criar algo bacana usando Flutter.&lt;/p&gt;
 
@@ -97,7 +97,7 @@
 &lt;p&gt;Aqui vai um convite pra você: &lt;a href=&quot;http://www.picpay.com/convite?@331X&quot; target=&quot;_blank&quot;&gt;http://www.picpay.com/convite?@331X&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;O código completo do app você pode conferir no meu repositório com todos os detalhes.&lt;br /&gt;
-&lt;a href=&quot;https://github.com/leonardobenedeti/picpay_clone_flutter&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/picpay_clone_flutter&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /></entry><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="http://localhost:4000/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>http://localhost:4000/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="http://localhost:4000/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
+&lt;a href=&quot;https://github.com/leonardobenedeti/picpay_clone_flutter&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/picpay_clone_flutter&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /></entry><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
 
 &lt;p&gt;A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.&lt;/p&gt;
 
@@ -195,7 +195,7 @@
 
 &lt;p&gt;&lt;img src=&quot;assets/img/sendgrid/9.0-result-postman.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Dai pra frente, precisamos criar um template customizado para cada caso e transacionar como preferir. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="heroku" /><category term="node.js" /><category term="sendgrid" /></entry><entry><title type="html">[POC] - Swipe up component com Ionic</title><link href="http://localhost:4000/poc-swipeup-components-ionic3" rel="alternate" type="text/html" title="[POC] - Swipe up component com Ionic" /><published>2019-09-10T00:00:00-03:00</published><updated>2019-09-10T16:00:00-03:00</updated><id>http://localhost:4000/poc-swipeup-components-ionic3</id><content type="html" xml:base="http://localhost:4000/poc-swipeup-components-ionic3">&lt;p&gt;Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.&lt;/p&gt;
+&lt;p&gt;Dai pra frente, precisamos criar um template customizado para cada caso e transacionar como preferir. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="heroku" /><category term="node.js" /><category term="sendgrid" /></entry><entry><title type="html">[POC] - Swipe up component com Ionic</title><link href="/poc-swipeup-components-ionic3" rel="alternate" type="text/html" title="[POC] - Swipe up component com Ionic" /><published>2019-09-10T00:00:00-03:00</published><updated>2019-09-10T16:00:00-03:00</updated><id>/poc-swipeup-components-ionic3</id><content type="html" xml:base="/poc-swipeup-components-ionic3">&lt;p&gt;Trabalhando em um projeto de curioso, ‘precisei’ fazer um swipe up em android nativo, com uma lib resolvi o problema e vida que segue.&lt;/p&gt;
 
 &lt;p&gt;Porém fiquei curioso em saber se o Ionic seria capaz de fazer a mesma coisa.&lt;/p&gt;
 
@@ -223,14 +223,14 @@
 
 &lt;h4 id=&quot;abrir-o-componente-clicando-mantendo-o-efeito&quot;&gt;Abrir o componente clicando, mantendo o efeito&lt;/h4&gt;
 
-&lt;p&gt;Usando os eventos do Hammer.js apenas precisei incluir o &lt;code class=&quot;highlighter-rouge&quot;&gt;tap&lt;/code&gt; na lista de eventos para funcionar. Suave!&lt;/p&gt;
+&lt;p&gt;Usando os eventos do Hammer.js apenas precisei incluir o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tap&lt;/code&gt; na lista de eventos para funcionar. Suave!&lt;/p&gt;
 
 &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;hammer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;tap&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;O método &lt;code class=&quot;highlighter-rouge&quot;&gt;open()&lt;/code&gt; utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:&lt;/p&gt;
+&lt;p&gt;O método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open()&lt;/code&gt; utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:&lt;/p&gt;
 
 &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
     &lt;span class=&quot;c1&quot;&gt;// Este metodo já existia no tutorial original, apenas isolei em um método para controlar 'por fora'&lt;/span&gt;
@@ -260,9 +260,9 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Código do componente onde o listener fica esperando o evento para iniciar o método &lt;code class=&quot;highlighter-rouge&quot;&gt;open()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Código do componente onde o listener fica esperando o evento para iniciar o método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;open()&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* outros controllers...*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* outros controllers...*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;subscribe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;details&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dados&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// olha ele ai de novo. =D&lt;/span&gt;
@@ -275,7 +275,7 @@
 
 &lt;h4 id=&quot;ajustar-o-css-para-ficar-parecido-com-o-componente-normalmente-usado-nos-apps-atuais&quot;&gt;Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais&lt;/h4&gt;
 
-&lt;p&gt;O &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.&lt;/p&gt;
+&lt;p&gt;O &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;css&lt;/code&gt; do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.&lt;/p&gt;
 
 &lt;p&gt;Para o exemplo que eu estava trabalhando precisei alterar isso um pouco.&lt;/p&gt;
 
@@ -334,7 +334,7 @@
 
 &lt;p&gt;Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="http://localhost:4000/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>http://localhost:4000/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="http://localhost:4000/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
 
 &lt;p&gt;A título de curiosidade baixei um repo para entender mais sobre Flutter.&lt;/p&gt;
 
@@ -358,7 +358,7 @@
 
 &lt;p&gt;Com algum tempo procurando o problema e imprimindo tudo que poderia de logs, identifiquei que a animação do avatar estava sendo iniciado com QUALQUER scroll na tela, mais especificamente falando do header.&lt;/p&gt;
 
-&lt;p&gt;Encontrei a propriedade &lt;code class=&quot;highlighter-rouge&quot;&gt;scrollNotification.metrics.axisDirection&lt;/code&gt; que identificava se o scroll era vertical&lt;code class=&quot;highlighter-rouge&quot;&gt;(top-&amp;gt;bottom or bottom-&amp;gt;top)&lt;/code&gt; ou horizontal&lt;code class=&quot;highlighter-rouge&quot;&gt;(left-&amp;gt;right or right-&amp;gt;left)&lt;/code&gt; e com isso consegui controlar quando a animação iniciaria ou não.&lt;/p&gt;
+&lt;p&gt;Encontrei a propriedade &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scrollNotification.metrics.axisDirection&lt;/code&gt; que identificava se o scroll era vertical&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(top-&amp;gt;bottom or bottom-&amp;gt;top)&lt;/code&gt; ou horizontal&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(left-&amp;gt;right or right-&amp;gt;left)&lt;/code&gt; e com isso consegui controlar quando a animação iniciaria ou não.&lt;/p&gt;
 
 &lt;p&gt;Solução:
 &lt;img src=&quot;assets/videos/bug-fixed-scroll-tabs.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -376,7 +376,7 @@
 
 &lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="http://localhost:4000/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>http://localhost:4000/heroku-python-mysql</id><content type="html" xml:base="http://localhost:4000/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>/heroku-python-mysql</id><content type="html" xml:base="/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
 
 &lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
@@ -414,7 +414,7 @@ O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.&lt;/p&
 
 &lt;p&gt;Com o seguinte formato:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql://[user]:[passwd]@[host]/[default_schema]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql://[user]:[passwd]@[host]/[default_schema]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-vars-mysql.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -426,7 +426,7 @@ O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.&lt;/p&
 
 &lt;p&gt;Após conectar, crie suas tabelas e dados, eu criei uma tabela simples para exemplificar.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE users (
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE users (
   idusers INT NOT NULL,
   name VARCHAR(45) NULL,
   phone VARCHAR(45) NULL,
@@ -441,7 +441,7 @@ O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.&lt;/p&
 &lt;p&gt;&lt;strong&gt;requirements.txt&lt;/strong&gt;
 Arquivo responsável por abrigar todos as libs que vamos importar no projeto. O próprio nome já diz certo? Requirements. =D&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Flask-MySQLdb==0.2.0
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Flask-MySQLdb==0.2.0
 gunicorn==19.8.1
 mysqlclient==1.3.12
 Flask==0.12.2
@@ -455,7 +455,7 @@ PyMySQL==0.8.1
 &lt;p&gt;&lt;strong&gt;Procfile&lt;/strong&gt;
 Arquivo exclusivo do heroku para inicializar os apps. Ele pode abrigar scripts para iniciar sua aplicação.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;web: gunicorn api:app
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;web: gunicorn api:app
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Nesse caso o trecho procura a app dentro do arquivo api e inicia utulizando o gunicorn&lt;/p&gt;
@@ -471,27 +471,27 @@ Arquivo principal da aplicação. Aqui temos todos os códigos básicos para ret
 &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# MySQL configurations  #### REVER trecho de configuração para buscar as informações
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_USER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'USER'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_PASSWORD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'PASSWD'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_DB'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'DEFAULT_SCHEMA'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_HOST'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'HOST'&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_USER'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'USER'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_PASSWORD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'PASSWD'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_DB'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'DEFAULT_SCHEMA'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'MYSQL_DATABASE_HOST'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'HOST'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 
 &lt;span class=&quot;c1&quot;&gt;# routes
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM users&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fetchall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM users&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fetchall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -503,7 +503,7 @@ Arquivo principal da aplicação. Aqui temos todos os códigos básicos para ret
 Com o heroku cli baixado temos um recurso para utilizar com as mesmas configurações do app, porém localmente.
 Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku local web
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku local web
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Este comando irá iniciar localmente um server de acordo com o seu app, normalmente na porta 5000.&lt;/p&gt;
@@ -512,7 +512,7 @@ Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Publicando&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Para publicar o app no heroku basta fazer um &lt;code class=&quot;highlighter-rouge&quot;&gt;git push heroku master&lt;/code&gt;. Como o heroku é baseado em git ele vai entender o commit e iniciar o build com os novos códigos.&lt;/p&gt;
+&lt;p&gt;Para publicar o app no heroku basta fazer um &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push heroku master&lt;/code&gt;. Como o heroku é baseado em git ele vai entender o commit e iniciar o build com os novos códigos.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/commit-final.png&quot; style=&quot;margin:10px auto;&quot; alt=&quot;&quot; /&gt;
 ** ignorem o –force do comando, não é necessário. Tinha outra aplicação rodando nesse link e o merge não seria tão amigável rsrs&lt;/p&gt;
@@ -526,7 +526,7 @@ Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
 &lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="http://localhost:4000/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>http://localhost:4000/ionic-app-bier-prosit</id><content type="html" xml:base="http://localhost:4000/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry><entry><title type="html">Aplicativo Bier Prosit</title><link href="/ionic-app-bier-prosit" rel="alternate" type="text/html" title="Aplicativo Bier Prosit" /><published>2019-01-03T00:00:00-02:00</published><updated>2019-01-03T17:00:00-02:00</updated><id>/ionic-app-bier-prosit</id><content type="html" xml:base="/ionic-app-bier-prosit">&lt;p&gt;&lt;img src=&quot;assets/img/bierprosit/imagem-post.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Projeto criado em conjunto ao Bier Prosit focado em resolver alguns problemas em lojas e empórios focados em cervejas especiais. 
 Principal dor: Apesar do atendimento focado na informação do produto, os clientes da loja ainda sim não questionavam tudo o que precisavam saber sobre o produto.&lt;/p&gt;
@@ -554,14 +554,14 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;p style=&quot;text-align:center;&quot;&gt;** Sim, desenhei num flipchart e tirei foto =D&lt;/p&gt;
 
 &lt;h4 id=&quot;2-painel-administrativo--api&quot;&gt;2. Painel administrativo / API&lt;/h4&gt;
-&lt;p&gt;Criado utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;PHP&lt;/code&gt;, sem utilização de nenhum framework. O painel é responsável por gerenciar todos os produtos, sendo efetuando o cadastro, alteração ou exclusão de algum produto e emitir push notifications para o app, seja a cada produto cadastrado ou alguma mensagem customizada, de acordo com a vontade do Bier Prosit.&lt;/p&gt;
+&lt;p&gt;Criado utilizando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PHP&lt;/code&gt;, sem utilização de nenhum framework. O painel é responsável por gerenciar todos os produtos, sendo efetuando o cadastro, alteração ou exclusão de algum produto e emitir push notifications para o app, seja a cada produto cadastrado ou alguma mensagem customizada, de acordo com a vontade do Bier Prosit.&lt;/p&gt;
 
-&lt;p&gt;Os produtos são salvos em uma base de dados &lt;code class=&quot;highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; e toda conexão com ele é feita pelo painel. #phpraiz&lt;/p&gt;
+&lt;p&gt;Os produtos são salvos em uma base de dados &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MySQL&lt;/code&gt; e toda conexão com ele é feita pelo painel. #phpraiz&lt;/p&gt;
 
-&lt;p&gt;Em breve o painel será atualizado para a linguagem &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt; e será &lt;code class=&quot;highlighter-rouge&quot;&gt;API Based&lt;/code&gt; utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Flask&lt;/code&gt;, provavelmente com front-end em &lt;code class=&quot;highlighter-rouge&quot;&gt;Angular&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;React&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Em breve o painel será atualizado para a linguagem &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Python&lt;/code&gt; e será &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;API Based&lt;/code&gt; utilizando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Flask&lt;/code&gt;, provavelmente com front-end em &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Angular&lt;/code&gt; ou &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;React&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;3-aplicativo&quot;&gt;3. Aplicativo&lt;/h4&gt;
-&lt;p&gt;A primeira versão foi criada utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;Android Nativo&lt;/code&gt; e com o lançamento do &lt;code class=&quot;highlighter-rouge&quot;&gt;Ionic 1&lt;/code&gt; migrei para o framework, com a atualização foi feito o upgrade para a versão 3 do framework.&lt;/p&gt;
+&lt;p&gt;A primeira versão foi criada utilizando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Android Nativo&lt;/code&gt; e com o lançamento do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ionic 1&lt;/code&gt; migrei para o framework, com a atualização foi feito o upgrade para a versão 3 do framework.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Funcionalidades&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -597,7 +597,7 @@ Principal dor: Apesar do atendimento focado na informação do produto, os clien
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/7pgNxSLakCyOVgiy1&quot; target=&quot;_blank&quot;&gt;Melhorias e Sugestões&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://goo.gl/forms/99WNF42lMfq1UmOJ2&quot; target=&quot;_blank&quot;&gt;Bugs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="http://localhost:4000/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>http://localhost:4000/apps-ionic-bbmapfre</id><content type="html" xml:base="http://localhost:4000/apps-ionic-bbmapfre">&lt;blockquote&gt;
+&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="php" /><category term="ios" /><category term="android" /><category term="cloud" /><category term="google play" /><category term="app store" /></entry><entry><title type="html">Apps Ionic BB e MAPFRE</title><link href="/apps-ionic-bbmapfre" rel="alternate" type="text/html" title="Apps Ionic BB e MAPFRE" /><published>2018-08-01T00:00:00-03:00</published><updated>2018-08-01T16:00:00-03:00</updated><id>/apps-ionic-bbmapfre</id><content type="html" xml:base="/apps-ionic-bbmapfre">&lt;blockquote&gt;
   &lt;p&gt;Antes de começar a falar sobre este projeto, vale a pena relembrar o período que atuei apenas na sustentação dos aplicativos que foram migrados. &lt;a href=&quot;/apps-kony-bbmapfre&quot; target=&quot;_blank&quot;&gt;Confira aqui&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -724,13 +724,13 @@ e agora com a unificação não fazia mais sentido manter a mesma UX do app, com
   &lt;li&gt;e muito mais …&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada &lt;code class=&quot;highlighter-rouge&quot;&gt;Lazy Loading&lt;/code&gt;. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
+&lt;p&gt;Também utilizamos uma boa prática em apps componentizáveis para melhoria de performance chamada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lazy Loading&lt;/code&gt;. Em um app com quase 100 telas faz uma diferença e tanto. Pensa, se a splash do app precisasse esperar carregar as 100 telas, demoraria muito. 
 Com esse recurso, carregamos apenas a home e o que mais o usuário for clicando para utilizar.&lt;/p&gt;
 
 &lt;p&gt;Por último, mas não menos importante, criamos, duas vezes, todo pipeline de build utilizando a primeira vez, Jenkins e após o cliente adotar, utilizamos o Azure DevOps. 
 O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas conseguimos otimizar boa parte do desenvolvimento/homologação.&lt;/p&gt;
 
-&lt;p&gt;A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o &lt;code class=&quot;highlighter-rouge&quot;&gt;apk&lt;/code&gt; e &lt;code class=&quot;highlighter-rouge&quot;&gt;ipa&lt;/code&gt; em uma enterprise store chamada &lt;a href=&quot;https://appinstaller.com.br&quot; target=&quot;_blank&quot;&gt;AppInstaller&lt;/a&gt;. Com isso passávamos o link para a equipe de homologação do cliente.&lt;/p&gt;
+&lt;p&gt;A cada commit feito nas branchs escolhidas como trigger, tanto jenkins quanto azure, faziam o build e entregavam o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk&lt;/code&gt; e &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipa&lt;/code&gt; em uma enterprise store chamada &lt;a href=&quot;https://appinstaller.com.br&quot; target=&quot;_blank&quot;&gt;AppInstaller&lt;/a&gt;. Com isso passávamos o link para a equipe de homologação do cliente.&lt;/p&gt;
 
 &lt;p&gt;Infelizmente o processo de publicação ainda continua manual pelas políticas já mencionadas.&lt;/p&gt;
 
@@ -740,7 +740,7 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="http://localhost:4000/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>http://localhost:4000/poc-smart-app</id><content type="html" xml:base="http://localhost:4000/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>/poc-smart-app</id><content type="html" xml:base="/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
 
 &lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
@@ -789,7 +789,7 @@ O app altera o fundo do app quando atinge o horário 17:59, antes deste horário
   &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
   &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="http://localhost:4000/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>http://localhost:4000/events-page-from-riosulvalley</id><content type="html" xml:base="http://localhost:4000/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>/events-page-from-riosulvalley</id><content type="html" xml:base="/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
 Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;

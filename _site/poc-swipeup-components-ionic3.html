@@ -461,14 +461,14 @@
 
 <h4 id="abrir-o-componente-clicando-mantendo-o-efeito">Abrir o componente clicando, mantendo o efeito</h4>
 
-<p>Usando os eventos do Hammer.js apenas precisei incluir o <code class="highlighter-rouge">tap</code> na lista de eventos para funcionar. Suave!</p>
+<p>Usando os eventos do Hammer.js apenas precisei incluir o <code class="language-plaintext highlighter-rouge">tap</code> na lista de eventos para funcionar. Suave!</p>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">hammer</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">tap</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">ev</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
-<p>O método <code class="highlighter-rouge">open()</code> utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:</p>
+<p>O método <code class="language-plaintext highlighter-rouge">open()</code> utiliza o DomController para manipular e animar o que precisamos, da seguinte maneira:</p>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">open</span><span class="p">(){</span> 
     <span class="c1">// Este metodo já existia no tutorial original, apenas isolei em um método para controlar 'por fora'</span>
@@ -498,9 +498,9 @@
 <span class="p">}</span> 
 </code></pre></div></div>
 
-<p>Código do componente onde o listener fica esperando o evento para iniciar o método <code class="highlighter-rouge">open()</code>.</p>
+<p>Código do componente onde o listener fica esperando o evento para iniciar o método <code class="language-plaintext highlighter-rouge">open()</code>.</p>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">(</span><span class="kr">public</span> <span class="nx">events</span><span class="p">:</span> <span class="nx">Events</span><span class="p">,</span> <span class="cm">/* outros controllers...*/</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">(</span><span class="k">public</span> <span class="nx">events</span><span class="p">:</span> <span class="nx">Events</span><span class="p">,</span> <span class="cm">/* outros controllers...*/</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">events</span><span class="p">.</span><span class="nx">subscribe</span><span class="p">(</span><span class="dl">'</span><span class="s1">open</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">params</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">details</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">dados</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="nx">open</span><span class="p">();</span> <span class="c1">// olha ele ai de novo. =D</span>
@@ -513,7 +513,7 @@
 
 <h4 id="ajustar-o-css-para-ficar-parecido-com-o-componente-normalmente-usado-nos-apps-atuais">Ajustar o css para ficar parecido com o componente normalmente usado nos apps atuais</h4>
 
-<p>O <code class="highlighter-rouge">css</code> do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.</p>
+<p>O <code class="language-plaintext highlighter-rouge">css</code> do exemplo original, é literalmente um quadrado que faz o swipe up com o conteúdo da página.</p>
 
 <p>Para o exemplo que eu estava trabalhando precisei alterar isso um pouco.</p>
 

@@ -1,4 +1,4 @@
-I"i<p><img src="assets/img/vision/premier-pet.png" style="margin:40px auto;" alt="" /></p>
+I"�<p><img src="assets/img/vision/premier-pet.png" style="margin:40px auto;" alt="" /></p>
 
 <p>Este projeto foi bem curto, levou 12h no total para resolver o problema inicial e alguns outros erros.</p>
 
@@ -13,19 +13,19 @@
 
 <p>Refiz o processo confirmando que o Play não aceitava o apk, fui analisar mais a fundo o binário.</p>
 
-<p>Existe um processo para verificar detalhes de qualquer apk, chamado <code class="highlighter-rouge">aapt</code>. Ao executar o comando ele retorna todas as informações que o Play extrai para realizar a publicação.</p>
+<p>Existe um processo para verificar detalhes de qualquer apk, chamado <code class="language-plaintext highlighter-rouge">aapt</code>. Ao executar o comando ele retorna todas as informações que o Play extrai para realizar a publicação.</p>
 
 <p>Como utilizar o aapt:</p>
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span>ANDROID_HOME/buid-tools/[android-version]/aapt dump badging &lt;path-to-apk&gt;
 </code></pre></div></div>
 
-<p>No meu caso, precisava confirmar o <code class="highlighter-rouge">version code</code>, que de acordo com o painel estava incorreto.</p>
+<p>No meu caso, precisava confirmar o <code class="language-plaintext highlighter-rouge">version code</code>, que de acordo com o painel estava incorreto.</p>
 
 <p>Para contextualizar um pouco mais, o projeto foi construido com Ionic 1. O framework utiliza um arquivo para suas configurações chamado config.xml, onde abriga todas as configs básicas do app, incluindo a versão do app.</p>
 
-<p>Quando o projeto Android é criado se baseando nesse arquivo, o script utiliza a versão do app 1.0.0 e converte <code class="highlighter-rouge">.</code> em <code class="highlighter-rouge">0</code>, transformando assim a versão 1.0.0 em 10000.</p>
+<p>Quando o projeto Android é criado se baseando nesse arquivo, o script utiliza a versão do app 1.0.0 e converte <code class="language-plaintext highlighter-rouge">.</code> em <code class="language-plaintext highlighter-rouge">0</code>, transformando assim a versão 1.0.0 em 10000.</p>
 
-<p>Ao verificar o arquivo, já tendo em mente o version code necessário para subida do apk, reparei que apenas o número estava errado, parte por falta de atenção da Vision parte pelo Ionic transformar <code class="highlighter-rouge">.</code> em <code class="highlighter-rouge">0</code> no version code.</p>
+<p>Ao verificar o arquivo, já tendo em mente o version code necessário para subida do apk, reparei que apenas o número estava errado, parte por falta de atenção da Vision parte pelo Ionic transformar <code class="language-plaintext highlighter-rouge">.</code> em <code class="language-plaintext highlighter-rouge">0</code> no version code.</p>
 
 <p>Com isso aconteceu uma confusão com as versões.</p>
 
