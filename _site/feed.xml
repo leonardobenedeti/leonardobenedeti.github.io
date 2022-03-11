@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-19T18:08:34-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Pruuu App</title><link href="/pruuu-app" rel="alternate" type="text/html" title="Pruuu App" /><published>2020-11-12T00:00:00-03:00</published><updated>2020-11-12T16:00:00-03:00</updated><id>/pruuu-app</id><content type="html" xml:base="/pruuu-app">&lt;p&gt;Recentemente, participei de um processo seletivo para uma empresa e para ser avaliado tecnicamente o desafio era criar uma app, utilizando detalhes específicos da empresa que criou o desafio.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-03-11T17:03:17-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+
+&lt;p&gt;Minha história relacionando iFood Benefícios e Dextra iniciou dia 01/12/2020, fui contratado ainda em outubro/2020 pela Dextra para iniciar dia 01/12. Com isso minha integração foi interrompida já por uma das primeiras reuniões do projeto.&lt;/p&gt;
+
+&lt;p&gt;Fiquei muito empolgado ao iniciar o projeto com uma gigante chamada iFood, mesmo não sendo o aplicativo principal, tínhamos uma responsabilidade imensa de criar o app de benefícios do ZERO.&lt;/p&gt;
+
+&lt;p&gt;Inicialmente o time do projeto contava apenas com pessoas da Dextra e definimos todos os primeiros passos do projeto, que no momento ainda era tratado como um MVP, por conta do produto já existir dentro do app principal do ifood.&lt;/p&gt;
+
+&lt;p&gt;O contexto inicial do projeto era esse: Remover o produto benefícios do app iFood Delivery, até para o próprio produto iFood Benefícios ter mais autonomia, e com isso iniciamos.&lt;/p&gt;
+
+&lt;p&gt;Antes de me despedir do projeto(spoiler alert), fiz um &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt; buscando os primeiros commits para levantar essa informação.&lt;/p&gt;
+
+&lt;p&gt;Fui o autor do 4 commit do projeto, ainda definindo os primeiros widgets e uso de themeData e design tokens.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;(claramente ofusquei informações para não expor meus colegas)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;commit 0599c1****************7a2cf
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;Author: Leonardo Benedeti &amp;lt;leonardobenedeti@gmail.com&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;Date:   Fri Dec 4 16:46:21 2020 -0300
+
+    Inclusão de themeData e designTokens
+
+commit acc0a0****************909eb
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;Author: Leonardo Benedeti &amp;lt;leonardobenedeti@gmail.com&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;go&quot;&gt;Date:   Wed Dec 2 20:26:08 2020 -0300
+
+    Criação do widget button com as suas variações e adição dele no dashbook
+
+commit b544c5****************22508
+Author: ****************
+Date:   Tue Dec 1 09:44:41 2020 -0300
+
+    Removing web folder
+
+commit 83af1****************450ca
+Author: ****************
+Date:   Mon Nov 30 17:59:27 2020 -0300
+
+    vscode on gitignore
+
+commit 9285c****************5c4b4
+Author: ****************
+Date:   Mon Nov 30 17:55:47 2020 -0300
+
+    Initial commit
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
+
+&lt;p&gt;O projeto já passou por algumas alterações de arquitetura e gestão de estado, porém ele iniciou com o seguinte setup: Arquitetura próxima ao MVVM e utilizando MobX como gestão de estado. Este primeiro setup foi decidido por conta do contexto inicial do produto, que era muito pequeno, não existindo a necessidade de algo mais robusto.&lt;/p&gt;
+
+&lt;p&gt;O MVP cresceu, virou produto e esse produto cresce todos os dias cada vez mais.&lt;/p&gt;
+
+&lt;p&gt;Com isso, atualmente o app com um contexto MUITO maior e já com uma escala e time gigante, optamos em migrar para um novo setup: Clean Arch e Cubit.&lt;/p&gt;
+
+&lt;p&gt;Infelizmente não posso abrir muita coisa por se tratar de um projeto privado, mas o que posso afirmar é: Foi muito gratificante atuar num projeto onde foi possível migrar código, refatorar quando necessário e coisas do tipo.&lt;/p&gt;
+
+&lt;h3 id=&quot;presença-na-loja&quot;&gt;Presença na loja&lt;/h3&gt;
+
+&lt;p&gt;O app sempre teve uma nota proporcionalmente baixa em relação aos concorrentes, mas à medida que evoluímos o app conseguimos chegar num patamar de avaliações bem compatível e sempre crescendo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/dextra-ciandt/ifood-beneficios/appstore.png&quot; alt=&quot;Imagem do app na loja appstore&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fim-da-história&quot;&gt;Fim da história&lt;/h3&gt;
+
+&lt;p&gt;Em março, completei 1 ano e 4 meses de projeto. Projeto que no início foi bem conturbado e tortuoso por conta de estarmos descobrindo como o produto seria. Passamos por marés muito agitadas e atualmente o projeto se encontra em águas bem mansas, e como diz o ditado: maré calma nunca fez bom marinheiro, decidi sair do projeto para buscar novos desafios. Mas calma, tudo isso ainda atuando pela CI&amp;amp;T, apenas vou trocar de projeto e antes de iniciar no novo desafio, também optei por tirar umas férias para descansar.&lt;/p&gt;
+
+&lt;p&gt;Com isso, hoje dia 04/03, último dia antes das férias, encerro minha participação no projeto iFood Benefícios mas mantenho o carinho pelo projeto, que vi crescer literalmente do zero. #vaiFilhão&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Site Turbocast</title><link href="/site-turbocast" rel="alternate" type="text/html" title="Site Turbocast" /><published>2021-02-28T00:00:00-03:00</published><updated>2021-02-28T16:00:00-03:00</updated><id>/site-turbocast</id><content type="html" xml:base="/site-turbocast">&lt;p&gt;Quem me conhece sabe. Sou viciado no mundo dos carros e estou sempre envolvido de alguma forma e sempre consumi muito conteúdo gear head e o Turbocast é um desses casos.&lt;/p&gt;
+
+&lt;p&gt;O Turbocast é um podcast formado por 5 apresentadores e mais algumas pessoas ajudando em volta, a maior parte do conteúdo é sobre carros, mas sempre rola uma resenha geral sobre assuntos gerais e sempre que podem mantém o foco no mundo automotivo.&lt;/p&gt;
+
+&lt;h3 id=&quot;contexto-do-desafio&quot;&gt;Contexto do desafio:&lt;/h3&gt;
+
+&lt;p&gt;Criar um bot para gravação de áudio no discord…. sim. Nada a ver com o projeto que descrevo aqui. 
+Como isso aconteceu? Vi um post no instagram do TC buscando desenvolvedores para o tal bot, porém não explicaram direito e decidi trocar uma ideia.&lt;/p&gt;
+
+&lt;p&gt;Acabamos evoluindo um pouco o papo e acabamos pensando o seguinte: O bot não resolveria o problema deles, já que o bot atual dependia do discord e no caso o problema era do discord e não do bot.&lt;/p&gt;
+
+&lt;p&gt;Com isso reparei que eles não tinham um site e propus criar. Dai sim chegamos no contexto correto rsrs&lt;/p&gt;
+
+&lt;h3 id=&quot;desenvolvimento&quot;&gt;Desenvolvimento&lt;/h3&gt;
+
+&lt;p&gt;O site foi pensado para ser o mais simples possível. Daí criei uma landing page simples contendo poucas sections, na sua maioria institucional, falando sobre a empresa, mostrando seus integrantes e onde podem ser encontrados.&lt;/p&gt;
+
+&lt;p&gt;Vou destacar aqui no post apenas duas sections, onde tive um pouco mais de trabalho pra criar algo que pensamos no momento da ideia.&lt;/p&gt;
+
+&lt;p&gt;Porém para ver o site todo, basta abrir o site: &lt;a href=&quot;https://turbocast.com.br&quot; target=&quot;_blank&quot;&gt;turbocast.com.br&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-escute-nosso-último-episódio&quot;&gt;Section: Escute nosso último episódio&lt;/h4&gt;
+
+&lt;p&gt;O contexto para esta section, foi bem simples: precisamos mostrar o último ep do podcast. Inicialmente fizemos manualmente, toda quarta feira o link da publicação era substituído. Porém toda publicação que envolve outros players é como nos blogs e gera um RSS feed, neste caso, pegamos o feed público do canal deles no Anchor, plataforma de podcasts do Spotify e a partir desse RSS feed, montamos o player automaticamente com o último ep do feed.&lt;/p&gt;
+
+&lt;p&gt;Com isso, toda quarta feira, data de publicação do turbocast, o site já abre com o novo ep disponível para escutar no próprio site usando o player do anchor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/site-turbocast/ultimo-ep.png&quot; alt=&quot;Imagem da section último episódio&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como foi feito:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;podcastCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;xpto123&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;podcastName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;nomeDoPodcast&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`https://anchor.fm/s/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;podcastCode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/podcast/rss`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lastEpisode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.lastEpisode&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loadEpisode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dataType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Aqui já com o XML do RSS, navegamos pra encontrar os valores que precisamos pra montar a URL do último EP.&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;channel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lastItem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;urlEpisode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lastItem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;embeddedUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`https://anchor.fm/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;podcastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/embed/episodes/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;urlEpisode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embeddedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// Aqui já com a embeddedUrl montada, criamos um iframe para montar o player direto no site. &lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;lastEpisode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&amp;lt;iframe src=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;embeddedUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; height=&quot;200px&quot; width=&quot;400px&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&amp;gt;&amp;lt;/iframe&amp;gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;lastEpisode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;loadEpisode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;section-integrantes&quot;&gt;Section: Integrantes&lt;/h4&gt;
+
+&lt;p&gt;O contexto desta section, surgiu por um motivo: não sabia qual integrante vinha antes. Ao perguntar, gerei dúvidas no povo do turbocast também. 
+Daí fiz algo para resolver o problema, montei uma lista de integrantes e fiz um sort. rsrsrs&lt;/p&gt;
+
+&lt;p&gt;Portanto, toda vez que abrir o site, os integrantes serão exibidos de forma aleatória. =D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/site-turbocast/integrantes.png&quot; alt=&quot;Imagem da section integrantes&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como foi feito:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;integrantes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;gueds&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;camilo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;hud&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;romulo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;vini&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Após definir randomicamente os integrantes com o .sort(), bastou montar as imagens na section&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;considerações-finais&quot;&gt;Considerações finais&lt;/h3&gt;
+
+&lt;p&gt;Após criar o site, virei o menino da TI do podcast.&lt;/p&gt;
+
+&lt;p&gt;Hoje temos alguns projetos em conjunto em andamento, ainda secretos mas em andamento.&lt;/p&gt;
+
+&lt;p&gt;Vale deixar aqui registrado um agradecimento ao Turbocast, que foi meu primeiro case unindo minha paixão pelo meio automotivo com a minha profissão. Tamo junto povo. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="html" /><category term="css" /><category term="javascript" /><category term="branding" /></entry><entry><title type="html">Pruuu App</title><link href="/pruuu-app" rel="alternate" type="text/html" title="Pruuu App" /><published>2020-11-12T00:00:00-03:00</published><updated>2020-11-12T16:00:00-03:00</updated><id>/pruuu-app</id><content type="html" xml:base="/pruuu-app">&lt;p&gt;Recentemente, participei de um processo seletivo para uma empresa e para ser avaliado tecnicamente o desafio era criar uma app, utilizando detalhes específicos da empresa que criou o desafio.&lt;/p&gt;
 
 &lt;p&gt;Questionei a recrutadora sobre a possibilidade de criar um app sem vínculos com a empresa para manter esse app como desafio para outras oportunidades também. E também porque gostei do desafio e acabei empolgando rsrs&lt;/p&gt;
 
@@ -740,62 +891,4 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>/poc-smart-app</id><content type="html" xml:base="/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
-
-&lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
-
-&lt;p&gt;Vamos separar em tópicos para explicar a POC.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Conceito de smart apps&lt;/li&gt;
-  &lt;li&gt;Necessidade e contexto&lt;/li&gt;
-  &lt;li&gt;App final&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;1-conceito-de-smart-apps&quot;&gt;1. Conceito de smart apps&lt;/h4&gt;
-&lt;p&gt;Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
-Um smart app bem conhecido e muito utilizado é o Waze.
-O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza com rotas em roxo, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid two&quot;&gt;
-  &lt;img src=&quot;assets/img/everis/smartapp/waze-dia.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img src=&quot;assets/img/everis/smartapp/waze-noite.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Com isso podemos classificar smart apps, os apps que conseguem de alguma forma interagir com o ambiente do usuário. Seja com horário, como o Waze faz, com localização recomendando de lugares e outros exemplos.&lt;/p&gt;
-
-&lt;p&gt;Existem tipos de smart app, a grande maioria utiliza recursos do device que esta instalado, mas existem apps que são baseados em API. Que é o caso do post.&lt;/p&gt;
-
-&lt;h4 id=&quot;2-necessidade-e-contexto&quot;&gt;2. Necessidade e contexto&lt;/h4&gt;
-
-&lt;p&gt;A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências de mercado em varias frentes.&lt;/p&gt;
-
-&lt;p&gt;Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação.&lt;/p&gt;
-
-&lt;p&gt;Para conseguir criar tudo que precisava, chegamos a um consenso que Ionic seria a melhor pedida devido sua facilidade e menor barreira de entrada.&lt;/p&gt;
-
-&lt;p&gt;Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.&lt;/p&gt;
-
-&lt;p&gt;Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho no algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.&lt;/p&gt;
-
-&lt;p&gt;Escrevi um outro &lt;a href=&quot;/heroku-python-mysql&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; que mostra como subir uma aplicação python com mysql no heroku.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-app-final&quot;&gt;3. App final&lt;/h4&gt;
-
-&lt;p&gt;Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid three&quot;&gt;
-  &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
-  &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry><entry><title type="html">RioSulValley / Página de Eventos</title><link href="/events-page-from-riosulvalley" rel="alternate" type="text/html" title="RioSulValley / Página de Eventos" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T14:32:16-03:00</updated><id>/events-page-from-riosulvalley</id><content type="html" xml:base="/events-page-from-riosulvalley">&lt;p&gt;&lt;img src=&quot;assets/img/rsv/eventos.png&quot; style=&quot;margin:40px auto;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Depois de um longo papo sobre fazer ou não uma pagina de eventos e como fazer isso pela comunidade &lt;a href=&quot;http://riosulvalley.com.br&quot;&gt;RioSulValley&lt;/a&gt;, me propus a ajudar a criar essa tal página. 
-Criamos um grupo onde apenas os interessados em ajudar estavam presentes, eram estes: &lt;a href=&quot;&quot;&gt;Kaio Freitas&lt;/a&gt; - o cara que normalmente toma a frente da comunidade em diversos assuntos; &lt;a href=&quot;&quot;&gt;Ivo Soares&lt;/a&gt; - desenvolvedor atuante na comunidade, e quem mostrou a ideia que usamos para criar a página; Eu - desenvolvedor atuante na comunidade sempre que posso rsrs.&lt;/p&gt;
-
-&lt;p&gt;Com o grupo formado iniciamos o bate papo para criar essa tal página. Com uma ideia, Ivo mostrou uma página que fazia o mesmo que queriamos fazer para o RSV, era a &lt;a href=&quot;http://frontendbr.com.br/eventos/&quot;&gt;página eventos&lt;/a&gt; da comunidade &lt;a href=&quot;http://frontendbr.com.br&quot;&gt;Front-End Brasil&lt;/a&gt;, como é uma comunidade também, o código estava aberto no &lt;a href=&quot;https://github.com/frontendbr/eventos&quot;&gt;github&lt;/a&gt; deles. Sendo assim, carinhosamente fizemos um fork do projeto e iniciamos as alterações.&lt;/p&gt;
-
-&lt;p&gt;No início atuei alterando o front para as cores e conteúdos do RSV, ao finalizar essa parte que em teoria seria a mais simples rsrs, fomos para a parte funcional da página. O Front-End Brasil, pelo próprio nome já se explica é uma comunidade em nível nacional e o RSV é regional, abrangendo todo Sul Fluminense do Rio de Janeiro, com isso precisamos alterar um dos filtros que listava os eventos por ESTADOS. Alteramos este filtro para CIDADES e assim todas as alterações que tinhamos em mente estavam prontas.&lt;/p&gt;
-
-&lt;p&gt;Com o front alterado, o Ivo iniciou sua atuação, preparando tudo que foi desenvolvido para fazendo o build final da aplicação para publicar no github pages do RSV gerando o link &lt;a href=&quot;http://riosulvalley.com.br/eventos&quot;&gt;riosulvalley.com.br/eventos&lt;/a&gt;.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="react" /><category term="webpack" /><category term="css" /><category term="github pages" /></entry></feed>
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry></feed>

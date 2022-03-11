@@ -5,19 +5,22 @@ permalink: /experiencia
 sidebar_link: true
 ---
 
-## • Dextra
+## • Dextra / CI&T
 
+**Empresas**: Em Dezembro de 2021 foi finalizado o M&A da Dextra pela CI&T, ocasionando a troca de marca e incorporação de todos os projetos e recursos. <br>
 **Cargo**: Dev Mobile Sr <br>
-**Período**: 01/2020 – atualmente <br>
+**Período**: 01/2020 – <b>atualmente</b> <br>
 **Local**: São Paulo - SP, Brasil <br>
 **Responsabilidades**:  <br>
 Desenvolvimento mobile focado em flutter<br>
+
+
 **Tecnologias**: Flutter
 
-<a href="/dextra" class="btn">Projetos</a>
+<a href="/dextra-ciandt" class="btn">Projetos</a>
 
 #### Clientes
-* **iFood Benefícios (atual)**: Flutter development - Projeto em andamento para criar um app para abrigar as funcionalidades de benefícios do iFood, hoje estas funcionalidades estão no app principal do iFood e o projeto visa em criar outro app. 
+* **iFood Benefícios**: Projeto em andamento para criar um app utilizando Flutter, para abrigar as funcionalidades de benefícios do iFood, hoje estas funcionalidades estão no app principal do iFood e o projeto visa em criar outro app. 
 
 ----
 
@@ -33,7 +36,7 @@ Ser referência mobile nos projetos, seja desenvolvendo ou atuando como Tech Lea
 <a href="/everis" class="btn">Projetos</a>
 
 #### Clientes
-* **AndBank (atual)**: Flutter development/Referência Mobile - Projeto em andamento para criar um app de um private bank inteiro com Flutter e backend todo no GCP.
+* **AndBank**: Flutter development/Referência Mobile - Projeto em andamento para criar um app de um private bank inteiro com Flutter e backend todo no GCP.
 * **MAPFRE**: Team Lead - Também por um curto período, liderei uma equipe de UX, gerenciando os projetos que eram demandados para a equipe.
 * **Itaú**: Tech Lead - Pequena passagem por lá para tentar mudar a visão do itaú sobre a everis. Não deu muito certo.
 * **MAPFRE/BB Seguros**: Tech Lead - Migração do app atual em kony para Ionic, projeto curto de 3 meses com quase 100 telas. Até hoje sem nenhum bug aberto. =D

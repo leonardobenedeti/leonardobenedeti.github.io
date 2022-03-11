@@ -1,0 +1,85 @@
+I"�%<p>Quem me conhece sabe. Sou viciado no mundo dos carros e estou sempre envolvido de alguma forma e sempre consumi muito conteúdo gear head e o Turbocast é um desses casos.</p>
+
+<p>O Turbocast é um podcast formado por 5 apresentadores e mais algumas pessoas ajudando em volta, a maior parte do conteúdo é sobre carros, mas sempre rola uma resenha geral sobre assuntos gerais e sempre que podem mantém o foco no mundo automotivo.</p>
+
+<h3 id="contexto-do-desafio">Contexto do desafio:</h3>
+
+<p>Criar um bot para gravação de áudio no discord…. sim. Nada a ver com o projeto que descrevo aqui. 
+Como isso aconteceu? Vi um post no instagram do TC buscando desenvolvedores para o tal bot, porém não explicaram direito e decidi trocar uma ideia.</p>
+
+<p>Acabamos evoluindo um pouco o papo e acabamos pensando o seguinte: O bot não resolveria o problema deles, já que o bot atual dependia do discord e no caso o problema era do discord e não do bot.</p>
+
+<p>Com isso reparei que eles não tinham um site e propus criar. Dai sim chegamos no contexto correto rsrs</p>
+
+<h3 id="desenvolvimento">Desenvolvimento</h3>
+
+<p>O site foi pensado para ser o mais simples possível. Daí criei uma landing page simples contendo poucas sections, na sua maioria institucional, falando sobre a empresa, mostrando seus integrantes e onde podem ser encontrados.</p>
+
+<p>Vou destacar aqui no post apenas duas sections, onde tive um pouco mais de trabalho pra criar algo que pensamos no momento da ideia.</p>
+
+<p>Porém para ver o site todo, basta abrir o site: <a href="https://turbocast.com.br" target="_blank">turbocast.com.br</a></p>
+
+<h4 id="section-escute-nosso-último-episódio">Section: Escute nosso último episódio</h4>
+
+<p>O contexto para esta section, foi bem simples: precisamos mostrar o último ep do podcast. Inicialmente fizemos manualmente, toda quarta feira o link da publicação era substituído. Porém toda publicação que envolve outros players é como nos blogs e gera um RSS feed, neste caso, pegamos o feed público do canal deles no Anchor, plataforma de podcasts do Spotify e a partir desse RSS feed, montamos o player automaticamente com o último ep do feed.</p>
+
+<p>Com isso, toda quarta feira, data de publicação do turbocast, o site já abre com o novo ep disponível para escutar no próprio site usando o player do anchor.</p>
+
+<p><img src="./assets/img/site-turbocast/ultimo-ep.png" alt="Imagem da section último episódio" /></p>
+
+<p>Como foi feito:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">podcastCode</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">xpto123</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">podcastName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nomeDoPodcast</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`https://anchor.fm/s/</span><span class="p">${</span><span class="nx">podcastCode</span><span class="p">}</span><span class="s2">/podcast/rss`</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lastEpisode</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.lastEpisode</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">loadEpisode</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="na">url</span><span class="p">:</span> <span class="nx">url</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">dataType</span><span class="p">:</span> <span class="dl">"</span><span class="s2">xml</span><span class="dl">"</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">xml</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Aqui já com o XML do RSS, navegamos pra encontrar os valores que precisamos pra montar a URL do último EP.</span>
+        <span class="kd">var</span> <span class="nx">channel</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">xml</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="dl">'</span><span class="s1">channel</span><span class="dl">'</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">lastItem</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">channel</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="dl">'</span><span class="s1">item</span><span class="dl">'</span><span class="p">).</span><span class="nx">first</span><span class="p">();</span>
+        <span class="kd">var</span> <span class="nx">urlEpisode</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">lastItem</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="dl">'</span><span class="s1">link</span><span class="dl">'</span><span class="p">).</span><span class="nx">text</span><span class="p">();</span>
+        <span class="kd">var</span> <span class="nx">embeddedUrl</span> <span class="o">=</span> <span class="s2">`https://anchor.fm/</span><span class="p">${</span><span class="nx">podcastName</span><span class="p">}</span><span class="s2">/embed/episodes/</span><span class="p">${</span><span class="nx">urlEpisode</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">).</span><span class="nx">pop</span><span class="p">()}</span><span class="s2">`</span><span class="p">;</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">embeddedUrl</span><span class="p">);</span>
+        <span class="c1">// Aqui já com a embeddedUrl montada, criamos um iframe para montar o player direto no site. </span>
+        <span class="nx">lastEpisode</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s2">`&lt;iframe src="</span><span class="p">${</span><span class="nx">embeddedUrl</span><span class="p">}</span><span class="s2">" height="200px" width="400px" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;`</span><span class="p">);</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">lastEpisode</span><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">loadEpisode</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="section-integrantes">Section: Integrantes</h4>
+
+<p>O contexto desta section, surgiu por um motivo: não sabia qual integrante vinha antes. Ao perguntar, gerei dúvidas no povo do turbocast também. 
+Daí fiz algo para resolver o problema, montei uma lista de integrantes e fiz um sort. rsrsrs</p>
+
+<p>Portanto, toda vez que abrir o site, os integrantes serão exibidos de forma aleatória. =D</p>
+
+<p><img src="./assets/img/site-turbocast/integrantes.png" alt="Imagem da section integrantes" /></p>
+
+<p>Como foi feito:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">integrantes</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">gueds</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">camilo</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">hud</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">romulo</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">vini</span><span class="dl">'</span><span class="p">].</span><span class="nx">sort</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">.</span><span class="mi">5</span> <span class="o">-</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">());</span>
+<span class="c1">// Após definir randomicamente os integrantes com o .sort(), bastou montar as imagens na section</span>
+</code></pre></div></div>
+
+<h3 id="considerações-finais">Considerações finais</h3>
+
+<p>Após criar o site, virei o menino da TI do podcast.</p>
+
+<p>Hoje temos alguns projetos em conjunto em andamento, ainda secretos mas em andamento.</p>
+
+<p>Vale deixar aqui registrado um agradecimento ao Turbocast, que foi meu primeiro case unindo minha paixão pelo meio automotivo com a minha profissão. Tamo junto povo. =D</p>
+:ET
