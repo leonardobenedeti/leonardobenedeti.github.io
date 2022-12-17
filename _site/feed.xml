@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-03-11T17:03:17-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-12-16T22:00:56-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu site e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
 
 &lt;p&gt;Minha história relacionando iFood Benefícios e Dextra iniciou dia 01/12/2020, fui contratado ainda em outubro/2020 pela Dextra para iniciar dia 01/12. Com isso minha integração foi interrompida já por uma das primeiras reuniões do projeto.&lt;/p&gt;
 
@@ -179,76 +179,7 @@ Daí fiz algo para resolver o problema, montei uma lista de integrantes e fiz um
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/flutter-app-pruuu-microblog&quot; target=&quot;_blank&quot;&gt;Repositório do Pruuu&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;PS.: Evitem Pull Requests. Porque ? Como é um app que estou criando para mostrar o que o Leonardo Benedeti sabe, eu incluir código criado por outras pessoas é maneiro no contexto código aberto, mas pode gerar confusão quando eu for ser avaliado. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Clone do app PicPay usando Flutter</title><link href="/picpay-clone-using-flutter" rel="alternate" type="text/html" title="Clone do app PicPay usando Flutter" /><published>2019-10-28T00:00:00-03:00</published><updated>2019-10-28T16:00:00-03:00</updated><id>/picpay-clone-using-flutter</id><content type="html" xml:base="/picpay-clone-using-flutter">&lt;p&gt;“Um belo dia resolvi mudar e fazer tudo o que eu queria fazer”&lt;/p&gt;
-
-&lt;p&gt;Sim. Em um dia, não tão belo como na música, decidi me aventurar e criar algo bacana usando Flutter.&lt;/p&gt;
-
-&lt;p&gt;Participo de alguns grupos que fazem apps de exemplo, para mostrar arquiteturas e boas práticas, criando clones de apps já existentes.&lt;/p&gt;
-
-&lt;p&gt;Com essa ideia em mente procurei algum app que ainda não tivesse sido clonado e não vi nenhum clone do PicPay, o canivete suíço dos pagamentos.&lt;/p&gt;
-
-&lt;p&gt;Uso muito o app no meu dia a dia e foi uma motivação maior ainda replicar um app tão bom, que imagino que seja nativo, utilizando o Flutter.&lt;/p&gt;
-
-&lt;p&gt;Como ponto de partida, tirei um print do meu celular e decidi recriar apenas a home do app, que mostra:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Saldo&lt;/li&gt;
-  &lt;li&gt;Lista de pessoas&lt;/li&gt;
-  &lt;li&gt;Tabs de transações, minhas e das pessoas que sigo&lt;/li&gt;
-  &lt;li&gt;A lista referente as tabs&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Print do app original. 
-&lt;img src=&quot;assets/img/picpay/original.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Seguindo para o desenvolvimento.&lt;/p&gt;
-
-&lt;p&gt;Iniciei o projeto em um horário vago no período de trabalho, mas só consegui dar continuidade a noite em casa, devido a tarefas do trabalho.&lt;/p&gt;
-
-&lt;p&gt;Seguindo assim, podemos analisar os ajustes a cada commit que fiz. Os detalhes dos commits vocês podem ver no repo. =D&lt;/p&gt;
-
-&lt;p&gt;Primeiro ajuste: Apenas ajustes no app que o flutter te entrega pronto, inclusão de cores e ícones na title bar.
-&lt;img src=&quot;assets/img/picpay/commits/1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Segundo ajuste: Aqui tivemos uma mudança mais considerável, ajustei o header para sliver e customizei o title para fazer o ‘Meu Saldo’ e já adicionei os containers para os próximos ajustes.
-&lt;img src=&quot;assets/img/picpay/commits/2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Terceiro ajuste: Aqui iniciei a criação das listas de atividades e dos cards. Dei uma boeira na cor da tab também. era pra alterar a cor do indicator apenas mas alterei do container. #mybad
-&lt;img src=&quot;assets/img/picpay/commits/3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Quarto Ajuste: Cores devidamente ajustadas e card construido.
-&lt;img src=&quot;assets/img/picpay/commits/4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Quinto ajuste: Inclusão da lista de sugestões de contato para efetuar um pagamento.
-&lt;img src=&quot;assets/img/picpay/commits/5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sexto ajuste: Inclusão de mais itens na lista e inclusão de icones printados do app original
-&lt;img src=&quot;assets/img/picpay/commits/6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sétimo ajuste: Remover a necessidade da safe area na parte de baixo do layout. 
-&lt;img src=&quot;assets/img/picpay/commits/7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;E para comparar com o layout original vamos com uma imagem lado a lado.&lt;/p&gt;
-&lt;div class=&quot;grid&quot;&gt;
-    &lt;div class=&quot;a img&quot;&gt;
-        &lt;img src=&quot;assets/img/picpay/original.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;b img&quot;&gt;
-        &lt;img src=&quot;assets/img/picpay/clone.png&quot; alt=&quot;&quot; /&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Vale ressaltar. Criei aqui apenas a UI da home do PicPay, não me importei com algumas coisas, como arquitetura, boas práticas, BLoC e affins…&lt;/p&gt;
-
-&lt;p&gt;Queria deixar a UI mais próxima possível do app original para me testar neste quesito.&lt;/p&gt;
-
-&lt;p&gt;Quando tiver um pouco mais de tempo, pretendo plugar uma consulta a algum backend, que provavelmente eu vou criar também, e ai sim, plugar tudo que tiver de boas práticas, loadings e tudo mais pra deixar o app dinâmico.&lt;/p&gt;
-
-&lt;p&gt;E pra quem não conhece o PicPay, da uma olhada ai que vale a pena usar.&lt;/p&gt;
-
-&lt;p&gt;Aqui vai um convite pra você: &lt;a href=&quot;http://www.picpay.com/convite?@331X&quot; target=&quot;_blank&quot;&gt;http://www.picpay.com/convite?@331X&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;O código completo do app você pode conferir no meu repositório com todos os detalhes.&lt;br /&gt;
-&lt;a href=&quot;https://github.com/leonardobenedeti/picpay_clone_flutter&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/picpay_clone_flutter&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /></entry><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
+&lt;p&gt;PS.: Evitem Pull Requests. Porque ? Como é um app que estou criando para mostrar o que o Leonardo Benedeti sabe, eu incluir código criado por outras pessoas é maneiro no contexto código aberto, mas pode gerar confusão quando eu for ser avaliado. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">[Tutorial] - Email sender with Sendgrid on Heroku</title><link href="/heroku-mail-sender-with-sendgrid" rel="alternate" type="text/html" title="[Tutorial] - Email sender with Sendgrid on Heroku" /><published>2019-10-07T00:00:00-03:00</published><updated>2019-10-07T16:00:00-03:00</updated><id>/heroku-mail-sender-with-sendgrid</id><content type="html" xml:base="/heroku-mail-sender-with-sendgrid">&lt;p&gt;Pensando como melhorar algumas plataformas que tenho online encontrei o Sendgrid dentro do nosso velho amigo Heroku.&lt;/p&gt;
 
 &lt;p&gt;A Sendgrid é uma plataforma de envio de emails transacionais e de marketing.&lt;/p&gt;
 
@@ -891,4 +822,53 @@ O pipeline não fazia todo papel DevOps de fato por políticas do cliente, mas c
 
 &lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;/h3&gt;
 
-&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry></feed>
+&lt;p&gt;Hoje o app continua nas lojas e a sustentação do app está bem estabilizada, sem incidentes graves e problemas que demandem muita energia. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="ios" /><category term="android" /><category term="google play" /><category term="app store" /><category term="devops" /><category term="jenkins" /><category term="azure devops" /></entry><entry><title type="html">[POC] - SmartApp</title><link href="/poc-smart-app" rel="alternate" type="text/html" title="[POC] - SmartApp" /><published>2018-06-08T00:00:00-03:00</published><updated>2018-06-08T16:00:00-03:00</updated><id>/poc-smart-app</id><content type="html" xml:base="/poc-smart-app">&lt;p&gt;&lt;img src=&quot;assets/img/everis/smartapp/img-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;** Acredite, no canto direito superior é um cerebro pra simbolizar a inteligencia da api&lt;/p&gt;
+
+&lt;p&gt;Este projeto foi criado utilizando uma arquitetura básica de um app feito em Ionic consumindo uma API python utilizando Flask e um algoritmo de recomendações baseado em inteligencia artificial.&lt;/p&gt;
+
+&lt;p&gt;Vamos separar em tópicos para explicar a POC.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Conceito de smart apps&lt;/li&gt;
+  &lt;li&gt;Necessidade e contexto&lt;/li&gt;
+  &lt;li&gt;App final&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;1-conceito-de-smart-apps&quot;&gt;1. Conceito de smart apps&lt;/h4&gt;
+&lt;p&gt;Para explicar o conceito de smart apps a melhor maneira é exemplificar alguns casos.
+Um smart app bem conhecido e muito utilizado é o Waze.
+O app altera o fundo do app quando atinge o horário 17:59, antes deste horário é cinza com rotas em roxo, quando o dia vira noite, o app faz um cross-fading de cor de fundo para um cinza bem escuro e com rotas em azul claro para contrastar com o fundo.&lt;/p&gt;
+
+&lt;div class=&quot;images-grid two&quot;&gt;
+  &lt;img src=&quot;assets/img/everis/smartapp/waze-dia.png&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;assets/img/everis/smartapp/waze-noite.png&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Com isso podemos classificar smart apps, os apps que conseguem de alguma forma interagir com o ambiente do usuário. Seja com horário, como o Waze faz, com localização recomendando de lugares e outros exemplos.&lt;/p&gt;
+
+&lt;p&gt;Existem tipos de smart app, a grande maioria utiliza recursos do device que esta instalado, mas existem apps que são baseados em API. Que é o caso do post.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-necessidade-e-contexto&quot;&gt;2. Necessidade e contexto&lt;/h4&gt;
+
+&lt;p&gt;A POC foi pensada para ser apresentada em um evento onde a Everis tem boa participação e sempre aborda as novas tendências de mercado em varias frentes.&lt;/p&gt;
+
+&lt;p&gt;Neste caso estavamos a pouco tempo do evento e existia um app nativo iOS que ainda não consumia nenhuma api e tinha alguns exemplos de cards, mas tudo offline e sem nenhuma recomendação.&lt;/p&gt;
+
+&lt;p&gt;Para conseguir criar tudo que precisava, chegamos a um consenso que Ionic seria a melhor pedida devido sua facilidade e menor barreira de entrada.&lt;/p&gt;
+
+&lt;p&gt;Também existia um algoritmo feito em Python que ao inputar dados, ele recomenda algumas informações baseadas no treino previamente feito.&lt;/p&gt;
+
+&lt;p&gt;Com o algoritmo em mãos precisavamos criar uma API na mesma linguagem para não gerar retrabalho no algoritmo, com isso escolhemos o Flask para expor em uma API e disponibilizamos no Heroku.&lt;/p&gt;
+
+&lt;p&gt;Escrevi um outro &lt;a href=&quot;/heroku-python-mysql&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; que mostra como subir uma aplicação python com mysql no heroku.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-app-final&quot;&gt;3. App final&lt;/h4&gt;
+
+&lt;p&gt;Após criar o app e a api, conectamos os dois e ao enviar os dados preenchidos no formulário a API baseada no treino feito posteriormente, recomenda as informações que o app mostra em formato de cards.&lt;/p&gt;
+
+&lt;div class=&quot;images-grid three&quot;&gt;
+  &lt;img class=&quot;a&quot; src=&quot;assets/img/everis/smartapp/smartapp-1.png&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;b&quot; src=&quot;assets/img/everis/smartapp/smartapp-2.png&quot; alt=&quot;&quot; /&gt;
+  &lt;img class=&quot;c&quot; src=&quot;assets/img/everis/smartapp/smartapp-3.png&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="python" /><category term="ios" /><category term="android" /><category term="heroku" /></entry></feed>
