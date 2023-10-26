@@ -5,11 +5,56 @@ permalink: /experiencia
 sidebar_link: true
 ---
 
+## • GearApp
+
+**Cargo**: Fundador <br>
+**Período**: 06/2023 – <b>atualmente</b> <br>
+**Local**: São Paulo - SP, Brasil <br>
+**Responsabilidades**:  <br>
+* Desenvolvimento flutter - mobile e web
+* Definições de negócio
+* Parcerias estratégicas e vendas
+* UI/UX 
+* Social media
+* e o que mais precisar...
+
+
+**Tecnologias**: Flutter, Adobe XD, Adobe Illustrator, Boa vontade, Paciência... rsrsrs
+
+<a href="https://gearapp.com.br" target="blank" class="btn primary">Veja nosso site</a>
+<a href="/gearapp" class="btn">Posts sobre o negócio</a>
+
+#### Resumo
+
+* Criado inicialmente pra fugir das amarras dos projetos das consultorias, acabei indo muito a fundo na brincadeira e percebi que tinha um potencial negócio em mãos, dai comecei a estruturar melhor o app para receber os usuários que esperava... em breve vou detalhar mais sobre o app e negócio em alguns posts. Clica em "posts sobre o negócio" pra dar um confere. =D
+
+----
+
+## • GearLabs
+
+**Cargo**: Fundador <br>
+**Período**: 06/2023 – <b>atualmente</b> <br>
+**Local**: São Paulo - SP, Brasil <br>
+**Responsabilidades**:  <br>
+* Desenvolvimento - mobile e web
+
+**Tecnologias**: Flutter, HTML, CSS, JS... tudo que for preciso pra subir um site ou algo relacionado a tecnologia focando no setor automotivo.
+
+<a href="https://gearlabs.com.br" target="blank" class="btn primary">Veja nosso site</a>
+<a href="/gearlabs" class="btn">Posts sobre o negócio</a>
+
+#### Resumo
+
+* Empresa criada em formato de agência apenas para complemento de renda, criando alguns sites e projetos simples nos horários vagos. 
+
+----
+
+
 ## • Dextra / CI&T
 
 **Empresas**: Em Dezembro de 2021 foi finalizado o M&A da Dextra pela CI&T, ocasionando a troca de marca e incorporação de todos os projetos e recursos. <br>
 **Cargo**: Dev Mobile Sr <br>
-**Período**: 01/2020 – <b>atualmente</b> <br>
+**Período**: 01/2020 – 06/2023 <br>
 **Local**: São Paulo - SP, Brasil <br>
 **Responsabilidades**:  <br>
 Desenvolvimento mobile focado em flutter<br>
@@ -20,6 +65,13 @@ Desenvolvimento mobile focado em flutter<br>
 <a href="/dextra-ciandt" class="btn">Projetos</a>
 
 #### Clientes
+
+* **Costa Coffee**: Projeto internacional focado em criar uma interface para máquinas de café, a squad que participei focou apenas no front que o cliente interagia para realizar os pedidos mas a CI&T cuidava de várias verticais do projeto.
+
+* **Total Express**: Criação de um app totalmente do zero. Participei das definições iniciais até o momento que o app acabou sendo desligado por motivos internos da própria Total Express, mas o projeto tinha tudo de melhor no sentido de desenvolvimento mobile. AppCheck, FeatureToggle, Arquitetura desde o momento 0, design system e por ai vai. 
+
+* **Band Play**: Assessment para o projeto que no momento do assessment, era na construído com Ionic. Aqui ajudei um pouco mais com uma visão geral de desenvolvimento mobile, muito por já ter experiência com o framework, mas também por atuar em projetos com grande número de usuários. 
+
 * **iFood Benefícios**: Projeto em andamento para criar um app utilizando Flutter, para abrigar as funcionalidades de benefícios do iFood, hoje estas funcionalidades estão no app principal do iFood e o projeto visa em criar outro app. 
 
 ----

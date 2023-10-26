@@ -4,7 +4,7 @@ title: "Site Turbocast"
 little_desc: "Site criado em parceria com o podcast automotivo mais brabo. =D"
 excerpt_separator: ""
 categories:
-  - Freelas / Próprios
+  - GearLabs
 tags:
   - html
   - css

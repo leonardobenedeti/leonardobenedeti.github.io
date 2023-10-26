@@ -1,0 +1,130 @@
+I"�&<h3 id="inicio-da-ideia-e-proposta">Inicio da ideia e proposta</h3>
+
+<p>Por ser seguidor do canal onde o Pedro Spina atuava anteriormente à fundação da StageFilms, sempre acompanhei o trabalho dele e na primeira oportunidade de criar um site pra empresa dele, pulei na bomba e ofereci meus trabalhos então pra Stage, composta pelo Pedro Spina e sua esposa Luana Spina.</p>
+
+<p>Após todo papo pra entender o que eles queriam e pegar exemplos, iniciei uma analise que acabou sendo bem controversa, julguei ser possível fazer 100% do que eles pedira, mas ao iniciar o código, tudo conflitou e acabou ficando muito bagunçado e não funcionou.</p>
+
+<p>Com isso, fizemos uma nova reunião e fomos por um caminho de criar algo mais simples mas que ainda sim evidenciasse o trabalho da Stage Films e acabamos criando algo muito daora.</p>
+
+<h3 id="desenvolvimento">Desenvolvimento</h3>
+
+<p>Inicialmente utilizariamos uma serie de libs para o site todo ser animado, mas com os conflitos citados anteiormente, acabei optando por seguir uma linha mais “raiz” e criar muita coisa na mão.</p>
+
+<p>Caso não queira ler todo processo mas esteja curioso com o site, basta abrir o link: <a href="https://stagefilms.com.br" target="_blank">stagefilms.com.br</a></p>
+
+<h4 id="section-header--logo-animada">Section: Header / Logo animada</h4>
+
+<p>Um dos itens principais pedidos por eles era uma logo que tinha uma animação bem específica, onde todas as letras da logo iriam mudando o tamanho e posicionamento, meio que desconstruindo a logo.</p>
+
+<p>Nesse caso, isolei cada letra da logo e apliquei uma regra de scale e padding específica para gerar o efeito de desconstrução. Inicialmente queriamos algo disforme, mas acabou que a padronização de algumas reduzindo e outras aumentando agradou e seguimos assim.</p>
+
+<p><img src="./assets/img/stagefilms/logo-pre-scroll.png" alt="Imagem da section head pré scroll" />
+<img src="./assets/img/stagefilms/logo-pos-scroll.png" alt="Imagem da section head pós scroll" /></p>
+
+<p>No asset mostrando o comportamento da logo, vocês também puderam reparar um video rolando no fundo, isso foi apenas uma cereja que decidimos fazer nos últimos ajustes e é apenas um embedded do youtube rolando com um estilo aplicado para não esbarrar nos aspect ratios. =D</p>
+
+<hr />
+
+<h4 id="todo-o-site">Todo o site</h4>
+
+<p>Inserimos um efeito de cursor bem conhecido que é um highlight em itens específicos do site.</p>
+
+<p>Utilizamos a lib <a href="https://magicmousejs.web.app/" target="_blank">Magic Mouse</a> pra realizar esse efeito e o uso dela é bem simples.</p>
+
+<p>Após importar os arquivos necessários pra ela funcionar, basta rodar esse código para configurar as opções do highlight do cursor.</p>
+
+<p>Como foi feito:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">outerStyle</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">circle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">hoverEffect</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">circle-move</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">hoverItemMove</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">defaultCursor</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">outerWidth</span><span class="dl">"</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">outerHeight</span><span class="dl">"</span><span class="p">:</span> <span class="mi">30</span>
+<span class="p">}</span>
+<span class="nx">magicMouse</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Resultado:</p>
+
+<p><img src="./assets/img/stagefilms/efeito-magic-mouse.png" alt="Imagem do efeito do cursor com o Magic Mouse" /></p>
+
+<hr />
+
+<h3 id="section-grade-de-cases">Section: Grade de cases</h3>
+
+<p>Esta sessão foi bem tranquila, embora trabalhosa pois criar um grid desigual assim é um bom de um trabalho de formiguinha pra encaixar todos eles.</p>
+
+<p>Para replicar não existe muito mistério, é basicamente um display grid com uma grade específica onde nos itens maiores vc precisa aumentar o tamanho dele e pular alguns espaços da grade.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.classe-pai</span><span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">5</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">8</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.classe-maior-horizontalmente</span><span class="p">{</span>
+    <span class="py">grid-column-end</span><span class="p">:</span> <span class="n">span</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.classe-maior-verticalmente</span><span class="p">{</span>
+    <span class="py">grid-row-end</span><span class="p">:</span> <span class="n">span</span> <span class="m">2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Feito isso, você só precisa alinhar o conteúdo do que vc fez dentro de cada item, expandido ou não e pronto. =D</p>
+
+<p><img src="./assets/img/stagefilms/grid-cases.png" alt="Imagem da grade de cases" /></p>
+
+<hr />
+
+<h3 id="section-carrossel-de-marcas">Section: Carrossel de marcas</h3>
+
+<p>Talvez a sessão do site mais simples de execução por utilizar um lib também, chamada <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">OwnCarousel</a>. Bem simples de utilizar mas aqui no projeto fizemos algo além de só utilizar a lib.</p>
+
+<p>Para ativar o carrossel com a lib basta você importar tudo que ela demanda e rodar este trecho</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.brand-carousel</span><span class="dl">'</span><span class="p">).</span><span class="nx">owlCarousel</span><span class="p">({</span>
+    <span class="na">loop</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">margin</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="na">autoplay</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">center</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">slideTransition</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ease-in-out</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">autoplayHoverPause</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">smartSpeed</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
+    <span class="na">autoWidth</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">responsive</span><span class="p">:</span> <span class="p">{</span>
+      <span class="mi">0</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">items</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="mi">600</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">items</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="mi">1000</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">items</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Depois de ativarmos a lib, fizemos com o <code class="language-plaintext highlighter-rouge">hover</code>, um efeito de troca de imagens 100% preenchidas em branco para as logos originais com as cores das empresas.</p>
+
+<p><img src="./assets/img/stagefilms/carrossel-marcas.png" alt="Imagem do carrossel de marcas" /></p>
+
+<hr />
+
+<h3 id="section-contato">Section: Contato</h3>
+
+<p>E pra fechar, seguindo o conceito minimalista do site, a sessão de contato foi a mais simples e sem uso de nenhuma lib. Apenas os contatos e o magic mouse que já tinha sido aplicado em todo o site.</p>
+
+<p>Direto e reto. Clicou falou com eles direto nos links. =D</p>
+
+<p><img src="./assets/img/stagefilms/contato.png" alt="Imagem do contato" /></p>
+
+<hr />
+
+<h3 id="considerações-finais">Considerações finais</h3>
+
+<p>O site foi publicado recentemente e está passando por uma avaliação dos clientes da StageFilms. Até então ele fica como está, mas estamos estudando a viabilidade de mais uma atualização pra trazer mais componentes para o site. =D</p>
+:ET

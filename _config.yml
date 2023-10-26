@@ -1,31 +1,31 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown: kramdown
+highlighter: rouge
 
 # Setup
-title:            Leonardo Benedeti
-tagline:          'Meu site e base de conhecimento'
-description:      'Meu site e base de conhecimento'
-url:              '' #https://fongandrew.github.io/hydeout
-baseurl:          # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+title: Leonardo Benedeti
+tagline: "Meu portfólio e base de conhecimento"
+description: "Meu portfólio e base de conhecimento"
+url: "" #https://fongandrew.github.io/hydeout
+baseurl:
+  "" # the optional subpath of your site, e.g. "/blog"
+  # NB: This applies to all pages in your Jekyll site.
+  # If you want to move just the blog index pages but keep
+  # other pages at root, see the paginate_path and
+  # sidebar_blog_link below.
 
 author:
-  name:          'Leonardo Benedeti'
-  url:           https://leonardobenedeti.github.io
-  tt:            https://twitter.com/LeonardoBSM
-  linkedin:      https://www.linkedin.com/in/leonardobenedeti/
-  insta:         http://instagram.com/leonardobenedeti
-  facebook:      https://www.facebook.com/leobenedeti
-  git:           https://github.com/leonardobenedeti
+  name: "Leonardo Benedeti"
+  url: https://leonardobenedeti.github.io
+  tt: https://twitter.com/LeonardoBSM
+  linkedin: https://www.linkedin.com/in/leonardobenedeti/
+  insta: http://instagram.com/leonardobenedeti
+  facebook: https://www.facebook.com/leobenedeti
+  git: https://github.com/leonardobenedeti
 
-
-paginate:         9999
+paginate: 9999
 # paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+# Or '/blog/page:num' if you want to move your index pages
 
 plugins:
   - jekyll-feed
@@ -33,16 +33,16 @@ plugins:
   - jekyll-paginate
 
 # Custom vars
-version:            3.4.1
-sidebar_home_link:  true
+version: 3.4.1
+sidebar_home_link: true
 # sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
+# page. If you change your paginate_path,
+# set this to the root of the paginate_path
+# to enable a separate blog link.
 github:
-  repo:             https://github.com/leonardobenedeti
+  repo: https://github.com/leonardobenedeti
 
-exclude: ['modelos_de_post', 'OLD_posts']
+exclude: ["modelos_de_post", "OLD_posts"]
 site.disqus.shortname: https-leonardobenedeti-github-io
 
 permalink: /:title
