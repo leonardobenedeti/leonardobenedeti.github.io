@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-10-26T19:48:52-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu portfólio e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Site StageFilms</title><link href="/stage-films" rel="alternate" type="text/html" title="Site StageFilms" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-12T16:00:00-03:00</updated><id>/stage-films</id><content type="html" xml:base="/stage-films">&lt;h3 id=&quot;inicio-da-ideia-e-proposta&quot;&gt;Inicio da ideia e proposta&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-20T20:09:37-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu portfólio e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">IBGE - Places</title><link href="/IBGE-Places" rel="alternate" type="text/html" title="IBGE - Places" /><published>2023-12-20T00:00:00-03:00</published><updated>2023-12-20T16:00:00-03:00</updated><id>/IBGE-Places</id><content type="html" xml:base="/IBGE-Places">&lt;h3 id=&quot;relembrar-é-viver-edição-ionic-framework&quot;&gt;Relembrar é viver… edição Ionic Framework&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/ibge/video-device-browser.gif&quot; alt=&quot;Resumo da usabilidade do app em GIF&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;porque-reviver-uma-tech-que-não-atuo-mais-&quot;&gt;Porque reviver uma tech que não atuo mais ?&lt;/h3&gt;
+
+&lt;p&gt;Por conta de uma possível oportunidade, que precisava estabilizar um app criado em Ionic, fui abordado por um amigo/ex-colega de trabalho sobre a possibilidade de ajudar no projeto.&lt;/p&gt;
+
+&lt;p&gt;Porém… mesmo topando ajudar inicialmente, surgiu uma incerteza de que de fato eu daria conta do trabalho, afinal, faz muito tempo que não atuo com Ionic.&lt;/p&gt;
+
+&lt;p&gt;Daí decidi criar esse projeto pra ir relembrando a documentação, navegação e chamadas de APIs abertas.&lt;/p&gt;
+
+&lt;h3 id=&quot;porque-estados-e-cidades-do-brasil&quot;&gt;Porque estados e cidades do brasil?&lt;/h3&gt;
+
+&lt;p&gt;Queria criar algo usando uma api aberta como os testes padrões que normalmente utilizam as APIs de heróis da marvel e muitas outras apis abertas, porém não queria ser contaminado com testes já existentes e nessa brincadeira encontrei a api do IBGE que tem muitas outras opções muito legais pra serem exploradas.&lt;/p&gt;
+
+&lt;p&gt;No caso deste app, optei por utilizar estas opções:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://servicodados.ibge.gov.br/api/v1/localidades&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lista as localidades do brasil em vários formatos, aqui no app usamos apenas estados e cidades pra montar a lista e capturar o id da cidade pra utilizar nas próximas.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://servicodados.ibge.gov.br/api/v2/censos/nomes/leonardo?localidade=[ID_CIDADE]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Fornece a quantidade de Leonardos nascidos em um determinado período na localidade, que no caso utilizei o id da cidade pra buscar o número por cidade.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://servicodados.ibge.gov.br/api/v3/malhas/municipios/[ID_CIDADE] &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Também com o id da cidade, neste caso aqui é possível buscar a silhueta da cidade.&lt;/p&gt;
+
+&lt;p&gt;e com toda essa informação vamos pro layout…&lt;/p&gt;
+
+&lt;h3 id=&quot;layout-da-ideia&quot;&gt;Layout da ideia&lt;/h3&gt;
+
+&lt;p&gt;Como era algo apenas pra relembrar a mecânica do Ionic e não um projeto de fato, não tinha muita intenção de criar algo muito complexo em layout, muito também por conta de que o layout no Ionic é feito com html e css, duas tecnologias que já tenho uma ótima experiência.&lt;/p&gt;
+
+&lt;p&gt;Daí pra relembrar apenas a mecânica, um layout simples bastaria e pensei justamente em duas listas simples com ChoiceChips e depois uma tela com mais detalhes da cidade escolhida.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Listagens de estados e cidades
+&lt;img src=&quot;./assets/img/ibge/listagens.png&quot; alt=&quot;Imagem das listas&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Detalhes da cidade e quantos Leonardos
+&lt;img src=&quot;./assets/img/ibge/detalhes.png&quot; alt=&quot;Imagem das listas&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Vale comentar, em um projeto mais elaborado, normalmente faço um protótipo antes, aqui eu fui me guiando apenas pelo código.&lt;/p&gt;
+
+&lt;h3 id=&quot;sobre-o-projeto-e-código&quot;&gt;Sobre o projeto e código&lt;/h3&gt;
+
+&lt;p&gt;Confesso que quando a oportunidade chegou eu não aceitei tão bem a ideia de retornar a uma tecnologia que não utilizo há algum tempo… mas sinceramente a realidade é que não achei tão ruim, de fato me encontrei muito mais rápido do que imaginava e o resultado foi bem interessante, principalmente pelo tempo, demorei cerca de 3~4h pra realizar a base do projeto e antes de escrever este post, fiz uns ajustes de layout apenas e tudo pode ser conferido nos timestamps dos commits. =D&lt;/p&gt;
+
+&lt;p&gt;Sobre o código, vocês podem conferir tudo como foi feito no repo do projeto que está aberto.&lt;/p&gt;
+
+&lt;p&gt;Repo do projeto: 
+&lt;a href=&quot;https://github.com/leonardobenedeti/ibge-places&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/ibge-places&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;obs.: tenho outro projeto parecido com este, feito também para uma oportunidade porém bem mais elaborado e feito em Flutter que é o 
+&lt;a href=&quot;https://leonardobenedeti.github.io/pruuu-app&quot; target=&quot;_blank&quot;&gt;Pruuu App&lt;/a&gt; criado pra ser uma réplica do twitter, ficou bem daora e vale a leitura. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="Ionic" /><category term="scss" /><category term="typescript" /></entry><entry><title type="html">GearApp</title><link href="/gear-app" rel="alternate" type="text/html" title="GearApp" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-11T16:00:00-03:00</updated><id>/gear-app</id><content type="html" xml:base="/gear-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+
+&lt;p&gt;App criado pra fugir das amarras do mundo corporativo, sim, por uma época me senti muito frustrado em alguns projetos por precisar seguir as diretrizes previamente definidas para os projetos e com isso acabei iniciando o desenvolvimento do Gear App como uma brincadeira, uma válvula de escape, pra conseguir respirar e fazer algo do meu jeito.&lt;/p&gt;
+
+&lt;p&gt;Outro fator que corroborou foi que recentemente eu acabara de remover um app publicado da loja, não tendo nenhum app publicado diretamente por mim nas lojas, perdendo assim um diferencial gigante perante a outros profissionais na hora de uma entrevista ou algo do tipo.&lt;/p&gt;
+
+&lt;p&gt;Passando o tempo, preenchendo essa vontade, acabei desenvolvendo um produto maior do que eu esperava e percebi que tinha não apenas um app em mãos, mas sim um negócio e o melhor de tudo, um negócio que unia minha profissão com o setor automotivo, que no caso sempre fui fã e passei horas consumindo conteúdos sobre.&lt;/p&gt;
+
+&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
+
+&lt;p&gt;O projeto iniciou com uma arquitetura baseada em Clean mas um pouco mais simples e com MobX para gestão de estado. Porém com o passar do tempo o código virou uma bagunça e decidi retornar ao costumeiro Bloc, facilitando ainda mais com o uso do Cubit.&lt;/p&gt;
+
+&lt;p&gt;Atualmente o app está publicado em ambas lojas, AppStore e Google Play e em ambas lojas com uma boa nota.&lt;/p&gt;
+
+&lt;p&gt;Estamos atualmente estruturando mais ainda a base do app e do backoffice para começar a divulgar mais ainda o projeto e ganhar mercado, mas já estamos próximos a 1500 usuários e pouco mais de 600 seguidores no instagram.&lt;/p&gt;
+
+&lt;p&gt;O maior feedback é que o app é muito bem feito e não trava como alguns apps do setor automotivo.&lt;/p&gt;
+
+&lt;div class=&quot;images-grid two&quot;&gt;
+  &lt;img src=&quot;../assets/img/gearapp/IMG_2620.PNG&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;../assets/img/gearapp/IMG_2621.PNG&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pra encontrar o app nas lojas é bem simples, só buscar por Gear App que é o primeiro a aparecer caso seu celular seja compatível.&lt;/p&gt;
+
+&lt;p&gt;Ou você também pode entrar no site do &lt;a href=&quot;https://gearapp.com.br/&quot; target=&quot;_blank&quot;&gt;GearApp&lt;/a&gt; pra ter acesso aos links das lojas.&lt;/p&gt;
+
+&lt;h3 id=&quot;atualizações-em-breve&quot;&gt;Atualizações…. em breve&lt;/h3&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Costa Coffee</title><link href="/costa-coffee" rel="alternate" type="text/html" title="Costa Coffee" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-26T16:00:00-03:00</updated><id>/costa-coffee</id><content type="html" xml:base="/costa-coffee">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+
+&lt;p&gt;Aplicação web usada como interface de uma máquina de café da marca Costa Coffee, marca internacional comprada recentemente pela CocaCola na época e com a CI&amp;amp;T tento uma boa posição dentro do projeto cuidando de várias frentes.&lt;/p&gt;
+
+&lt;p&gt;O projeto consistia basicamente em criar aplicações que beberiam da mesma fonte de dados, exibindo em 4 formatos:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pedidos: Tela que mostrava todos os itens disponíveis para realizar o pedido, no caso deste formato, pouco depois da minha chegada também passamos a adaptar o código para rodar em browsers para os usuários pedirem dos seus próprios devices e não apenas do totem de pedidos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Acompanhamento: Uma tela sem interação do usuário. Básicamente uma tela de status mostrando a fila de pedidos e o status de cada um deles.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Retirada: Uma tela bem específica, tanto em dimensões quanto em design por conta do tamanho, tinha o foco de receber a intenção de retirada do pedido do usuário e validar as informações para emitir a ação pra máquina.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
+
+&lt;p&gt;O projeto foi criado utilizando uma base mais focada em apps mobile por ter uma navegação bem restrita e totalmente controlada pelo próprio app, não dependendo assim de interações externas ao app como um voltar do browser por exemplo ou botão voltar do android. Tudo era controlado 100% pelos botões desenvolvidos pelo time.&lt;/p&gt;
+
+&lt;p&gt;Utilizavamos uma arquitetura muito específica do projeto e estavamos caminhando pra implementar algo como o Clean mas ainda não estava nesse ponto quando deixei o projeto.&lt;/p&gt;
+
+&lt;p&gt;Para a gestão de estado da aplicação utilizavamos Bloc e também próximo a minha saída do projeto estavamos começando a migrar para Cubit.
+Injeção e inversão de dependência, utilizando GetIt para injeção.&lt;/p&gt;
+
+&lt;h3 id=&quot;fim-da-história&quot;&gt;Fim da história&lt;/h3&gt;
+
+&lt;p&gt;Este foi meu último projeto na CI&amp;amp;T, onde decidi abrir asas e experimentar um mundo mais arriscado lançando um app independente chamado GearApp que é focado no setor automotivo, mas aqui a história é do Costa e não do Gear… com essa decisão acabei deixando a CI&amp;amp;T em junho de 2023, uma das melhores consultorias que já passei.&lt;/p&gt;
+
+&lt;p&gt;Obrigado CI&amp;amp;T. Tamo junto&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="web" /></entry><entry><title type="html">Site StageFilms</title><link href="/stage-films" rel="alternate" type="text/html" title="Site StageFilms" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-12T16:00:00-03:00</updated><id>/stage-films</id><content type="html" xml:base="/stage-films">&lt;h3 id=&quot;inicio-da-ideia-e-proposta&quot;&gt;Inicio da ideia e proposta&lt;/h3&gt;
 
 &lt;p&gt;Por ser seguidor do canal onde o Pedro Spina atuava anteriormente à fundação da StageFilms, sempre acompanhei o trabalho dele e na primeira oportunidade de criar um site pra empresa dele, pulei na bomba e ofereci meus trabalhos então pra Stage, composta pelo Pedro Spina e sua esposa Luana Spina.&lt;/p&gt;
 
@@ -126,64 +248,7 @@
 
 &lt;h3 id=&quot;considerações-finais&quot;&gt;Considerações finais&lt;/h3&gt;
 
-&lt;p&gt;O site foi publicado recentemente e está passando por uma avaliação dos clientes da StageFilms. Até então ele fica como está, mas estamos estudando a viabilidade de mais uma atualização pra trazer mais componentes para o site. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="html" /><category term="css" /><category term="javascript" /></entry><entry><title type="html">Costa Coffee</title><link href="/costa-coffee" rel="alternate" type="text/html" title="Costa Coffee" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-26T16:00:00-03:00</updated><id>/costa-coffee</id><content type="html" xml:base="/costa-coffee">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
-
-&lt;p&gt;Aplicação web usada como interface de uma máquina de café da marca Costa Coffee, marca internacional comprada recentemente pela CocaCola na época e com a CI&amp;amp;T tento uma boa posição dentro do projeto cuidando de várias frentes.&lt;/p&gt;
-
-&lt;p&gt;O projeto consistia basicamente em criar aplicações que beberiam da mesma fonte de dados, exibindo em 4 formatos:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Pedidos: Tela que mostrava todos os itens disponíveis para realizar o pedido, no caso deste formato, pouco depois da minha chegada também passamos a adaptar o código para rodar em browsers para os usuários pedirem dos seus próprios devices e não apenas do totem de pedidos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Acompanhamento: Uma tela sem interação do usuário. Básicamente uma tela de status mostrando a fila de pedidos e o status de cada um deles.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Retirada: Uma tela bem específica, tanto em dimensões quanto em design por conta do tamanho, tinha o foco de receber a intenção de retirada do pedido do usuário e validar as informações para emitir a ação pra máquina.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
-
-&lt;p&gt;O projeto foi criado utilizando uma base mais focada em apps mobile por ter uma navegação bem restrita e totalmente controlada pelo próprio app, não dependendo assim de interações externas ao app como um voltar do browser por exemplo ou botão voltar do android. Tudo era controlado 100% pelos botões desenvolvidos pelo time.&lt;/p&gt;
-
-&lt;p&gt;Utilizavamos uma arquitetura muito específica do projeto e estavamos caminhando pra implementar algo como o Clean mas ainda não estava nesse ponto quando deixei o projeto.&lt;/p&gt;
-
-&lt;p&gt;Para a gestão de estado da aplicação utilizavamos Bloc e também próximo a minha saída do projeto estavamos começando a migrar para Cubit.
-Injeção e inversão de dependência, utilizando GetIt para injeção.&lt;/p&gt;
-
-&lt;h3 id=&quot;fim-da-história&quot;&gt;Fim da história&lt;/h3&gt;
-
-&lt;p&gt;Este foi meu último projeto na CI&amp;amp;T, onde decidi abrir asas e experimentar um mundo mais arriscado lançando um app independente chamado GearApp que é focado no setor automotivo, mas aqui a história é do Costa e não do Gear… com essa decisão acabei deixando a CI&amp;amp;T em junho de 2023, uma das melhores consultorias que já passei.&lt;/p&gt;
-
-&lt;p&gt;Obrigado CI&amp;amp;T. Tamo junto&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="web" /></entry><entry><title type="html">GearApp</title><link href="/gear-app" rel="alternate" type="text/html" title="GearApp" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-11T16:00:00-03:00</updated><id>/gear-app</id><content type="html" xml:base="/gear-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
-
-&lt;p&gt;App criado pra fugir das amarras do mundo corporativo, sim, por uma época me senti muito frustrado em alguns projetos por precisar seguir as diretrizes previamente definidas para os projetos e com isso acabei iniciando o desenvolvimento do Gear App como uma brincadeira, uma válvula de escape, pra conseguir respirar e fazer algo do meu jeito.&lt;/p&gt;
-
-&lt;p&gt;Outro fator que corroborou foi que recentemente eu acabara de remover um app publicado da loja, não tendo nenhum app publicado diretamente por mim nas lojas, perdendo assim um diferencial gigante perante a outros profissionais na hora de uma entrevista ou algo do tipo.&lt;/p&gt;
-
-&lt;p&gt;Passando o tempo, preenchendo essa vontade, acabei desenvolvendo um produto maior do que eu esperava e percebi que tinha não apenas um app em mãos, mas sim um negócio e o melhor de tudo, um negócio que unia minha profissão com o setor automotivo, que no caso sempre fui fã e passei horas consumindo conteúdos sobre.&lt;/p&gt;
-
-&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
-
-&lt;p&gt;O projeto iniciou com uma arquitetura baseada em Clean mas um pouco mais simples e com MobX para gestão de estado. Porém com o passar do tempo o código virou uma bagunça e decidi retornar ao costumeiro Bloc, facilitando ainda mais com o uso do Cubit.&lt;/p&gt;
-
-&lt;p&gt;Atualmente o app está publicado em ambas lojas, AppStore e Google Play e em ambas lojas com uma boa nota.&lt;/p&gt;
-
-&lt;p&gt;Estamos atualmente estruturando mais ainda a base do app e do backoffice para começar a divulgar mais ainda o projeto e ganhar mercado, mas já estamos próximos a 1500 usuários e pouco mais de 600 seguidores no instagram.&lt;/p&gt;
-
-&lt;p&gt;O maior feedback é que o app é muito bem feito e não trava como alguns apps do setor automotivo.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid two&quot;&gt;
-  &lt;img src=&quot;../assets/img/gearapp/IMG_2620.PNG&quot; alt=&quot;&quot; /&gt;
-  &lt;img src=&quot;../assets/img/gearapp/IMG_2621.PNG&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Pra encontrar o app nas lojas é bem simples, só buscar por Gear App que é o primeiro a aparecer caso seu celular seja compatível.&lt;/p&gt;
-
-&lt;p&gt;Ou você também pode entrar no site do &lt;a href=&quot;https://gearapp.com.br/&quot; target=&quot;_blank&quot;&gt;GearApp&lt;/a&gt; pra ter acesso aos links das lojas.&lt;/p&gt;
-
-&lt;h3 id=&quot;atualizações-em-breve&quot;&gt;Atualizações…. em breve&lt;/h3&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+&lt;p&gt;O site foi publicado recentemente e está passando por uma avaliação dos clientes da StageFilms. Até então ele fica como está, mas estamos estudando a viabilidade de mais uma atualização pra trazer mais componentes para o site. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="html" /><category term="css" /><category term="javascript" /></entry><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
 
 &lt;p&gt;Minha história relacionando iFood Benefícios e Dextra iniciou dia 01/12/2020, fui contratado ainda em outubro/2020 pela Dextra para iniciar dia 01/12. Com isso minha integração foi interrompida já por uma das primeiras reuniões do projeto.&lt;/p&gt;
 
@@ -643,154 +708,4 @@ Daí fiz algo para resolver o problema, montei uma lista de integrantes e fiz um
 
 &lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry><entry><title type="html">[Tutorial] - App Heroku: Flask com MySQL</title><link href="/heroku-python-mysql" rel="alternate" type="text/html" title="[Tutorial] - App Heroku: Flask com MySQL" /><published>2019-02-15T00:00:00-02:00</published><updated>2019-02-15T17:00:00-02:00</updated><id>/heroku-python-mysql</id><content type="html" xml:base="/heroku-python-mysql">&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/imagem-post.png&quot; style=&quot;margin:40px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:center;&quot;&gt;** Dessa vez foi no caderno da firma rsrs&lt;/p&gt;
-
-&lt;p&gt;Em um projeto na empresa que trabalho, em uma POC para a frente Mobile, precisamos criar uma API para um projeto mobile, porém como era uma POC precisavamos fazer o teste com o menor custo possível, se possível zero.&lt;/p&gt;
-
-&lt;p&gt;Com isso em mente, criamos tudo no Heroku e abaixo vai um pequeno passo a passo de como configurar um App no Heroku usando:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Python Flask - para consultar os dados no banco e responder ao client&lt;/li&gt;
-  &lt;li&gt;MySQL ClearDB - Addon do Heroku que permite criar um DB de até 5MB(mais que suficiente para uma POC)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;primeiro-passo-configurar-o-app-no-heroku-com-o-addon-mysql&quot;&gt;Primeiro passo: Configurar o app no Heroku com o Addon MySQL&lt;/h4&gt;
-
-&lt;p&gt;Para conseguirmos fazer tudo o que pretendemos precisamos deixar tudo configurado e vamos fazer isso aqui.&lt;/p&gt;
-
-&lt;p&gt;Começando pela criação do app no Heroku:
-&lt;img src=&quot;assets/img/tutoriais/python-mysql/criar-app-1.png&quot; style=&quot;margin:20px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/criar-app-2.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Após criar o aplicativo vamos precisar incluir os addons, no caso vamos incluir um addon para storage MySQL.
-O addon escolhido foi o ClearDB pela facilidade e ter uma faixa gratuita.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-addons-1.png&quot; style=&quot;margin:20px auto 10px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Na imagem acima é preciso clicar em configure add-ons e com isso será direcionado para uma página onde a busca da imagem abaixo será mostrada.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-addons-2.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Agora com o Add-on configurado precisamos nos conectar no banco para criar as tabelas e incluir dados para consumir.&lt;/p&gt;
-
-&lt;p&gt;Para isso precisamos ir até as configurações de nosso app e abrir as variáveis de configuração.&lt;/p&gt;
-
-&lt;p&gt;Lá vamos encontrar todos os dados para conectar com o banco.&lt;/p&gt;
-
-&lt;p&gt;Com o seguinte formato:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mysql://[user]:[passwd]@[host]/[default_schema]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/config-vars-mysql.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;segundo-passo-criar-as-tabelas-e-incluir-dados&quot;&gt;Segundo passo: Criar as tabelas e incluir dados&lt;/h4&gt;
-
-&lt;p&gt;Para este item eu costumo utilizar o MySQL Workbench, mas qualquer cliente, inclusive terminal pode ser utilizado.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/mysql-wb.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Após conectar, crie suas tabelas e dados, eu criei uma tabela simples para exemplificar.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE TABLE users (
-  idusers INT NOT NULL,
-  name VARCHAR(45) NULL,
-  phone VARCHAR(45) NULL,
-  PRIMARY KEY (idussers)
-);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;terceiro-passo-subir-a-app-no-heroku-com-um-hello-world&quot;&gt;Terceiro passo: Subir a app no heroku com um hello world&lt;/h4&gt;
-
-&lt;p&gt;Um aplicação python no heroku requer alguns cuidados para subir certinho e vamos passar por todos aqui.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;requirements.txt&lt;/strong&gt;
-Arquivo responsável por abrigar todos as libs que vamos importar no projeto. O próprio nome já diz certo? Requirements. =D&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Flask-MySQLdb==0.2.0
-gunicorn==19.8.1
-mysqlclient==1.3.12
-Flask==0.12.2
-Flask-Cors==3.0.3
-Flask-MySQL==1.4.0
-PyMySQL==0.8.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nesse caso temos algumas libs que vamos precisar. Básicamente todas girando no universo do Flask e MySQL&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Procfile&lt;/strong&gt;
-Arquivo exclusivo do heroku para inicializar os apps. Ele pode abrigar scripts para iniciar sua aplicação.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;web: gunicorn api:app
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Nesse caso o trecho procura a app dentro do arquivo api e inicia utulizando o gunicorn&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;api.py&lt;/strong&gt;
-Arquivo principal da aplicação. Aqui temos todos os códigos básicos para retornar um response.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;flask.ext.mysql&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt; 
-
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Flask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MySQL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# MySQL configurations  #### REVER trecho de configuração para buscar as informações
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;MYSQL_DATABASE_USER&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;USER&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;MYSQL_DATABASE_PASSWORD&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;PASSWD&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;MYSQL_DATABASE_DB&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;DEFAULT_SCHEMA&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;MYSQL_DATABASE_HOST&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;HOST&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;c1&quot;&gt;# routes
-&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;route&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;/&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT * FROM users&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;users&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fetchall&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;conn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jsonify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;users&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;por-último-os-resultados-dessa-saga&quot;&gt;Por último os resultados dessa saga.&lt;/h4&gt;
-
-&lt;p&gt;Temos duas maneiras de testar:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Localmente&lt;/strong&gt;
-Com o heroku cli baixado temos um recurso para utilizar com as mesmas configurações do app, porém localmente.
-Para isso basta digitar no terminal, dentro da pasta do projeto.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;heroku local web
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Este comando irá iniciar localmente um server de acordo com o seu app, normalmente na porta 5000.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/result-local.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Publicando&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Para publicar o app no heroku basta fazer um &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push heroku master&lt;/code&gt;. Como o heroku é baseado em git ele vai entender o commit e iniciar o build com os novos códigos.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/commit-final.png&quot; style=&quot;margin:10px auto;&quot; alt=&quot;&quot; /&gt;
-** ignorem o –force do comando, não é necessário. Tinha outra aplicação rodando nesse link e o merge não seria tão amigável rsrs&lt;/p&gt;
-
-&lt;p&gt;Após o build acima basta clicar no link que o CLI retornou et voilá.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;assets/img/tutoriais/python-mysql/result-publicado.png&quot; style=&quot;margin:10px auto 40px;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Caso queira baixar os códigos para criar sua API FLASK acesse o repo&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/leonardobenedeti/api-flask-with-mysql&quot; target=&quot;_blank&quot;&gt;GitHub - api-flask-with-mysql&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Leonardo Benedeti</name></author><category term="python" /><category term="mysql" /><category term="heroku" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry></feed>
