@@ -107,5 +107,9 @@ E com isso tudo pronto, só fazer seus commits que tudo vai acontecer automágic
 
 e claro, quando for utilizar algo mais automatiado assim, cuidado com o fluxo pra não sobrepor códigos que não poderiam ser alterados.
 
+
+Pra conferir o site rodando basta entrar no site <a href="https://appinstaller.com.br" target="_blank">AppInstaller</a>
+
+
 E como prometido, aqui vai o <a href="https://github.com/leonardobenedeti/appinstaller" target="_blank">Repo do AppInstaller</a> pra vocês conferirem as execuções e tudo além que não foi explicado aqui. 
 
