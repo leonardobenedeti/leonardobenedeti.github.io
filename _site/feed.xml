@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-20T20:09:37-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu portfólio e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">IBGE - Places</title><link href="/IBGE-Places" rel="alternate" type="text/html" title="IBGE - Places" /><published>2023-12-20T00:00:00-03:00</published><updated>2023-12-20T16:00:00-03:00</updated><id>/IBGE-Places</id><content type="html" xml:base="/IBGE-Places">&lt;h3 id=&quot;relembrar-é-viver-edição-ionic-framework&quot;&gt;Relembrar é viver… edição Ionic Framework&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-26T13:54:39-03:00</updated><id>/feed.xml</id><title type="html">Leonardo Benedeti</title><subtitle>Meu portfólio e base de conhecimento</subtitle><author><name>Leonardo Benedeti</name></author><entry><title type="html">Github Actions - Flutter Web</title><link href="/Github-Actions" rel="alternate" type="text/html" title="Github Actions - Flutter Web" /><published>2023-12-24T00:00:00-03:00</published><updated>2023-12-24T16:00:00-03:00</updated><id>/Github-Actions</id><content type="html" xml:base="/Github-Actions">&lt;h3 id=&quot;como-publicar-flutter-web-utilizando-github-actions--webhook--hostinger&quot;&gt;Como publicar flutter web utilizando Github Actions + webhook + hostinger&lt;/h3&gt;
+
+&lt;p&gt;Recentemente atuei com o Github Actions em um projeto mas não tive oportunidade de criar um do zero pra ver como funcionava, dai veio a ideia de criar algo simples e que pudesse postar por aqui, dai como o repositório do GearApp é privado não poderia servir de case pra mostrar publicamente, dai lembrei de um projeto que estava meio jogado e caberia um testes como esse.&lt;/p&gt;
+
+&lt;p&gt;A ideia era:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Criar o layout mais básico possível com flutter&lt;/li&gt;
+  &lt;li&gt;Sincronizar os hooks pra assim que publicar em uma branch já publicar no hostinger&lt;/li&gt;
+  &lt;li&gt;Automatizar tudo isso com o Github actions&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;O resumo da ideia em um rabisco seria algo nesse sentido.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/github-actions/code-flow.jpeg&quot; alt=&quot;Desenho do fluxo de código&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;layout&quot;&gt;Layout&lt;/h3&gt;
+
+&lt;p&gt;O App installer é um projeto que acabou morrendo e decidi manter o domínio por ser um nome bem bom, mas também disponibilizar a possibilidade para negociação do domínio e não apenas mostrar que o site não existe. Inicialmente fiz com um construtor da própria hostinger e tava ok, mas pra exemplificar o uso do Github Actions vi um bom candidato pra isso.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/github-actions/layout.png&quot; alt=&quot;Layout do site&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Além do layout adicionei também o copiar para área de transferência.&lt;/p&gt;
+
+&lt;p&gt;No final vou disponibilizar o link do repo completo.&lt;/p&gt;
+
+&lt;h3 id=&quot;githooks-no-hostinger&quot;&gt;Githooks no hostinger&lt;/h3&gt;
+
+&lt;p&gt;Aqui não existe muito mistério, mas pra não deixar de mostrar, vamos aos prints&lt;/p&gt;
+
+&lt;p&gt;No painel de hospedagem da hostinger você pode cadastrar um repo e apontar para um diretório, assim que o repo for atualizado, você pode implantar e com isso ele pega tudo que tem na branch e adiciona no diretório indicado, mas nesse passo, ainda manualmente.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/github-actions/repo-to-directory.png&quot; alt=&quot;Implantação manual dos arquivos do repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;E pra facilitar mais ainda, ao clicar em implantação automática, é mostrado um link do hook que o hostinger irá escutar caso esteja vinculado ao github. Feito isso, todo push na branch production é feito todo o processo de substituir os arquivos do diretório pelos arquivos da branch, assim, atualizando o site ou projeto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/github-actions/implantacao-automatica.png&quot; alt=&quot;Implantação automática&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;estrela-do-show&quot;&gt;Estrela do show&lt;/h3&gt;
+
+&lt;p&gt;Agora, com tudo já montado, faltou apenas o próprio build utilizando os workflows do github actions e o meu ficou assim:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Publish Web&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;workflow_dispatch&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;main&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ubuntu-latest&lt;/span&gt;
+
+    &lt;span class=&quot;na&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Checkout&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;actions/checkout@v1&lt;/span&gt;
+
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Setup Flutter&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;subosito/flutter-action@v1&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;stable&quot;&lt;/span&gt;
+
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Install dependencies&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flutter pub get&lt;/span&gt;
+
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Build Web&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;flutter build web --release&lt;/span&gt;
+
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Deploy&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;|&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;cd build/web&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git init&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git config --global user.email leonardobenedeti@gmail.com&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git config --global user.name leonardobenedeti&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git status&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git remote add origin https://$@github.com/leonardobenedeti/appinstaller.git&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git checkout -b production&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git add --all&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git commit -m &quot;Publish by Actions&quot;&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;git push origin production -f&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mas aqui temos mais detalhes pra funcionar como o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;secrets.TOKEN_FOR_BUILD&lt;/code&gt;. Pela internet tem vários artigos que mostram como criar o token pra utilizar aqui só que gostaria de indicar e também deixar o crédito de onde tirei essa dúvida que foi neste &lt;a href=&quot;https://blog.flutterando.com.br/publicando-suas-paginas-flutter-no-github-pages-utilizando-github-action-ab2701cd1f52&quot; target=&quot;_blank&quot;&gt;post&lt;/a&gt; do Toshi Ossada no blog do Flutterando.&lt;/p&gt;
+
+&lt;p&gt;E com isso tudo pronto, só fazer seus commits que tudo vai acontecer automágicamente… =D&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./assets/img/github-actions/workflows.png&quot; alt=&quot;Implantação automática&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;e claro, quando for utilizar algo mais automatiado assim, cuidado com o fluxo pra não sobrepor códigos que não poderiam ser alterados.&lt;/p&gt;
+
+&lt;p&gt;E como prometido, aqui vai o &lt;a href=&quot;https://github.com/leonardobenedeti/appinstaller&quot; target=&quot;_blank&quot;&gt;Repo do AppInstaller&lt;/a&gt; pra vocês conferirem as execuções e tudo além que não foi explicado aqui.&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="Flutter" /><category term="Web" /><category term="CI/CD" /><category term="Github Actions" /></entry><entry><title type="html">IBGE - Places</title><link href="/IBGE-Places" rel="alternate" type="text/html" title="IBGE - Places" /><published>2023-12-20T00:00:00-03:00</published><updated>2023-12-20T16:00:00-03:00</updated><id>/IBGE-Places</id><content type="html" xml:base="/IBGE-Places">&lt;h3 id=&quot;relembrar-é-viver-edição-ionic-framework&quot;&gt;Relembrar é viver… edição Ionic Framework&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;./assets/img/ibge/video-device-browser.gif&quot; alt=&quot;Resumo da usabilidade do app em GIF&quot; /&gt;&lt;/p&gt;
 
@@ -63,34 +153,7 @@
 &lt;a href=&quot;https://github.com/leonardobenedeti/ibge-places&quot; target=&quot;_blank&quot;&gt;https://github.com/leonardobenedeti/ibge-places&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;obs.: tenho outro projeto parecido com este, feito também para uma oportunidade porém bem mais elaborado e feito em Flutter que é o 
-&lt;a href=&quot;https://leonardobenedeti.github.io/pruuu-app&quot; target=&quot;_blank&quot;&gt;Pruuu App&lt;/a&gt; criado pra ser uma réplica do twitter, ficou bem daora e vale a leitura. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="Ionic" /><category term="scss" /><category term="typescript" /></entry><entry><title type="html">GearApp</title><link href="/gear-app" rel="alternate" type="text/html" title="GearApp" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-11T16:00:00-03:00</updated><id>/gear-app</id><content type="html" xml:base="/gear-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
-
-&lt;p&gt;App criado pra fugir das amarras do mundo corporativo, sim, por uma época me senti muito frustrado em alguns projetos por precisar seguir as diretrizes previamente definidas para os projetos e com isso acabei iniciando o desenvolvimento do Gear App como uma brincadeira, uma válvula de escape, pra conseguir respirar e fazer algo do meu jeito.&lt;/p&gt;
-
-&lt;p&gt;Outro fator que corroborou foi que recentemente eu acabara de remover um app publicado da loja, não tendo nenhum app publicado diretamente por mim nas lojas, perdendo assim um diferencial gigante perante a outros profissionais na hora de uma entrevista ou algo do tipo.&lt;/p&gt;
-
-&lt;p&gt;Passando o tempo, preenchendo essa vontade, acabei desenvolvendo um produto maior do que eu esperava e percebi que tinha não apenas um app em mãos, mas sim um negócio e o melhor de tudo, um negócio que unia minha profissão com o setor automotivo, que no caso sempre fui fã e passei horas consumindo conteúdos sobre.&lt;/p&gt;
-
-&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
-
-&lt;p&gt;O projeto iniciou com uma arquitetura baseada em Clean mas um pouco mais simples e com MobX para gestão de estado. Porém com o passar do tempo o código virou uma bagunça e decidi retornar ao costumeiro Bloc, facilitando ainda mais com o uso do Cubit.&lt;/p&gt;
-
-&lt;p&gt;Atualmente o app está publicado em ambas lojas, AppStore e Google Play e em ambas lojas com uma boa nota.&lt;/p&gt;
-
-&lt;p&gt;Estamos atualmente estruturando mais ainda a base do app e do backoffice para começar a divulgar mais ainda o projeto e ganhar mercado, mas já estamos próximos a 1500 usuários e pouco mais de 600 seguidores no instagram.&lt;/p&gt;
-
-&lt;p&gt;O maior feedback é que o app é muito bem feito e não trava como alguns apps do setor automotivo.&lt;/p&gt;
-
-&lt;div class=&quot;images-grid two&quot;&gt;
-  &lt;img src=&quot;../assets/img/gearapp/IMG_2620.PNG&quot; alt=&quot;&quot; /&gt;
-  &lt;img src=&quot;../assets/img/gearapp/IMG_2621.PNG&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Pra encontrar o app nas lojas é bem simples, só buscar por Gear App que é o primeiro a aparecer caso seu celular seja compatível.&lt;/p&gt;
-
-&lt;p&gt;Ou você também pode entrar no site do &lt;a href=&quot;https://gearapp.com.br/&quot; target=&quot;_blank&quot;&gt;GearApp&lt;/a&gt; pra ter acesso aos links das lojas.&lt;/p&gt;
-
-&lt;h3 id=&quot;atualizações-em-breve&quot;&gt;Atualizações…. em breve&lt;/h3&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">Costa Coffee</title><link href="/costa-coffee" rel="alternate" type="text/html" title="Costa Coffee" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-26T16:00:00-03:00</updated><id>/costa-coffee</id><content type="html" xml:base="/costa-coffee">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+&lt;a href=&quot;https://leonardobenedeti.github.io/pruuu-app&quot; target=&quot;_blank&quot;&gt;Pruuu App&lt;/a&gt; criado pra ser uma réplica do twitter, ficou bem daora e vale a leitura. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="Ionic" /><category term="scss" /><category term="typescript" /></entry><entry><title type="html">Costa Coffee</title><link href="/costa-coffee" rel="alternate" type="text/html" title="Costa Coffee" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-26T16:00:00-03:00</updated><id>/costa-coffee</id><content type="html" xml:base="/costa-coffee">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
 
 &lt;p&gt;Aplicação web usada como interface de uma máquina de café da marca Costa Coffee, marca internacional comprada recentemente pela CocaCola na época e com a CI&amp;amp;T tento uma boa posição dentro do projeto cuidando de várias frentes.&lt;/p&gt;
 
@@ -248,7 +311,34 @@ Injeção e inversão de dependência, utilizando GetIt para injeção.&lt;/p&gt
 
 &lt;h3 id=&quot;considerações-finais&quot;&gt;Considerações finais&lt;/h3&gt;
 
-&lt;p&gt;O site foi publicado recentemente e está passando por uma avaliação dos clientes da StageFilms. Até então ele fica como está, mas estamos estudando a viabilidade de mais uma atualização pra trazer mais componentes para o site. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="html" /><category term="css" /><category term="javascript" /></entry><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+&lt;p&gt;O site foi publicado recentemente e está passando por uma avaliação dos clientes da StageFilms. Até então ele fica como está, mas estamos estudando a viabilidade de mais uma atualização pra trazer mais componentes para o site. =D&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="html" /><category term="css" /><category term="javascript" /></entry><entry><title type="html">GearApp</title><link href="/gear-app" rel="alternate" type="text/html" title="GearApp" /><published>2023-10-26T00:00:00-03:00</published><updated>2023-10-11T16:00:00-03:00</updated><id>/gear-app</id><content type="html" xml:base="/gear-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
+
+&lt;p&gt;App criado pra fugir das amarras do mundo corporativo, sim, por uma época me senti muito frustrado em alguns projetos por precisar seguir as diretrizes previamente definidas para os projetos e com isso acabei iniciando o desenvolvimento do Gear App como uma brincadeira, uma válvula de escape, pra conseguir respirar e fazer algo do meu jeito.&lt;/p&gt;
+
+&lt;p&gt;Outro fator que corroborou foi que recentemente eu acabara de remover um app publicado da loja, não tendo nenhum app publicado diretamente por mim nas lojas, perdendo assim um diferencial gigante perante a outros profissionais na hora de uma entrevista ou algo do tipo.&lt;/p&gt;
+
+&lt;p&gt;Passando o tempo, preenchendo essa vontade, acabei desenvolvendo um produto maior do que eu esperava e percebi que tinha não apenas um app em mãos, mas sim um negócio e o melhor de tudo, um negócio que unia minha profissão com o setor automotivo, que no caso sempre fui fã e passei horas consumindo conteúdos sobre.&lt;/p&gt;
+
+&lt;h3 id=&quot;tecniquês&quot;&gt;Tecniquês&lt;/h3&gt;
+
+&lt;p&gt;O projeto iniciou com uma arquitetura baseada em Clean mas um pouco mais simples e com MobX para gestão de estado. Porém com o passar do tempo o código virou uma bagunça e decidi retornar ao costumeiro Bloc, facilitando ainda mais com o uso do Cubit.&lt;/p&gt;
+
+&lt;p&gt;Atualmente o app está publicado em ambas lojas, AppStore e Google Play e em ambas lojas com uma boa nota.&lt;/p&gt;
+
+&lt;p&gt;Estamos atualmente estruturando mais ainda a base do app e do backoffice para começar a divulgar mais ainda o projeto e ganhar mercado, mas já estamos próximos a 1500 usuários e pouco mais de 600 seguidores no instagram.&lt;/p&gt;
+
+&lt;p&gt;O maior feedback é que o app é muito bem feito e não trava como alguns apps do setor automotivo.&lt;/p&gt;
+
+&lt;div class=&quot;images-grid two&quot;&gt;
+  &lt;img src=&quot;../assets/img/gearapp/IMG_2620.PNG&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;../assets/img/gearapp/IMG_2621.PNG&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pra encontrar o app nas lojas é bem simples, só buscar por Gear App que é o primeiro a aparecer caso seu celular seja compatível.&lt;/p&gt;
+
+&lt;p&gt;Ou você também pode entrar no site do &lt;a href=&quot;https://gearapp.com.br/&quot; target=&quot;_blank&quot;&gt;GearApp&lt;/a&gt; pra ter acesso aos links das lojas.&lt;/p&gt;
+
+&lt;h3 id=&quot;atualizações-em-breve&quot;&gt;Atualizações…. em breve&lt;/h3&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="android" /><category term="ios" /><category term="ux" /><category term="ui" /><category term="branding" /></entry><entry><title type="html">iFood Benefícios</title><link href="/ifood-beneficios-app" rel="alternate" type="text/html" title="iFood Benefícios" /><published>2022-03-04T00:00:00-03:00</published><updated>2022-03-04T16:00:00-03:00</updated><id>/ifood-beneficios-app</id><content type="html" xml:base="/ifood-beneficios-app">&lt;h3 id=&quot;contexto-geral-e-história&quot;&gt;Contexto geral e história&lt;/h3&gt;
 
 &lt;p&gt;Minha história relacionando iFood Benefícios e Dextra iniciou dia 01/12/2020, fui contratado ainda em outubro/2020 pela Dextra para iniciar dia 01/12. Com isso minha integração foi interrompida já por uma das primeiras reuniões do projeto.&lt;/p&gt;
 
@@ -666,46 +756,4 @@ Daí fiz algo para resolver o problema, montei uma lista de integrantes e fiz um
 
 &lt;p&gt;Com esse script, automaticamente o package do gh-pages cria a branch e publica tudo pra você. =D&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry><entry><title type="html">[Github PR] - Twitter UI Clone Bug fix</title><link href="/flutter-twitter-ui-clone-ug-fix" rel="alternate" type="text/html" title="[Github PR] - Twitter UI Clone Bug fix" /><published>2019-09-06T00:00:00-03:00</published><updated>2019-09-06T16:00:00-03:00</updated><id>/flutter-twitter-ui-clone-ug-fix</id><content type="html" xml:base="/flutter-twitter-ui-clone-ug-fix">&lt;h2 id=&quot;minha-primeira-aventura-flutter&quot;&gt;Minha “primeira” aventura Flutter&lt;/h2&gt;
-
-&lt;p&gt;A título de curiosidade baixei um repo para entender mais sobre Flutter.&lt;/p&gt;
-
-&lt;p&gt;Navegando encontrei esse post no medium&lt;br /&gt;
-&lt;a href=&quot;https://medium.com/@diegoveloper/flutter-lets-know-the-scrollcontroller-and-scrollnotification-652b2685a4ac&quot; target=&quot;_blank&quot;&gt;Flutter: let’s know the ScrollController and ScrollNotification&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Estava procurando especificamente sobre como controlar a scrollview para emitir eventos enquanto o usuário estivesse scrollando a tela.&lt;/p&gt;
-
-&lt;p&gt;Para minha grata surpresa, o repo além de ter o que eu procurava, encontrei um clone do Twitter, especificamente a UI da page de perfil, com efeitos e tudo.&lt;/p&gt;
-
-&lt;p&gt;Ao tentar incluir em um projeto notei um bug ao scrollar as tabs do projeto original.&lt;/p&gt;
-
-&lt;p&gt;Quando eu scrollava as tabs o avatar iniciava a animação, porém, não deveria acontecer isso.&lt;/p&gt;
-
-&lt;p&gt;Problema:
-&lt;img src=&quot;assets/videos/bug-scrolling-tabs.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Esse bug me fez quase desistir da UI que antes considerei perfeita para o que estava criando para estudos.&lt;/p&gt;
-
-&lt;p&gt;Mas como o Flutter é um toolkit desafiador e o Dart é intuitivo e simples, pensei: Porque não tentar arrumar isso?!&lt;/p&gt;
-
-&lt;p&gt;Com algum tempo procurando o problema e imprimindo tudo que poderia de logs, identifiquei que a animação do avatar estava sendo iniciado com QUALQUER scroll na tela, mais especificamente falando do header.&lt;/p&gt;
-
-&lt;p&gt;Encontrei a propriedade &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scrollNotification.metrics.axisDirection&lt;/code&gt; que identificava se o scroll era vertical&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(top-&amp;gt;bottom or bottom-&amp;gt;top)&lt;/code&gt; ou horizontal&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(left-&amp;gt;right or right-&amp;gt;left)&lt;/code&gt; e com isso consegui controlar quando a animação iniciaria ou não.&lt;/p&gt;
-
-&lt;p&gt;Solução:
-&lt;img src=&quot;assets/videos/bug-fixed-scroll-tabs.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;O pull request desse ajuste foi enviado para o repo original e espero que ajude outras pessoas.&lt;br /&gt;
-&lt;a href=&quot;https://github.com/diegoveloper/flutter-samples/pull/11&quot; target=&quot;_blank&quot;&gt;Link para o pull request&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Obs.: essa foi a minha primeira contribuição com a comunidade open source. =D&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Informações importantes para quem quer entrar para o mundo Flutter:&lt;/p&gt;
-
-&lt;p&gt;Temos uma mega comunidade no Brasil que fez agora no fim de agosto o evento Flutter Talks, onde conheci o git em questão, comentado acima. O Diego Velasquez mostrou as diferenças entre Provider e Bloc, além dele tiveram muitas outras talks sobre todos os assuntos possíveis de Flutter.&lt;/p&gt;
-
-&lt;p&gt;A comunidade tem muito conteúdo de flutter. Recomendo acesso ao grupo e todo conteúdo oferecido por eles. Vale a pena!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://t.me/flutterando&quot; target=&quot;_blank&quot;&gt;Telegram da Comunidade Flutterando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="flutter" /><category term="github" /><category term="pull requests" /></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://leonardobenedeti.github.io/ionic3-swipe-up-component/&quot;&gt;Link do projeto publicado rodando&lt;/a&gt;&lt;/p&gt;</content><author><name>Leonardo Benedeti</name></author><category term="ionic" /><category term="github pages" /><category term="Hammer.js" /></entry></feed>

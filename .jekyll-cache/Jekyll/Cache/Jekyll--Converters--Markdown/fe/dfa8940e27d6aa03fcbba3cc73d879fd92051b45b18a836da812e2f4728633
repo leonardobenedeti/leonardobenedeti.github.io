@@ -1,0 +1,93 @@
+I"�<h3 id="como-publicar-flutter-web-utilizando-github-actions--webhook--hostinger">Como publicar flutter web utilizando Github Actions + webhook + hostinger</h3>
+
+<p>Recentemente atuei com o Github Actions em um projeto mas não tive oportunidade de criar um do zero pra ver como funcionava, dai veio a ideia de criar algo simples e que pudesse postar por aqui, dai como o repositório do GearApp é privado não poderia servir de case pra mostrar publicamente, dai lembrei de um projeto que estava meio jogado e caberia um testes como esse.</p>
+
+<p>A ideia era:</p>
+<ol>
+  <li>Criar o layout mais básico possível com flutter</li>
+  <li>Sincronizar os hooks pra assim que publicar em uma branch já publicar no hostinger</li>
+  <li>Automatizar tudo isso com o Github actions</li>
+</ol>
+
+<p>O resumo da ideia em um rabisco seria algo nesse sentido.</p>
+
+<p><img src="./assets/img/github-actions/code-flow.jpeg" alt="Desenho do fluxo de código" /></p>
+
+<h3 id="layout">Layout</h3>
+
+<p>O App installer é um projeto que acabou morrendo e decidi manter o domínio por ser um nome bem bom, mas também disponibilizar a possibilidade para negociação do domínio e não apenas mostrar que o site não existe. Inicialmente fiz com um construtor da própria hostinger e tava ok, mas pra exemplificar o uso do Github Actions vi um bom candidato pra isso.</p>
+
+<p><img src="./assets/img/github-actions/layout.png" alt="Layout do site" /></p>
+
+<p>Além do layout adicionei também o copiar para área de transferência.</p>
+
+<p>No final vou disponibilizar o link do repo completo.</p>
+
+<h3 id="githooks-no-hostinger">Githooks no hostinger</h3>
+
+<p>Aqui não existe muito mistério, mas pra não deixar de mostrar, vamos aos prints</p>
+
+<p>No painel de hospedagem da hostinger você pode cadastrar um repo e apontar para um diretório, assim que o repo for atualizado, você pode implantar e com isso ele pega tudo que tem na branch e adiciona no diretório indicado, mas nesse passo, ainda manualmente.</p>
+
+<p><img src="./assets/img/github-actions/repo-to-directory.png" alt="Implantação manual dos arquivos do repo" /></p>
+
+<p>E pra facilitar mais ainda, ao clicar em implantação automática, é mostrado um link do hook que o hostinger irá escutar caso esteja vinculado ao github. Feito isso, todo push na branch production é feito todo o processo de substituir os arquivos do diretório pelos arquivos da branch, assim, atualizando o site ou projeto.</p>
+
+<p><img src="./assets/img/github-actions/implantacao-automatica.png" alt="Implantação automática" /></p>
+
+<h3 id="estrela-do-show">Estrela do show</h3>
+
+<p>Agora, com tudo já montado, faltou apenas o próprio build utilizando os workflows do github actions e o meu ficou assim:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Publish Web</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">workflow_dispatch</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v1</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Setup Flutter</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">subosito/flutter-action@v1</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">channel</span><span class="pi">:</span> <span class="s2">"</span><span class="s">stable"</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install dependencies</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">flutter pub get</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build Web</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">flutter build web --release</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">cd build/web</span>
+          <span class="s">git init</span>
+          <span class="s">git config --global user.email leonardobenedeti@gmail.com</span>
+          <span class="s">git config --global user.name leonardobenedeti</span>
+          <span class="s">git status</span>
+          <span class="s">git remote add origin https://$@github.com/leonardobenedeti/appinstaller.git</span>
+          <span class="s">git checkout -b production</span>
+          <span class="s">git add --all</span>
+          <span class="s">git commit -m "Publish by Actions"</span>
+          <span class="s">git push origin production -f</span>
+</code></pre></div></div>
+
+<p>Mas aqui temos mais detalhes pra funcionar como o <code class="language-plaintext highlighter-rouge">secrets.TOKEN_FOR_BUILD</code>. Pela internet tem vários artigos que mostram como criar o token pra utilizar aqui só que gostaria de indicar e também deixar o crédito de onde tirei essa dúvida que foi neste <a href="https://blog.flutterando.com.br/publicando-suas-paginas-flutter-no-github-pages-utilizando-github-action-ab2701cd1f52" target="_blank">post</a> do Toshi Ossada no blog do Flutterando.</p>
+
+<p>E com isso tudo pronto, só fazer seus commits que tudo vai acontecer automágicamente… =D</p>
+
+<p><img src="./assets/img/github-actions/workflows.png" alt="Implantação automática" /></p>
+
+<p>e claro, quando for utilizar algo mais automatiado assim, cuidado com o fluxo pra não sobrepor códigos que não poderiam ser alterados.</p>
+
+<p>E como prometido, aqui vai o <a href="https://github.com/leonardobenedeti/appinstaller" target="_blank">Repo do AppInstaller</a> pra vocês conferirem as execuções e tudo além que não foi explicado aqui.</p>
+
+:ET
